@@ -178,7 +178,8 @@
 
 .slick-arrow.arrow-next {
     right: 0;
-    top: -3rem;
+    top: -5.5rem;
+    rotate: 180deg;
 }
 
 .slick-arrow.arrow-next svg {

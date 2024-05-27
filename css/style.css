@@ -3,7 +3,9 @@ html {
   overflow-x: hidden;
   font-size: 18px;
 }
-
+a {
+  text-decoration: none !important;
+}
 .btn-rounded {
   border-radius: 50px;
 }

@@ -8,42 +8,66 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/menu.css" rel="stylesheet">
+  <link href="css/slick-slider.css" rel="stylesheet">
   <link rel="stylesheet" href="css/s-custom.css">
   <link rel="stylesheet" href="css/s-custom2.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <link href="css/slick-slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="js/jquery-3.7.1.js"></script>
- <script src="js/headerFooter.js"></script>
- <style>
-  @media (max-width:700px) {
-    #bg-white {
-      position: relative !important;
+
+  <style>
+    @media (max-width:700px) {
+      .drop-sticky {
+        padding: 20px !important;
+        border-radius: 1rem !important;
+      }
     }
-    .hero-search {
-      padding-top: 1rem !important;
+
+    @media (max-width:1000px) {
+      #search-box-m {
+        z-index: 0 !important;
+      }
+
+      .drop-sticky {
+        padding: 15px !important;
+      }
     }
-  }
-  @media (max-width:1000px) {
-    #search-box-m {
-     z-index: 0 !important;
+
+    @media (min-width:1000px) {
+      #bg-white header {
+        background-image: none !important;
+      }
+
+      .search-box-m {
+        position: fixed;
+        top: 13px;
+        transition: translatey(-50%) 0.4s ease;
+        left: 50%;
+        transform: translatey(-50%);
+        transform: translatex(-50%);
+      }
+
+      .search-box-m .drop-sticky {
+        padding: 15px !important;
+      }
+
+      .search-box-m .drop-sticky span {
+        display: none;
+      }
+
     }
-  }
- </style>
+  </style>
 </head>
+
 <body>
 
-
-  
-  <div id="search-bar" class="search-main "  >
-    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2"style="z-index: 100;">
+  <div id="search-bar" class="search-main ">
+    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2 "
+      style="z-index: 100;">
       <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
         style="border-radius: 2rem; padding: 6px 16px;">
         <div>
@@ -58,102 +82,246 @@
       </div>
 
     </div>
+  </div>
 
-</div>
 
-<div id="header-home"  style=" z-index: 9999 !important;"></div>
+  <section class="hero-section pt-0 pb-0">
+    <div class="header-section" id="bg-white"
+      style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important;">
+      <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0"
+        style="background-image: url(img/hero-bg.png)">
+        <div class="col-md-3 mb-md-0">
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+
+
+        <div class="col-md-3 d-flex justify-content-end mobile-version-none">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3" aria-current="page">Add my place</a></li>
+          </ul>
+          <!--menu items-->
+
+          <div class="dropdown mobile-version-none">
+            <button class="dropdown" style="background-color: white; display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 16px;
+            border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+            background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+
+              <li class="cdmenu-item">
+                <div class="d-grid">
+                  <button class="btn dropdown header-dropdown-font-1"
+                    style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sign up
+                  </button>
+                </div>
+              </li>
+              <li class="cdmenu-item">
+                <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
+                    style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Log in
+                  </button></div>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+            </ul>
+          </div>
+
+          <!--menu items end-->
+
+      </header>
+    </div>
+
+    <div class="hero-search" style="margin-top: 6rem;">
+      <h1>Bringing the military community together</h1>
+
+      <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
+        <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
+
+          <div class="dropdown d-flex align-items-center justify-content-center">
+            <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span>Select a</span> destination
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown d-flex align-items-center justify-content-center">
+            <a class="drop-sticky hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span> Choose a</span> date
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown d-flex align-items-center justify-content-center">
+            <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span>Add a</span> guest
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;" href="#">Search</a>
+
+        </div>
+
+      </div>
+      <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
+
+    </div>
+  </section>
 
   <!--Hero section end here -->
-  <section class="discovery-slider container" id="discovery-slider" style="display: none;">
 
-    <p class="product-slider-font-3 ">A trusted option for whatever you need</p>
- 
-  <div class="product-slider" id="product-slider">
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g1.jpg" alt="Product 1" loading="lazy">
+  <section class="py-5">
+    <div class="container-xxl container-sm discover-main">
+      <h3>A trusted option for whatever you need</h3>
+
+
+
+      <div class="discover-box">
+
+
+        <div class="item">
+          <img src="./img/g1.jpg" loading="lazy">
+
+
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
+
         </div>
-    </div>
+        <div class="item">
 
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g3.jpg" alt="Product 1" loading="lazy">
+          <img src="./img/g2.jpg" loading="lazy">
+
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
+
         </div>
-    </div>
+        <div class="item">
+          <img src="./img/g3.jpg" loading="lazy">
 
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g2.jpg" alt="Product 1" loading="lazy">
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
+
         </div>
-    </div>
+        <div class="item">
+          <img src="./img/g4.jpg" loading="lazy">
 
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g4.jpg" alt="Product 1" loading="lazy">
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
         </div>
-    </div>
+        <div class="item">
+          <img src="./img/g3.jpg" loading="lazy">
 
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g3.jpg" alt="Product 1" loading="lazy">
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
+
         </div>
-    </div>
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g2.jpg" alt="Product 1" loading="lazy">
+        <div class="item">
+          <img src="./img/g2.jpg" loading="lazy">
+
+          <div class="discover-text d-flex">
+            <div>
+              <span>Collection</span>
+              <p>Short term and vacation rentals</p>
+            </div>
+            <div>
+              <button class="btn btn-light">See all</button>
+            </div>
+          </div><!--discover-text end-->
         </div>
+
+
+
+      </div><!--discover-box end -->
+
+
     </div>
-    <div class="slide">
-        <div class="product  ">
-          <p class=" product-cat product-slider-font-1">Category</p>
-          <p class=" product-header product-slider-font-2">Short-term & Vacation rentals</p>
-          <button class=" product-button see-all">See all</button>
-          <img src="img/g4.jpg" alt="Product 1" loading="lazy">
-        </div>
-    </div>
+  </section>
 
 
 
-</div>
 
- </section>
-
-
-  <section class="py-5 pt-1" >
+  <section class="py-5">
     <div class="container-xxl container-sm">
-      <h3 class="header-font ">Find homes, rooms, or spaces shared by each other</h3>
+      <h3 class="mb-4">Find homes, rooms, or spaces shared by each other</h3>
 
 
-      <div class="filter-area d-flex mobile-version-none">
-      <!-- 
-        
-        <div class="filter-button">
-         <button type="button" class="btn btn-cd-secondary btn-pill">
+      <div class="filter-area d-flex">
+        <!-- <div class="filter-button">
+       <button type="button" class="btn btn-cd-secondary btn-pill">
           Filter <i class="bi bi-filter"></i>
-         </button>
-        </div> 
-    
-      -->
-
-      <!--
+        </button>
+      </div> -->
 
         <div class="filter-menu">
           <button type="button" class="btn btn-cd-light btn-pill active">
@@ -178,12 +346,13 @@
             <i class="bi bi-power"></i> Entire Place
           </button>
 
+
+
+
+
         </div>
-
-      -->
       </div>
-
-      <div class="row book-main" style="margin-top: 1rem;">
+      <div class="row book-main">
 
 
         <div class="cd-col">
@@ -224,7 +393,23 @@
         </div><!--col card end here-->
 
 
-      
+        <div class="cd-col">
+          <div class="book-gallery">
+            <div class="bgallery-img mb-3"> <img src="img/g3.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5>Apartment</h5>
+                <div class="d-flex rating align-items-center">
+                  <img src="img/star.svg" alt=""><span>4.0</span>
+                </div>
+              </div>
+              <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                apartment/room<br>Period of time</p>
+              <p><b>$320</b> <Span class="bs-3">per night</Span>
+              </p>
+            </div>
+          </div>
+        </div><!--col card end here-->
 
 
         <div class="cd-col">
@@ -364,12 +549,10 @@
     </div>
   </section>
 
-<section class="5" style="background-image: url(img/5.jpg);">
 
-
-  <section class="mb-5">
+  <section>
     <div class="container-xxl container-sm">
-      <h3 class="mb-4 header-font-1">Why crewdogs?</h2>
+      <h3 class="mb-4">Why crewdogs?</h2>
 
         <p class="py-2 btc-3">
           <b>Save money. Support each other. Give back to the community. </b><br><br>
@@ -386,17 +569,18 @@
   </section>
 
 
-  <section id="Who-can-join" class="mb-5">
+  <section class="mb-5" style="padding-top: 5rem !important;" id="item-why">
     <div class="container-xxl container-sm">
-      <h3  class="mb-4 header-font-1">Who can join?</h2>
+      <h3 class="mb-4">Who can join?</h2>
 
         <p class="py-2 btc-3">
           Secured by ID.me or a military email, Crewdogs verifies Active Duty, National Guard, Reserves, Veterans,
           Retirees,
           Military Spouses, Surviving Spouses, Immediate Military Family Members, Dependents, and Parents.</p>
-        <ul class="cd-highlights d-flex font-1 " >
+
+        <ul class="cd-highlights">
           <li>
-            <span><i class="bi bi-tag "></i></span> <b>Military members</b>
+            <span><i class="bi bi-tag"></i></span> <b>Military members</b>
           </li>
           <li>
             <span><i class="bi bi-award"></i></span> <b>Veterans and retirees</b>
@@ -406,24 +590,22 @@
           </li>
         </ul>
     </div>
-    
   </section>
 
 
 
-  <section style="margin-top: 5rem;">
-    
-    <div class="container-xxl container-sm">
-      <h3 class="mb-4 header-font-1">Reviews from our community</h3>
+  <section>
+    <div class=" review-box-m container-xxl container-sm">
+      <h3 class="mb-4">Reviews from our community</h2>
 
 
 
         <div class="review-box">
 
 
-          <div class="item" style="min-width: 293px;">
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“1 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -434,9 +616,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“2 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -447,9 +630,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“3 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -460,9 +644,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“4 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -473,9 +658,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“5 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -486,9 +672,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“6 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -499,9 +686,10 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
-          <div class="item" style="min-width: 293px;">
+
+          <div class="item">
             <div class="review-card">
-              <h3>“ Exceptional service. Can’t be faulted ”</h3>
+              <h3>“7 Exceptional service. Can’t be faulted ”</h3>
               <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
                 et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
               </p>
@@ -512,83 +700,133 @@
             </div><!--review card end-->
 
           </div> <!--item end-->
+
+          <div class="item">
+            <div class="review-card">
+              <h3>“8 Exceptional service. Can’t be faulted ”</h3>
+              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
+                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
+              </p>
+              <div class="d-flex">
+                <div class="avatar"><img src="img/avatar.png" alt=""></div>
+                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
+              </div>
+            </div><!--review card end-->
+
+          </div> <!--item end-->
+
+          <div class="item">
+            <div class="review-card">
+              <h3>“9 Exceptional service. Can’t be faulted ”</h3>
+              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
+                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
+              </p>
+              <div class="d-flex">
+                <div class="avatar"><img src="img/avatar.png" alt=""></div>
+                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
+              </div>
+            </div><!--review card end-->
+
+          </div> <!--item end-->
+
+          <div class="item">
+            <div class="review-card">
+              <h3>“10 Exceptional service. Can’t be faulted ”</h3>
+              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
+                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
+              </p>
+              <div class="d-flex">
+                <div class="avatar"><img src="img/avatar.png" alt=""></div>
+                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
+              </div>
+            </div><!--review card end-->
+
+          </div> <!--item end-->
+
+
+
+
 
         </div><!--review-box end -->
 
     </div>
 
+
   </section>
-  </section>
+
+  <div id="footer"></div>
 
 
- <div id="footer" style="z-index: 1000;"></div>
-
- <script>
-  window.addEventListener('scroll', function() {
+  <script>
+    window.addEventListener('scroll', function () {
       // Check if window width is greater than or equal to 700px
       var scrollHeight = window.scrollY;
       var searchBox = document.getElementById('search-box-m');
       var searchBg = document.getElementById('bg-white');
-      if (window.innerWidth >= 1000) {
 
-          if (scrollHeight > 350) {
-              searchBox.classList.add('search-box-m');
-              searchBg.classList.add('bg-white');
-          } else {
-              searchBox.classList.remove('search-box-m');
-              searchBg.classList.remove('bg-white');
-          }
+      if (window.innerWidth <= 700) {
+
+        if (scrollHeight > 10) {
+          searchBg.classList.add('bg-white');
+        } else {
+          searchBg.classList.remove('bg-white');
+        }
       }
       if (window.innerWidth >= 700) {
 
-          if (scrollHeight > 350) {
-              searchBg.classList.add('bg-white');
-          } else {
-              searchBg.classList.remove('bg-white');
-          }
-      }
-      if (window.innerWidth <= 700) {
-
-          if (scrollHeight > 10) {
-              searchBg.classList.add('bg-white');
-          } else {
-              searchBg.classList.remove('bg-white');
-          }
+        if (scrollHeight > 350) {
+          searchBg.classList.add('bg-white');
+        } else {
+          searchBg.classList.remove('bg-white');
+        }
       }
 
-  });
-</script>
+      if (window.innerWidth >= 1000) {
+
+        if (scrollHeight > 350) {
+          searchBox.classList.add('search-box-m');
+          searchBg.classList.add('bg-white');
+        } else {
+          searchBox.classList.remove('search-box-m');
+          searchBg.classList.remove('bg-white');
+        }
+      }
+
+
+
+
+
+    });
+  </script>
 
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const searchBar = document.getElementById("searchBar");
-      const toggleBtn = document.getElementById("toggleBtn");
-      const content = document.getElementById("content");
-      const closeBtn = document.getElementById("closeBtn");
+    let lastScrollTop = 0;
+    let isScrolling;
 
-      toggleBtn.addEventListener("click", function () {
-        searchBar.classList.toggle("active");
-        content.classList.toggle("hidden"); // Toggles the visibility of the content div
-      });
+    window.addEventListener("scroll", function () {
+      clearTimeout(isScrolling);
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-      closeBtn.addEventListener("click", function () {
-        searchBar.classList.remove("active");
-        content.classList.remove("hidden"); // Shows the content div when the search bar is closed
-      });
+      if (currentScroll > lastScrollTop) {
+        // Scroll down
+        document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+      } else {
+        // Scroll up
+        document.getElementById("mobileFooter").style.transform = "translateY(0)";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+
+      isScrolling = setTimeout(function () {
+        document.getElementById("mobileFooter").style.transform = "translateY(0)";
+      }, 100);
     });
-     // Get references to all buttons
-  const buttons = document.querySelectorAll('button');
-
-// Add click event listener to each button
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    // Toggle the 'active' class list for the clicked button
-    this.classList.toggle('toggle-button-colour');
-  });
-});
   </script>
 
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
   <script>
     $('.burger, .overlay').click(function () {
       $('.burger').toggleClass('clicked');
@@ -613,144 +851,76 @@ buttons.forEach(button => {
 
     });
   </script>
-
-<script>
-  let lastScrollTop = 0;
-  let isScrolling;
-
-  window.addEventListener("scroll", function () {
-    clearTimeout(isScrolling);
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-      // Scroll down
-      document.getElementById("mobileFooter").style.transform = "translateY(100%)";
-    } else {
-      // Scroll up
-      document.getElementById("mobileFooter").style.transform = "translateY(0)";
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-
-    isScrolling = setTimeout(function () {
-      document.getElementById("mobileFooter").style.transform = "translateY(0)";
-    }, 100);
-  });
-</script>
-
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/headerFooter.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/carousel.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.product-slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [
-                {
-                    breakpoint: 1550,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
+    $(document).ready(function () {
+      try {
+        $('.discover-box').slick({
+          slidesToShow: 3,
+          arrows: false,
+          prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          dots: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
         });
-        document.getElementById('discovery-slider').style.display = "block";
+      }
+      catch (ex) {
+        console.log("Error initiating carousel" + ex)
+      }
+
     });
-</script>
-<script src="js/carousel.js"></script>
 
-<script>
-
-  $(document).ready(function () {
-    try {
-      $('.discover-box').slick({
-        slidesToShow: 3,
-        arrows: false,
-        prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-        nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-        dots: false,
-        autoplay: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
+    $(document).ready(function () {
+      try {
+        $('.review-box').slick({
+          slidesToShow: 3,
+          arrows: false,
+          prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          dots: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1
+              }
             }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    }
-    catch (ex) {
-      console.log("Error initiating carousel" + ex)
-    }
+          ]
+        });
+      }
+      catch (ex) {
+        console.log("Error initiating carousel" + ex)
+      }
 
-  });
+    });
 
-  $(document).ready(function () {
-    try {
-      $('.review-box').slick({
-        slidesToShow: 3,
-        arrows: false,
-        prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-        nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-        dots: false,
-        autoplay: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    }
-    catch (ex) {
-      console.log("Error initiating carousel" + ex)
-    }
-
-  });
-
-</script>
-
+  </script>
 
 
 </body>

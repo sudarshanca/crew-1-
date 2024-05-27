@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew dogs</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/s-custom.css">
+  <link rel="stylesheet" href="css/s-custom2.css">
+  <link href="css/slick-slider.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .box {
+      float: left;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .dropdown {
+      display: none;
+
+      background-color: #f9f9f9;
+      min-width: 160px;
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .dropdown-content div {
+      cursor: pointer;
+      padding: 8px 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .icon {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #888;
+      cursor: pointer;
+    }
+
+    .icon.opened {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=" d-flex flex-column justify-content-between p-2" style="min-height: 100dvh;">
+
+
+    <div id="container">
+      <div><img src="img/cross.png" style="width: 15px !important;" class="m-1 px-2" alt=""></div>
+      <div class="d-flex flex-column gap-3">
+
+
+        <div class="box w-100 dm-bold-2 mt-2 px-2 " style="display: block;">
+          Add a location
+          <i class="fas fa-plus icon opened" style="display: none;"></i>
+          <i class="fas fa-minus icon" ></i>
+          <div class="dropdown" style="display: block; background-color: inherit;">
+            <div class="dropdown-content">
+              <div>
+                <input type="text" placeholder="Select a destination">
+
+                <div class="border p-2  d-flex flex-column gap-2 dm-small-1"
+                  style="border-radius: 16px; font-size: 12px;">
+                  <div class="  d-flex align-items-center gap-2" style="border-radius: 16px; ">
+                    <img src="img/location-1.png" class="border p-2"
+                      style="border-radius: 50%; width: 37px; aspect-ratio: 1;" alt="">
+                    <div>
+                      <p class="mb-0">Charleston AFB</p>
+                    </div>
+                  </div>
+                  <hr class="my-0" style="width: 93%; margin-left: auto;">
+
+                  <div class="  d-flex align-items-center gap-2" style="border-radius: 16px; ">
+                    <img src="img/location-1.png" class="border p-2"
+                      style="border-radius: 50%; width: 37px; aspect-ratio: 1;" alt="">
+                    <div>
+                      <p class="mb-0">Charleston AFB</p>
+                    </div>
+                  </div>
+                  <hr class="my-0" style="width: 93%; margin-left: auto;">
+                  <div class="  d-flex align-items-center gap-2" style="border-radius: 16px; ">
+                    <img src="img/location-1.png" class="border p-2"
+                      style="border-radius: 50%; width: 37px; aspect-ratio: 1;" alt="">
+                    <div>
+                      <p class="mb-0">Charleston AFB</p>
+                    </div>
+                  </div>
+                  <hr class="my-0" style="width: 93%; margin-left: auto;">
+
+                  <div class="  d-flex align-items-center gap-2" style="border-radius: 16px; ">
+                    <img src="img/location-1.png" class="border p-2"
+                      style="border-radius: 50%; width: 37px; aspect-ratio: 1;" alt="">
+                    <div>
+                      <p class="mb-0">Charleston AFB</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+
+        <div class="box w-100 dm-bold-2 mt-2 px-2 " style="display: none;">
+          Choose a date
+          <i class="fas fa-plus icon opened" style="display: none;"></i>
+          <i class="fas fa-minus icon"></i>
+          <div class="dropdown" style="display: none; background-color: inherit;">
+            <div class="dropdown-content">
+              <img src="img/calander-22.png" width="100%" alt="">
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="box w-100 dm-bold-2 mt-2 px-2 " style="display: none;">
+          guests
+          <i class="fas fa-plus icon opened" style="display: none;"></i>
+          <i class="fas fa-minus icon"></i>
+          <div class="dropdown" style="display: none; background-color: inherit;">
+            <div class="dropdown-content">
+
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="m-0 dm-small-2" style="color: #4B4B4D;">Adults</p>
+                  <p class="m-0 dm-small-2" style="font-size: 13px; color: #ACACB0;">Aged 13 and above</p>
+                </div>
+
+                <div class="d-flex  gap-2 justifycontent-between  align-items-center " style="width: 50px; " >
+                <div class="m-0" >
+                  <img src="img/Minus.png" alt="">
+                </div>
+                <div>0</div>
+                <div class=" m-0">
+                  <img src="img/Add.png" alt="">
+                </div>
+              </div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="m-0 dm-small-2" style="color: #4B4B4D;">Children</p>
+                  <p class="m-0 dm-small-2" style="font-size: 13px; color: #ACACB0;">Ages 2- 12</p>
+                </div>
+
+                <div class="d-flex  gap-2 justifycontent-between  align-items-center " style="width: 50px; " >
+                <div class="m-0" >
+                  <img src="img/Minus.png" alt="">
+                </div>
+                <div>0</div>
+                <div class=" m-0">
+                  <img src="img/Add.png" alt="">
+                </div>
+              </div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="m-0 dm-small-2" style="color: #4B4B4D;">Infants</p>
+                  <p class="m-0 dm-small-2" style="font-size: 13px; color: #ACACB0;">Under 2</p>
+                </div>
+
+                <div class="d-flex  gap-2 justifycontent-between  align-items-center " style="width: 50px; " >
+                <div class="m-0" >
+                  <img src="img/Minus.png" alt="">
+                </div>
+                <div>0</div>
+                <div class=" m-0">
+                  <img src="img/Add.png" alt="">
+                </div>
+              </div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="m-0 dm-small-2" style="color: #4B4B4D;">Pets</p>
+                </div>
+
+                <div class="d-flex  gap-2 justifycontent-between  align-items-center " style="width: 50px; " >
+                <div class="m-0" >
+                  <img src="img/Minus.png" alt="">
+                </div>
+                <div>0</div>
+                <div class=" m-0">
+                  <img src="img/Add.png" alt="">
+                </div>
+              </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+       
+  
+   
+        <!-- Repeat for other divs -->
+      </div>
+    </div>
+
+
+
+    <div class="w-100 d-flex justify-content-between p-2" style=" z-index: 1000; position: fixed; bottom: 0; right: 0; left: 0; background-color: white; border-top: 1px solid #4444;">
+      <button type="button" class=" dm-small-4 btn w-full " style="color: #2587CF; border-radius: 16px; ">Clear
+        all</button>
+      <button type="button" id="nextBtn" class=" dm-small-4 btn w-full"
+        style=" border: 1px solid #ACACB03D; border-radius: 16px; color: white; background: #0D99FF;"> Next </button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var container = document.getElementById("container");
+      var divs = container.querySelectorAll(".box");
+      var currentIndex = 0;
+
+      // Function to hide dropdown of all boxes except the current one
+      function hideOtherDropdowns(currentIndex) {
+        var dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach(function (dropdown, index) {
+          if (index !== currentIndex) {
+            dropdown.style.display = "none";
+          }
+        });
+      }
+
+      // Show the dropdown when a box is clicked
+      container.addEventListener("click", function (event) {
+        var target = event.target;
+        if (target.classList.contains("box")) {
+          // Show dropdown of clicked box
+          var dropdown = target.querySelector(".dropdown");
+          var iconPlus = target.querySelector(".fa-plus");
+          var iconMinus = target.querySelector(".fa-minus");
+
+          if (dropdown.style.display === "none") {
+            hideOtherDropdowns(currentIndex);
+            dropdown.style.display = "block";
+            iconPlus.style.display = "none";
+            iconMinus.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+            iconPlus.style.display = "block";
+            iconMinus.style.display = "none";
+          }
+        }
+      });
+
+      // Show the next div when the Next button is clicked
+      document.getElementById("nextBtn").addEventListener("click", function () {
+        if (currentIndex < divs.length - 1) {
+          // Hide dropdown of current box
+          divs[currentIndex].querySelector(".dropdown").style.display = "none";
+          // Show next box
+          currentIndex++;
+          divs[currentIndex].style.display = "block";
+          // Open dropdown of next box
+          divs[currentIndex].querySelector(".dropdown").style.display = "block";
+        }
+        if (currentIndex === divs.length - 1) {
+          document.getElementById("nextBtn").innerHTML = "Search";
+        }
+      });
+
+      // Ensure the first div is initially shown
+      divs[currentIndex].style.display = "block";
+    });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchBar = document.getElementById("searchBar");
+      const toggleBtn = document.getElementById("toggleBtn");
+      const content = document.getElementById("content");
+      const closeBtn = document.getElementById("closeBtn");
+
+      toggleBtn.addEventListener("click", function () {
+        searchBar.classList.toggle("active");
+        content.classList.toggle("hidden"); // Toggles the visibility of the content div
+      });
+
+      closeBtn.addEventListener("click", function () {
+        searchBar.classList.remove("active");
+        content.classList.remove("hidden"); // Shows the content div when the search bar is closed
+      });
+    });
+    // Get references to all buttons
+    const buttons = document.querySelectorAll('button');
+
+    // Add click event listener to each button
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        // Toggle the 'active' class list for the clicked button
+        this.classList.toggle('toggle-button-colour');
+      });
+    });
+  </script>
+
+  <script>
+    $('.burger, .overlay').click(function () {
+      $('.burger').toggleClass('clicked');
+      $('.overlay').toggleClass('show');
+      $('nav').toggleClass('show');
+      $('body').toggleClass('overflow');
+    });
+
+    $(function () {
+      var header = $(".navbar");
+
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+          header.addClass("scrolled");
+          header.removeClass("navbar-inverse");
+
+        } else {
+          header.removeClass("scrolled");
+        }
+      });
+
+    });
+  </script>
+  <script>
+    let prevScrollPos = window.pageYOffset;
+    const scrollThreshold = 600; // Adjust this value to control when the search bar should appear
+
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > scrollThreshold) {
+        document.getElementById("search-bar").style.top = "0";
+      } else {
+        document.getElementById("search-bar").style.top = "-150px"; // Adjust based on the height of your search bar
+      }
+      prevScrollPos = currentScrollPos;
+    }
+
+  </script>
+  <script>
+    let lastScrollTop = 0;
+    let isScrolling;
+
+    window.addEventListener("scroll", function () {
+      clearTimeout(isScrolling);
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scroll down
+        document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+      } else {
+        // Scroll up
+        document.getElementById("mobileFooter").style.transform = "translateY(0)";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+
+      isScrolling = setTimeout(function () {
+        document.getElementById("mobileFooter").style.transform = "translateY(0)";
+      }, 100);
+    });
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="js/carousel.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      try {
+        $('.discover-box').slick({
+          slidesToShow: 3,
+          arrows: false,
+          prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          dots: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      }
+      catch (ex) {
+        console.log("Error initiating carousel" + ex)
+      }
+
+    });
+
+    $(document).ready(function () {
+      try {
+        $('.review-box').slick({
+          slidesToShow: 3,
+          arrows: false,
+          prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+          dots: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      }
+      catch (ex) {
+        console.log("Error initiating carousel" + ex)
+      }
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>

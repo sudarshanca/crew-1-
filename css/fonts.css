@@ -1,0 +1,989 @@
+.header-font {
+  color: #444;
+  font-family: "DM Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.56px;
+
+}
+
+.header-font-1 {
+  color: #333;
+  font-feature-settings: 'cv04' on, 'ss03' on, 'cv03' on, 'cv01' on;
+  font-family: "DM Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
+  /* 40.6px */
+  letter-spacing: -0.56px;
+}
+
+.font-1 {
+  color: var(--BLACK, #444);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+
+/* details font */
+
+.details-header-font-1 {
+  color: #444;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.details-header-font-2 {
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: -0.078px;
+}
+
+.details-header-font-3 {
+  overflow: hidden;
+  color: var(--BLACK, #444);
+  text-overflow: ellipsis;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: -0.078px;
+}
+
+.details-header-font-4 {
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 185.714% */
+  letter-spacing: -0.078px;
+}
+
+.details-header-font-5 {
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: -0.078px;
+}
+
+.details-header-font-6{
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+height: 19px;
+align-self: stretch;
+}
+
+.details-header-font-7 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+width: 168px;
+height: 19px;
+}
+
+.details-header-font-8 {
+  color: var(--PRIMARY-MAIN, #0D99FF);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+text-decoration-line: underline;
+}
+
+.personalinfor-nav {
+  color: var(--GREY, #747474);
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+}
+
+.personalinfor-header {
+  color: #000;
+font-feature-settings: 'ss03' on;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 180% */
+}
+
+.personalinfor-header-1 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+}
+
+/* addPaymentmethod fonts*/
+
+
+.addpaymentmethod-font-1 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+text-align: center;
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 118%; /* 33.04px */
+letter-spacing: -0.56px;
+}
+
+.addpaymentmethod-font-2 {
+  color: var(--GREY, #747474);
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
+
+.addpaymentmethod-font-3 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.078px;
+}
+
+
+/* authentication font */
+
+.pin-font {
+color: var(--Grayscale-Gray-80, #4B4B4D);
+text-align: center;
+
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 118%; /* 33.04px */
+letter-spacing: -0.56px;
+}
+
+
+/* personal information font */
+
+.pi-font-1 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+}
+
+.pi-delete-font {
+color: var(--System-Alert-Alert-50, #FF554A);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+text-decoration-line: underline;
+}
+
+.pi-font-2 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.pi-font-3 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.28px;
+}
+
+.pi-font-4 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
+
+
+.pi-font-4-1 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 150% */
+letter-spacing: -0.32px;
+}
+
+.pi-font-5 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 116.667% */
+letter-spacing: -0.32px;
+}
+
+.your-payout-font {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 118%; /* 33.04px */
+letter-spacing: -0.56px;
+}
+
+.pi-font-6 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 131.25% */
+letter-spacing: -0.32px;
+}
+
+.pi-font-6-1 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+}
+
+.pi-font-7 {
+  color: #000;
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 91.667% */
+}
+
+.pi-font-7-1 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
+
+
+
+
+/* photo edit fonts */
+
+.pe-font-1 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118%; /* 33.04px */
+  letter-spacing: -0.56px;
+}
+
+
+/* payment history fonts*/
+.ph-font-1 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
+
+.ph-font-2 {
+  color: #ACACB0;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 150% */
+letter-spacing: -0.32px;
+}
+
+.ph-font-3 {
+  color: #0D99FF;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 131.25% */
+letter-spacing: -0.32px;
+text-decoration-line: underline;
+}
+
+
+
+/* login fonts */
+
+.login-header-fonts {
+  color: var(--Grayscale-Gray-80, #4B4B4D) !important;
+text-align: center;
+font-family: "DM Sans";
+font-size: 28px !important;
+font-style: normal !important;
+font-weight: 500 !important;
+line-height: 118% !important; /* 33.04px */
+letter-spacing: -0.56px !important;
+}
+
+/* message fonts */
+
+.msg-font-1 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 225% */
+}
+
+.msg-font-2 {
+  overflow: hidden;
+  color: var(--GREY, #747474);
+  text-overflow: ellipsis;
+  font-family: "DM Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+}
+
+.msg-font-3 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 183.333% */
+}
+
+.msg-font-4 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 200% */
+}
+
+.msg-font-5 {
+  color: #B9B9B9;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+}
+.msg-font-6 {
+  color: var(--BLACK, #444);
+text-align: center;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+
+.msg-font-7 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+}
+
+.msg-font-8 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.msg-font-9 {
+  color: #B9B9B9;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.msg-font-10 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+}
+
+/* msg sidebar font*/
+.msg-side-font-1 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 257.143% */
+}
+.msg-side-font-2 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 225% */
+}
+
+.msg-side-font-3 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 257.143% */
+}
+
+.msg-side-font-4 {
+color: #444;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.14px;
+}
+
+.msg-side-font-5 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.msg-side-font-6 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.12px;
+}
+
+.msg-side-font-7{
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 156.25% */
+}
+
+.msg-side-font-8 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 208.333% */
+}
+
+.msg-side-font-9 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 200% */
+letter-spacing: -0.18px;
+}
+
+.msg-side-font-10 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 156.25% */
+}
+
+.msg-side-font-11 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 178.571% */
+}
+.msg-side-font-12 {
+  color: var(--Primary-Primary-50, #0D99FF);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+letter-spacing: -0.078px;
+}
+
+.msg-side-font-13 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 138.462% */
+letter-spacing: -0.078px;
+}
+
+.msg-side-font-14 {
+  color: #444;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.078px;
+}
+
+.msg-side-font-15 {
+  color: var(--BLACK, #444);
+
+/* Default/Regular/Body */
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+letter-spacing: -0.12px;
+}
+
+.msg-side-font-16 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 200% */
+letter-spacing: -0.12px;
+}
+
+
+
+.msg-side-font-17 {
+  color: var(--BLACK, #444);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 156.25% */
+}
+
+.msg-side-font-18{
+  color: var(--Grayscale-Gray-60, #ACACB0);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 156.25% */
+text-decoration: line-through;
+}
+
+.msg-side-font-19{
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 208.333% */
+}
+
+.msg-side-font-20 {
+  color: #444;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 138%; /* 19.32px */
+letter-spacing: -0.28px;
+}
+
+/* report popup*/
+.repot-popup-font-1 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+/* Default/Bold/Title1 */
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+}
+
+/* offer page fonts */
+
+.offer-header-font-1 {
+  color: #222;
+font-family: "DM Sans";
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 115.385% */
+}
+
+.offer-header-font-2 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 110% */
+letter-spacing: -0.408px;
+}
+.offer-header-font-3 {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+font-family: "DM Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 169.231% */
+letter-spacing: -0.408px;
+}
+
+.offer-header-font-4 {
+  color: var(--Grayscale-Gray-60, #ACACB0);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.offer-header-font-5{
+  color: var(--BLACK, #444);
+text-align: right;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.4px;
+}
+
+
+.popup-font {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+/* Default/Bold/Headline */
+font-family: "DM Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 129.412% */
+letter-spacing: -0.408px;
+}
+
+.popup-font-2 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+
+  /* Default/Bold/Subheadline */
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: -0.5px;
+}
+
+.popup-font-3 {
+  color: var(--Grayscale-Gray-60, #ACACB0);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+}
+
+.popup-font-4 {
+  color: #FFF;
+text-align: center;
+
+/* Default/Regular/Caption2 */
+font-family: "DM Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px; /* 154.545% */
+letter-spacing: -0.07px;
+
+border-radius: 12px;
+border: 0.5px solid var(--White-White-24, rgba(255, 255, 255, 0.24));
+background: rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(12px);
+}
+
+.mobile-profile-font-1 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 138.462% */
+letter-spacing: -0.078px;
+}
+
+.mobile-profile-font-2 {
+  color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+letter-spacing: -0.078px;
+}
+
+.accept-and-decline {
+  color: #222;
+font-family: "DM Sans";
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 115.385% */
+}
+
+
+/* slider */
+
+.product-slider-font-1 {
+  color: #FFF;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.28px;
+}
+
+.product-slider-font-2 {
+  color: #FFF;
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.48px;
+}
+
+.product-slider-font-3 {
+  color: #444;
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+
+.see-all {
+  display: flex;
+height: 40px;
+padding: 16px 24px;
+align-items: center;
+gap: 24px;
+border-radius: 16px;
+background: #FEFEFE;
+border: none;
+}
+
+.header-dropdown-font-1 {
+  color: #FFF;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 138%; /* 19.32px */
+letter-spacing: -0.28px;
+}
+
+.header-dropdown-font-2 {
+  color: #444;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 138%; /* 19.32px */
+letter-spacing: -0.28px;
+}
+
+.dashboard-font-1 {
+  color: #222;
+font-family: "DM Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 112.5% */
+align-self: stretch;
+}
+
+.dashboard-font-2 {
+  color: #222;
+font-family: "DM Sans";
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 115.385% */
+}
+
+.dashboard-font-3 {
+  color: var(--BLACK, #444);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 166.667% */
+}
+
+.dashboard-font-4 {
+  color: var(--Primary-Primary-50, #0D99FF);
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+text-decoration-line: underline;
+}
+
+
+/* buttons stylings*/
+
+.reserve-button,
+.save {
+  color: white;
+  display: flex;
+  width: 180px;
+  height: 48px;
+  padding: 12px 48px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Primary-Primary-50, #0D99FF);
+  backdrop-filter: blur(40px);
+}
+
+.conformed-declined-icon {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 300% */
+}
+
+.Request-again-button {
+display: flex;
+padding: 8px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+width: 100%;
+border: 1px solid #4444;
+background-color: white;
+border-radius: 8px;
+color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
+
+
+
+
+.location-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #4444;
+}

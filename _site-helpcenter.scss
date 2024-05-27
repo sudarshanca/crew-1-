@@ -1,0 +1,357 @@
+.TopHeaderText {
+    color: #222;
+    font-feature-settings: 'ss03' on, 'liga' off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    margin-bottom: 30px;
+}
+
+.imageMenuDropDownButton {
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid #F1F1F1;
+}
+
+.rightHeaderContainer {
+    padding-left: 60px;
+
+    h2 {
+        color: #1E1E20;
+        font-family: "DM Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        /* 87.5% */
+        letter-spacing: -0.32px;
+    }
+
+
+    h5 {
+        color: #4B4B4D;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 185.714% */
+        letter-spacing: -0.078px;
+    }
+
+    button {
+        border-radius: 16px;
+        padding-inline: 32px;
+        padding-block: 16px;
+        border: 1px solid rgba(234, 235, 237, 0.80);
+        background: #FFF;
+
+
+        color: #444;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+
+.tab-buttons {
+    display: flex;
+
+    .tab-button {
+        cursor: pointer;
+        padding: 10px 20px;
+
+        color: #747474;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        /* 128.571% */
+    }
+
+    /* Style for the active tab button */
+    .tab-button.active {
+
+        border: 1px;
+        border-bottom: 3px solid #0D99FF;
+    }
+}
+
+.tab {
+    display: none;
+    /* Hide all tabs by default */
+}
+
+/* Style for the active tab */
+.tab.active {
+    display: block;
+    /* Show active tab */
+}
+
+.columnContainerGuest {
+    .columnDivion {
+        padding-inline: 16px;
+        padding-block: 20px;
+        h4 {
+            color: #444;
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            /* 131.25% */
+            letter-spacing: -0.32px;
+        }
+
+        div.wrapper {
+
+            border-radius: 10px;
+            border: 1px solid rgba(234, 235, 237, 0.80);
+            background: #FFF;
+        }
+        .textPadding{
+            padding: 24px;
+
+        }
+
+        div.text {
+            color: #4B4B4D;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            /* 185.714% */
+            letter-spacing: -0.078px;
+        }
+
+        .viewAllButton{
+            border: none;
+            border-top: 1px solid rgba(234, 235, 237, 0.80);
+            width: 100%;
+            background-color: transparent;
+            padding: 16px 24px;
+
+
+            color:   #747474;
+font-family: "DM Sans";
+ font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 175% */
+    letter-spacing: -0.32px;
+        }
+    }
+}
+
+@media   (max-width: 780px){
+    .rightHeaderContainer {
+        display: none;
+    }
+    .TopHeaderText{
+        margin-top: 100px;
+    }
+}
+
+@media   (max-width: 425px){
+  
+    .TopHeaderText{
+        margin-top: 40px;
+    }
+}
+
+
+.helpBackButton {
+    color: #0D99FF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin-left: 6px;
+}
+
+.sideHeader {
+    h3{
+        color:   #444;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 105% */
+letter-spacing: -0.32px;
+margin-bottom: 24px;
+    }
+    h4{
+        color:   #444;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 131.25% */
+letter-spacing: -0.32px;
+margin-bottom: 24px;
+}
+    h6{
+        color:  #4B4B4D;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+margin-bottom: 24px;
+letter-spacing: -0.078px;
+    }
+}
+
+.ContactUsButton{
+    border-radius: 16px;
+    padding-inline: 32px;
+    padding-block: 16px;
+    border: 1px solid rgba(234, 235, 237, 0.80);
+    background: #FFF;
+    color: #444;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+// Accordian CSS Start
+
+.accordion {
+    overflow-anchor: none;
+}
+
+.accordion>.card:not(:last-of-type) {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion>.card {
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.accordion>.card:not(:first-of-type) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion>.card:not(:last-of-type) {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+// Accordian CSS End
+
+
+#accordionExample {
+    button {
+        color: #444;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.078px;
+        text-decoration: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    li {
+        color: #747474;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 185.714% */
+        letter-spacing: -0.078px;
+    }
+}
+  
+
+
+.panel-title {
+    position: relative;
+  }
+    
+  .panel-title::after {
+    content: "\002B";
+    color: #333;
+    top: -2px;
+    right: 0px;
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 28px;
+    transition: content 1.3s ease; /* Transition for content property */
+
+  }
+  
+  .panel-title[aria-expanded="true"]::after {
+    content: "\2212";
+    font-size: 28px;
+    transition: content 1.3s ease; /* Transition for content property */
+
+  }
+   

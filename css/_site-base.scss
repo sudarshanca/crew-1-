@@ -1,0 +1,76 @@
+$white:#fff;
+$black:#000;
+$primary:#EA6D27;
+$hero-color:#f5f5f5;
+$body-secondary:#ACACB0;
+$body-text-color:#747474;
+$body-primary:#1E1E20;
+$border-light:#E7E7E7;
+$font-size-16:16px;
+$bg-light:#F5F5F5;
+
+
+body, html {
+    overflow-x: hidden; font-size: 18px;
+}
+.btn-rounded {border-radius: 50px;}
+.bp-3 {color:$body-primary;}
+.bs-3{color:$body-secondary;}
+.btc-3{color:$body-text-color;}
+.fs-16 {font-size:$font-size-16;}
+.hr{color:#E6E6E6;}
+
+a.btn-brand {
+    border-radius: 40px; border:solid 1px #E7E7E7; background-color: #fff; padding:1rem 2rem; color:$body-primary; text-decoration: none;
+&:hover {box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background: $body-primary; color:#fff}
+}
+
+.btn.btn-cd-secondary {background: $bg-light; border:0; font-size: 16px;
+&:hover {background: $body-secondary;}
+}
+.btn.btn-pill {border-radius: 40px;}
+.btn.btn-cd-light {border:solid 1px #F4F4F4; color:#B4B4B4; font-size: 16px;
+&:hover{background: #EEF8FF; color: #076CB6;}
+&:active{background: #EEF8FF; color: #076CB6;}
+}
+.cd-mt1{margin-top: 96px;}
+.cd-mt2{margin-top: 153.5px;}
+
+
+@media (max-width: 576px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 100%;}
+    }
+}
+
+@media (min-width: 576px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 50%;}
+    }
+}
+
+@media (min-width: 768px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 33.33333333%;}
+    }
+}
+
+@media (min-width: 1200px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 25%;}
+    }
+}
+
+@media (min-width: 1400px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 20%;}
+    }
+}
+@media (min-width: 1720px) {
+    .book-main {
+        .cd-col {flex:0 0 auto; width: 16.666666%;}
+    }
+}
+
+
+

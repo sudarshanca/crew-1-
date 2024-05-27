@@ -1,0 +1,23 @@
+.discover-main { 
+.discover-box {
+    margin-left: -25px; margin-top: 2rem;    
+    .item{position: relative;
+    img {filter: brightness(0.7); border-radius: 12px;}
+    }
+    .discover-text{position: absolute; top:20px; left:20px; color: #fff; height: 80%; flex-direction: column; justify-content: space-between;
+        .btn {border-radius: 16px;}
+        p{font-weight: bold; font-size: 24px;}
+    
+    }
+    
+}
+}
+
+
+ul.cd-highlights { display: flex; gap: 1rem; margin: 0; padding: 0;
+li{ display: flex; border: solid 1px #E7E7E7; border-radius: 16px; gap: 0.8rem; padding: 20px 30px; align-items: center;}
+span {width: 50px; height: 50px; border-radius: 50px; border:solid 1px #E7E7E7; 
+    background-color: #FCFCFC; display: flex; align-items: center; justify-content: space-around; font-size: 24px;}
+b {font-weight: normal;}
+}
+

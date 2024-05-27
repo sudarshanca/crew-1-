@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew dogs</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/s-custom.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="css/slick-slider.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script src="js/headerFooter.js"></script>
+
+    <style>
+        .coll {
+            cursor: pointer;
+        }
+
+        .activeblu {
+            color: #0D99FF;
+        }
+
+        .activeblu .line {
+            height: 2px;
+            width: 80%;
+            background-color: #0D99FF;
+            margin: .3rem auto;
+        }
+
+        @media (max-width:700px) {
+            #profile-mobile-version{
+                display: block !important;
+            }
+
+            .profile-desktop-version {
+                display: none !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+ <main class="profile-desktop-version">
+
+
+    <section class="w-100 " style=" border-bottom: 1px solid #4444; background-image: url(img/hero-bg.png); ">
+
+        <div id="header3" style="background-image: url(img/hero-bg.png);"></div>
+        <section class="container mb-0" style="max-width: 1450px;">
+            <section class="" style="padding-left: 2%;">
+
+                <h1 class=" trips " style="font-weight: 700; font-size: 42px; color: #444444;">Profile</h1>
+                <div class="mobile-view container ">
+                    <h1 class="travel">Travel</h1>
+                    <img src="img/Vector.png" alt="">
+                </div>
+                <br>
+                <div class="text-center " style="margin-bottom: -.3rem;">
+                    <div class="customg row row-cols-auto personalinfor-nav">
+                        <div class="coll  activeblu" onclick="showContent('content1')">My info <div class="line"></div>
+                        </div>
+                        <div class="coll" onclick="showContent('content2')">Settings <div class="line"></div>
+                        </div>
+                        <div class="coll" onclick="showContent('content3')">Payment & payouts <div class="line"></div>
+                        </div>
+                        <div class="coll" onclick="showContent('content4')">Support <div class="line"></div>
+                        </div>
+                        <div class="coll" onclick="showContent('content5')">Legal <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+
+    <section class=" container mb-5" style="max-width: 1550px; margin-top: 1rem;">
+
+
+        <div class="container d-flex flex-wrap justify-contant-between gap-4">
+
+            <div class=" left flex-fill">
+                <div id="content1" class=" content boxes ">
+                    <div>
+                        <p class="personalinfor-header">Photos</p>
+
+                    </div>
+                    <div class="left-top d-flex align-items-center justify-content-between flex-wrap w-100 gap-3 ">
+                        <div class="images d-flex gap-1 ">
+                            <div class="img overflow-hidden ">
+                                <img src="img/man.png" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="img/home.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="img/bathroom-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex profile-button gap-1 ">
+                            <button class="btn  border dm-small-3" style="border-radius: 16px; color: #0D99FF;  ">Edit
+                                Photos</button>
+                            <button class="btn border dm-small-3" style="border-radius: 16px;">Preview Profile</button>
+                        </div>
+                    </div>
+                    <form action="" class="mt-3 d-flex flex-column gap-3 w-100">
+                        <div class="firstname">
+                            <label for="Name " class="personalinfor-header-1" style="margin-bottom: 16px;">Name</label>
+                            <div class="border  d-flex align-items-center gap-2"
+                                style="margin-bottom: 20px; padding: 5px !important; border-radius: 16px;">
+                                <input class=" form-control-sm px-4" style="border: none; outline: none;" type="text"
+                                    placeholder="first name">
+                                <div>
+                                    <a href="" class="text-end" style="margin: 0 2rem 1rem 0;">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="category " class="personalinfor-header-1 " style="margin-bottom: 16px;">Service
+                                category</label>
+                            <select class="ui dropdown form-select "
+                                style=" margin-bottom: 20px; padding: 24px !important;">
+                                <option value="">Military member</option>
+                                <option value="1">yes</option>
+                                <option value="0">no</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Rank" class="personalinfor-header-1" style="margin-bottom: 16px;">Rank</label>
+                            <select class="ui dropdown form-select "
+                                style=" margin-bottom: 20px; padding: 24px !important;">
+                                <option value="">0-1</option>
+                                <option value="1">1</option>
+                                <option value="0">2</option>
+                            </select>
+                        </div>
+                        <label for="About " class="personalinfor-header-1">About</label>
+                        <div class="border p-3" style="border-radius: 16px !important;">
+                            <textarea style="caret-color: black;" name="about" class="p-1" id="" cols="" rows="5"></textarea>
+                            <hr class="m-auto">
+                            <div class="w-100 d-flex justify-content-end">
+                                <a href="" class="text-end" style="margin: 1rem 1rem 0 0;">save</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div id="content2" class="content boxes ">
+                    <p class="tx-photo" style="font-size: 18px;">Notifications</p>
+
+                    <div class="w-100 border p-3 pt-3 " style="border-radius: 16px;">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1">Email</p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input pi-font-1" type="checkbox" id="flexSwitchCheckChecked"
+                                    checked>
+                            </div>
+                        </div>
+                        <hr class="border" style=" margin-top: 0;">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1">Push notifications</p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                            </div>
+                        </div>
+
+                        <hr class="border " style=" border-radius: 16px; margin-top: 0;">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1">SMS - text messages</p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 w-100">
+                        <p class="tx-dark" style="font-size: 18px;">Login & Security</p>
+                        <div>
+                            <p class="pi-font-1">Phone number</p>
+                            <div class="d-flex justify-content-between w-100 border p-2 pt-3  " style="padding-left: 1rem  !important; padding-right: 2rem !important; border-radius: 16px;">
+                                <p class="pi-font-1">(704) 111-2222</p>
+                                <p class="pi-font-1 text-primary"><ins>Edit</ins></p>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <p class="pi-font-1 mt-3">Email</p>
+                            <div class="d-flex justify-content-between w-100 border  p-2 pt-3 " style=" padding-left: 1rem  !important; padding-right: 2rem !important; border-radius: 16px;">
+                                <p class="pi-font-1">John@gmail.com</p>
+                                <p class="pi-font-1 text-primary"><ins>Edit</ins></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100">
+                        <div class="d-flex align-items-center justify-content-between" style="width: 20%;">
+                            <div>
+                                <p class="pi-font-1">Account</p>
+                            </div>
+                            <div style="border-bottom: 2px solid blue; width: 30px; margin-top: -1rem;"></div>
+                        </div>
+
+                        <div class="ml-1" style="margin-left: 1.5rem;">
+                            <p class="pi-font-1">Delete account and erase data</p>
+                            <p class="pi-delete-font"><ins>Delete</ins></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="content3" class=" content boxes ">
+                    <p class=" w-100 personalinfor-header">Payment and payout</p>
+
+                    <p class="pi-font-2">Travelling</p>
+                    <div class="w-100 border  p-3 pt-3 " style="border-radius: 16px;">
+                        <div class="d-flex justify-content-between align-items-start  ">
+                            <div>
+                                <p class="pi-font-1 " style="margin-bottom: .2rem !important;">Payment methods</p>
+                                <p class="pi-font-3 mb-0">
+                                    Add a payment and start searching
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1" style="margin-bottom: .2rem !important;">Payment History</p>
+                                <p class="pi-font-3 mb-0">
+                                    Keep track of all your payments and refunds.
+                                </p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="pi-font-2">Hosting</p>
+                    <div class="w-100 border  p-3 pt-3 " style="border-radius: 16px;">
+                        <div class="d-flex justify-content-between align-items-start  ">
+                            <div>
+                                <p class="pi-font-1" style="margin-bottom: .2rem !important;">Payout methods</p>
+                                <p class="pi-font-3 mb-0">
+                                    Manage how you get paid.
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1" style="margin-bottom: .2rem !important;">Transaction history</p>
+                                <p class="pi-font-3 mb-0">
+                                    Keep track of all your payouts.
+                                </p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-1" style="margin-bottom: .2rem !important;">My donations</p>
+                                <p class="pi-font-3 mb-0">
+                                    Change your charity and see your donations
+                                </p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="content4" class=" content boxes ">
+                    <p class="personalinfor-header">Support</p>
+
+                    <div class="w-100 border  p-3 pt-3 " style="border-radius: 16px;">
+                        <div class="d-flex justify-content-between align-items-start  ">
+                            <div>
+                                <p class="pi-font-1" style="margin-bottom: .2rem !important;">Gives us feedback</p>
+                                <p class="pi-font-3 mb-0">
+                                    We are here for you, let us know what we can improve on .
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content5" class=" content boxes ">
+                    <p class="personalinfor-header">Legal</p>
+
+                    <div class="w-100 border p-3 pt-3 " style="border-radius: 16px;">
+                        <div class="d-flex justify-content-between align-items-start  ">
+                            <div>
+                                <p class="pi-font-3 mb-0">Term & Condition</p>
+
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="pi-font-3 mb-0">Privacy Policy</p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#444444" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right border  rounded " style=" min-width: 293px; height: fit-content;">
+                <p class="pi-font-4 px-3" style="font-weight: 500 !important;">Help center</p>
+                <p class="pi-font-5 px-3"> Need some help? </p>
+                <p class="pi-font-4 px-3">We’re here for you, anytime</p>
+                <hr>
+                <p class="pi-font-4  text-center" style="font-size: 12px; font-weight: 500;">Contact us</p>
+            </div>
+        </div>
+
+    </section>
+
+ </main>
+
+    <div id="profile-mobile-version" style="display: none;" ></div>
+
+
+    <div id="footer"></div>
+    </section>
+
+
+    <!--Hero section end here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script>
+        document.getElementById('content1').classList.add('active');
+
+        function showContent(contentId) {
+            let contents = document.getElementsByClassName('content');
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            document.getElementById(contentId).classList.add('active');
+
+            let cols = document.querySelectorAll('.coll');
+            for (let i = 0; i < cols.length; i++) {
+                cols[i].classList.remove('activeblu');
+            }
+            event.target.classList.add('activeblu');
+        }
+    </script>
+</body>
+
+</html>

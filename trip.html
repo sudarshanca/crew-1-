@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew dogs</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/s-custom.css">
+    <link href="css/slick-slider.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .box {
+        width: 100%;
+        max-width: 293px;
+        margin: 0 !important;
+    }
+    .box p:last-child{
+        margin-bottom: 0 !important;
+    }
+    .desktop-version-footer{
+    display: none;
+  }
+   
+    @media (max-width:700px) {
+        .mobile-none{
+            display: none !important;
+        }
+        .navbars-travel {
+            padding-bottom: .5rem !important;
+        }
+
+        .margin-mobile-none {
+            margin: 12px 0 0 0 !important;
+            padding: 0 !important;
+        }
+        .mobile-padding-left {
+            padding-left: .5rem;
+        }
+  
+    }
+  </style>
+
+</head>
+
+<body>
+   
+    <div id="header3" class="mobile-none"></div>
+
+    <section style= "max-width: 1450px; margin-bottom: 5rem;" class="container margin-mobile-none ">
+
+
+    <section  class="container mt-3  margin-mobile-none " >
+        <h1 class=" trips  mobile-none">Trips</h1>
+        <div class="mobile-view container ">
+
+            <h1 class="travel  ">Travel</h1>
+
+            <div class="border d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border-radius: 50%; ">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                <path d="M3.778 6.13487C3.96182 5.53878 4.29108 4.9787 4.79601 4.47808C5.19356 4.08392 5.60616 3.82398 6.02014 3.66667M11.423 2.0186C12.9107 1.07489 15.3134 0.182507 17.3882 2.29841C22.3135 7.32121 13.867 17 10.0002 17C6.13344 17 -2.3131 7.32121 2.61224 2.29841C4.68707 0.18253 7.08967 1.0749 8.57737 2.01861C9.41798 2.55184 10.5824 2.55184 11.423 2.0186Z" stroke="#4B4B4D" stroke-width="1.33333" stroke-linecap="round"/>
+              </svg>
+            </div>
+           
+        </div>
+        <br>
+        <div class="mobile-padding-left navbars-travel text-center pb-5" style="overflow-x: scroll; scrollbar-width: none;">
+            <div class="customg" style="display: flex !important; min-width: max-content;">
+                <div class="col activeblue" onclick="showContent('content1')">All trips</div>
+                <div class="col" onclick="showContent('content2')">Requested</div>
+                <div class="col" onclick="showContent('content3')">Confirmed</div>
+                <div class="col" onclick="showContent('content4')">Cancelled</div>
+                <div class="col" onclick="showContent('content5')">Needs review</div>
+                <div class="col" onclick="showContent('content6')">Past stay</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5" >
+        <div id="content1"  class=" content boxes ">
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status conformed">Conformed</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status cancelled">Cancelled</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="content2" class="content boxes">
+            <div class="box rounded border border-1">
+                <p class="m-3 status cancelled">Cancelled2</p>
+                <br>
+                <br>
+                <p class="mx-3 heading">Dimitri Stanic</p>
+                <p class="mx-3 adress">An apartment in texas</p>
+                <div class="mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p>&#x2022; 2 Guests</p>
+                </div>
+                <p class="border-top text-center trip-details">Trip details</p>
+            </div>
+            <div class="box rounded border border-1">
+                <p class="m-3 status">Needs review</p>
+                <br>
+                <br>
+                <p class="mx-3 heading">Dimitri Stanic</p>
+                <p class="mx-3 adress">An apartment in texas</p>
+                <div class="mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p>&#x2022; 2 Guests</p>
+                </div>
+                <p class="border-top text-center trip-details">Trip details</p>
+            </div>
+        </div>
+        
+
+        <div id="content3" class=" content boxes ">
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status conformed">conformed3</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+            </div>
+
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+        </div>
+
+        <div id="content4" class=" content boxes ">
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status cancelled">Cancelled4</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+            </div>
+
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+        </div>
+
+        <div id="content5" class=" content boxes ">
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status cancelled">Cancelled5</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+            </div>
+
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+        </div>
+
+        <div id="content6" class=" content boxes ">
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status cancelled">Cancelled6</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+            </div>
+
+            <div class="box rounded border border-1 ">
+                <p class=" m-3 status ">Needs review</p>
+                <br>
+                <br>
+                <p class=" mx-3 heading">Dimitri Stanic</p>
+                <p class=" mx-3 adress">An apartment in texas</p>
+                <div class=" mx-3 d-flex timedate">
+                    <p>July 4 - Aug 8</p>
+                    <p> &#x2022; 2 Guests</p>
+
+                </div>
+                <p class=" border-top text-center trip-details">Trip details</p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</section>
+    <!--Hero section end here -->
+
+    <div id="footer"></div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script>
+     document.getElementById('content1').classList.add('active');
+
+function showContent(contentId) {
+    let contents = document.getElementsByClassName('content');
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.remove('active');
+    }
+    document.getElementById(contentId).classList.add('active');
+
+    let cols = document.querySelectorAll('.col');
+    for (let i = 0; i < cols.length; i++) {
+        cols[i].classList.remove('activeblue');
+    }
+    event.target.classList.add('activeblue');
+}
+    </script>
+</body>
+
+</html>

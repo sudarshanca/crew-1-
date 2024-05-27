@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew dogs</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/slick-slider.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/s-custom.css">
+  <link rel="stylesheet" href="css/scrollbar.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/message.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .desktop-version-footer {
+      display: none;
+    }
+
+    .activeblue {
+      border-radius: 1rem;
+    }
+
+    .activeblue {
+      border-radius: 1rem;
+    }
+
+    @media (max-width:700px) {
+      .three {
+      width: 100% !important;
+      }
+      .two{
+      width: 100% !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grid  grid-notification ">
+    <div class="one w-100">
+      <div class=" mx-3">
+        <div class="w-100">
+          <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-2">
+            <div class="col-md-3 mb-md-0 ">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 gap-2 d-flex justify-content-end">
+              <!-- <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3" aria-current="page">Add my place</a></li>
+          
+         </ul> -->
+              <!--menu items-->
+              <div class="d-flex gap-3 align-items-center">
+                <p class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Bookings</p>
+                <p class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Calendar</p>
+                <p class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Dashboard</p>
+                <p class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Listings</p>
+                <p class="help-text mb-0 pb-1 link-not-active link-active " style="color: #444444;">Inbox</p>
+                <div class="mobile-display-none" style="cursor: pointer;" onclick="toggleNotification()">
+                  <svg class="not-selected" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="18"
+                    height="21" viewBox="0 0 18 21" fill="none">
+                    <path
+                      d="M5.18336 17L5.58336 17.6857C7.38336 20.7714 10.9834 20.7714 12.7834 17.6857L13.1834 17M1.36619 14.5496L1.46954 14.7627C2.13331 16.1311 3.52054 17 5.04144 17H13.2623C14.5656 17 15.7785 16.3342 16.4783 15.2347C17.4661 13.6826 17.2045 11.6465 15.8564 10.3945L15.8125 10.3538C14.8972 9.50376 14.4466 8.26543 14.6015 7.02598L14.6662 6.50905C15.0318 3.58379 12.7509 1 9.80286 1H8.09995C5.15552 1 2.87737 3.58064 3.24258 6.50234L3.32194 7.13719C3.46808 8.30631 3.04102 9.4741 2.17514 10.2731C0.99242 11.3645 0.663827 13.1016 1.36619 14.5496Z"
+                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                  <svg class="selected" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="18" height="21"
+                    viewBox="0 0 12 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66593 5.06227C1.38515 2.81605 3.13661 0.832031 5.40031 0.832031H6.53559C8.80169 0.832031 10.555 2.81815 10.2739 5.06675L10.2308 5.41137C10.1475 6.07811 10.3899 6.74425 10.8823 7.2015L10.9115 7.22867C11.9871 8.22751 12.1958 9.85197 11.4077 11.0903C10.8926 11.8996 10.0291 12.4143 9.08197 12.4892L8.95448 12.7078C8.27928 13.8653 7.22728 14.4987 6.12259 14.4987C5.0179 14.4987 3.9659 13.8653 3.2907 12.7078L3.16518 12.4926C2.03765 12.4224 1.0276 11.7509 0.530172 10.7254L0.461271 10.5833C-0.103163 9.41969 0.160901 8.02373 1.11135 7.14666C1.57003 6.7234 1.79625 6.10481 1.71883 5.48551L1.66593 5.06227ZM4.34708 12.4987C4.85331 13.1905 5.5085 13.4987 6.12259 13.4987C6.73668 13.4987 7.39187 13.1905 7.8981 12.4987H4.34708Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+              <div class="dropdown">
+
+                <button class="btn btn-outline-secondary dropdown d-flex align-items-center imageMenuDropDownButton"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/review-man.png" class="mr" width="32px" height="32px">
+                  <i class="bi bi-list"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end cd-menu-item">
+
+                  <li class="cdmenu-item">
+                    <div class="d-grid"><button class="btn btn-primary dropdown" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Sign up
+                      </button></div>
+                  </li>
+                  <li class="cdmenu-item">
+                    <div class="d-grid"><button class="btn btn-outline-secondary dropdown" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Log in
+                      </button></div>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">View collections</a></li>
+                  <li><a class="dropdown-item" href="#">Add my place</a></li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Help</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--menu items end-->
+          </header>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="two " style="width: 400px;">
+      <div class=" two-header d-flex flex-column gap-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mesg-header-font mb-0 message-mobile-font">Messages</p>
+          <div class="desktop-display-none" style="cursor: pointer;" onclick="toggleNotification()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" fill="none">
+              <path
+                d="M5.18336 17L5.58336 17.6857C7.38336 20.7714 10.9834 20.7714 12.7834 17.6857L13.1834 17M1.36619 14.5496L1.46954 14.7627C2.13331 16.1311 3.52054 17 5.04144 17H13.2623C14.5656 17 15.7785 16.3342 16.4783 15.2347C17.4661 13.6826 17.2045 11.6465 15.8564 10.3945L15.8125 10.3538C14.8972 9.50376 14.4466 8.26543 14.6015 7.02598L14.6662 6.50905C15.0318 3.58379 12.7509 1 9.80286 1H8.09995C5.15552 1 2.87737 3.58064 3.24258 6.50234L3.32194 7.13719C3.46808 8.30631 3.04102 9.4741 2.17514 10.2731C0.99242 11.3645 0.663827 13.1016 1.36619 14.5496Z"
+                stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="text-center pb-2">
+          <div class="d-flex gap-2 flex-wrap w-100">
+            <p class="col-message-1 activeblue">All</p>
+            <p class="col-message-1">Hosting</p>
+            <p class="col-message-1">Traveling</p>
+            <p class="col-message-1">Support</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="message-list">
+
+        <div class="   chat-list d-flex flex-column list-message " style="margin-top: -5px;">
+
+          <div class="chat-person" onclick="chatPersontBoxToggle()">
+            <div class="chat-person-image">
+              <!--notification-->
+              <div>3+</div>
+              <img src="img/image 9.png" width="100%" height="100%" alt="">
+            </div>
+            <div class="chat-person-box">
+              <div class=" div-1 heading ">
+                <p class="mb-0 msg-font-1">David Pam</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0" style="color:#B4B4B4 ; line-height: 18px; ">Guest</p>
+              </div>
+              <p class=" mb-0 msg-font-2 message-overflow-p" style="width: 100%;">Requesting Reservation Confirmation
+                for
+                A small room in denver</p>
+              <div class="div-2 msg-font-3">
+                <p class="mb-0 ">Inquiry</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0">June 3rd-13th</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-person selected-message">
+            <div class="chat-person-image-2">
+              <div>
+                <img src="img/image 9.png" class="d-none" width="100%" height="100%" alt="">
+                j
+              </div>
+              <img src="img/image 9.png" width="100%" height="100%" alt="">
+            </div>
+            <div class="chat-person-box">
+              <div class=" div-1 heading ">
+                <p class="mb-0 msg-font-1">Ahsing john</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0" style="color:#B4B4B4 ; line-height: 18px; ">Guest</p>
+              </div>
+              <p class=" mb-0 msg-font-2 message-overflow-p" style=" color: #000; width: 100%;">Requesting Reservation
+                Confirmation
+                for
+                A small room in denver</p>
+              <div class="div-2 msg-font-3">
+                <p class="mb-0 ">Inquiry</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0">June 3rd-13th</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-person">
+            <div class="chat-person-image">
+              <!--notification  
+                <div>3+</div>
+              -->
+              <img src="img/image 9.png" width="100%" height="100%" alt="">
+            </div>
+            <div class="chat-person-box">
+              <div class=" div-1 heading ">
+                <p class="mb-0 msg-font-1">David Pam</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0" style="color:#B4B4B4 ; line-height: 18px; ">Guest</p>
+              </div>
+              <p class=" mb-0 msg-font-2 message-overflow-p" style="width: 100%;">Requesting Reservation Confirmation
+                for
+                A small room in denver</p>
+              <div class="div-2 msg-font-3">
+                <p class="mb-0 ">Inquiry</p>
+                <p class=" m-0  dot-circle"></p>
+                <p class="mb-0">June 3rd-13th</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="three" style="width: calc(100vw - 400px);">
+
+      <div class="msg-box-container">
+
+        <div class=" msg-box-main main-section  ">
+          <div>
+            <div class=" d-flex justify-content-between  align-items-center border  px-2">
+              <div class=" p-2 chat-person  d-flex gap-2 " style="border: none !important; overflow-x: hidden; ">
+                <div class=" d-flex m-auto desktop-none" style="cursor: pointer;" onclick="chatPersontBoxToggle()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                    <path
+                      d="M20.3327 7.8763C20.8159 7.8763 21.2077 7.48455 21.2077 7.0013C21.2077 6.51805 20.8159 6.1263 20.3327 6.1263V7.8763ZM1.66602 6.1263C1.18277 6.1263 0.791016 6.51805 0.791016 7.0013C0.791016 7.48455 1.18277 7.8763 1.66602 7.8763V6.1263ZM5.71673 13.4561C6.05996 13.7963 6.61397 13.7938 6.95416 13.4506C7.29434 13.1074 7.29186 12.5533 6.94863 12.2132L5.71673 13.4561ZM4.27589 10.7961L4.89184 10.1746L4.89184 10.1746L4.27589 10.7961ZM4.27589 3.2065L3.65993 2.58502L3.65993 2.58502L4.27589 3.2065ZM6.94864 1.78944C7.29187 1.44926 7.29434 0.895247 6.95416 0.552017C6.61398 0.208787 6.05996 0.206315 5.71673 0.546496L6.94864 1.78944ZM1.68922 7.36686L0.821243 7.47749L0.821243 7.47749L1.68922 7.36686ZM1.68922 6.63575L0.821243 6.52511L0.821243 6.52511L1.68922 6.63575ZM20.3327 6.1263H1.66602V7.8763H20.3327V6.1263ZM6.94863 12.2132L4.89184 10.1746L3.65993 11.4176L5.71673 13.4561L6.94863 12.2132ZM4.89184 3.82797L6.94864 1.78944L5.71673 0.546496L3.65993 2.58502L4.89184 3.82797ZM4.89184 10.1746C4.05709 9.34731 3.48449 8.77793 3.09704 8.29548C2.72068 7.82684 2.59156 7.52582 2.5572 7.25622L0.821243 7.47749C0.91316 8.19862 1.25725 8.79939 1.73258 9.39127C2.19683 9.96934 2.85442 10.6192 3.65993 11.4176L4.89184 10.1746ZM3.65993 2.58502C2.85442 3.38338 2.19683 4.03326 1.73258 4.61134C1.25725 5.20322 0.91316 5.80398 0.821243 6.52511L2.5572 6.74638C2.59156 6.47679 2.72068 6.17577 3.09704 5.70713C3.48449 5.22468 4.05709 4.6553 4.89184 3.82797L3.65993 2.58502ZM2.5572 7.25622C2.53562 7.08694 2.53562 6.91566 2.5572 6.74638L0.821243 6.52511C0.78094 6.84131 0.78094 7.16129 0.821243 7.47749L2.5572 7.25622Z"
+                      fill="#444444" />
+                  </svg>
+                </div>
+                <div class="chat-person-image m-auto">
+                  <!--notification-->
+                  <div>3+</div>
+                  <img src="img/image 9.png" width="100%" height="100%" alt="">
+                </div>
+
+                <div>
+
+                  <div class="d-flex flex-column heading mb-0 ">
+                    <p class="mb-0 msg-font-4"> Ahsing john</p>
+                    <p class="mb-0 msg-font-5">Last seen 8 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <button class="col-message details-text" onclick="toggleSidebar()"
+                  style="background-color: inherit;">Details</button>
+
+                <div style="position: relative;">
+
+
+                  <div class=" button-active message-report-icon" onclick="reportDropdownToggle()">
+                    ...
+                    <div class="report-dropdown" style="display: none;">
+                      <!-- Button trigger modal -->
+                      <p type="button" class="msg-side-font-20 mb-0 " style="background-color: white; border: none;"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Report
+                      </p>
+                      <hr class="">
+                      <p class="msg-side-font-20 mb-0"> Block Ahsing john </p>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-grow-1 d-flex justify-content-end flex-column" style="overflow-y: scroll;">
+            <!-- empty chat box, add d-flex class name to show -->
+            <div class="d-none flex-column align-items-center justify-content-center w-100  " style="height: 100%;">
+              <div class="d-flex flex-column gap-3">
+                <div class="border p-4 m-auto" style="width: fit-content; border-radius: 50%;">
+                  <img src="img/message.png" class="" width="23.33px" height="23.33px" alt="">
+                </div>
+                <p class="adress">Select a chat from the left side to continue</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column p-2" style="overflow-y: scroll;">
+              <!-- today -->
+              <p class="msg-font-6"> Today </p>
+
+              <!--information message-->
+              <div class=" information-notification">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path
+                      d="M11.5 10V16M21.5 11C21.5 16.5228 17.0228 21 11.5 21C5.97715 21 1.5 16.5228 1.5 11C1.5 5.47715 5.97715 1 11.5 1C17.0228 1 21.5 5.47715 21.5 11Z"
+                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
+                    <path
+                      d="M12.5 7C12.5 7.55228 12.0523 8 11.5 8C10.9477 8 10.5 7.55228 10.5 7C10.5 6.44772 10.9477 6 11.5 6C12.0523 6 12.5 6.44772 12.5 7Z"
+                      fill="#444444" />
+                  </svg>
+                </div>
+                <p class="container mb-0 msg-font-7">To secure your payment, ensure to
+                  communicate and don’t forget to pay through crew dogs payment get way</p>
+              </div>
+
+              <!--information message-->
+              <div class=" information-notification">
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path
+                      d="M11.5 10V16M21.5 11C21.5 16.5228 17.0228 21 11.5 21C5.97715 21 1.5 16.5228 1.5 11C1.5 5.47715 5.97715 1 11.5 1C17.0228 1 21.5 5.47715 21.5 11Z"
+                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
+                    <path
+                      d="M12.5 7C12.5 7.55228 12.0523 8 11.5 8C10.9477 8 10.5 7.55228 10.5 7C10.5 6.44772 10.9477 6 11.5 6C12.0523 6 12.5 6.44772 12.5 7Z"
+                      fill="#444444" />
+                  </svg></div>
+                <p class="container mb-0 msg-font-7">Your reservation has been sent to the host for confirmation
+                </p>
+              </div>
+
+              <!--client message-->
+              <div class="chat-person d-flex gap-2 mb-2">
+                <div class="position-relative" style="width: 42px; height: 42px; min-width: 42px;">
+                  <div class="position-absolute d-flex justify-content-center align-items-center"
+                    style=" right: -5px;  color: white; background: #0D99FF; border: 2px solid white; width: 42px; height: 42px; min-width: 42px; border-radius: 50%;">
+                    <img src="img/image 9.png" class="d-none" width="100%" height="100%" alt="">
+                    j
+                  </div>
+                  <img src="img/image 9.png" width="100%" height="100%" alt="">
+                </div>
+                <div>
+                  <div class="d-flex flex-colum">
+                    <div class="d-flex flex-column heading mb-0 gap-1">
+                      <p class="mb-0 msg-font-8"> Ahsing john</p>
+                      <p class="mb-0 msg-font-9">11:21 am</p>
+                    </div>
+                  </div>
+                  <p class="msg-font-10 mb-0" style="color: #444444;">
+                    Hi Jake, I received your reservation, before i confirm, i’d like to know if you will be responsible
+                    for your other pet. We do not have arrangements to accommodate more than one pet.
+                  </p>
+                  <p class="mb-0 msg-font-9">Seen</p>
+                </div>
+              </div>
+
+              <!--host message-->
+              <div class="chat-person d-flex gap-2 mb-2">
+                <div class="chat-person-image-2">
+                  <div>
+                    <img src="img/image 9.png" class="d-none" width="100%" height="100%" alt="">
+                    k
+                  </div>
+                  <img src="img/image 9.png" width="100%" height="100%" alt="">
+                </div>
+                <div>
+                  <div class="d-flex flex-colum">
+                    <div class="d-flex flex-column heading mb-0 gap-1">
+                      <p class="mb-0 msg-font-8"> Ahsing john</p>
+                      <p class="mb-0 msg-font-9">11:21 am</p>
+                    </div>
+                  </div>
+                  <p class="msg-font-10" style="color: #444444;">
+                    Hi Jake, I received your reservation, before i confirm, i’d like to know if you will be responsible
+                    for your other pet. We do not have arrangements to accommodate more than one pet.
+                  </p>
+                </div>
+              </div>
+              <!--add chat mesages here-->
+
+              <!-- see more -->
+              <div class="d-flex align-items-start px-2 m-auto border p-1 mb-3 "
+                style="max-width: fit-content; border-radius: 1rem; width: 95%; background: #F5F5F5F5;">
+                <div> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M16.5588 8.50027C16.8351 8.19167 16.8089 7.71752 16.5003 7.44123C16.1917 7.16493 15.7175 7.19113 15.4412 7.49973L12.0721 11.2629C11.3894 12.0254 10.9296 12.5363 10.5365 12.8667C10.1621 13.1814 9.94213 13.25 9.75 13.25C9.55787 13.25 9.33794 13.1814 8.96348 12.8667C8.5704 12.5363 8.11064 12.0254 7.42794 11.2629L6.55877 10.2921C6.28248 9.98349 5.80833 9.9573 5.49973 10.2336C5.19113 10.5099 5.16493 10.984 5.44123 11.2926L6.34751 12.3049C6.98337 13.0152 7.51374 13.6076 7.99835 14.0149C8.51099 14.4458 9.06393 14.75 9.75 14.75C10.4361 14.75 10.989 14.4458 11.5016 14.0149C11.9862 13.6076 12.5166 13.0152 13.1524 12.305L16.5588 8.50027Z"
+                      fill="#444444" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11 0.25C5.06294 0.25 0.25 5.06294 0.25 11C0.25 16.9371 5.06294 21.75 11 21.75C16.9371 21.75 21.75 16.9371 21.75 11C21.75 5.06294 16.9371 0.25 11 0.25ZM1.75 11C1.75 5.89137 5.89137 1.75 11 1.75C16.1086 1.75 20.25 5.89137 20.25 11C20.25 16.1086 16.1086 20.25 11 20.25C5.89137 20.25 1.75 16.1086 1.75 11Z"
+                      fill="#444444" />
+                  </svg></div>
+                <p class="container mb-0 msg-font-7">Your reservation has been confirmed for July 22- Aug 15. <a
+                    href="">See
+                    details</a></p>
+              </div>
+
+            </div>
+          </div>
+
+          <!--message input-->
+
+          <div class=" px-3">
+            <div class="d-flex gap-3  align-items-center">
+              <div> <label for="fileInput" class=" custom-file-upload">
+                  <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="17" height="23"
+                    viewBox="0 0 17 23" fill="none">
+                    <path
+                      d="M9.63281 14.0219L10.5818 10.4802C11.1059 8.52413 9.94513 6.51356 7.98909 5.98944C6.03305 5.46532 4.02248 6.62612 3.49836 8.58216L1.12585 17.4365C0.601729 19.3925 1.76253 21.4031 3.71857 21.9272C4.6168 22.1679 5.52652 22.0533 6.29852 21.6695C6.77229 21.434 7.1942 21.0971 7.52975 20.6788M7.04008 9.53117L6.09108 13.0729C5.56696 15.0289 6.72776 17.0395 8.68381 17.5636C10.6398 18.0877 12.6504 16.9269 13.1745 14.9709L15.547 6.11658C16.0712 4.16054 14.9104 2.14997 12.9543 1.62585C12.0561 1.38517 11.1464 1.49979 10.3744 1.88356C9.9006 2.11907 9.47869 2.45595 9.14314 2.87429"
+                      stroke="#747474" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </label>
+                <input type="file" id="fileInput" style="display:none;">
+              </div>
+              <div class="border d-flex align-items-center px-3 my-2 w-100" style=" border-radius: 24px;">
+                <input type="text" class="m-0 p-0" style="border: none; outline: none;" placeholder="say something...">
+                <div style="cursor: pointer;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path
+                      d="M9.51002 4.73062L18.07 9.01062C21.91 10.9306 21.91 14.0706 18.07 15.9906L9.51002 20.2706C3.75002 23.1506 1.40002 20.7906 4.28002 15.0406L5.15002 13.3106C5.37002 12.8706 5.37002 12.1406 5.15002 11.7006L4.28002 9.96062C1.40002 4.21062 3.76002 1.85062 9.51002 4.73062Z"
+                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5.43994 12.5H10.8399" stroke="#444444" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- side-bar starts here -->
+
+        <div class="sidebar">
+
+          <div class=" sidebar-header border ">
+            <div class="msg-side-font-1">Details</div>
+
+            <div style="cursor: pointer;" onclick="toggleSidebar()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M11.6478 1.14775C11.8674 0.928078 11.8674 0.571922 11.6478 0.352252C11.4281 0.132583 11.0719 0.132583 10.8523 0.352252L6.00001 5.20452L1.14775 0.352255C0.928078 0.132585 0.571922 0.132585 0.352252 0.352255C0.132583 0.571925 0.132583 0.92808 0.352252 1.14775L5.20451 6.00001L0.352273 10.8523C0.132603 11.0719 0.132603 11.4281 0.352273 11.6477C0.571943 11.8674 0.928098 11.8674 1.14777 11.6477L6.00001 6.79551L10.8523 11.6477C11.0719 11.8674 11.4281 11.8674 11.6477 11.6477C11.8674 11.4281 11.8674 11.0719 11.6477 10.8523L6.7955 6.00001L11.6478 1.14775Z"
+                  fill="#444444" />
+              </svg>
+            </div>
+
+          </div>
+
+
+          <div class="sidebar-1">
+
+            <div class="br-16 w-100 position-relative" style="border-radius: 8px; overflow: hidden;">
+              <div class="position-absolute bg-light px-3 conformed-declined-icon"
+                style=" border-radius: 16px; top: 5%; left: 5%; ">Declined</div>
+              <img src="img/d-img3.jpg" width="100%" height="100%" alt="">
+            </div>
+
+            <div class="mt-2">
+              <p class="msg-side-font-2 mb-0 ">Request declined</p>
+              <p class="msg-side-font-3 ">Markson is unable to host your trip.</p>
+              <button class="Request-again-button">Request again</button>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between container align-items-center">
+              <div>
+                <p class="msg-side-font-4  mb-1">Check-in date</p>
+                <p class="msg-side-font-5 mb-0" style="line-height: 20px;">Mon, July 22</p>
+                <p class=" mb-0 msg-side-font-6">3:00pm</p>
+              </div>
+              <div class="line" style="width: 1px; height: 50px; background-color: #4444;"></div>
+              <div>
+                <p class="msg-side-font-4  mb-1">Check-out date</p>
+                <p class="msg-side-font-5 mb-0" style="line-height: 20px;">Thur, August 15</p>
+                <p class=" mb-0 msg-side-font-6">3:00pm</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex gap-2 align-items-start">
+              <div class="location-icon mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                  <path
+                    d="M10.3413 16.4841L9.84427 16.0944L9.84427 16.0944L10.3413 16.4841ZM5.65782 16.4841L5.16083 16.8738L5.65782 16.4841ZM7.99954 18.4251L7.99954 17.7936L7.99954 18.4251ZM14.1048 7.98576C14.1048 9.01859 13.5662 10.4006 12.7185 11.8993C11.8848 13.3732 10.8073 14.8663 9.84427 16.0944L10.8382 16.8738C11.8203 15.6216 12.9404 14.0727 13.8179 12.5212C14.6816 10.9944 15.368 9.36742 15.368 7.98576H14.1048ZM6.15481 16.0944C5.19177 14.8663 4.1143 13.3732 3.28059 11.8993C2.4329 10.4006 1.89427 9.01859 1.89427 7.98576H0.631116C0.631116 9.36742 1.31752 10.9944 2.18113 12.5212C3.05872 14.0727 4.1788 15.6216 5.16083 16.8738L6.15481 16.0944ZM1.89427 7.98576C1.89427 4.2864 4.67051 1.36791 7.99954 1.36791V0.104749C3.88725 0.104749 0.631116 3.67761 0.631116 7.98576H1.89427ZM7.99954 1.36791C11.3286 1.36791 14.1048 4.2864 14.1048 7.98576H15.368C15.368 3.67761 12.1118 0.104749 7.99954 0.104749V1.36791ZM9.84427 16.0944C9.32304 16.759 8.97985 17.1932 8.67253 17.4724C8.39225 17.727 8.20516 17.7936 7.99954 17.7936L7.99954 19.0567C8.61348 19.0567 9.08986 18.7998 9.52186 18.4074C9.92681 18.0395 10.3447 17.5032 10.8382 16.8738L9.84427 16.0944ZM5.16083 16.8738C5.65437 17.5032 6.07226 18.0395 6.47722 18.4074C6.90921 18.7998 7.38559 19.0567 7.99954 19.0567L7.99954 17.7936C7.79392 17.7936 7.60682 17.727 7.32654 17.4724C7.01922 17.1932 6.67604 16.759 6.15481 16.0944L5.16083 16.8738ZM4.84164 8.31528C4.84164 10.0593 6.25548 11.4732 7.99954 11.4732V10.21C6.9531 10.21 6.1048 9.36171 6.1048 8.31528H4.84164ZM7.99954 11.4732C9.74359 11.4732 11.1574 10.0593 11.1574 8.31528H9.89427C9.89427 9.36171 9.04597 10.21 7.99954 10.21V11.4732ZM11.1574 8.31528C11.1574 6.57122 9.74359 5.15738 7.99954 5.15738V6.42054C9.04597 6.42054 9.89427 7.26884 9.89427 8.31528H11.1574ZM7.99954 5.15738C6.25548 5.15738 4.84164 6.57122 4.84164 8.31528H6.1048C6.1048 7.26884 6.9531 6.42054 7.99954 6.42054V5.15738Z"
+                    fill="#747474" />
+                </svg>
+              </div>
+              <div>
+                <div>
+                  <p class="msg-side-font-7" style="margin-bottom: 3px;">Thur, August 15</p>
+                  <p class=" mb-0 msg-side-font-8">City, State</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex gap-2 align-items-start">
+              <div class="location-icon mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                  <path
+                    d="M3.15654 17.618L3.52777 17.1071L3.15654 17.618ZM2.22504 16.6865L2.736 16.3153L2.22504 16.6865ZM15.7747 16.6865L15.2637 16.3153L15.7747 16.6865ZM14.8432 17.618L14.4719 17.1071L14.8432 17.618ZM14.8432 2.38422L14.4719 2.89518L14.8432 2.38422ZM15.7747 3.31572L15.2637 3.68695L15.7747 3.31572ZM3.15654 2.38422L3.52777 2.89518L3.15654 2.38422ZM2.22504 3.31572L2.736 3.68695L2.22504 3.31572ZM5.63142 12.738C5.28261 12.738 4.99985 13.0207 4.99985 13.3696C4.99985 13.7184 5.28261 14.0011 5.63142 14.0011V12.738ZM12.3683 14.0011C12.7171 14.0011 12.9998 13.7184 12.9998 13.3696C12.9998 13.0207 12.7171 12.738 12.3683 12.738V14.0011ZM5.63142 9.36955C5.28261 9.36955 4.99985 9.65232 4.99985 10.0011C4.99985 10.3499 5.28261 10.6327 5.63142 10.6327V9.36955ZM12.3683 10.6327C12.7171 10.6327 12.9998 10.3499 12.9998 10.0011C12.9998 9.65232 12.7171 9.36955 12.3683 9.36955V10.6327ZM5.63142 6.00113C5.28261 6.00113 4.99985 6.2839 4.99985 6.63271C4.99985 6.98152 5.28261 7.26429 5.63142 7.26429V6.00113ZM8.15774 7.26429C8.50655 7.26429 8.78932 6.98152 8.78932 6.63271C8.78932 6.2839 8.50655 6.00113 8.15774 6.00113V7.26429ZM15.9472 9.15903V10.8432H17.2104V9.15903H15.9472ZM2.05248 10.8432V9.15903H0.78932V10.8432H2.05248ZM8.99985 17.7906C7.40694 17.7906 6.263 17.7897 5.37715 17.6938C4.50312 17.5991 3.95557 17.4179 3.52777 17.1071L2.78531 18.129C3.46432 18.6223 4.25958 18.8432 5.24109 18.9496C6.21077 19.0546 7.43508 19.0538 8.99985 19.0538V17.7906ZM0.78932 10.8432C0.78932 12.408 0.788453 13.6323 0.893511 14.602C0.999851 15.5835 1.22075 16.3788 1.71408 17.0578L2.736 16.3153C2.42519 15.8875 2.24402 15.34 2.14932 14.4659C2.05334 13.5801 2.05248 12.4361 2.05248 10.8432H0.78932ZM3.52777 17.1071C3.22394 16.8863 2.95674 16.6191 2.736 16.3153L1.71408 17.0578C2.01274 17.4688 2.37424 17.8303 2.78531 18.129L3.52777 17.1071ZM15.9472 10.8432C15.9472 12.4361 15.9463 13.5801 15.8504 14.4659C15.7557 15.34 15.5745 15.8875 15.2637 16.3153L16.2856 17.0578C16.7789 16.3788 16.9998 15.5835 17.1062 14.602C17.2112 13.6323 17.2104 12.408 17.2104 10.8432H15.9472ZM8.99985 19.0538C10.5646 19.0538 11.7889 19.0546 12.7586 18.9496C13.7401 18.8432 14.5354 18.6223 15.2144 18.129L14.4719 17.1071C14.0441 17.4179 13.4966 17.5991 12.6225 17.6938C11.7367 17.7897 10.5927 17.7906 8.99985 17.7906V19.0538ZM15.2637 16.3153C15.0429 16.6191 14.7758 16.8863 14.4719 17.1071L15.2144 18.129C15.6255 17.8303 15.987 17.4688 16.2856 17.0578L15.2637 16.3153ZM8.99985 2.21166C10.5927 2.21166 11.7367 2.21252 12.6225 2.3085C13.4966 2.4032 14.0441 2.58437 14.4719 2.89518L15.2144 1.87326C14.5354 1.37993 13.7401 1.15903 12.7586 1.05269C11.7889 0.947632 10.5646 0.948499 8.99985 0.948499V2.21166ZM17.2104 9.15903C17.2104 7.59426 17.2112 6.36995 17.1062 5.40027C16.9998 4.41876 16.7789 3.6235 16.2856 2.94449L15.2637 3.68695C15.5745 4.11474 15.7557 4.6623 15.8504 5.53633C15.9463 6.42218 15.9472 7.56612 15.9472 9.15903H17.2104ZM14.4719 2.89518C14.7758 3.11592 15.0429 3.38312 15.2637 3.68695L16.2856 2.94449C15.987 2.53342 15.6255 2.17192 15.2144 1.87326L14.4719 2.89518ZM8.99985 0.948499C7.43508 0.948499 6.21077 0.947632 5.24109 1.05269C4.25958 1.15903 3.46432 1.37993 2.78531 1.87326L3.52777 2.89518C3.95557 2.58437 4.50312 2.4032 5.37715 2.3085C6.263 2.21252 7.40694 2.21166 8.99985 2.21166V0.948499ZM2.05248 9.15903C2.05248 7.56612 2.05334 6.42218 2.14932 5.53633C2.24402 4.6623 2.42519 4.11474 2.736 3.68695L1.71408 2.94449C1.22075 3.6235 0.999851 4.41876 0.893511 5.40027C0.788453 6.36995 0.78932 7.59426 0.78932 9.15903H2.05248ZM2.78531 1.87326C2.37424 2.17192 2.01274 2.53342 1.71408 2.94449L2.736 3.68695C2.95674 3.38312 3.22394 3.11592 3.52777 2.89518L2.78531 1.87326ZM5.63142 14.0011H12.3683V12.738H5.63142V14.0011ZM5.63142 10.6327H12.3683V9.36955H5.63142V10.6327ZM5.63142 7.26429H8.15774V6.00113H5.63142V7.26429Z"
+                    fill="#747474" />
+                </svg>
+              </div>
+              <div>
+                <div>
+                  <p class="msg-side-font-7" style="margin-bottom: 3px;">House rules</p>
+                  <p class=" mb-0 msg-side-font-8">Get to know the house rules and regulations</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="1">
+              <p class="msg-side-font-9"> Reservation details</p>
+
+
+              <div>
+                <p class="msg-side-font-7" style="margin-bottom: 3px;">Stay ID</p>
+                <p class=" mb-0 msg-side-font-8">65-XTR123</p>
+              </div>
+              <hr>
+              <div>
+                <p class="msg-side-font-7" style="margin-bottom: 3px;">Guests</p>
+                <p class=" mb-0 msg-side-font-8">2 adults, 1 infant, a pet</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <p class="msg-side-font-10">Government travel with Non-A</p>
+
+            <hr>
+
+            <div>
+              <p class="msg-side-font-7">Cancellation policy</p>
+              <p class="msg-side-font-8">Free cancellation up to 7 days before check-in. Cancel before
+                check-infor a partial </p>
+            </div>
+
+            <hr>
+
+            <div>
+              <p class="msg-side-font-9">Payment details</p>
+              <p class=" msg-side-font-8">Total + deposit</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="msg-side-font-11 mb-0">7 nights</p>
+                <p class="msg-side-font-9 mb-0">$7,186.67</p>
+              </div>
+              <p class="msg-side-font-12">Show full breakdown</p>
+            </div>
+
+            <hr>
+            <div>
+              <div class="d-flex align-items-center justify-content-between gap-1">
+                <p class="mb-0 msg-side-font-16" style="min-width: fit-content;">Payment schedule:</p>
+
+                <div class="d-flex align-items-center ">
+                  <p class=" mb-0 msg-side-font-8" style="min-width: fit-content;">4 Remaining payments</p>
+                  <div onclick="toggleSidebarDropdown()" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <g opacity="0.9">
+                        <path d="M6 9L12 15L18 9" stroke="#444444" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-drop-down sidebar-drop-down-box mt-3">
+                <div class=" box d-flex flex-column gap-2" style="height: fit-content;">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-1 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.10562 16.9222C13.7564 16.9222 17.5267 13.152 17.5267 8.50113C17.5267 3.85031 13.7564 0.0800781 9.10562 0.0800781C4.4548 0.0800781 0.68457 3.85031 0.68457 8.50113C0.68457 13.152 4.4548 16.9222 9.10562 16.9222ZM13.7867 6.3961C14.0194 6.13622 13.9973 5.73693 13.7374 5.50427C13.4776 5.2716 13.0783 5.29366 12.8456 5.55353L10.0084 8.72253C9.4335 9.36466 9.04634 9.79484 8.71532 10.0731C8.39999 10.3381 8.21478 10.3959 8.05299 10.3959C7.8912 10.3959 7.70599 10.3381 7.39066 10.0731C7.05964 9.79483 6.67248 9.36466 6.09758 8.72252L5.36564 7.905C5.13298 7.64512 4.73369 7.62306 4.47382 7.85573C4.21394 8.0884 4.19188 8.48768 4.42455 8.74756L5.18775 9.60002C5.72321 10.1981 6.16983 10.697 6.57792 11.04C7.00961 11.4029 7.47524 11.659 8.05299 11.659C8.63074 11.659 9.09637 11.4029 9.52806 11.04C9.93616 10.697 10.3828 10.1981 10.9182 9.60002L13.7867 6.3961Z"
+                          fill="#25C26E" />
+                      </svg>
+                      <p class=" mb-0 msg-side-font-18">$3,150</p>
+                    </div>
+                    <p class="mb-0 msg-side-font-19">Paid on march 31st</p>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-1 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.10562 16.9222C13.7564 16.9222 17.5267 13.152 17.5267 8.50113C17.5267 3.85031 13.7564 0.0800781 9.10562 0.0800781C4.4548 0.0800781 0.68457 3.85031 0.68457 8.50113C0.68457 13.152 4.4548 16.9222 9.10562 16.9222ZM6.57931 7.86955C6.2305 7.86955 5.94773 8.15232 5.94773 8.50113C5.94773 8.84994 6.2305 9.13271 6.57931 9.13271H11.6319C11.9807 9.13271 12.2635 8.84994 12.2635 8.50113C12.2635 8.15232 11.9807 7.86955 11.6319 7.86955H6.57931Z"
+                          fill="#ACACB0" />
+                      </svg>
+                      <p class=" mb-0  msg-side-font-17">$750</p>
+                    </div>
+                    <p class="mb-0  msg-side-font-8">Due April 4th</p>
+                  </div>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-1 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.10562 16.9222C13.7564 16.9222 17.5267 13.152 17.5267 8.50113C17.5267 3.85031 13.7564 0.0800781 9.10562 0.0800781C4.4548 0.0800781 0.68457 3.85031 0.68457 8.50113C0.68457 13.152 4.4548 16.9222 9.10562 16.9222ZM6.57931 7.86955C6.2305 7.86955 5.94773 8.15232 5.94773 8.50113C5.94773 8.84994 6.2305 9.13271 6.57931 9.13271H11.6319C11.9807 9.13271 12.2635 8.84994 12.2635 8.50113C12.2635 8.15232 11.9807 7.86955 11.6319 7.86955H6.57931Z"
+                          fill="#ACACB0" />
+                      </svg>
+                      <p class=" mb-0  msg-side-font-17">$900</p>
+                    </div>
+                    <p class="mb-0  msg-side-font-8">Due April 4th</p>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-1 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.10562 16.9222C13.7564 16.9222 17.5267 13.152 17.5267 8.50113C17.5267 3.85031 13.7564 0.0800781 9.10562 0.0800781C4.4548 0.0800781 0.68457 3.85031 0.68457 8.50113C0.68457 13.152 4.4548 16.9222 9.10562 16.9222ZM6.57931 7.86955C6.2305 7.86955 5.94773 8.15232 5.94773 8.50113C5.94773 8.84994 6.2305 9.13271 6.57931 9.13271H11.6319C11.9807 9.13271 12.2635 8.84994 12.2635 8.50113C12.2635 8.15232 11.9807 7.86955 11.6319 7.86955H6.57931Z"
+                          fill="#ACACB0" />
+                      </svg>
+                      <p class=" mb-0  msg-side-font-17">$900</p>
+                    </div>
+                    <p class="mb-0  msg-side-font-8">Due April 4th</p>
+                  </div>
+
+
+
+                  <br>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-1 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.10562 16.9222C13.7564 16.9222 17.5267 13.152 17.5267 8.50113C17.5267 3.85031 13.7564 0.0800781 9.10562 0.0800781C4.4548 0.0800781 0.68457 3.85031 0.68457 8.50113C0.68457 13.152 4.4548 16.9222 9.10562 16.9222ZM6.57931 7.86955C6.2305 7.86955 5.94773 8.15232 5.94773 8.50113C5.94773 8.84994 6.2305 9.13271 6.57931 9.13271H11.6319C11.9807 9.13271 12.2635 8.84994 12.2635 8.50113C12.2635 8.15232 11.9807 7.86955 11.6319 7.86955H6.57931Z"
+                          fill="#ACACB0" />
+                      </svg>
+                      <p class=" mb-0  msg-side-font-17">$5700</p>
+                    </div>
+                    <p class="mb-0  msg-side-font-8">Due April 4th</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <hr class="mt-0">
+
+            <div class="d-flex gap-2 justify-content-between align-items-center ">
+              <div>
+                <p class=" msg-side-font-13 mb-0">Payment method</p>
+                <p class="msg-side-font-14" style="margin-bottom: 3px;">xxxxxxxxxx91</p>
+              </div>
+              <div class="d-flex gap-2 align-items-center  ">
+                <p class="msg-side-font-13 mb-0">Edit</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                  <path d="M1 13L7 7L1 1" stroke="#444444" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <hr>
+
+            <div class="d-flex gap-2 justify-content-between align-items-center ">
+
+              <p class=" msg-side-font-15 mb-0">Get receipt</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path d="M1 13L7 7L1 1" stroke="#444444" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <hr>
+
+            <div class="d-flex gap-2 ">
+              <div class="location-icon mt-2"
+                style=" height: 48px; width: 48px; border-radius: 50%; overflow: hidden; padding: 0px; ">
+                <img src="img/people.jpg" width="100%" height="100%" alt="">
+              </div>
+              <div>
+                <div>
+                  <p class="msg-side-font-3 mb-0" style="margin-bottom: 3px;">Thur, August 15</p>
+                  <p class=" msg-side-font-13">City, State</p>
+                  <p class="msg-side-font-12">View Profile</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="notification-container container " style=" display: none; width: fit-content;">
+      <div class="notification-header-desktop">
+        <p class="header-font">Notifications</p>
+        <hr>
+      </div>
+
+
+
+      <div class="desktop-none flex-column mt-2">
+
+
+
+        <div class="d-flex ">
+
+          <div class="d-flex" style="cursor: pointer;" onclick="toggleNotification()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="#090A0A" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="mb-0 mobile-notification-font mx-auto">Notifications</p>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center pb-2">
+          <div class="  d-flex gap-2 flex-wrap w-100">
+            <p class="col-message-1 activeblue">All</p>
+            <p class="col-message-1">Hosting</p>
+            <p class="col-message-1">Traveling</p>
+            <p class="col-message-1">Support</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=" notifiaction mb-5 chat-list d-flex flex-column list-message " style="overflow: hidden;">
+
+        <div class="notification-0">
+          <div class="chat-person ">
+            <div class="images">
+              <img src="img/d-img2.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="chat-person-box">
+              <div class="">
+                <p class=" msg-font-7">Please confirm your email address by clicking on the link we just emailed
+                  you. If you cannot
+                  find the email, you can request a new confirmation email or change your email address.</p>
+                <p class="mb-0 msg-side-font-6">3:23 PM</p>
+              </div>
+            </div>
+            <div class="m-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M11.6478 1.14775C11.8674 0.928078 11.8674 0.571922 11.6478 0.352252C11.4281 0.132583 11.0719 0.132583 10.8523 0.352252L6.00001 5.20452L1.14775 0.352255C0.928078 0.132585 0.571922 0.132585 0.352252 0.352255C0.132583 0.571925 0.132583 0.92808 0.352252 1.14775L5.20451 6.00001L0.352273 10.8523C0.132603 11.0719 0.132603 11.4281 0.352273 11.6477C0.571943 11.8674 0.928098 11.8674 1.14777 11.6477L6.00001 6.79551L10.8523 11.6477C11.0719 11.8674 11.4281 11.8674 11.6477 11.6477C11.8674 11.4281 11.8674 11.0719 11.6477 10.8523L6.7955 6.00001L11.6478 1.14775Z"
+                  fill="#747474" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="notification-0">
+          <div class="chat-person ">
+            <div class="images">
+              <img src="img/d-img2.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="chat-person-box">
+              <div class="">
+                <p class=" msg-font-7">Please confirm your email address by clicking on the link we just emailed
+                  you. If you cannot
+                  find the email, you can request a new confirmation email or change your email address.</p>
+                <p class="mb-0 msg-side-font-6">3:23 PM</p>
+              </div>
+            </div>
+            <div class="m-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M11.6478 1.14775C11.8674 0.928078 11.8674 0.571922 11.6478 0.352252C11.4281 0.132583 11.0719 0.132583 10.8523 0.352252L6.00001 5.20452L1.14775 0.352255C0.928078 0.132585 0.571922 0.132585 0.352252 0.352255C0.132583 0.571925 0.132583 0.92808 0.352252 1.14775L5.20451 6.00001L0.352273 10.8523C0.132603 11.0719 0.132603 11.4281 0.352273 11.6477C0.571943 11.8674 0.928098 11.8674 1.14777 11.6477L6.00001 6.79551L10.8523 11.6477C11.0719 11.8674 11.4281 11.8674 11.6477 11.6477C11.8674 11.4281 11.8674 11.0719 11.6477 10.8523L6.7955 6.00001L11.6478 1.14775Z"
+                  fill="#747474" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+
+
+    <div id="footer" class="desktop-none"></div>
+
+
+
+
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="msg-side-font-14" style="color: #000;" id="staticBackdropLabel">Report account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="min-height: 50vh;">
+          <h1 class="repot-popup-font-1">Why are you reporting this account?</h1>
+          <br>
+          <div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="msg-side-font-15" for="">Violence</label>
+              <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                id="flexCheckDefault">
+            </div>
+            <hr>
+
+
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="msg-side-font-15" for="">Unauthorized sales</label>
+              <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                id="flexCheckDefault">
+            </div>
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="msg-side-font-15" for="">Hate speech</label>
+              <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                id="flexCheckDefault">
+            </div>
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="msg-side-font-15" for="">Fake or Spam</label>
+              <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                id="flexCheckDefault">
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="msg-side-font-15" for="">Something else</label>
+              <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                id="flexCheckDefault">
+            </div>
+
+            <br>
+
+            <div style="overflow: hidden;">
+              <textarea name="" placeholder="Write a reply" class="border p-2  msg-side-font-15"
+                style=" border-radius: 10px;  width: 100%; height: 100px;" id=""></textarea>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="save" style="width: 100%;">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/headerFooter.js"></script>
+
+  <script>
+    function toggleSidebar() {
+      let detailsText = document.querySelector('.details-text');
+      document.querySelector('.msg-box-container').classList.toggle('show-sidebar');
+      document.querySelector('.msg-box-main').classList.toggle('msg-box-main-width');
+      if (detailsText.innerHTML === "Details") {
+        detailsText.innerHTML = "Hide details";
+        detailsText.style.color = "#0D99FF"
+      } else {
+        detailsText.innerHTML = "Details";
+        detailsText.style.color = "#000"
+      }
+    }
+
+    function toggleSidebarDropdown() {
+      document.querySelector('.sidebar-drop-down').classList.toggle('show-sidebar-dropdown');
+    }
+
+    function toggleNotification() {
+      document.querySelector('.grid-notification').classList.toggle('show-notification');
+    }
+
+    function chatPersontBoxToggle() {
+      document.querySelector('.grid').classList.toggle('grid-chat-box');
+    }
+
+
+    function reportDropdownToggle() {
+      document.querySelector('.report-dropdown').classList.toggle('report-dropdown-toggle');
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.button-active')) {
+        var dropdowns = document.getElementsByClassName("report-dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('report-dropdown-toggle')) {
+            openDropdown.classList.remove('report-dropdown-toggle');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+
+   .review-box{ margin:2rem 0 5rem -35px;
+    .review-card {
+        
+        min-height: 300px;
+        border: solid 1px $border-light; 
+        border-radius: 12px;
+        padding:3rem;
+        
+        
+        .avatar{
+            width: 50px; height: 50px; border-radius: 100%; overflow: hidden; margin-right: 1rem;
+            img{max-width: 50px; height: auto; }
+        }
+        .reviewer {
+            b {display: block; font-weight: 500;}
+            span{font-size: $font-size-16;}
+         
+        }
+    }
+
+}

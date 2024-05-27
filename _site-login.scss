@@ -1,0 +1,512 @@
+
+.rightSideEligible {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../img/people.jpg') lightgray 50% / cover no-repeat;
+}
+
+
+.eligibleListContainer{
+    border-radius: 16px;
+    background: #FAFAFA;
+        padding: 48px;
+        min-height: 500px;
+        margin: 107px 138px 107px 138px;
+    
+        h2 {
+            color: #1E1E20;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: "DM Sans";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+            /* 142.857% */
+            letter-spacing: -0.56px;
+        }
+    
+        .logoContainer {
+            display: flex;
+            gap: 12px;
+    }
+
+    li {
+        font-size: 30px;
+        list-style-type: none;
+        margin-bottom: 1rem;
+        background: url('../img/TickCircle.svg') no-repeat left  ;
+        padding: 2.4px 0 3px 30px;
+
+color: #4B4B4D;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    }
+    
+    ul.better li {
+      background-position: left 4px;
+    }
+}  
+
+
+@media (max-width: 1441px) {
+    /* Styles for screens smaller than 1440px */
+    /* Add your styles here */
+    .eligibleListContainer{
+
+    margin: 67px 98px 67px 98px;
+    }
+}
+@media (max-width: 1025px) {
+    /* Styles for screens smaller than 1440px */
+    /* Add your styles here */
+    .eligibleListContainer{
+
+    margin: 27px 68px 27px 68px;
+    }
+}
+@media (max-width: 720px) {
+    /* Styles for screens smaller than 1440px */
+    /* Add your styles here */
+    .eligibleListContainer{
+
+    margin: 0;
+     
+    border-radius: 0; 
+    }
+    #rightSideEligibleId{
+        display: none;
+    }
+}
+
+
+.leftSideLoginEntry {
+
+    h1{
+        color: #1E1E20;
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: "DM Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 118%;
+        /* 33.04px */
+        letter-spacing: -0.56px;
+        margin-bottom: 64px;
+    }
+
+         .messageBeforeContinue {
+             color: var(--GREY, #747474);
+             text-align: center;
+             font-family: "DM Sans";
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: 22.4px;
+             /* 160% */
+             margin-block: 32px;
+         }
+
+        .Continue-button {
+            border-radius: 16px;
+            background: #0D99FF;
+            backdrop-filter: blur(40px);
+            width: 100%;
+            display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+    
+            color: #FFF;
+            text-align: center;
+    
+            font-family: "DM Sans";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            /* 123.529% */
+            letter-spacing: -0.32px;
+    
+        }
+                .gapedDiv {
+                    margin-top: 24px;
+                     
+        
+                    button {
+                        color: #444;
+        margin-bottom: 24px;
+        padding: 24px;
+                        border-radius: 16px;
+                        border: 1px solid rgba(234, 235, 237, 0.80);
+                        background: #FCFCFC;
+        width: 100%;
+        
+                        text-align: center;
+                        font-family: "DM Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 21px;
+                        /* 150% */
+                        letter-spacing: -0.32px;
+                    }
+                }
+
+                .orClass {
+                    color: #747474;
+                    text-align: center;
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22.4px;
+                    /* 140% */
+                }
+}
+@media (min-width:768px) {
+      .mobile-show {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+  
+    .mobile-show {   
+             display: block;
+
+    }
+    
+ 
+    
+    .canIjoinLink{
+        margin-bottom: 24px;
+        color:   #0D99FF;
+    text-align: center;
+    font-feature-settings: 'ss03' on, 'liga' off;
+    font-family: "DM Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.52px;
+    text-decoration-line: underline;
+    }
+    .hidecontent {
+        display: block;
+    }
+    
+    .showcontent {
+        display: none;
+    }
+}
+
+#otpPageId {
+ display: none;
+ text-align: center;
+ justify-content: center;
+ margin-top: 64px;
+    h1 {
+        color: #4B4B4D;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 118%;
+        /* 33.04px */
+        letter-spacing: -0.56px;
+        margin-bottom: 32px;
+margin-right: 5px;
+
+    }
+
+    position: relative;
+
+    span {
+        padding-inline: 16px;
+        width: 53px;
+        height: 47px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+        border-radius: 400px;
+        border: 1px solid #E7E7E7;
+        background: #FAFAFA;
+        // padding: 3px;
+        margin-bottom: 32px;
+    }
+
+        input {
+            border-radius: 17.333px;
+            border: 1.333px solid #E3E5E5;
+            background: #FCFCFC;
+            width: 76px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        input.email{
+            border-radius: 16px;
+border: 1px solid   rgba(234, 235, 237, 0.80);
+background: #FDFDFD;
+
+text-align: left;
+padding: 24px;
+        }
+        h3{
+            color:   #1E1E20;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22.4px;
+text-align: center;
+margin-bottom: 32px;
+
+        }
+        .inputContainer{
+text-align: center;
+margin-bottom: 32px;
+color:   #ACACB0;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.4px; /* 160% */
+        }
+
+        .Continue-button {
+            border-radius: 16px;
+            background: #0D99FF;
+            backdrop-filter: blur(40px);
+            width: 100%;
+            display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+    
+            color: #FFF;
+            text-align: center;
+    
+            font-family: "DM Sans";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            /* 123.529% */
+            letter-spacing: -0.32px;
+            width: 100%;
+        }
+
+}
+.marginBotton{
+    margin-bottom: 32px;
+}
+
+
+#chooseVerificationPageId {
+    text-align: center;
+    justify-content: center;
+    margin-top: 64px;
+    padding-left: 12px;
+    padding-right: 12px;
+       h1 {
+           color: #4B4B4D;
+           text-align: center;
+           font-family: "DM Sans";
+           font-size: 28px;
+           font-style: normal;
+           font-weight: 500;
+           line-height: 118%;
+           /* 33.04px */
+           letter-spacing: -0.56px;
+           margin-bottom: 32px;
+margin-right: 5px;
+   
+       }
+
+       a{
+        color:   #0D99FF;
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22.4px; /* 160% */
+margin-left: 12px;
+margin-right: 12px;
+       }
+
+       button {
+        color: #444;
+margin-bottom: 24px;
+ 
+padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(234, 235, 237, 0.80);
+        background: #FCFCFC;
+width: 100%;
+
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: -0.32px;
+    }
+   
+       position: relative;
+   
+       span {
+           padding-inline: 16px;
+           width: 53px;
+           height: 48px;
+           display: flex;
+           align-items: center;
+           margin-right: 5px;
+           border-radius: 400px;
+           border: 1px solid #E7E7E7;
+           background: #FAFAFA;
+           // padding: 3px;
+           margin-bottom: 32px;
+       }
+   
+           input {
+               border-radius: 17.333px;
+               border: 1.333px solid #E3E5E5;
+               background: #FCFCFC;
+               width: 76px;
+               padding: 24px;
+               text-align: center;
+           }
+           h3{
+               color:   #1E1E20;
+   font-family: "DM Sans";
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 22.4px;
+   text-align: center;
+   margin-bottom: 32px;
+   
+           }
+           .inputContainer{
+   text-align: center;
+   margin-bottom: 32px;
+   
+           }
+   
+           .Continue-button {
+               border-radius: 16px;
+               background: #0D99FF;
+               backdrop-filter: blur(40px);
+               width: 100%;
+               display: flex;
+               padding: 16px;
+               justify-content: center;
+               align-items: center;
+               gap: 10px;
+       
+               color: #FFF;
+               text-align: center;
+       
+               font-family: "DM Sans";
+               font-size: 17px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 21px;
+               /* 123.529% */
+               letter-spacing: -0.32px;
+               width: 100%;
+           }
+   
+   }
+
+   .marginSide{
+    margin-left: 100px;
+    margin-right: 100px;
+   }
+   
+   @media (max-width:768px) {
+       
+       
+       .marginSide{
+        margin-left: 20px;
+        margin-right: 20px;
+       }
+   }
+
+
+
+
+
+
+.mainConfirmationPage{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    
+    
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    .messageContainer{
+        justify-content: center;
+text-align: center;
+
+   .imageContainer{
+    background-color: #e9f4fc;
+    border-radius: 100%;
+    height: 115px;
+    display: flex;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+
+   }
+   h1{
+    margin-top: 46px;
+    color:   #1E1E20;
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.36px;
+   }
+.smalltext{
+    color:   #4B4B4D;
+text-align: center;
+font-family: "DM Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+margin-bottom: 24px;
+}
+
+}
+
+a{
+    color:   #0D99FF;
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22.4px; /* 160% */
+margin-left: 12px;
+margin-right: 12px;
+   }
+}

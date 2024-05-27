@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew dogs</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/s-custom.css">
+    <link href="css/slick-slider.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+  <div id="header"></div>
+  
+
+    <section class="container mb-5">
+
+        <div class=" d-flex flex-wrap">
+
+            <div class="left flex-fill">
+                <div class="d-flex justify-content-center align-items-center   border"
+                style=" border-radius: 50%; width: 48px; height: 38px;">
+                <span id="goBackButtonId ">
+                  <i class="bi bi-arrow-left-short"></i>
+                </span>
+              </div>
+              <div>
+                <p class="tx-dark-3 mt-2" style="font-size: 28px; color: #1E1E20;">Your payments</p>
+                <p class="tx-lite" style="color: #4B4B4D;">Track your payments and refunds here</p>
+              </div>
+              <div class="py-3">
+                <div class=" text-center pb-5">
+                    <div class="customg row row-cols-auto">
+                        <div class="col  activeblue" onclick="showContent('content1')">All payments</div>
+                        <div class="col" onclick="showContent('content2')">Upcoming</div>
+                        <div class="col" onclick="showContent('content3')">Completed</div>
+                        <div class="col" onclick="showContent('content4')">Refunds </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+              <div class="">
+                <div class="d-flex flex-wrap book-main gap-2">
+
+            
+                  <div class="cd-col border p-2 rounded flex-fill " style="max-width: 293px;" >
+                
+                        <div class="d-flex justify-content-between align-items-center">
+                          <p class="tx-lite-1 line-height" style="color: #ACACB0;">Payment 2/3 completed</p>
+                        </div>
+                        <br>
+                        <div>
+                        <p class="tx-lite line-height" style="color: #4B4B4D; font-size: 16px; color: #0D99FF;"><ins> Stay ID: xxx-xxxx </ins></p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">4 July - 8 Aug</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Paid on 4 July: $1,900</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Charged on 1 Aug: $1,000</p>
+                        <hr>
+                        <p class="tx-lite text-center line-height" style="font-size: 12px;">Payment details</p>
+                      </div>
+               
+                  </div>
+                  <!--col card end here-->
+                  <div class="cd-col border p-2 rounded flex-fill " style="max-width: 293px;" >
+                
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="tx-lite line-height" style="color: #ACACB0;">completed</p>
+                    </div>
+                    <br>
+                        <div>
+                        <p class="tx-lite line-height" style="color: #4B4B4D; font-size: 16px; color: #0D99FF;"><ins> Stay ID: xxx-xxxx </ins></p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">4 July - 8 Aug</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Paid on 4 July: $1,900</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Charged on 1 Aug: $1,000</p>
+                        <hr>
+                        <p class="tx-lite text-center line-height" style="font-size: 12px;">Payment details</p>
+                      </div>
+           
+              </div>
+              <!--col card end here-->
+                  <!--col card end here-->
+                  <div class="cd-col border p-2 rounded flex-fill " style="max-width: 293px;" >
+           
+                        <div class="d-flex justify-content-between align-items-center">
+                          <p class="tx-lite line-height text-danger" style="color: #ACACB0;">  Completed with Refund</p>
+                        </div>
+                        <br>
+                        <div>
+                        <p class="tx-lite line-height" style="color: #4B4B4D; font-size: 16px; color: #0D99FF;"><ins> Stay ID: xxx-xxxx </ins></p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">4 July - 8 Aug</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Paid on 4 July: $1,900</p>
+                        <p class="tx-lite line-height" style="color: #4B4B4D;">Charged on 1 Aug: $1,000</p>
+                        <hr>
+                        <p class="tx-lite text-center line-height" style="font-size: 12px;">Payment details</p>
+                      </div>
+                     
+                  </div>
+                  <!--col card end here-->
+                 
+                </div>
+              </div>
+            </div>
+        
+               
+            </div>
+
+            <div class="right border  rounded " style=" margin: 0 auto; min-width: 293px; height: fit-content;">
+                <p class="help-text p-3">Help center</p>
+                <p class="tx-dark px-3"> Need some help? </p>
+                <p class="tx-lite px-3">We’re here for you, anytime</p>
+                <hr>
+                <p class="help-text text-center">Contact us</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div id="footer"></div>
+    </section>
+
+
+    <!--Hero section end here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/headerFooter.js"></script>
+ 
+</body>
+
+</html>

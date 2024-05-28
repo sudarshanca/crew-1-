@@ -60,7 +60,7 @@
 <body>
 
   <div>
-    <div class="container">
+    <div class="px-3">
       <div class=" mx-3">
         <div class="w-100">
           <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-2">
@@ -76,10 +76,11 @@
        </ul> -->
               <!--menu items-->
               <div class="d-flex gap-3 align-items-center">
-                <a href="#" class="help-text mb-0 pb-1 link-not-active link-active " style="color: #444444;">Dashboard</a>
-                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active " style="color: #444444;">Bookings</a>
+                <a href="dashboard.html" class="help-text mb-0 pb-1 link-not-active  link-active" style="color: #444444;">Dashboard</a>
+                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active "
+                  style="color: #444444;">Bookings</a>
                 <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Calendar</a>
-                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Listings</a>
+                <a href="listingDashboard.html" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Listings</a>
                 <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Inbox</a>
                 <div class="mobile-display-none" style="cursor: pointer;" onclick="toggleNotification()">
                   <svg class="not-selected" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="18"
@@ -97,21 +98,24 @@
                 </div>
               </div>
 
-              <div class="dropdown" >
-                <button class=" d-flex gap-1 align-items-center  dropdown" style="border: none; background-color: white;" type="button" data-bs-toggle="dropdown"
+              <div class="dropdown ">
+                <button class=" d-flex gap-1 align-items-center  dropdown"
+                  style="border: none; background-color: white;" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <img src="../img/people.jpg" style="width: 30px; height: 30px; border-radius: 50%;" alt="">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                    <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
                   </svg>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
                   <li><a class="dropdown-item header-dropdown-font-2" href="#">Profile</a></li>
                   <li><a class="dropdown-item header-dropdown-font-2" href="#">Help Center</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item header-dropdown-font-2" href="#">Search and traveling</a></li>
                   <li><a class="dropdown-item header-dropdown-font-2" href="#">Loh Out</a></li>
-                  </ul>
+                </ul>
               </div>
             </div>
             <!--menu items end-->

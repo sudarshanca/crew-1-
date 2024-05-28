@@ -207,3 +207,21 @@ line-height: 18px; /* 128.571% */
 letter-spacing: -0.078px;
 text-decoration-line: underline;
 }
+
+.api-button {
+  min-width: fit-content;
+  display: flex;
+padding: 12px;
+align-items: center;
+gap: 24px;
+border-radius: 12px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: var(--White-White-100, #FFF);
+color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+}

@@ -1,0 +1,117 @@
+.left-l-d {
+  width: 40%;
+  gap: 12px;
+  align-self: stretch;
+  padding: 0.5rem;
+}
+
+.right-l-d {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.nav-bar-listing-details {
+  border-left: 4px solid #f6f6f6;
+  padding: 0.5rem;
+}
+
+.nav-bar-listing-details p {
+  margin-bottom: 5px !important;
+}
+
+.nav-bar-listing-details .active {
+  color: #0d99ff;
+}
+
+.photos-right img {
+  max-width: 110px;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat, #efefef;
+}
+
+.input-name {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.8));
+  background: #fcfcfc;
+}
+
+.input-name input,
+.input-name input::placeholder,
+.textarea-1 {
+  padding: 0 0.5rem 0 0.1rem !important;
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 185.714% */
+  letter-spacing: -0.078px;
+}
+
+.edit-name {
+  color: var(--Primary-Primary-50, #0d99ff);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.078px;
+  text-decoration-line: underline;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.6rem;
+}
+
+.flex-c-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-c-1 .svg-1 {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: 1px solid #e7e7e7;
+}
+
+.grid-d {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.grid-d .choose-furniture {
+  border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+}
+
+.grid-d .choose-furniture:last-child,
+.grid-d .choose-furniture:nth-last-child(2){
+  border: 1px solid white;
+}
+
+@media (max-width:700px) {
+  .grid-d {
+    grid-template-columns: 1fr;
+  }
+}

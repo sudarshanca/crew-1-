@@ -14,6 +14,9 @@ $(function () {
 $(function () {
     $("#headerHelp").load("headerHelp.html");
 });
+$(function () {
+    $("#headerdashboard").load("../headerDashboard.html");
+});
 
 $(function () {
     $("#headerDashboard").load("headerDashboard.html");

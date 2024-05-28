@@ -1,9 +1,8 @@
 .left-l-d {
-  width: 100%;
+ min-width: 200px;
   gap: 12px;
   align-self: stretch;
   padding: 0.5rem;
-  min-width: 300px ;
 }
 
 .right-l-d {
@@ -127,7 +126,7 @@
 
 .rates-board {
   display: flex;
-  width: 944px;
+  width: 100%;
   padding: 24px;
   justify-content: space-between;
   align-items: flex-start;

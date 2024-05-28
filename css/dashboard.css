@@ -1,8 +1,9 @@
 .left-l-d {
-  width: 40%;
+  width: 100%;
   gap: 12px;
   align-self: stretch;
   padding: 0.5rem;
+  min-width: 300px ;
 }
 
 .right-l-d {
@@ -97,6 +98,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
 .grid-d .choose-furniture {
   border-bottom: 1px solid #F1F1F1;
   display: flex;
@@ -106,12 +108,103 @@
 }
 
 .grid-d .choose-furniture:last-child,
-.grid-d .choose-furniture:nth-last-child(2){
+.grid-d .choose-furniture:nth-last-child(2) {
   border: 1px solid white;
+}
+
+.pricing-daily .input-name,
+.pricing-weekly .input-name,
+.pricing-Monthly .input-name {
+  max-width: 200px;
 }
 
 @media (max-width:700px) {
   .grid-d {
     grid-template-columns: 1fr;
   }
+}
+
+
+.rates-board {
+  display: flex;
+  width: 944px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 16px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: #FAFAFA;
+}
+
+.add-rate {
+  margin: 1rem 0;
+  border-radius: 16px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: #FFF;
+  display: flex;
+  height: 107px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+}
+
+.discount-rate {
+  margin: 1rem 0;
+  display: flex;
+width: 248px;
+padding: 12px;
+justify-content: space-between;
+align-items: center;
+border-radius: 16px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: #FAFAFA;
+color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 150% */
+letter-spacing: -0.32px;
+}
+
+.discount-rate span,
+.learnmore {
+  color: var(--Primary-Primary-50, #0D99FF);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+text-decoration-line: underline;
+}
+
+.discount-rate div {
+  display: flex;
+padding: 8px;
+align-items: center;
+gap: 10px;
+border-radius: 12px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: var(--White-White-100, #FFF);
+color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 105% */
+letter-spacing: -0.32px;
+}
+
+.edit-delet-1 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+text-decoration-line: underline;
 }

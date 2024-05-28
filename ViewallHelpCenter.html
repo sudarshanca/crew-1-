@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +19,39 @@
 
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 
+    <style>
+        @media (max-width:700px) {
+            .back-help-mobile-version {
+                display: flex;
+                margin-bottom: 1rem;
+                align-items: center;
+            }
+
+            .back-help-mobile-version .TopHeaderText {
+                margin: 0 auto !important;
+                color: var(--Grayscale-Gray-100, #1E1E20);
+                text-align: center;
+                font-family: "DM Sans";
+                font-size: 16px !important;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 21px;
+                /* 131.25% */
+                letter-spacing: -0.32px;
+                text-align: center;
+            }
+            .pd-mobile-none{
+               padding: 0 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <section class="hero-section pb-0" style="overflow: visible;">
         <div class="container-xxl container-sm">
             <header
-                class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-3 mb-4">
+                class=" pd-mobile-none d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-3 mb-4">
                 <div class="col-md-3 mb-md-0">
                     <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                         <img src="img/logo.png" alt="">
@@ -36,7 +63,7 @@
               
             </ul> -->
                     <!--menu items-->
-                    <div class="dropdown">
+                    <div class="dropdown mobile-none">
                         <button
                             class="btn btn-outline-secondary dropdown d-flex align-items-center imageMenuDropDownButton"
                             type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,328 +99,372 @@
         <div class=" mt-md-1" style="max-width: 1450px;">
             <div class="container">
 
-            
-            <div class="row ">
 
-                <div class="col-md-12"  >
-                    <div onclick="history.back()" role="button" style="width: fit-content;">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
-                            <path d="M5.92391 14.889L0.407696 9.02805C-0.135904 8.45047 -0.135904 7.54953 0.407696 6.97195L5.92391 1.11097C6.2078 0.809343 6.68245 0.79496 6.98408 1.07885C7.28571 1.36274 7.3001 1.83739 7.01621 2.13902L1.5 8L7.01621 13.861C7.3001 14.1626 7.28571 14.6373 6.98408 14.9211C6.68245 15.205 6.2078 15.1907 5.92391 14.889Z" fill="#0D99FF"/>
-                        </svg> <span class="helpBackButton"  >Help Center</span> 
-                    </div>  
-                </div>
-                <div class="col-md-6">
+
+                <div class="back-help-mobile-version">
+
+                    <div class="d-flex">
+                        <div onclick="history.back()" role="button" style="width: fit-content; margin-right: -15px;">
+                            <svg class="mobile-none" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16"
+                                fill="none" >
+                                <path
+                                    d="M5.92391 14.889L0.407696 9.02805C-0.135904 8.45047 -0.135904 7.54953 0.407696 6.97195L5.92391 1.11097C6.2078 0.809343 6.68245 0.79496 6.98408 1.07885C7.28571 1.36274 7.3001 1.83739 7.01621 2.13902L1.5 8L7.01621 13.861C7.3001 14.1626 7.28571 14.6373 6.98408 14.9211C6.68245 15.205 6.2078 15.1907 5.92391 14.889Z"
+                                    fill="#0D99FF" />
+                            </svg>
+                            <span class=" mobile-none helpBackButton">Help Center</span>
+
+                            <svg class="mobile-display-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="#1E1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </div>
+                    </div>
+
                     <h1 class="TopHeaderText" id="mainHeaderText">
-                        Header 
+                        Login and Verification
                     </h1>
-             
+
                 </div>
-        
+
             </div>
         </div>
-    </div>
     </section>
 
-<section class="mt-4 m-auto mob" style="max-width: 1450px;">
-    <div class="container">
-    <div class="row">
-         <div class="col-md-9 col-lg-10 col-xl-10">
-             <!-- Accordian start -->
-           
-             <div class="accordion mb-5 "  id="accordionExample">
-                <div class="card    ">
-                  <div class="card-header  " id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left panel-title " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        <!-- <i class="bi bi-plus"></i> -->
-                      </button>
-                    </h2>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                mattis. Class aptent taciti sociosquad litora torquent.
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet,
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </li>
-                        </ul>
+    <section class="mt-4 m-auto mob" style="max-width: 1450px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-10 col-xl-10">
+                    <!-- Accordian start -->
+
+                    <div class="accordion mb-5 " id="accordionExample">
+                        <div class="card    ">
+                            <div class="card-header  " id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left panel-title " type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                        <!-- <i class="bi bi-plus"></i> -->
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed d-flex justify-content-between panel-title"
+                                        type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+
+
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div class="card-header" id="heading4">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left panel-title " type="button"
+                                        data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                        aria-controls="collapse4">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapse4" class="collapse " aria-labelledby="heading4"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading5">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                        aria-controls="collapse5">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading6">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                                        aria-controls="collapse6">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse6" class="collapse" aria-labelledby="heading6"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="card">
+                            <div class="card-header" id="heading7">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
+                                        aria-controls="collapse7">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapse7" class="collapse " aria-labelledby="heading7"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading8">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapse8" aria-expanded="false"
+                                        aria-controls="collapse8">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse8" class="collapse" aria-labelledby="heading8"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading9">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed panel-title" type="button"
+                                        data-toggle="collapse" data-target="#collapse9" aria-expanded="false"
+                                        aria-controls="collapse9">
+                                        Norem ipsum dolor sit amet, consectetur adipiscing.
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse9" class="collapse" aria-labelledby="heading9"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                            vulputatelibero et velit interdum, ac aliquet odio
+                                            mattis. Class aptent taciti sociosquad litora torquent.
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+
+
+
+
+
+                    <!-- Accordian End -->
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button  
-                      class="btn btn-link btn-block text-left collapsed d-flex justify-content-between panel-title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Norem ipsum dolor sit amet, consectetur adipiscing. 
-                     
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                mattis. Class aptent taciti sociosquad litora torquent.
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet,
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </li>
-                        </ul>
+                <div class="col-md-3 col-lg-2 col-xl-2 ">
+                    <div class="sideHeader">
+
+                        <h3>
+                            Help categories
+                        </h3>
+                        <h4>
+                            Login and Verification
+                        </h4>
+                        <h4>
+                            Booking
+                        </h4>
+                        <h4>
+                            Cancellation
+                        </h4>
+                        <h4>
+                            Payments
+                        </h4>
+                        <h4>
+                            Official Gov't Travel
+                        </h4>
+                        <h4>
+                            Becoming a host
+                        </h4>
+                        <br><br>
+                        <h3>
+                            Need some help?
+                        </h3>
+                        <h6>
+                            We're here to help anytime
+                        </h6>
+
+                        <button class="ContactUsButton">
+                            Contact us
+                        </button>
                     </div>
-                  </div>
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button    class="btn btn-link btn-block text-left collapsed panel-title" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Norem ipsum dolor sit amet, consectetur adipiscing. 
-
-                       
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                mattis. Class aptent taciti sociosquad litora torquent.
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet,
-                            </li>
-                            <li>
-                                Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div class="card">
-                    <div class="card-header" id="heading4">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left panel-title " type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                
-                    <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="heading5">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed panel-title" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="heading6">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed panel-title" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-                  <div class="card">
-                    <div class="card-header" id="heading7">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                
-                    <div id="collapse7" class="collapse " aria-labelledby="heading7" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="heading8">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed panel-title" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="heading9">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed panel-title" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                          Norem ipsum dolor sit amet, consectetur adipiscing. 
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <ul>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputatelibero et velit interdum, ac aliquet odio
-                                  mattis. Class aptent taciti sociosquad litora torquent.
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet,
-                              </li>
-                              <li>
-                                  Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-
-
-
-
-
-            <!-- Accordian End -->
-        </div>
-         <div class="col-md-3 col-lg-2 col-xl-2 ">
-            <div class="sideHeader">
-            
-                <h3>
-                    Help categories
-                </h3>
-                <h4>
-                    Login and Verification
-                </h4>
-                <h4>
-                    Booking
-                </h4>
-                <h4>
-                    Cancellation
-                </h4>
-                <h4>
-                    Payments
-                </h4>
-                <h4>
-                    Official Gov't Travel
-                </h4>
-                <h4>
-                    Becoming a host
-                </h4> 
-                <br><br>
-                <h3>
-                    Need some help?
-                </h3>
-                <h6>
-                    We're here to help anytime
-                </h6>
-            
-                <button class="ContactUsButton">
-                    Contact us
-                </button>
             </div>
+
         </div>
-    </div>    
+    </section>
 
-    </div>  
-</section>
-
- <div id="footer"></div>
+    <div id="footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
@@ -425,34 +496,34 @@
         });
 
 
-        
-
-        document.addEventListener('DOMContentLoaded', function() {
-    // Function to get the value of a URL parameter
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    // Get the value of the 'title' parameter from the URL
-    var title = getParameterByName('title');
-
-    // Use the title as needed
-    if (title) {
-        // For example, set the title as the text content of a heading element
-        document.getElementById('mainHeaderText').textContent = title;
-    }
-});
 
 
-function goBack(params) {
-    history.back();
-}
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to get the value of a URL parameter
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            // Get the value of the 'title' parameter from the URL
+            var title = getParameterByName('title');
+
+            // Use the title as needed
+            if (title) {
+                // For example, set the title as the text content of a heading element
+                document.getElementById('mainHeaderText').textContent = title;
+            }
+        });
+
+
+        function goBack(params) {
+            history.back();
+        }
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/carousel.js"></script>

@@ -1,3 +1,17 @@
+.who-can-join {
+  color: var(--Grayscale-Gray-100, #1E1E20);
+text-align: center;
+leading-trim: both;
+text-edge: cap;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 118%; /* 23.6px */
+letter-spacing: -0.4px;
+}
+
+
 .header-font {
   color: #444;
   font-family: "DM Sans";
@@ -1003,6 +1017,7 @@ font-weight: 400;
 line-height: 26px; /* 185.714% */
 letter-spacing: -0.078px;
 }
+
 
 /* buttons stylings*/
 

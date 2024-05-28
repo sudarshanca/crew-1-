@@ -883,6 +883,10 @@ color: #4B4B4D;
     position: fixed !important;
   }
 
+  .eligibleListContainer{
+    padding: 1rem;
+ }
+
   .pt {
     padding-top: 2rem;
     margin-top: 0 !important;

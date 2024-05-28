@@ -9,10 +9,6 @@
   margin-right: auto;
 }
 
-.discover-main .discover-box {
-  z-index: -100 !important;
-}
-
 .star-svg {
   width: 15px;
   height: 15px;

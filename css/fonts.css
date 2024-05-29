@@ -1181,6 +1181,15 @@
   letter-spacing: -0.32px;
 }
 
+.dashboard-font-20 {
+  color: #222;
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 128.571% */
+}
+
 
 .input-fonts,
 .input-fonts::placeholder {

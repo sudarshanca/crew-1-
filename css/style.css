@@ -131,11 +131,11 @@ a.btn-brand:hover {
   padding: 1rem 0 7rem 0;
 }
 .hero-section-1 {
-  background: url(../img/BG.png);
+  background: url(../img/hero-bg.jpg);
   overflow: hidden;
   padding: 1rem 0 7rem 0;
+  background-size: cover;
 }
-
 .hero-search {
   text-align: center;
   max-width: 888px;
@@ -301,6 +301,7 @@ a.btn-brand:hover {
   width: 100%;
   overflow: hidden;
   border-radius: 16px 16px 16px 16px;
+  position: relative;
 }
 
 .book-gallery .bgallery-img img {

@@ -300,7 +300,7 @@ a.btn-brand:hover {
 
 .book-gallery .bgallery-img img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16/14;
 }
 
 .book-gallery .card-body {

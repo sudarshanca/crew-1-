@@ -21,6 +21,8 @@
 
   <style>
 
+
+
     .review-card h3 {
      font-size: 24px;
     }
@@ -68,6 +70,7 @@
       }
 
     }
+
   </style>
 </head>
 
@@ -218,101 +221,99 @@
     <div class="container-xxl container-sm discover-main">
       <h3>A trusted option for whatever you need</h3>
 
+<div class="" id="slider-main" style=" height: 0px; overflow: hidden;">
+  <div id="discover-box" class="discover-box">
 
 
-      <div class="discover-box">
+    <div class="item">
+      <img src="./img/g1.jpg" loading="lazy">
 
 
-        <div class="item">
-          <img src="./img/g1.jpg" loading="lazy">
-
-
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
-
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
         </div>
-        <div class="item">
-
-          <img src="./img/g2.jpg" loading="lazy">
-
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
-
+        <div>
+          <button class="btn btn-light">See all</button>
         </div>
-        <div class="item">
-          <img src="./img/g3.jpg" loading="lazy">
+      </div><!--discover-text end-->
 
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
+    </div>
+    <div class="item">
 
+      <img src="./img/g2.jpg" loading="lazy">
+
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
         </div>
-        <div class="item">
-          <img src="./img/g4.jpg" loading="lazy">
-
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
+        <div>
+          <button class="btn btn-light">See all</button>
         </div>
-        <div class="item">
-          <img src="./img/g3.jpg" loading="lazy">
+      </div><!--discover-text end-->
 
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
+    </div>
+    <div class="item">
+      <img src="./img/g3.jpg" loading="lazy">
 
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
         </div>
-        <div class="item">
-          <img src="./img/g2.jpg" loading="lazy">
-
-          <div class="discover-text d-flex">
-            <div>
-              <span>Collection</span>
-              <p>Short term and vacation rentals</p>
-            </div>
-            <div>
-              <button class="btn btn-light">See all</button>
-            </div>
-          </div><!--discover-text end-->
+        <div>
+          <button class="btn btn-light">See all</button>
         </div>
+      </div><!--discover-text end-->
+
+    </div>
+    <div class="item">
+      <img src="./img/g4.jpg" loading="lazy">
+
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
+        </div>
+        <div>
+          <button class="btn btn-light">See all</button>
+        </div>
+      </div><!--discover-text end-->
+    </div>
+    <div class="item">
+      <img src="./img/g3.jpg" loading="lazy">
+
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
+        </div>
+        <div>
+          <button class="btn btn-light">See all</button>
+        </div>
+      </div><!--discover-text end-->
+
+    </div>
+    <div class="item">
+      <img src="./img/g2.jpg" loading="lazy">
+
+      <div class="discover-text d-flex">
+        <div>
+          <span>Collection</span>
+          <p>Short term and vacation rentals</p>
+        </div>
+        <div>
+          <button class="btn btn-light">See all</button>
+        </div>
+      </div><!--discover-text end-->
+    </div>
 
 
 
-      </div><!--discover-box end -->
-
-
+  </div><!--discover-box end -->
+</div>
     </div>
   </section>
 
@@ -570,7 +571,6 @@
       <h3 class="mb-4">Reviews from our community</h2>
 
 
-
         <div class="review-box">
 
 
@@ -826,12 +826,22 @@
   <script src="js/headerFooter.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/carousel.js"></script>
+  
 
   <script>
+
+$("body").bind("DOMNodeInserted", function() {
+	var $this = $(this).find('.slick-initialized');
+	window.setTimeout(function(){
+        $this.addClass('finally-loaded');
+    }, 2000);
+});
+    
 
     $(document).ready(function () {
       try {
         $('.discover-box').slick({
+          lazyLoad: 'ondemand',
           slidesToShow: 3,
           arrows: false,
           prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
@@ -857,7 +867,7 @@
       catch (ex) {
         console.log("Error initiating carousel" + ex)
       }
-
+      document.getElementById("slider-main").style.height = "auto"
     });
 
     $(document).ready(function () {

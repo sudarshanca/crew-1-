@@ -130,6 +130,11 @@ a.btn-brand:hover {
   overflow: hidden;
   padding: 1rem 0 7rem 0;
 }
+.hero-section-1 {
+  background: url(../img/BG.png);
+  overflow: hidden;
+  padding: 1rem 0 7rem 0;
+}
 
 .hero-search {
   text-align: center;
@@ -326,6 +331,7 @@ a.btn-brand:hover {
   border: solid 1px #E7E7E7;
   border-radius: 12px;
   padding: 3rem;
+  background-color: #FFF;
 }
 
 .review-box .review-card .avatar {
@@ -880,7 +886,7 @@ ul.cd-highlights b {
 }
 
 .rightSideEligible {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/people.jpg") lightgray 50%/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/BG3.png") lightgray 50%/cover no-repeat;
 }
 
 .eligibleListContainer {

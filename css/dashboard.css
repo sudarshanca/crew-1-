@@ -266,3 +266,23 @@ font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 166.667% */
 }
+
+.dropdown-time {
+  padding: .5rem;
+  gap: 1rem;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.dropdown-time select {
+  outline: none;
+  border:  none;
+  margin: 0;
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 157.143% */
+letter-spacing: -0.12px;
+}

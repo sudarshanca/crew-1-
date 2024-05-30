@@ -54,7 +54,13 @@
   height: 100%;
 }
 
-img {
+.grid-container img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  /* Maintain aspect ratio while covering the container */
+}
+ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -300,7 +306,7 @@ img {
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 28%;
   transform: translateY(-50%);
   background-color: white;
   color: black;
@@ -317,7 +323,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.slider:hover button {
+.book-gallery:hover button {
   opacity: 1;
 }
 .prev img {

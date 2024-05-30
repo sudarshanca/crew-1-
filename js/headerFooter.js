@@ -32,9 +32,6 @@ $(function () {
 $(function () {
     $("#footer").load("footer.html");
 });
-
-
-
 //mobile search bar
 
 let prevScrollPos = window.pageYOffset;

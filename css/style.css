@@ -127,12 +127,10 @@ a.btn-brand:hover {
 
 .hero-section {
   background: url(../img/hero-bg.png);
-  overflow: hidden;
   padding: 1rem 0 7rem 0;
 }
 .hero-section-1 {
   background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../img/hero-bg.jpg) ;
-  overflow: hidden;
   padding: 1rem 0 7rem 0;
   background-size: cover;
 }
@@ -154,7 +152,8 @@ a.btn-brand:hover {
 }
 
 .hero-search .search-box .dropdown-menu {
-  width: 100%;
+  width: fit-content;
+  min-width: 300px;
 }
 
 .hero-search .search-box .dropdown {

@@ -154,7 +154,12 @@ a.btn-brand:hover {
 .hero-search .search-box .dropdown-menu {
   width: fit-content;
   min-width: 300px;
+  --bs-dropdown-link-active-bg: none;
+  --bs-dropdown-link-hover-bg:none;
+  cursor: pointer;
 }
+
+
 
 .hero-search .search-box .dropdown {
   border: solid 1px #E7E7E7;

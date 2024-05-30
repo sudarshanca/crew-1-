@@ -237,12 +237,12 @@
   }
 
   /* Position the slides */
-  .carousel-slide {
+  .carousel-slide-img{
     display: none;
   }
 
   /* Show the first slide by default */
-  .carousel-slide:first-child {
+  .carousel-slide-img:first-child {
     display: block;
   }
 
@@ -281,14 +281,14 @@
 
 /*index item slider*/
 
-.carousel-container {
+.carousel-container{
   position: relative;
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-.carousel-slide {
+.carousel-container .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }

@@ -74,3 +74,90 @@ document.addEventListener('DOMContentLoaded', () => {
       showSlides(slideIndex);
   });
 });
+
+
+
+// slick slider 
+
+$(document).ready(function () {
+  try {
+    $('.discover-box').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 3,
+      arrows: false,
+      prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      dots: false,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
+  catch (ex) {
+    console.log("Error initiating carousel" + ex)
+  }
+  document.getElementById("slider-main").style.height = "auto"
+});
+
+$(document).ready(function () {
+  try {
+    $('.review-box').slick({
+      slidesToShow: 3,
+      arrows: false,
+      prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      dots: false,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
+  catch (ex) {
+    console.log("Error initiating carousel" + ex)
+  }
+
+});
+
+$(document).ready(function () {
+  try {
+    $('.img-slider').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 1,
+      arrows: true,
+      prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      dots: true,
+    });
+  }
+  catch (ex) {
+    console.log("Error initiating carousel" + ex)
+  }
+  document.getElementById("slider-main").style.height = "auto"
+});
+
+
+

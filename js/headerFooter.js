@@ -34,48 +34,8 @@ $(function () {
 });
 
 
-// Function to load header and footer
-//function loadHeaderAndFooter() {
-//  // Load header
-//    fetch('https://crewdogsconnect.com/demo/header.html')
-//      .then(response => response.text())
-//      .then(headerHTML => {
-//          document.getElementById('header').innerHTML = headerHTML;
-//      });
-//  // Load header
-//  fetch('../header2.html')
-//      .then(response => response.text())
-//      .then(headerHTML => {
-//          document.getElementById('header2').innerHTML = headerHTML;
-//      });
 
-//  // Load header
-//  fetch('../header3.html')
-//      .then(response => response.text())
-//      .then(headerHTML => {
-//          document.getElementById('header3').innerHTML = headerHTML;
-//      });
-//  // Load headerHelp
-//  fetch('../headerHelp.html')
-//      .then(response => response.text())
-//      .then(headerHTML => {
-//          document.getElementById('headerHelp').innerHTML = headerHTML;
-//      });
-
-//  // Load searchBar
-//  fetch('../searchBar.html')
-//      .then(response => response.text())
-//      .then(headerHTML => {
-//          document.getElementById('searchBar').innerHTML = headerHTML;
-//      });
-
-//  // Load footer
-//  fetch('../footer.html')
-//      .then(response => response.text())
-//      .then(footerHTML => {
-//          document.getElementById('footer').innerHTML = footerHTML;
-//      });
-//}
+//mobile search bar
 
 let prevScrollPos = window.pageYOffset;
 const scrollThreshold = 550; // Adjust this value to control when the search bar should appear
@@ -92,3 +52,24 @@ window.onscroll = function() {
 
 // Call the function to load header and footer when the DOM is loaded
 document.addEventListener('DOMContentLoaded', loadHeaderAndFooter);
+
+
+
+
+//mobile footer
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll down
+    document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+  } else {
+    // Scroll up
+    document.getElementById("mobileFooter").style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});

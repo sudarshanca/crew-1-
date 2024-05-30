@@ -281,14 +281,14 @@
 
 /*index item slider*/
 
-.slider {
+.carousel-container {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-.slides {
+.carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -363,3 +363,4 @@
   background-color: #FFF;
   border-radius: 50%;
 }
+

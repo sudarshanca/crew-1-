@@ -97,6 +97,7 @@ line-height: 22.4px; /* 140% */
 
 .content {
   display: none ;
+min-height: 400px;
 }
 
 .content.active {
@@ -190,4 +191,105 @@ letter-spacing: -0.078px;
    border-radius: 50%;
    background-color: #0D99FF;
    color: white;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 13px;
+  background: linear-gradient(to right, #2196F3 0%, #2196F3 0%, #ddd 0%, #ddd 100%);
+  outline: none;
+  opacity: 0.9;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: pointer;
+  filter: drop-shadow(0px 3.25px 6.5px rgba(16, 24, 40, 0.06)) drop-shadow(0px 6.5px 13px rgba(16, 24, 40, 0.10));
+}
+
+.slider::-moz-range-thumb {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: pointer;
+  cursor: pointer;
+  filter: drop-shadow(0px 3.25px 6.5px rgba(16, 24, 40, 0.06)) drop-shadow(0px 6.5px 13px rgba(16, 24, 40, 0.10));
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider-tooltip {
+  position: absolute;
+  white-space: nowrap;
+  top: -55px;
+  left: 0;
+  transform: translateX(0%);
+
+  display: flex;
+  padding: 13px 19.5px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 13px;
+  background: var(--White, #FFF);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.189);
+  color: var(--Gray-700, #344054);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29.25px;
+  /* 182.813% */
+}
+
+.slider-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.slider-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.slider-scale p {
+  width: 1px;
+  height: 8px;
+  background: #E7E7E7;
+}
+
+.scale-mark {
+  width: 1px;
+  height: 16px;
+  background: #E7E7E7;
 }

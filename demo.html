@@ -97,12 +97,23 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
+            background-color: white;
+            color: black;
             border: none;
             padding: 10px;
             cursor: pointer;
             user-select: none;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider:hover button {
+            opacity: 1;
         }
 
         .prev {
@@ -138,6 +149,8 @@
             background-color: #FFF;
             border-radius: 50%;
         }
+
+       
     </style>
 </head>
 
@@ -402,9 +415,9 @@
                         <div class="bgallery-img mb-3">
                             <div class="slider">
                                 <div class="slides">
-                                    <div class="slide"><img src="img/g3.jpg" alt="Image 1"></div>
-                                    <div class="slide"><img src="img/g2.jpg" alt="Image 2"></div>
-                                    <div class="slide"><img src="img/g1.jpg" alt="Image 3"></div>
+                                    <div class="slide"><img src="img/g3.jpg" loading="lazy" alt="Image 1"></div>
+                                    <div class="slide"><img src="img/g2.jpg" loading="lazy" alt="Image 2"></div>
+                                    <div class="slide"><img src="img/g1.jpg" loading="lazy" alt="Image 3"></div>
                                     <!-- Add more slides as needed -->
                                 </div>
                                 <button class="prev" onclick="plusSlides(-1)">&#10094;</button>

@@ -1,104 +1,118 @@
-<div class="my-2" style=" padding:  0 !important; width: 100vw; background-image: url(img/hero-bg.png);">
-  
- <div class=" d-flex justify-content-between" id="bg-white" style="padding: 20px !important; position: fixed; top: 0;left: 0;right: 0; z-index: 100;">
+<section class="hero-section hero-section-1 pt-0 pb-0">
+  <div class="header-section " id="bg-white"
+    style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;"  >
+    <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
+      <div class="col-md-3 mb-md-0 d-flex align-items-center">
+        <!--logo-->
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="img/logo.svg" alt="">
+        </a>
+      </div>
 
-  <div >
-    <div class=" margin-auto " >
-      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none" >
-        <img src="img/logo.svg"  alt="">
-      </a>
-    </div>
+
+
+      <div class="col-md-3 d-flex justify-content-end mobile-version-none">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my place</a></li>
+        </ul>
+        <!--menu items-->
+
+        <div class="dropdown mobile-version-none">
+          <button class="dropdown" style="background-color: white; display: flex;
+          padding: 16px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 16px;
+          border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+          background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+              <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+
+            <li class="cdmenu-item">
+              <div class="d-grid">
+                <button class="btn dropdown header-dropdown-font-1"
+                  style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sign up
+                </button>
+              </div>
+            </li>
+            <li class="cdmenu-item">
+              <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
+                  style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Log in
+                </button></div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!--menu items end-->
+
+    </header>
   </div>
 
- 
- <div >
-  
-  <div class="dropdown mobile-version-none" >
-    <button class="btn btn-outline-secondary dropdown" type="button" data-bs-toggle="dropdown"
-      aria-expanded="false">
-      <i class="bi bi-list"></i>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+  <div class="hero-search" style="margin-top: 6rem;">
+    <h1>Bringing the military community together</h1>
 
-      <li class="cdmenu-item">
-        <div class="d-grid">
-          <button class="btn dropdown header-dropdown-font-1" style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+    <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
+      <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
+
+        <div class="dropdown d-flex align-items-center justify-content-center">
+          <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            Sign up
-          </button></div>
-      </li>
-      <li class="cdmenu-item">
-        <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown" style="  border-radius: 1rem;" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Log in
-          </button></div>
-      </li>
-      <li>
-        <hr class="dropdown-divider">
-      </li>
-      <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
-      <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
-      <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
-      <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
-    </ul>
-  </div>
- </div>
-
-</div>
-
-
-
-
-
-
-  <div class="hero-search pt" style="padding-top: 5rem;">
-    <h1 class="">Bringing the military community together</h1>
-    <div class="d-flex mb-4" style="height: fit-content; min-height: 6rem;"  >
-      <div id="search-box-m" style="z-index: 101;" class="search-box d-flex ">
-
-        <div class="dropdown bord d-flex align-items-center justify-content-center" > 
-          <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           <span>Select a</span>  destination
+            <span>Select a</span> destination
           </a>
 
-          <ul class="dropdown-menu" style="min-height: fit-content;">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </div>
 
-        <div class="dropdown bord d-flex align-items-center justify-content-center">
+        <div class="dropdown d-flex align-items-center justify-content-center">
           <a class="drop-sticky hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-           <span> Choose a</span> date
+            <span> Choose a</span> date
           </a>
 
-          <ul class="dropdown-menu" style="min-height: max-content;">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </div>
 
-        <div class="    dropdown bord d-flex align-items-center justify-content-center">
-          <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           <span>Add a</span>  guest
+        <div class="dropdown d-flex align-items-center justify-content-center">
+          <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span>Add a</span> guest
           </a>
 
-          <ul class=" dropdown-menu" style="min-height: max-content;">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </div>
 
-        <a class="drop-sticky btn btn-lg bord btn-primary" style="background: #0D99FF;" href="#">Search</a>
+        <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;" href="#">Search</a>
 
       </div>
 
     </div>
-    <a href="#Who-can-join" title="" class="btn btn-link">Can I Join?</a>
-  </div>
+    <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
 
-</div>
+  </div>
+</section>

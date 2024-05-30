@@ -18,61 +18,6 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <style>
-
-
-
-    .review-card h3 {
-     font-size: 24px;
-    }
-    @media (max-width:700px) {
-      .drop-sticky {
-        padding: 20px !important;
-        border-radius: 1rem !important;
-      }
-      .review-card  {
-        margin-left: .5rem;
-        margin-right: -.5rem;
-      }
-    }
-
-    @media (max-width:1000px) {
-      #search-box-m {
-        z-index: 0 !important;
-      }
-
-      .drop-sticky {
-        padding: 15px !important;
-      }
-    }
-
-    @media (min-width:1000px) {
-      #bg-white header {
-        background-image: none !important;
-      }
-
-      .search-box-m {
-        position: fixed;
-        top: 13px;
-        transition: translatey(-50%) 0.4s ease;
-        left: 50%;
-        transform: translatey(-50%);
-        transform: translatex(-50%);
-      }
-
-      .search-box-m .drop-sticky {
-        padding: 15px !important;
-      }
-
-      .search-box-m .drop-sticky span {
-        display: none;
-      }
-
-    }
-   
-  
-  </style>
 </head>
 
 <body>
@@ -97,125 +42,7 @@
   </div>
 
 
-  <section class="hero-section hero-section-1 pt-0 pb-0">
-    <div class="header-section " id="bg-white"
-      style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;"  >
-      <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
-        <div class="col-md-3 mb-md-0 d-flex align-items-center">
-          <!--logo-->
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="img/Group 95.svg" alt="">
-          </a>
-        </div>
-
-
-
-        <div class="col-md-3 d-flex justify-content-end mobile-version-none">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3" aria-current="page">Add my place</a></li>
-          </ul>
-          <!--menu items-->
-
-          <div class="dropdown mobile-version-none">
-            <button class="dropdown" style="background-color: white; display: flex;
-            padding: 16px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 16px;
-            border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-            background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
-
-              <li class="cdmenu-item">
-                <div class="d-grid">
-                  <button class="btn dropdown header-dropdown-font-1"
-                    style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Sign up
-                  </button>
-                </div>
-              </li>
-              <li class="cdmenu-item">
-                <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
-                    style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Log in
-                  </button></div>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
-            </ul>
-          </div>
-
-          <!--menu items end-->
-
-      </header>
-    </div>
-
-    <div class="hero-search" style="margin-top: 6rem;">
-      <h1>Bringing the military community together</h1>
-
-      <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
-        <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span>Select a</span> destination
-            </a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class="drop-sticky hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span> Choose a</span> date
-            </a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span>Add a</span> guest
-            </a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-
-          <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;" href="#">Search</a>
-
-        </div>
-
-      </div>
-      <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
-
-    </div>
-  </section>
-
+ <div id="header-home"></div>
   <!--Hero section end here -->
 
   <section class="py-5">
@@ -327,26 +154,36 @@
 
       <div class="row book-main">
 
+         <div class="cd-col">
 
 
-
-        <div class="cd-col">
-          <div class="book-gallery">
-            <div class="bgallery-img mb-3"> <img src="img/g1.jpg" alt=""></div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5>Apartment</h5>
-                <div class="d-flex rating align-items-center">
-                  <img src="img/star.svg" alt=""><span>4.0</span>
-                </div>
-              </div>
-              <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                apartment/room<br>Period of time</p>
-              <p><b>$320</b> <Span class="bs-3">per night</Span>
-              </p>
-            </div>
-          </div>
-        </div><!--col card end here-->
+                    <div class="book-gallery">
+                        <div class="bgallery-img mb-3">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="img/g3.jpg" loading="lazy" alt="Image 1"></div>
+                                    <div class="slide"><img src="img/g2.jpg" loading="lazy" alt="Image 2"></div>
+                                    <div class="slide"><img src="img/g1.jpg" loading="lazy" alt="Image 3"></div>
+                                    <!-- Add more slides as needed -->
+                                </div>
+                                <button class="prev" onclick="plusSlides(-1)"><img src="img/arrow_back.svg" alt=""></button>
+                                <button class="next" onclick="plusSlides(1)"><img src="img/arrow_forward.svg" alt=""></button>
+                            </div>
+                            <div class="dots"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Apartment</h5>
+                                <div class="d-flex rating align-items-center">
+                                    <img src="img/star.svg" alt=""><span>4.0</span>
+                                </div>
+                            </div>
+                            <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                                apartment/room<br>Period of time</p>
+                            <p><b>$320</b> <Span class="bs-3">per night</Span></p>
+                        </div>
+                    </div>
+                </div><!--col card end here-->
 
 
         <div class="cd-col">
@@ -719,7 +556,7 @@
       var searchBox = document.getElementById('search-box-m');
       var searchBg = document.getElementById('bg-white');
 
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 1000) {
 
         if (scrollHeight > 10) {
           searchBg.classList.add('bg-white');
@@ -727,7 +564,7 @@
           searchBg.classList.remove('bg-white');
         }
       }
-      if (window.innerWidth >= 700) {
+      if (window.innerWidth >= 1000) {
 
         if (scrollHeight > 350) {
           searchBg.classList.add('bg-white');
@@ -747,65 +584,32 @@
         }
       }
 
-
-
-
-
     });
   </script>
 
 
   <script>
-    let lastScrollTop = 0;
-    let isScrolling;
+  let lastScrollTop = 0;
 
-    window.addEventListener("scroll", function () {
-      clearTimeout(isScrolling);
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (currentScroll > lastScrollTop) {
-        // Scroll down
-        document.getElementById("mobileFooter").style.transform = "translateY(100%)";
-      } else {
-        // Scroll up
-        document.getElementById("mobileFooter").style.transform = "translateY(0)";
-      }
+  if (currentScroll > lastScrollTop) {
+    // Scroll down
+    document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+  } else {
+    // Scroll up
+    document.getElementById("mobileFooter").style.transform = "translateY(0)";
+  }
 
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
 
-      isScrolling = setTimeout(function () {
-        document.getElementById("mobileFooter").style.transform = "translateY(0)";
-      }, 100);
-    });
   </script>
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="./script.js"></script>
-  <script>
-    $('.burger, .overlay').click(function () {
-      $('.burger').toggleClass('clicked');
-      $('.overlay').toggleClass('show');
-      $('nav').toggleClass('show');
-      $('body').toggleClass('overflow');
-    });
-
-    $(function () {
-      var header = $(".navbar");
-
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-          header.addClass("scrolled");
-          header.removeClass("navbar-inverse");
-
-        } else {
-          header.removeClass("scrolled");
-        }
-      });
-
-    });
-  </script>
   <script src="js/jquery-3.7.1.js"></script>
   <script src="js/headerFooter.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -890,6 +694,90 @@
       }
       document.getElementById("slider-main").style.height = "auto"
     });
+
+  </script>
+
+  <script>
+let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+const dotsContainer = document.querySelector('.dots');
+const prevButton = document.querySelector('.prev'); // Get the previous button element
+const nextButton = document.querySelector('.next'); // Get the next button element
+
+// Generate dots dynamically
+for (let i = 0; i < totalSlides; i++) {
+    let dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => currentSlide(i));
+    dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll('.dot');
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    if (n >= totalSlides) { slideIndex = 0; }
+    if (n < 0) { slideIndex = totalSlides - 1; }
+    slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+    updateDots(slideIndex);
+    
+    // Check if on first or last slide, then hide respective buttons
+    if (slideIndex === 0) {
+        prevButton.style.display = 'none';
+    } else {
+        prevButton.style.display = 'flex';
+    }
+    if (slideIndex === totalSlides - 1) {
+        nextButton.style.display = 'none';
+    } else {
+        nextButton.style.display = 'flex';
+    }
+}
+
+function updateDots(n) {
+    dots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === n) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+// Touch controls
+let touchStartX = 0;
+let touchEndX = 0;
+
+slides.addEventListener('touchstart', function (event) {
+    touchStartX = event.changedTouches[0].screenX;
+}, false);
+
+slides.addEventListener('touchend', function (event) {
+    touchEndX = event.changedTouches[0].screenX;
+    handleGesture();
+}, false);
+
+function handleGesture() {
+    if (touchEndX < touchStartX) {
+        if (slideIndex !== totalSlides - 1) {
+            plusSlides(1); // swipe left, but not on the last slide
+        }
+    }
+    if (touchEndX > touchStartX) {
+        if (slideIndex !== 0) {
+            plusSlides(-1); // swipe right, but not on the first slide
+        }
+    }
+}
+
 
   </script>
 

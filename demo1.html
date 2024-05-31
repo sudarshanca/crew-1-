@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
  
   <style>
+
+#location-dropdown, #calander, #guests-dropdown {
+      display: none;
+    }
     .home-calander {
         position: absolute;
         background-color: #FFF !important;
@@ -995,40 +999,73 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
-  </script>
+</script>
 
-  <script>
-     let locationDropdownc =  document.getElementById('location-dropdown');
-     let calanderToggle =  document.getElementById('calander');
-     let guestsDropdownc =  document.getElementById('guests-dropdown');
-    function togglecalander() {
-      if (calanderToggle.style.display === "none"){
-        calanderToggle.style.display = "block"
- 
-      }else {
-        calanderToggle.style.display = "none"
-      }
-    }
-    function locationDropdown() {
-      if (locationDropdownc.style.display === "none"){
-        locationDropdownc.style.display = "block"
-        guestsDropdownc.style.display = "none"
-        calanderToggle.style.display = "none"
-      }else {
-        locationDropdownc.style.display = "none"
-      }
-    }
-    function guestsDropdown() {
-      if (guestsDropdownc.style.display === "none"){
-        guestsDropdownc.style.display = "block"
-        calanderToggle.style.display = "none"
-        locationDropdownc.style.display = "none"
-      }else {
-        guestsDropdownc.style.display = "none"
-      }
-    }
+<script>
+  let locationDropdownc = document.getElementById('location-dropdown');
+  let calanderToggle = document.getElementById('calander');
+  let guestsDropdownc = document.getElementById('guests-dropdown');
 
-  </script>
+  function togglecalander() {
+    if (calanderToggle.style.display === "none") {
+      calanderToggle.style.display = "block";
+      addEventListeners();
+    } else {
+      calanderToggle.style.display = "none";
+      removeEventListeners();
+    }
+  }
+
+  function locationDropdown() {
+    if (locationDropdownc.style.display === "none") {
+      locationDropdownc.style.display = "block";
+      guestsDropdownc.style.display = "none";
+      calanderToggle.style.display = "none";
+      addEventListeners();
+    } else {
+      locationDropdownc.style.display = "none";
+      removeEventListeners();
+    }
+  }
+
+  function guestsDropdown() {
+    if (guestsDropdownc.style.display === "none") {
+      guestsDropdownc.style.display = "block";
+      calanderToggle.style.display = "none";
+      locationDropdownc.style.display = "none";
+      addEventListeners();
+    } else {
+      guestsDropdownc.style.display = "none";
+      removeEventListeners();
+    }
+  }
+
+  function addEventListeners() {
+    window.onclick = handleOutsideClick;
+    window.onscroll = hideDropdowns;
+  }
+
+  function removeEventListeners() {
+    window.onclick = null;
+    window.onscroll = null;
+  }
+
+  function hideDropdowns() {
+    locationDropdownc.style.display = 'none';
+    calanderToggle.style.display = 'none';
+    guestsDropdownc.style.display = 'none';
+    removeEventListeners();
+  }
+
+  function handleOutsideClick(event) {
+    if (!event.target.matches('.location-button') && 
+        !event.target.matches('.calander-button') && 
+        !event.target.matches('.guests-button') && 
+        !event.target.closest('.dropdown')) {
+      hideDropdowns();
+    }
+  }
+</script>
 
 </body>
 

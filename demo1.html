@@ -762,14 +762,10 @@
   <script src="js/headerFooter.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/script.js"></script>
 
   
 
 <script>
-
-
-// slick slider 
 
 $(document).ready(function () {
   try {
@@ -801,6 +797,43 @@ $(document).ready(function () {
   }
   document.getElementById("slider-main").style.height = "auto"
 });
+
+$(document).ready(function () {
+  try {
+    $('.review-box').slick({
+      slidesToShow: 3,
+      arrows: false,
+      prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
+      dots: false,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
+  catch (ex) {
+    console.log("Error initiating carousel" + ex)
+  }
+
+});
+
+
+
+
+  
+
 
 //index header 
 window.addEventListener('scroll', function () {

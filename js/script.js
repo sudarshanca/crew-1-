@@ -175,23 +175,6 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-  try {
-    $('.img-slider').slick({
-      lazyLoad: 'ondemand',
-      slidesToShow: 1,
-      arrows: true,
-      prevArrow: '<button class="sk-button sk-round arrow-prev"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-      nextArrow: '<button class="sk-button sk-round arrow-next"><span class="sk-icons"><svg width="20" height="20"><use xlink:href="#skiconsLeftCheveron"></use></svg></span></button>',
-      dots: true,
-    });
-  }
-  catch (ex) {
-    console.log("Error initiating carousel" + ex)
-  }
-  document.getElementById("slider-main").style.height = "auto"
-});
-
 
 // details gallary mobile version slider 
 

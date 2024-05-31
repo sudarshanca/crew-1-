@@ -32,6 +32,10 @@ $(function () {
 $(function () {
     $("#footer").load("footer.html");
 });
+
+$(function () {
+    $("#calander").load("calander.html");
+});
 //mobile search bar
 
 let prevScrollPos = window.pageYOffset;
@@ -53,20 +57,4 @@ document.addEventListener('DOMContentLoaded', loadHeaderAndFooter);
 
 
 
-//mobile footer
 
-let lastScrollTop = 0;
-
-window.addEventListener("scroll", function () {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (currentScroll > lastScrollTop) {
-    // Scroll down
-    document.getElementById("mobileFooter").style.transform = "translateY(100%)";
-  } else {
-    // Scroll up
-    document.getElementById("mobileFooter").style.transform = "translateY(0)";
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-});

@@ -23,6 +23,7 @@
 
 <body>
 
+
   <div id="search-bar" class="search-main ">
     <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2 "
       style="z-index: 100;">
@@ -665,6 +666,26 @@ window.addEventListener('scroll', function () {
     }
 
   });
+  </script>
+  
+  <script>
+    //mobile footer
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll down
+    document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+  } else {
+    // Scroll up
+    document.getElementById("mobileFooter").style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
   </script>
 
 </body>

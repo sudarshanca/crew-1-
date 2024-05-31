@@ -11,6 +11,7 @@
   <link href="css/slick-slider.css" rel="stylesheet">
   <link rel="stylesheet" href="css/s-custom.css">
   <link rel="stylesheet" href="css/s-custom2.css">
+  <link rel="stylesheet" href="css/calander.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,301 @@
   </div>
 
 
- <div id="header-home"></div>
+  <section class="hero-section hero-section-1 pt-0 pb-0" >
+    <div class="header-section " id="bg-white"
+      style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;"  >
+      <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
+        <div class="col-md-3 mb-md-0 d-flex align-items-center">
+          <!--logo-->
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+  
+  
+  
+        <div class="col-md-3 d-flex justify-content-end mobile-version-none">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my place</a></li>
+          </ul>
+          <!--menu items-->
+  
+          <div class="dropdown mobile-version-none">
+            <button class="dropdown" style="background-color: white; display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 16px;
+            border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+            background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+  
+              <li class="cdmenu-item">
+                <div class="d-grid">
+                  <button class="btn dropdown header-dropdown-font-1"
+                    style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sign up
+                  </button>
+                </div>
+              </li>
+              <li class="cdmenu-item">
+                <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
+                    style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Log in
+                  </button></div>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+            </ul>
+          </div>
+  
+          <!--menu items end-->
+  
+      </header>
+    </div>
+  
+    <div class="hero-search" style=" padding-top: 6rem;">
+      <h1>Bringing the military community together</h1>
+  
+      <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
+        <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
+  
+          <div class="dropdown d-flex align-items-center justify-content-center" >
+            <p class="m-0 drop-sticky hero-down dropdown-toggle"  onclick="locationDropdown()">
+              <span>Select a</span> destination
+            </p>
+            <ul id="location-dropdown"  class="dropdown-menu p-2 px-3 home-calander" style="z-index: 100; border-radius: 1rem; max-height: 400px; height: fit-content;">
+              <li>
+                <div class="dropdown-item p-0 ">
+                  <div class="d-flex gap-2 align-items-end justify-content-between">
+                      <div class="border d-flex"
+                        style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                          <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
+                        </svg>
+                      </div>
+                      <div class="w-100 flex-grow-1" >
+                        <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
+                        <hr class="m-0">
+                      </div>
+                  </div>
+                </div>
+              </li>
+            
+  
+              <li>
+                <div class="dropdown-item p-0 mb-2">
+                  <div class="d-flex gap-2 align-items-end justify-content-between">
+                      <div class="border d-flex"
+                        style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                          <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
+                        </svg>
+                      </div>
+                      <div class="w-100 flex-grow-1" >
+                        <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
+                        <hr class="m-0">
+                      </div>
+                  </div>
+                </div>
+              </li>
+            
+  
+              <li>
+                <div class="dropdown-item p-0 mb-2">
+                  <div class="d-flex gap-2 align-items-end justify-content-between">
+                      <div class="border d-flex"
+                        style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                          <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
+                        </svg>
+                      </div>
+                      <div class="w-100 flex-grow-1" >
+                        <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
+                        <hr class="m-0">
+                      </div>
+                  </div>
+                </div>
+              </li>
+            
+  
+              <li>
+                <div class="dropdown-item p-0 mb-2">
+                  <div class="d-flex gap-2 align-items-end justify-content-between">
+                      <div class="border d-flex"
+                        style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                          <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
+                        </svg>
+                      </div>
+                      <div class="w-100 flex-grow-1" >
+                        <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
+                        <hr class="m-0">
+                      </div>
+                  </div>
+                </div>
+              </li>
+            
+  
+  
+          </ul>
+          </div>
+  
+          <div class="dropdown d-flex align-items-center justify-content-center">
+              <p class="m-0 drop-sticky hero-down dropdown-toggle"  onclick="togglecalander()">
+                <span>choose a</span> date
+              </p>
+                  <div id="calander" style="max-height: 100vh; display: none; z-index: 1000;" class="home-calander"></div>
+            </div>
+  
+            <div class="dropdown d-flex align-items-center justify-content-center" >
+              <p class="m-0 drop-sticky hero-down dropdown-toggle" onclick="guestsDropdown()" >
+                <span>Select a</span> destination
+              </p>
+             <ul id="guests-dropdown" class="dropdown-menu p-2 pb-4 px-3 home-calander" style="z-index: 100; border-radius: 1rem; max-height: 400px; height: fit-content;">
+                <li>
+                  <div class="dropdown-item p-0">
+  
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="mb-0 pi-font-4-1">Adults</p>
+                        <p class="mb-0 msg-side-font-13">Aged 13 and above</p>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                            <path
+                              d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                        <p class="mb-0">5</p>
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path
+                              d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="dropdown-item p-0">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="mb-0 pi-font-4-1">Children</p>
+                        <p class="mb-0 msg-side-font-13">Ages 2- 12</p>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                            <path
+                              d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                        <p class="mb-0">5</p>
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path
+                              d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="dropdown-item p-0">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="mb-0 pi-font-4-1">Infants</p>
+                        <p class="mb-0 msg-side-font-13">Under 2</p>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                            <path
+                              d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                        <p class="mb-0">5</p>
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path
+                              d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="dropdown-item p-0">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="mb-0 pi-font-4-1">Pets</p>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                            <path
+                              d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                        <p class="mb-0">5</p>
+                        <div class="border d-flex "
+                          style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path
+                              d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
+                              fill="#747474" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+  
+          <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;" href="#">Search</a>
+  
+        </div>
+  
+      </div>
+      <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
+  
+    </div>
+  </section>
+  
   <!--Hero section end here -->
 
   <section class="py-5">
@@ -57,15 +352,15 @@
 
     <div class="item">
       <img src="./img/g1.jpg" loading="lazy">
-
-
       <div class="discover-text d-flex">
         <div>
           <span>Collection</span>
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
         </div>
       </div><!--discover-text end-->
 
@@ -80,7 +375,11 @@
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
+          </a>
         </div>
       </div><!--discover-text end-->
 
@@ -94,7 +393,9 @@
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
         </div>
       </div><!--discover-text end-->
 
@@ -108,7 +409,9 @@
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
         </div>
       </div><!--discover-text end-->
     </div>
@@ -121,7 +424,9 @@
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
         </div>
       </div><!--discover-text end-->
 
@@ -135,7 +440,9 @@
           <p>Short term and vacation rentals</p>
         </div>
         <div>
-          <button class="btn btn-light">See all</button>
+          <a href="listings.html">
+            <button class="btn btn-light">See all</button>
+          </a>
         </div>
       </div><!--discover-text end-->
     </div>
@@ -687,6 +994,82 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
   </script>
+
+  <script>
+    //search bar 
+
+    let locationDropdownc = document.getElementById('location-dropdown');
+     let calanderToggle = document.getElementById('calander');
+     let guestsDropdownc = document.getElementById('guests-dropdown');
+     let discoveryZIndex = document.querySelector('.discover-box');
+   
+     function togglecalander() {
+       if (calanderToggle.style.display === "none") {
+         calanderToggle.style.display = "block";
+         locationDropdownc.style.display = "none";
+         guestsDropdownc.style.display = "none";
+         discoveryZIndex.style.zIndex = "-1"
+         addEventListeners();
+       } else {
+         calanderToggle.style.display = "none";
+         removeEventListeners();
+       }
+     }
+   
+     function locationDropdown() {
+       if (locationDropdownc.style.display === "none") {
+         locationDropdownc.style.display = "block";
+         guestsDropdownc.style.display = "none";
+         calanderToggle.style.display = "none";
+         discoveryZIndex.style.zIndex = "-1"
+         addEventListeners();
+       } else {
+         locationDropdownc.style.display = "none";
+         removeEventListeners();
+       }
+     }
+   
+     function guestsDropdown() {
+       if (guestsDropdownc.style.display === "none") {
+         guestsDropdownc.style.display = "block";
+         calanderToggle.style.display = "none";
+         locationDropdownc.style.display = "none";
+         discoveryZIndex.style.zIndex = "-1"
+         addEventListeners();
+       } else {
+         guestsDropdownc.style.display = "none";
+         removeEventListeners();
+       }
+     }
+   
+     function addEventListeners() {
+       window.onclick = handleOutsideClick;
+       window.onscroll = hideDropdowns;
+     }
+   
+     function removeEventListeners() {
+       window.onclick = null;
+       window.onscroll = null;
+       discoveryZIndex.style.zIndex = "1"
+     }
+   
+     function hideDropdowns() {
+       locationDropdownc.style.display = 'none';
+       calanderToggle.style.display = 'none';
+       guestsDropdownc.style.display = 'none';
+       removeEventListeners();
+     }
+   
+     function handleOutsideClick(event) {
+       if (!event.target.matches('.location-button') && 
+           !event.target.matches('.calander-button') && 
+           !event.target.matches('.guests-button') && 
+           !event.target.closest('.dropdown')) {
+         hideDropdowns();
+       }
+     }
+  </script>
+ 
 
 </body>
 

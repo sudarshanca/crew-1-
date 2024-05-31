@@ -277,6 +277,42 @@
   }
 }
 
+#location-dropdown, #calander, #guests-dropdown {
+  display: none;
+}
+.home-calander {
+    position: absolute;
+    background-color: #FFF !important;
+    bottom: 0;
+    top: 105%;
+    transform: translateX(-50%, 50%);
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+.hero-search {
+    margin-top: 0px !important;
+}
+}
+
+@media (max-width: 768px) {
+  .hero-search {
+      margin-top: 0 !important;
+      max-width: 80%;
+  }
+  }
+
+  .book-gallery .bb {
+    color: #747474 !important;
+    text-decoration: line-through;
+  }
+  .book-gallery .b {
+    color: #333 !important;
+  }
+
 
 
 /*index item slider*/

@@ -231,7 +231,7 @@
                         <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
 
                             <div class="slider-container">
-                                <input type="range" min="1" max="12" value="1" class="slider" id="durationSlider">
+                                <input type="range" min="1" max="12" value="1" class="input-slider-range" id="durationSlider">
                                 <div class="slider-tooltip" id="sliderTooltip">1 month</div>
                                 <div class="slider-scale">
                                     <div class="scale-mark"></div>
@@ -331,28 +331,28 @@
         }
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const slider = document.getElementById("durationSlider");
-            const tooltip = document.getElementById("sliderTooltip");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.getElementById("durationSlider");
+        const tooltip = document.getElementById("sliderTooltip");
 
-            const updateTooltip = () => {
-                const value = slider.value;
-                tooltip.textContent = `${value} month${value > 1 ? 's' : ''}`;
+        const updateTooltip = () => {
+            const value = slider.value;
+            tooltip.textContent = `${value} month${value > 1 ? 's' : ''}`;
 
-                const percent = (value - slider.min) / (slider.max - slider.min) * 100;
-                const offset = -1.5; // Adjust as necessary to center the tooltip
-                const tooltipPos = percent / 100 * (slider.offsetWidth - 20) + offset;
+            const percent = (value - slider.min) / (slider.max - slider.min) * 100;
+            const offset = -1.5; // Adjust as necessary to center the tooltip
+            const tooltipPos = percent / 100 * (slider.offsetWidth - 20) + offset;
 
-                tooltip.style.left = `${tooltipPos}px`;
-                slider.style.background = `linear-gradient(to right, #2196F3 ${percent}%, #ddd ${percent}% !important )`;
-            };
-            slider.addEventListener("input", updateTooltip);
-            // Initial positioning
-            updateTooltip();
-        });
+            tooltip.style.left = `${tooltipPos}px`;
+            slider.style.background = `linear-gradient(to right, #2196F3 ${percent}%, #ddd ${percent}%)`;
+        };
+        slider.addEventListener("input", updateTooltip);
+        // Initial positioning
+        updateTooltip();
+    });
+</script>
 
-    </script>
 </body>
 
 </html>

@@ -176,6 +176,8 @@ $(document).ready(function () {
 });
 
 
+
+
 // details gallary mobile version slider 
 
   let slideIndex = 1;

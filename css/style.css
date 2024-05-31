@@ -1371,3 +1371,33 @@ ul.cd-highlights b {
   margin-left: 12px;
   margin-right: 12px;
 }
+
+
+/* doted lines*/
+
+.doted-line-main li
+{
+    position: relative;
+}
+.doted-line-main li::before {
+    content: " ";
+    background-color: #747474;
+    width: 1px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 8px;
+}
+.doted-line-main li::after {
+    content: " ";
+    background-color: #747474;
+    width: 1px;
+    height: 5px;
+    position: absolute;
+    top:  -5px;
+    left: 8px;
+}
+.doted-line-main  .first-after::after ,
+.doted-line-main  .last-before::before {
+    display: none;
+}

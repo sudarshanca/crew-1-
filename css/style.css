@@ -1309,6 +1309,10 @@ ul.cd-highlights b {
   .marginSide {
     margin-left: 20px;
     margin-right: 20px;
+    
+  }
+  .sk-button {
+    display: none;
   }
 }
 

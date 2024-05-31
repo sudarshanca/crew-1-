@@ -1312,7 +1312,13 @@ ul.cd-highlights b {
     
   }
   .sk-button {
-    display: none;
+    display: none !important;
+  }
+}
+@media (max-width: 700px) {
+
+  .sk-button {
+    display: none !important;
   }
 }
 

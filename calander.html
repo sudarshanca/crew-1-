@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <section class="calander-main container p-2 border rounded">
+    <section class="calander-main container p-2 border rounded" style="background-color: #fff ;">
         <div class="w-100 d-flex flex-column">
 
             <div>
@@ -345,11 +345,9 @@
                 const tooltipPos = percent / 100 * (slider.offsetWidth - 20) + offset;
 
                 tooltip.style.left = `${tooltipPos}px`;
-                slider.style.background = `linear-gradient(to right, #2196F3 ${percent}%, #ddd ${percent}%)`;
+                slider.style.background = `linear-gradient(to right, #2196F3 ${percent}%, #ddd ${percent}% !important )`;
             };
-
             slider.addEventListener("input", updateTooltip);
-
             // Initial positioning
             updateTooltip();
         });

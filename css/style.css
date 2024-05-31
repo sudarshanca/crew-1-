@@ -148,7 +148,7 @@ a.btn-brand:hover {
 .hero-search .search-box .hero-down {
   text-decoration: none;
   color: #ACACB0;
-  padding: 33px;
+  padding: 30px;
 }
 
 .hero-search .search-box .dropdown-menu {
@@ -159,12 +159,12 @@ a.btn-brand:hover {
   cursor: pointer;
 }
 
-
-
 .hero-search .search-box .dropdown {
   border: solid 1px #E7E7E7;
   background: #fff;
   margin-right: -1px;
+  position: relative;
+  cursor: pointer;
 }
 
 .hero-search .search-box .dropdown:first-child {

@@ -1030,9 +1030,7 @@ text-align: left;
 
 }
 
-.review-card h3 {
-  font-size: 24px;
- }
+
  @media (max-width:700px) {
    .drop-sticky {
      padding: 20px !important;

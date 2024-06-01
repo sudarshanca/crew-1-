@@ -701,9 +701,7 @@ color: #4B4B4D;
   background: #E9F4FC;
   border: 1px solid #E9F4Fc !important;
 }
-.toggle-button-colour img {
-  filter: invert(38%) sepia(92%) saturate(685%) hue-rotate(170deg) brightness(98%) contrast(85%) !important;
-}
+
 
 .pagination {
   display: flex;
@@ -1039,6 +1037,10 @@ text-align: left;
    .review-card  {
      margin-left: .5rem;
      margin-right: -.5rem;
+   }
+   .prev,
+   .next {
+    display: none !important;
    }
  }
 

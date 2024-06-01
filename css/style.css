@@ -442,6 +442,7 @@ ul.cd-highlights li {
   gap: 0.8rem;
   padding: 20px 30px;
   align-items: center;
+  background-color: #fff;
 }
 
 ul.cd-highlights span {

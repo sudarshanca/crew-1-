@@ -922,37 +922,7 @@
     </div>
   </footer>
 
-
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const searchBar = document.getElementById("searchBar");
-      const toggleBtn = document.getElementById("toggleBtn");
-      const content = document.getElementById("content");
-      const closeBtn = document.getElementById("closeBtn");
-
-      toggleBtn.addEventListener("click", function () {
-        searchBar.classList.toggle("active");
-        content.classList.toggle("hidden"); // Toggles the visibility of the content div
-      });
-
-      closeBtn.addEventListener("click", function () {
-        searchBar.classList.remove("active");
-        content.classList.remove("hidden"); // Shows the content div when the search bar is closed
-      });
-    });
-     // Get references to all buttons
-  const buttons = document.querySelectorAll('button');
-
-// Add click event listener to each button
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    // Toggle the 'active' class list for the clicked button
-    this.classList.toggle('toggle-button-colour');
-  });
-});
-  </script>
 
   <script>
     $('.burger, .overlay').click(function () {
@@ -1018,10 +988,6 @@ buttons.forEach(button => {
     });
     </script>
 
-
-
-
-  
 <script>
 //mobile footer
 let lastScrollTop = 0;

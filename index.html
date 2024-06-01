@@ -44,7 +44,125 @@
 </div>
 
 
-<div id="header-home"></div>
+<section class="hero-section hero-section-1 pt-0 pb-0" style="overflow: hidden;">
+  <div class="header-section " id="bg-white"
+    style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;"  >
+    <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
+      <div class="col-md-3 mb-md-0 d-flex align-items-center">
+        <!--logo-->
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+
+
+
+      <div class="col-md-3 d-flex justify-content-end mobile-version-none">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my place</a></li>
+        </ul>
+        <!--menu items-->
+
+        <div class="dropdown mobile-version-none">
+          <button class="dropdown" style="background-color: white; display: flex;
+          padding: 16px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 16px;
+          border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+          background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+              <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+
+            <li class="cdmenu-item">
+              <div class="d-grid">
+                <button class="btn dropdown header-dropdown-font-1"
+                  style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sign up
+                </button>
+              </div>
+            </li>
+            <li class="cdmenu-item">
+              <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
+                  style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Log in
+                </button></div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!--menu items end-->
+
+    </header>
+  </div>
+
+  <div class="hero-search" style="overflow: hidden; margin-top: 6rem;">
+    <h1>Bringing the military community together</h1>
+
+    <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
+      <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
+
+        <div class="dropdown d-flex align-items-center justify-content-center">
+          <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span>Select a</span> destination
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown d-flex align-items-center justify-content-center">
+          <a class="drop-sticky hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span> Choose a</span> date
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown d-flex align-items-center justify-content-center">
+          <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span>Add a</span> guest
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;" href="#">Search</a>
+
+      </div>
+
+    </div>
+    <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
+
+  </div>
+</section>
+
 
 <!--
 
@@ -103,7 +221,7 @@
 
   <section class="py-5">
     <div class="container-xxl container-sm discover-main">
-      <h3>A trusted option for whatever you need 1 </h3>
+      <h3>A trusted option for whatever you need 2 </h3>
 
 
 
@@ -655,12 +773,82 @@
   </section>
 
 
- <div id="footer"></div>
+  <footer class="desktop-version-footer">
+    <div class="container-xxl container-sm">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 me-auto">
+          <a href="/" style="position: relative !important;" class=" header-home-icon d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="d-flex gap-1 mb-5">
+            <a href="#" title=""><img src="img/ios-store-badge.png" alt=""></a>
+            <a href="#" title=""><img src="img/play-store-badge.png" alt=""></a>
+  
+          </div>
+        </div>
+  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h5>Links</h5>
+          <ul class="f-menu">
+            <li><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Add my place</a></li>
+            <li><a href="#" title="">Collections</a></li>
+            <li><a href="#" title="">About</a></li>
+          </ul>
+  
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h5>Help</h5>
+          <ul class="f-menu">
+            <li><a href="#" title="">Terms &amp; conditions</a></li>
+            <li><a href="#" title="">Privacy policy</a></li>
+            <li><a href="#" title="">FAQ's</a></li>
+            <li><a href="#" title="">The tee</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="copy bs-3">
+        &copy; 2024 Crewdogs.llc All Rights Reserved
+      </div>
+  
+    </div>
+  
+  </footer>
+  
+  <footer class="mobile-version-footer p-2  align-items-center justify-content-evenly" style=" background-color: white; border-top: 1px solid #4444; height: 60px;"
+    id="mobileFooter">
+    <div class=" mf-icon d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img class="d-none " src="img/Search.svg" width="21.75px" height="21.75px" alt="">
+      <img  src="img/Search-filled.svg" width="21.75px" height="21.75px" alt="">
+      <p id="toggleBtn" class="m-0 mobile-text-footer" style="color: #0D99FF;">Search</p>
+    </div>
+    <div class="mf-icon d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img src="img/travel.svg" width="21.75px" height="21.75px" alt="">
+      <img class="d-none" src="img/travel-filled.svg" width="21.75px" height="21.75px" alt="">
+      <p class=" m-0 mobile-text-footer">Travel</p>
+    </div>
+    <div class="mf-icon d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img src="img/Home.svg" width="21.75px" height="21.75px" alt="">
+      <img class="d-none" src="img/Home-filled.svg" width="21.75px" height="21.75px" alt="">
+      <p class=" m-0 mobile-text-footer">Home</p>
+    </div>
+    <div class=" mf-icon d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img src="img/Message.svg" width="21.75px" height="21.75px" alt="">
+      <img class="d-none" src="img/Message-filled.svg" width="21.75px" height="21.75px" alt="">
+      <p class=" m-0 mobile-text-footer">Message</p>
+    </div>
+    <div class="mf-icon d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img src="img/Profile.svg" width="21.75px" height="21.75px" alt="">
+      <img class="d-none" src="img/Profile-filled.svg" width="21.75px" height="21.75px" alt="">
+      <p class="m-0 mobile-text-footer" >Log in</p>
+    </div>
+  </footer>
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src="js/jquery-3.7.1.js"></script>
-  <script src="js/headerFooter.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {

@@ -19,6 +19,10 @@
     body{
       scroll-behavior: smooth;
     }
+    .height-0-auto {
+      height: 0px;
+      overflow: hidden;
+    }
   </style>
 </head>
 
@@ -221,12 +225,13 @@
 
   <section class="py-5">
     <div class="container-xxl container-sm discover-main">
-      <h3>A trusted option for whatever you need 2 </h3>
+      <h3>A trusted option for whatever you need 3 </h3>
 
+
+<div class="height-0-auto">
 
 
       <div class="discover-box">
-
 
         <div class="item">
           <img src="./img/g1.jpg" loading="lazy">
@@ -316,7 +321,7 @@
 
 
       </div><!--discover-box end -->
-
+</div>
 
     </div>
   </section>
@@ -998,7 +1003,8 @@ window.addEventListener("scroll", function () {
       catch (ex) {
         console.log("Error initiating carousel" + ex)
       }
-
+      
+     document.querySelector(".height-0-auto").style.height = "auto"
     });
 
     $(document).ready(function () {

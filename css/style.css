@@ -313,6 +313,12 @@ a.btn-brand:hover {
   aspect-ratio: 16/15;
 }
 
+@media (max-width:700px) {
+  .book-gallery .bgallery-img img {
+    aspect-ratio: 16/12;
+  }
+}
+
 .book-gallery .card-body {
   padding: 0;
 }

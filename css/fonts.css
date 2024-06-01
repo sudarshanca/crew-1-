@@ -12,6 +12,16 @@
   letter-spacing: -0.4px;
 }
 
+.review-card h3 {
+  color: var(--BLACK, #444);
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.4px;
+}
+
 .header-font {
   color: #444;
   font-family: "DM Sans";

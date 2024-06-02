@@ -1,5 +1,5 @@
 .trips {
-  font-family: DM Sans;
+  
   font-size: 26px;
   font-weight: 500;
   line-height: 30px;
@@ -7,7 +7,7 @@
 }
 
 .customg {
-  font-family: DM Sans;
+  
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
@@ -27,7 +27,7 @@
 .customg .col {
 margin-bottom: 15px;
 padding: 11px 17px;
-font-family: DM Sans;
+
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
@@ -41,7 +41,7 @@ max-width:fit-content;
 .col-message {
 padding: 8px;
 margin-bottom: 0;
-font-family: DM Sans;
+
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
@@ -58,7 +58,7 @@ color: #222222;
 }
 
 .add-my-plan {
-  font-family: DM Sans;
+  
   font-size: 16px;
   font-weight: 500;
   line-height: 20.83px;
@@ -68,7 +68,7 @@ color: #222222;
 
 .boxes .box {
   border: 1px solid #eaebedcc;
-  font-family: DM Sans;
+  
   min-width: 293px;
   flex-grow: 1;
   margin: auto;
@@ -136,7 +136,7 @@ color: #222222;
 }
 
 .travel {
-  font-family: DM Sans;
+  
   font-size: 26px;
   font-weight: 500;
   line-height: 30px;
@@ -165,7 +165,7 @@ color: #222222;
 }
 
 .fav-title .title {
-  font-family: DM Sans;
+  
   font-size: 17px;
   font-weight: 700;
   line-height: 22px;
@@ -174,7 +174,7 @@ color: #222222;
 }
 
 .fav-title .fav-city {
-  font-family: DM Sans;
+  
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -183,7 +183,7 @@ color: #222222;
 }
 
 .rating {
-  font-family: DM Sans;
+  
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
@@ -198,7 +198,7 @@ color: #222222;
 }
 
 .welcome-page-heading {
-  font-family: DM Sans;
+  
   font-size: 28px;
   font-weight: 500;
   line-height: 36.46px;
@@ -207,7 +207,7 @@ color: #222222;
 }
 
 .welcome-page-para {
-  font-family: DM Sans;
+  
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -223,7 +223,7 @@ color: #222222;
   margin-left: 5%;
 }
 .welcome-tick-para {
-  font-family: DM Sans;
+  
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -244,7 +244,7 @@ select {
 .ui,
 input[type="text"]::placeholder,
 select {
-  font-family: DM Sans;
+  
   font-size: 14px;
   font-weight: 400;
   line-height: 22.4px;
@@ -345,7 +345,7 @@ select {
 /*font styles */
 
 .tx-lite {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 400;
 line-height: 26px;
@@ -354,7 +354,7 @@ text-align: left;
 
 }
 .tx-lite-1 {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 500;
 line-height: 26px;
@@ -365,7 +365,7 @@ text-align: left;
 
 
 .tx-dark {
-  font-family: DM Sans;
+  
 font-size: 18px;
 font-weight: 500;
 line-height: 21px;
@@ -376,14 +376,14 @@ color:  #1E1E20;
 }
 
 .tx-dark-2{
-  font-family: DM Sans;
+  
 font-size: 16px;
 font-weight: 500;
 letter-spacing: -0.02em;
 text-align: left;
 }
 .tx-photo {
-font-family: DM Sans;
+
 font-size: 20px;
 font-weight: 500;
 line-height: 36px;
@@ -391,7 +391,7 @@ text-align: left;
 }
 
 .srtting-tx{
-  font-family: DM Sans;
+  
 font-size: 16px;
 font-weight: 500;
 line-height: 20.83px;
@@ -401,7 +401,7 @@ color: #444444;
 }
 
 .tx-dark-3 {
-font-family: DM Sans;
+
 font-size: 28px;
 font-weight: 500;
 line-height: 33.04px;
@@ -424,7 +424,7 @@ color: white;
 }
 
 .tx-acc-num {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 400;
 line-height: 21px;
@@ -434,7 +434,7 @@ color: #4B4B4D;
 }
 
 .tx-parag {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 400;
 line-height: 24px;
@@ -448,7 +448,7 @@ text-align: left;
 }
 
 .help-text {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 500;
 line-height: 21px;
@@ -531,7 +531,7 @@ border: 1px solid #EAEBEDCC;
 
 /* font styles  */
 .dm-small-1 {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 400;
 line-height: 18.23px;
@@ -539,7 +539,7 @@ letter-spacing: -0.02em;
 text-align: left;
 }
 .dm-small-2 {
-  font-family: DM Sans;
+  
 font-size: 14px;
 font-weight: 400;
 line-height: 26px;
@@ -548,7 +548,7 @@ text-align: left;
 }
 
 .dm-small-3 {
-  font-family: DM Sans;
+  
 font-size: 16px;
 font-weight: 500;
 line-height: 20.83px;
@@ -556,7 +556,7 @@ text-align: left;
 
 }
 .dm-small-4 {
-  font-family: DM Sans;
+  
 font-size: 16px;
 font-weight: 400;
 line-height: 21px;
@@ -565,7 +565,7 @@ text-align: left;
 }
 
 .dm-bold-1 {
-  font-family: DM Sans;
+  
 font-size: 16px;
 font-weight: 700;
 line-height: 20.83px;
@@ -574,7 +574,7 @@ text-align: left;
 }
 
 .dm-bold-2 {
-  font-family: DM Sans;
+  
   font-size: 20px;
   font-weight: 500;
   line-height: 26.04px;
@@ -582,7 +582,7 @@ text-align: left;
   text-align: left;
 }
 .dm-bold-3 {
-  font-family: DM Sans;
+  
 font-size: 20px;
 font-weight: 700;
 line-height: 18px;
@@ -590,7 +590,7 @@ letter-spacing: -0.07800000160932541px;
 text-align: left;
 }
 .dm-bold-4 {
-  font-family: DM Sans;
+
 font-size: 24px;
 font-weight: 700;
 line-height: 18px;
@@ -600,7 +600,7 @@ text-align: left;
 }
 
 .dm-bold-05 {
-font-family: DM Sans;
+
 font-size: 13px;
 font-weight: 700;
 line-height: 18px;
@@ -608,7 +608,7 @@ letter-spacing: -0.07800000160932541px;
 text-align: center;
 }
 .dm-bold-6 {
-  font-family: DM Sans;
+  
 font-size: 12px;
 font-weight: 700;
 line-height: 21px;
@@ -618,7 +618,6 @@ text-align: left;
 }
 
 .dm-show-map-font{
-  font-family: DM Sans;
 font-size: 14px;
 font-weight: 700;
 line-height: 18.23px;
@@ -627,7 +626,7 @@ text-align: left;
 }
 
 .mobile-text-footer {
-  font-family: DM Sans;
+  
 font-size: 10px;
 font-weight: 500;
 line-height: 13.02px;
@@ -637,27 +636,6 @@ text-align: center;
 
 
 
-/* mobile footer css */
-
-main {
-  height: 2000px; /* Just for demonstration */
-  padding: 20px;
-}
-
-.mobile-version-footer {
-  background-color: #f0f0f0;
-  display: none;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  transition: transform 0.5s ease-out;
-  z-index: 1000;
-}
-
-.mobile-text-footer {
-  font-size: 12px;
-  margin-top: 0.25rem;
-}
 
  /* Styles for the search bar container */
  .search-bar-container {
@@ -680,7 +658,7 @@ main {
     padding: 10px;
 }
 .custom-search{
-font-family: DM Sans;
+
 font-size: 10px;
 font-weight: 400;
 line-height: 21px;
@@ -972,7 +950,7 @@ color: #4B4B4D;
     transition: top 0.3s;
    }
 .mobile-font-size-1{
-    font-family: DM Sans;
+    
 font-size: 12px;
 font-weight: 400;
 line-height: 18px;
@@ -989,7 +967,7 @@ text-align: left;
   }
   .boxes .box {
     border: 1px solid #eaebedcc;
-    font-family: DM Sans;
+    
     min-width: 100%;
     width: 100%;
     flex-grow: 1;

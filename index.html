@@ -163,7 +163,7 @@
       </div>
 
     </div>
-    <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
+    <p onclick="canIJoin()"  title="" class="btn btn-link">Can I Join?</p>
 
   </div>
 </section>
@@ -628,10 +628,10 @@
 
 
   <section class="bg py-5" style="background-image: url(img/BG2.jpg);">
+
   <section class="">
     <div class="container-xxl container-sm">
-      <h3 class="mb-4">Why crewdogs?</h2>
-
+      <h3 class="mb-4">Why crewdogs?</h3>
         <p class="py-2 btc-3">
           <b>Save money. Support each other. Give back to the community. </b><br><br>
 
@@ -647,11 +647,11 @@
   </section>
 
 
-  <section id="item-why" class="mb-3" style="padding: 5rem 0;" >
+  <section id="can-i-join" class="pt-5" >
     <div class="container-xxl container-sm">
       <h3  class="mb-4">Who can join?</h2>
 
-        <p class="py-2 btc-3">
+        <p class="mb-0 btc-3">
           Secured by ID.me or a military email, Crewdogs verifies Active Duty, National Guard, Reserves, Veterans,
           Retirees,
           Military Spouses, Surviving Spouses, Immediate Military Family Members, Dependents, and Parents.</p>
@@ -672,11 +672,9 @@
 
 
 
-  <section>
+  <section class="pt-5">
     <div class="container-xxl container-sm">
       <h3 class="mb-4">Reviews from our community</h2>
-
-
 
         <div class="review-box">
           <div class="item">
@@ -845,6 +843,8 @@
 
 
   </section>
+
+  
 </section>
 
   <footer class="desktop-version-footer">
@@ -950,6 +950,13 @@
   </script>
 
 <script>
+
+function canIJoin() {
+  const element = document.getElementById("can-i-join");
+  const yOffset = -50; 
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({top: y, behavior: 'smooth'});
+}
   //index header 
   window.addEventListener('scroll', function () {
       // Check if window width is greater than or equal to 700px

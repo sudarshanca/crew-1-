@@ -245,10 +245,11 @@ a.btn-brand:hover {
   .hero-search {
     margin-top: 150px;
     max-width: 80%;
+
   }
 
   .hero-search .btn-primary {
-    border-radius: 0 0 16px 16px;
+    border-radius: 2rem;
     width: 100%;
   }
 
@@ -260,6 +261,7 @@ a.btn-brand:hover {
     flex-direction: column !important;
     width: 100%;
     margin-bottom: -1px;
+    gap: 10px;
   }
 
   .hero-search .search-box .hero-down {
@@ -268,8 +270,8 @@ a.btn-brand:hover {
     text-align: left;
   }
 
-  .hero-search .search-box .dropdown:first-child {
-    border-radius: 16px 16px 0 0;
+  .hero-search .search-box .dropdown {
+    border-radius: 2rem !important;
   }
 
   .hero-search .search-box .dropdown .dropdown-toggle::after {

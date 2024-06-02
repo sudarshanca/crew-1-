@@ -52,7 +52,7 @@
 <section class="hero-section hero-section-1 pt-0 pb-0" style="overflow: hidden;">
   <div class="header-section " id="bg-white"
     style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;"  >
-    <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
+    <header class="home-header d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
       <div class="col-md-3 mb-md-0 d-flex align-items-center">
         <!--logo-->
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
@@ -648,7 +648,7 @@
   </section>
 
 
-  <section id="item-why" class="mb-5" style="padding: 5rem 0;" >
+  <section id="item-why" class="mb-3" style="padding: 5rem 0;" >
     <div class="container-xxl container-sm">
       <h3  class="mb-4">Who can join?</h2>
 
@@ -924,6 +924,7 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
+
   <script>
     $('.burger, .overlay').click(function () {
       $('.burger').toggleClass('clicked');
@@ -989,6 +990,19 @@
     </script>
 
 <script>
+  //mobile search bar
+let prevScrollPos = window.pageYOffset;
+const scrollThreshold = 550; // Adjust this value to control when the search bar should appear
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (currentScrollPos > scrollThreshold) {
+    document.getElementById("search-bar").style.top = "0";
+  } else {
+    document.getElementById("search-bar").style.top = "-150px"; // Adjust based on the height of your search bar
+  }
+  prevScrollPos = currentScrollPos;
+}
 //mobile footer
 let lastScrollTop = 0;
 

@@ -195,4 +195,13 @@
     .discover-box .item{
         aspect-ratio: 16/13 !important;
   }
+
+ .discover-main {
+    }
+}
+@media (max-width:600px) {
+
+ .discover-main {
+    padding: 0 .3rem !important;
+    }
 }

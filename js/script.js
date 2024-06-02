@@ -248,4 +248,3 @@ $(document).ready(function () {
     dots[slideIndex - 1].classList.add("active-dot");
 
 
-

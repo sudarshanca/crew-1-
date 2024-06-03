@@ -925,8 +925,6 @@ ul.cd-highlights b {
 
 .eligibleListContainer h2 {
   color: #1E1E20;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "DM Sans";
   font-size: 28px;
   font-style: normal;
@@ -994,8 +992,6 @@ ul.cd-highlights b {
 .leftSideLoginEntry h1 {
   color: #1E1E20;
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "DM Sans";
   font-size: 28px;
   font-style: normal;

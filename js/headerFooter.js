@@ -37,7 +37,6 @@ $(function () {
     $("#calander").load("calander.html");
 });
 
-
 //mobile search bar
 let prevScrollPos = window.pageYOffset;
 const scrollThreshold = 550; // Adjust this value to control when the search bar should appear

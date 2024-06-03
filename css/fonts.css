@@ -1,8 +1,6 @@
 .who-can-join {
   color: var(--Grayscale-Gray-100, #1E1E20);
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
   font-size: 20px;
   font-weight: 500;
   line-height: 118%;
@@ -873,8 +871,6 @@
 
 .dashboard-font-9 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  leading-trim: both;
-  text-edge: cap;
   font-size: 24px;
   font-weight: 700;
   line-height: normal;

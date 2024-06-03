@@ -3,9 +3,7 @@
   text-align: center;
   leading-trim: both;
   text-edge: cap;
-  font-family: "DM Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 118%;
   /* 23.6px */
@@ -13,14 +11,12 @@
 }
 
 .review-card h3 {
-font-size: 24px;
+  font-size: 24px;
 }
 
 .header-font {
   color: #444;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.56px;
@@ -30,9 +26,7 @@ font-size: 24px;
 .header-font-1 {
   color: #333;
   font-feature-settings: 'cv04' on, 'ss03' on, 'cv03' on, 'cv01' on;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: 145%;
   /* 40.6px */
@@ -41,9 +35,7 @@ font-size: 24px;
 
 .font-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -1px;
@@ -54,9 +46,7 @@ font-size: 24px;
 
 .details-header-font-1 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.48px;
@@ -64,9 +54,7 @@ font-size: 24px;
 
 .details-header-font-2 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 162.5% */
@@ -77,9 +65,7 @@ font-size: 24px;
   overflow: hidden;
   color: var(--BLACK, #444);
   text-overflow: ellipsis;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 162.5% */
@@ -88,9 +74,7 @@ font-size: 24px;
 
 .details-header-font-4 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -99,9 +83,7 @@ font-size: 24px;
 
 .details-header-font-5 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 162.5% */
@@ -110,9 +92,7 @@ font-size: 24px;
 
 .details-header-font-6 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 18px;
   /* 112.5% */
@@ -123,9 +103,7 @@ font-size: 24px;
 
 .details-header-font-7 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   /* 112.5% */
@@ -136,9 +114,7 @@ font-size: 24px;
 
 .details-header-font-8 {
   color: var(--PRIMARY-MAIN, #0D99FF);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 18px;
   /* 112.5% */
@@ -149,9 +125,7 @@ font-size: 24px;
 .personalinfor-nav {
   color: var(--GREY, #747474);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 128.571% */
@@ -160,9 +134,7 @@ font-size: 24px;
 .personalinfor-header {
   color: #000;
   font-feature-settings: 'ss03' on;
-  font-family: "DM Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 36px;
   /* 180% */
@@ -170,9 +142,7 @@ font-size: 24px;
 
 .personalinfor-header-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 112.5% */
@@ -185,9 +155,7 @@ font-size: 24px;
 .addpaymentmethod-font-1 {
   color: var(--Grayscale-Gray-100, #1E1E20);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 118%;
   /* 33.04px */
@@ -197,9 +165,7 @@ font-size: 24px;
 .addpaymentmethod-font-2 {
   color: var(--GREY, #747474);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -208,9 +174,7 @@ font-size: 24px;
 
 .addpaymentmethod-font-3 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.078px;
@@ -223,9 +187,7 @@ font-size: 24px;
   color: var(--Grayscale-Gray-80, #4B4B4D);
   text-align: center;
 
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 118%;
   /* 33.04px */
@@ -237,9 +199,7 @@ font-size: 24px;
 
 .pi-font-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 112.5% */
@@ -248,9 +208,7 @@ font-size: 24px;
 
 .pi-delete-font {
   color: var(--System-Alert-Alert-50, #FF554A);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 128.571% */
@@ -260,9 +218,7 @@ font-size: 24px;
 
 .pi-font-2 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.32px;
@@ -270,9 +226,7 @@ font-size: 24px;
 
 .pi-font-3 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.28px;
@@ -280,9 +234,7 @@ font-size: 24px;
 
 .pi-font-4 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -292,9 +244,7 @@ font-size: 24px;
 
 .pi-font-4-1 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   /* 150% */
@@ -303,9 +253,7 @@ font-size: 24px;
 
 .pi-font-5 {
   color: var(--Grayscale-Gray-100, #1E1E20);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 21px;
   /* 116.667% */
@@ -314,9 +262,7 @@ font-size: 24px;
 
 .your-payout-font {
   color: var(--Grayscale-Gray-100, #1E1E20);
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 118%;
   /* 33.04px */
@@ -325,9 +271,7 @@ font-size: 24px;
 
 .pi-font-6 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 21px;
   /* 131.25% */
@@ -336,9 +280,7 @@ font-size: 24px;
 
 .pi-font-6-1 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 128.571% */
@@ -347,9 +289,7 @@ font-size: 24px;
 
 .pi-font-7 {
   color: #000;
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
   /* 91.667% */
@@ -357,9 +297,7 @@ font-size: 24px;
 
 .pi-font-7-1 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -374,9 +312,7 @@ font-size: 24px;
 .pe-font-1 {
   color: var(--Grayscale-Gray-100, #1E1E20);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 118%;
   /* 33.04px */
@@ -387,9 +323,7 @@ font-size: 24px;
 /* payment history fonts*/
 .ph-font-1 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -398,9 +332,7 @@ font-size: 24px;
 
 .ph-font-2 {
   color: #ACACB0;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 21px;
   /* 150% */
@@ -409,9 +341,7 @@ font-size: 24px;
 
 .ph-font-3 {
   color: #0D99FF;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 21px;
   /* 131.25% */
@@ -426,7 +356,6 @@ font-size: 24px;
 .login-header-fonts {
   color: var(--Grayscale-Gray-80, #4B4B4D) !important;
   text-align: center;
-  font-family: "DM Sans";
   font-size: 28px !important;
   font-style: normal !important;
   font-weight: 500 !important;
@@ -439,9 +368,7 @@ font-size: 24px;
 
 .msg-font-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 36px;
   /* 225% */
@@ -451,9 +378,7 @@ font-size: 24px;
   overflow: hidden;
   color: var(--GREY, #747474);
   text-overflow: ellipsis;
-  font-family: "DM Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 169.231% */
@@ -461,9 +386,7 @@ font-size: 24px;
 
 .msg-font-3 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 183.333% */
@@ -471,9 +394,7 @@ font-size: 24px;
 
 .msg-font-4 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   /* 200% */
@@ -481,9 +402,7 @@ font-size: 24px;
 
 .msg-font-5 {
   color: #B9B9B9;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 157.143% */
@@ -492,9 +411,7 @@ font-size: 24px;
 .msg-font-6 {
   color: var(--BLACK, #444);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 137.5% */
@@ -502,9 +419,7 @@ font-size: 24px;
 
 .msg-font-7 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 157.143% */
@@ -512,27 +427,21 @@ font-size: 24px;
 
 .msg-font-8 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
 .msg-font-9 {
   color: #B9B9B9;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .msg-font-10 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 157.143% */
@@ -541,9 +450,7 @@ font-size: 24px;
 /* msg sidebar font*/
 .msg-side-font-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   /* 257.143% */
@@ -551,9 +458,7 @@ font-size: 24px;
 
 .msg-side-font-2 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   /* 225% */
@@ -561,9 +466,7 @@ font-size: 24px;
 
 .msg-side-font-3 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 36px;
   /* 257.143% */
@@ -571,9 +474,7 @@ font-size: 24px;
 
 .msg-side-font-4 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.14px;
@@ -581,9 +482,7 @@ font-size: 24px;
 
 .msg-side-font-5 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.32px;
@@ -591,9 +490,7 @@ font-size: 24px;
 
 .msg-side-font-6 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.12px;
@@ -601,9 +498,7 @@ font-size: 24px;
 
 .msg-side-font-7 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 25px;
   /* 156.25% */
@@ -611,9 +506,7 @@ font-size: 24px;
 
 .msg-side-font-8 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 25px;
   /* 208.333% */
@@ -621,9 +514,7 @@ font-size: 24px;
 
 .msg-side-font-9 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   /* 200% */
@@ -632,9 +523,7 @@ font-size: 24px;
 
 .msg-side-font-10 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 25px;
   /* 156.25% */
@@ -642,9 +531,7 @@ font-size: 24px;
 
 .msg-side-font-11 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 25px;
   /* 178.571% */
@@ -652,9 +539,7 @@ font-size: 24px;
 
 .msg-side-font-12 {
   color: var(--Primary-Primary-50, #0D99FF);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 150% */
@@ -663,9 +548,7 @@ font-size: 24px;
 
 .msg-side-font-13 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   /* 138.462% */
@@ -674,9 +557,7 @@ font-size: 24px;
 
 .msg-side-font-14 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 112.5% */
@@ -687,9 +568,7 @@ font-size: 24px;
   color: var(--BLACK, #444);
 
   /* Default/Regular/Body */
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 137.5% */
@@ -698,9 +577,7 @@ font-size: 24px;
 
 .msg-side-font-16 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px;
   /* 200% */
@@ -711,9 +588,7 @@ font-size: 24px;
 
 .msg-side-font-17 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 25px;
   /* 156.25% */
@@ -721,9 +596,7 @@ font-size: 24px;
 
 .msg-side-font-18 {
   color: var(--Grayscale-Gray-60, #ACACB0);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 25px;
   /* 156.25% */
@@ -732,9 +605,7 @@ font-size: 24px;
 
 .msg-side-font-19 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 25px;
   /* 208.333% */
@@ -742,9 +613,7 @@ font-size: 24px;
 
 .msg-side-font-20 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 138%;
   /* 19.32px */
@@ -755,9 +624,7 @@ font-size: 24px;
 .repot-popup-font-1 {
   color: var(--Grayscale-Gray-100, #1E1E20);
   /* Default/Bold/Title1 */
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.36px;
@@ -767,9 +634,7 @@ font-size: 24px;
 
 .offer-header-font-1 {
   color: #222;
-  font-family: "DM Sans";
   font-size: 26px;
-  font-style: normal;
   font-weight: 500;
   line-height: 30px;
   /* 115.385% */
@@ -777,9 +642,7 @@ font-size: 24px;
 
 .offer-header-font-2 {
   color: var(--Grayscale-Gray-100, #1E1E20);
-  font-family: "DM Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
   /* 110% */
@@ -788,9 +651,7 @@ font-size: 24px;
 
 .offer-header-font-3 {
   color: var(--Grayscale-Gray-100, #1E1E20);
-  font-family: "DM Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   /* 169.231% */
@@ -799,9 +660,7 @@ font-size: 24px;
 
 .offer-header-font-4 {
   color: var(--Grayscale-Gray-60, #ACACB0);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -809,9 +668,7 @@ font-size: 24px;
 .offer-header-font-5 {
   color: var(--BLACK, #444);
   text-align: right;
-  font-family: "DM Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.4px;
@@ -821,9 +678,7 @@ font-size: 24px;
 .popup-font {
   color: var(--Grayscale-Gray-100, #1E1E20);
   /* Default/Bold/Headline */
-  font-family: "DM Sans";
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
   line-height: 22px;
   /* 129.412% */
@@ -834,9 +689,7 @@ font-size: 24px;
   color: var(--Grayscale-Gray-80, #4B4B4D);
 
   /* Default/Bold/Subheadline */
-  font-family: "DM Sans";
   font-size: 15px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   /* 133.333% */
@@ -845,9 +698,7 @@ font-size: 24px;
 
 .popup-font-3 {
   color: var(--Grayscale-Gray-60, #ACACB0);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   /* 128.571% */
@@ -857,16 +708,12 @@ font-size: 24px;
 .popup-font-4 {
   color: #FFF;
   text-align: center;
-
   /* Default/Regular/Caption2 */
-  font-family: "DM Sans";
   font-size: 11px;
-  font-style: normal;
   font-weight: 400;
   line-height: 17px;
   /* 154.545% */
   letter-spacing: -0.07px;
-
   border-radius: 12px;
   border: 0.5px solid var(--White-White-24, rgba(255, 255, 255, 0.24));
   background: rgba(0, 0, 0, 0.20);
@@ -875,9 +722,7 @@ font-size: 24px;
 
 .mobile-profile-font-1 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 700;
   line-height: 18px;
   /* 138.462% */
@@ -886,9 +731,7 @@ font-size: 24px;
 
 .mobile-profile-font-2 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   /* 150% */
@@ -897,9 +740,7 @@ font-size: 24px;
 
 .accept-and-decline {
   color: #222;
-  font-family: "DM Sans";
   font-size: 26px;
-  font-style: normal;
   font-weight: 500;
   line-height: 30px;
   /* 115.385% */
@@ -910,9 +751,7 @@ font-size: 24px;
 
 .product-slider-font-1 {
   color: #FFF;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.28px;
@@ -920,9 +759,7 @@ font-size: 24px;
 
 .product-slider-font-2 {
   color: #FFF;
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.48px;
@@ -930,9 +767,7 @@ font-size: 24px;
 
 .product-slider-font-3 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.56px;
@@ -951,9 +786,7 @@ font-size: 24px;
 
 .header-dropdown-font-1 {
   color: #FFF;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 138%;
   /* 19.32px */
@@ -962,9 +795,7 @@ font-size: 24px;
 
 .header-dropdown-font-2 {
   color: #444;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 138%;
   /* 19.32px */
@@ -973,9 +804,7 @@ font-size: 24px;
 
 .dashboard-font-1 {
   color: #222;
-  font-family: "DM Sans";
   font-size: 32px;
-  font-style: normal;
   font-weight: 500;
   line-height: 36px;
   /* 112.5% */
@@ -984,9 +813,7 @@ font-size: 24px;
 
 .dashboard-font-2 {
   color: #222;
-  font-family: "DM Sans";
   font-size: 26px;
-  font-style: normal;
   font-weight: 500;
   line-height: 30px;
   /* 115.385% */
@@ -995,9 +822,7 @@ font-size: 24px;
 .dashboard-font-3 {
   color: var(--BLACK, #444);
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
   /* 166.667% */
@@ -1006,9 +831,7 @@ font-size: 24px;
 .dashboard-font-4 {
   color: var(--Primary-Primary-50, #0D99FF);
   text-align: center;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   /* 128.571% */
@@ -1017,9 +840,7 @@ font-size: 24px;
 
 .dashboard-font-5 {
   color: #222;
-  font-family: "DM Sans";
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 36px;
   /* 128.571% */
@@ -1028,9 +849,7 @@ font-size: 24px;
 .dashboard-font-6 {
   color: #000;
   font-feature-settings: 'ss03' on;
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 36px;
   /* 200% */
@@ -1038,9 +857,7 @@ font-size: 24px;
 
 .dashboard-font-7 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 25.2px;
   /* 180% */
@@ -1048,9 +865,7 @@ font-size: 24px;
 
 .dashboard-font-8 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 25.2px;
   /* 140% */
@@ -1060,9 +875,7 @@ font-size: 24px;
   color: var(--Grayscale-Gray-80, #4B4B4D);
   leading-trim: both;
   text-edge: cap;
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.32px;
@@ -1070,9 +883,7 @@ font-size: 24px;
 
 .dashboard-font-10 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   /* 175% */
@@ -1081,9 +892,7 @@ font-size: 24px;
 
 .dashboard-font-11 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 25px;
   /* 138.889% */
@@ -1091,9 +900,7 @@ font-size: 24px;
 
 .dashboard-font-12 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -1102,9 +909,7 @@ font-size: 24px;
 
 .dashboard-font-13 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.078px;
@@ -1112,9 +917,7 @@ font-size: 24px;
 
 .dashboard-font-14 {
   color: #000;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
   /* 137.5% */
@@ -1122,9 +925,7 @@ font-size: 24px;
 
 .dashboard-font-15 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   /* 177.778% */
@@ -1133,9 +934,7 @@ font-size: 24px;
 
 .dashboard-font-16 {
   color: var(--GREY, #747474);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -1144,9 +943,7 @@ font-size: 24px;
 
 .dashboard-font-16 span {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.078px;
@@ -1154,9 +951,7 @@ font-size: 24px;
 
 .dashboard-font-17 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.078px;
@@ -1164,9 +959,7 @@ font-size: 24px;
 
 .dashboard-font-18 {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.078px;
@@ -1175,9 +968,7 @@ font-size: 24px;
 .dashboard-font-19 {
   color: var(--Primary-Primary-50, #0D99FF);
   text-align: right;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   /* 131.25% */
@@ -1186,29 +977,26 @@ font-size: 24px;
 
 .dashboard-font-20 {
   color: #222;
-font-family: "DM Sans";
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: 36px; /* 128.571% */
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  /* 128.571% */
 }
+
 .dashboard-font-21 {
   color: #444;
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 138%; /* 19.32px */
-letter-spacing: -0.28px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 138%;
+  /* 19.32px */
+  letter-spacing: -0.28px;
 }
 
 
 .input-fonts,
 .input-fonts::placeholder {
   color: var(--Grayscale-Gray-60, #ACACB0);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   /* 185.714% */
@@ -1236,9 +1024,7 @@ letter-spacing: -0.28px;
 
 .conformed-declined-icon {
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   /* 300% */
@@ -1258,9 +1044,7 @@ letter-spacing: -0.28px;
   background-color: white;
   border-radius: 8px;
   color: var(--BLACK, #444);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
 }
 
@@ -1275,17 +1059,12 @@ letter-spacing: -0.28px;
   background: var(--Primary-Primary-50, #0D99FF);
   border: none;
   color: #FFF;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 138%;
   /* 19.32px */
   letter-spacing: -0.28px;
 }
-
-
-
 
 .location-icon {
   width: 48px;
@@ -1297,7 +1076,6 @@ letter-spacing: -0.28px;
   border: 1px solid #4444;
 }
 
-
 .button-edit-delet {
   display: flex;
   padding: 12px;
@@ -1307,11 +1085,309 @@ letter-spacing: -0.28px;
   border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
   background: var(--White-White-100, #FFF);
   color: var(--Grayscale-Gray-80, #4B4B4D);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   /* 128.571% */
   letter-spacing: -0.078px;
+}
+
+/* ---------------------------
+fonts
+----------------------------*/
+.trips {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.customg {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.add-my-plan {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.83px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+}
+
+.adress {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+}
+
+.timedate {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+}
+
+.travel {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #222222;
+}
+
+.fav-title .title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.40799999237060547px;
+  text-align: left;
+}
+
+.fav-title .fav-city {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+}
+
+.rating {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #4B4B4D;
+}
+
+.welcome-page-heading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36.46px;
+  letter-spacing: -0.36000001430511475px;
+  text-align: left;
+}
+
+.welcome-page-para {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.welcome-tick-para {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+
+/*font styles */
+
+.tx-lite {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+}
+
+.tx-lite-1 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+}
+
+
+.tx-dark {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  color: #1E1E20;
+
+}
+
+.tx-dark-2 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.tx-photo {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+
+.srtting-tx {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.83px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #444444;
+}
+
+.tx-dark-3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.04px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #1E1E20;
+}
+
+.tx-acc-num {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  color: #4B4B4D;
+}
+
+
+.help-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  color: #747474;
+}
+
+
+
+/* font styles  */
+.dm-small-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.dm-small-2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+}
+
+.dm-small-3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.83px;
+  text-align: left;
+
+}
+
+.dm-small-4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+}
+
+.dm-bold-1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.dm-bold-2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.04px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.dm-bold-3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+}
+
+.dm-bold-4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+}
+
+.dm-bold-05 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: center;
+}
+
+.dm-bold-6 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.0008em;
+  text-align: left;
+
+}
+
+.dm-show-map-font {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.23px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.mobile-text-footer {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13.02px;
+  text-align: center;
+
+}
+
+.custom-search {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.0008em;
+  text-align: left;
+  color: #4B4B4D;
 }

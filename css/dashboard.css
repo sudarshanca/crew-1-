@@ -798,3 +798,112 @@ text-decoration-line: underline;
     width: 100% !important;
   }
 }
+
+
+
+/*-----------------------------
+myplace.html
+------------------------------*/
+.custom-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.custom-carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-slide img {
+  width: 100%;
+  aspect-ratio: 16/13;
+}
+
+.custom-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.custom-dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+
+.custom-dot.active {
+  background-color: #747474;
+}
+
+.buttons-edit-calander {
+display: flex;
+gap: 1rem;
+position: absolute;
+bottom: 1rem;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.edit-button {
+display: flex;
+width: 116px;
+padding: 10px 16px;
+align-items: center;
+gap: 2px;
+border-radius: 16px;
+border: 1px solid #E7E7E7;
+background: var(--Gray-04, #FCFCFC);
+}
+
+.listing-footer {
+display: flex;
+justify-content: space-between;
+}
+.listing-footer div {
+display: flex;
+gap: 5px;
+}
+.m-r-1rem {
+margin-right: 1rem;
+}
+.header-icon div {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.listing-name {
+color: #FFF;
+text-align: center;
+font-size: 11px;
+line-height: 17px; /* 154.545% */
+letter-spacing: -0.07px;
+
+display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+border-radius: 12px;
+border: 0.5px solid var(--White-White-24, rgba(255, 255, 255, 0.24));
+background: rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(12px);
+
+position: absolute;
+top: 15%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}

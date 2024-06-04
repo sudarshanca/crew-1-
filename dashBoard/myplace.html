@@ -176,67 +176,69 @@
 
   <script src="../js/bootstrap.bundle.min.js"></script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const carousels = document.querySelectorAll('.custom-book-gallery');
-
-    carousels.forEach(carousel => {
-        const slides = carousel.querySelectorAll('.custom-carousel-slide img');
-        const dotsContainer = carousel.querySelector('.custom-dots');
-        const carouselSlide = carousel.querySelector('.custom-carousel-slide');
-        let currentIndex = 0;
-        let startX, endX;
-
-        // Create dots
-        slides.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.classList.add('custom-dot');
-            if (index === 0) dot.classList.add('active');
-            dotsContainer.appendChild(dot);
-        });
-
-        const dots = dotsContainer.querySelectorAll('.custom-dot');
-
-        function showSlide(index) {
-            const slideWidth = slides[0].clientWidth;
-            carouselSlide.style.transform = `translateX(${-index * slideWidth}px)`;
-
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[index].classList.add('active');
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                showSlide(currentIndex);
-            });
-        });
-
-
-        // Swipe functionality
-        carouselSlide.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-
-        carouselSlide.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        });
-
-        carouselSlide.addEventListener('touchend', () => {
-            if (startX > endX) {
-                // Swipe left
-                currentIndex = (currentIndex + 1) % slides.length;
-            } else if (startX < endX) {
-                // Swipe right
-                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            }
-            showSlide(currentIndex);
-        });
-    });
-});
-
-</script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousels = document.querySelectorAll('.custom-book-gallery');
+  
+      carousels.forEach(carousel => {
+          const slides = carousel.querySelectorAll('.custom-carousel-slide img');
+          const dotsContainer = carousel.querySelector('.custom-dots');
+          const carouselSlide = carousel.querySelector('.custom-carousel-slide');
+          let currentIndex = 0;
+          let startX, endX;
+          const threshold = 20; // Swipe threshold in pixels
+  
+          // Create dots
+          slides.forEach((_, index) => {
+              const dot = document.createElement('span');
+              dot.classList.add('custom-dot');
+              if (index === 0) dot.classList.add('active');
+              dotsContainer.appendChild(dot);
+          });
+  
+          const dots = dotsContainer.querySelectorAll('.custom-dot');
+  
+          function showSlide(index) {
+              const slideWidth = slides[0].clientWidth;
+              carouselSlide.style.transform = `translateX(${-index * slideWidth}px)`;
+  
+              dots.forEach(dot => dot.classList.remove('active'));
+              dots[index].classList.add('active');
+          }
+  
+          dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                  currentIndex = index;
+                  showSlide(currentIndex);
+              });
+          });
+  
+          // Swipe functionality
+          carouselSlide.addEventListener('touchstart', (e) => {
+              startX = e.touches[0].clientX;
+          });
+  
+          carouselSlide.addEventListener('touchmove', (e) => {
+              endX = e.touches[0].clientX;
+          });
+  
+          carouselSlide.addEventListener('touchend', () => {
+              const distance = endX - startX;
+              if (Math.abs(distance) > threshold) {
+                  if (distance < 0) {
+                      // Swipe left
+                      currentIndex = (currentIndex + 1) % slides.length;
+                  } else {
+                      // Swipe right
+                      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  }
+                  showSlide(currentIndex);
+              }
+          });
+      });
+  });
+  </script>
+  
 </body>
 
 </html>

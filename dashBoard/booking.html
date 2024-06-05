@@ -192,6 +192,30 @@
   </script>
       <script src="../js/jquery-3.7.1.js"></script>
       <script src="dashboard.js"></script>
+      <script>
+        $('.burger, .overlay').click(function () {
+          $('.burger').toggleClass('clicked');
+          $('.overlay').toggleClass('show');
+          $('nav').toggleClass('show');
+          $('body').toggleClass('overflow');
+        });
+    
+        $(function () {
+          var header = $(".navbar");
+    
+          $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+              header.addClass("scrolled");
+              header.removeClass("navbar-inverse");
+    
+            } else {
+              header.removeClass("scrolled");
+            }
+          });
+    
+        });
+      </script>
 
 </body>
 

@@ -16,10 +16,36 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+ <style>
+  @media (max-width:1000px) {
+    .flex-wrap-1000 {
+      flex-direction: column !important;
+    }
+    .book-main {
+      margin: auto;
+    }
+  }
+ </style>
 </head>
 
 <body>
+
+   <div id="search-bar" class="search-main " >
+    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2">
+      <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
+        style="border-radius: 2rem; padding: 6px 16px;">
+        <div>
+          <img src="img/Search 2.png" width="20px" height="20px" alt="">
+        </div>
+        <div class="">
+          <p class="dm-bold-6 m-0" style="color: #4B4B4D;">Where to?</p>
+          <p class="custom-search m-0 p-0" style="color: #4B4B4D;">
+            Anytime • Add guests
+          </p>
+        </div>
+      </div>
+      </div>
+      </div>
 
  <div id="header2"></div>
 
@@ -27,7 +53,7 @@
 
   <main class="mx-auto d-flex align-items-start gap-4 "
     style="max-width: 1450px; margin-top: 5rem; color: #fff; height:fit-content ;">
-  <section class=" container d-flex gap-3 justify-content-evenly">
+  <section class=" container flex-wrap-1000 d-flex gap-3 justify-content-evenly">
 
  
     <div class="listing-map" style="background-color: #fff; width: 60%; position: relative;">
@@ -154,14 +180,42 @@
  
  <div id="footer"></div>
 
-
-  <script src="./script.js"></script>
-  <script src="./script.js"></script>
     <script src="js/jquery-3.7.1.js"></script>
   <script src="./js/headerFooter.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  
+
   <script>
+  //mobile search bar
+  let prevScrollPos = window.pageYOffset;
+const scrollThreshold = 10; // Adjust this value to control when the search bar should appear
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (currentScrollPos > scrollThreshold) {
+    document.getElementById("search-bar").style.top = "0";
+  } else {
+    document.getElementById("search-bar").style.top = "-150px"; // Adjust based on the height of your search bar
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+//mobile footer
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll down
+    document.getElementById("mobileFooter").style.transform = "translateY(100%)";
+  } else {
+    // Scroll up
+    document.getElementById("mobileFooter").style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
+
     $(document).ready(function() {
       var currentPage = 1;
       var totalPages = 10; // You can change this to the total number of pages

@@ -1,7 +1,9 @@
 body,
 html {
-  overflow-x: hidden;
   font-size: 18px;
+}
+.book-gallery a {
+  text-decoration: none;
 }
 
 .btn-rounded {

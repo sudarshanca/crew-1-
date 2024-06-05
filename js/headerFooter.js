@@ -37,19 +37,6 @@ $(function () {
     $("#calander").load("calander.html");
 });
 
-//mobile search bar
-let prevScrollPos = window.pageYOffset;
-const scrollThreshold = 550; // Adjust this value to control when the search bar should appear
-
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (currentScrollPos > scrollThreshold) {
-    document.getElementById("search-bar").style.top = "0";
-  } else {
-    document.getElementById("search-bar").style.top = "-150px"; // Adjust based on the height of your search bar
-  }
-  prevScrollPos = currentScrollPos;
-}
 
 // Call the function to load header and footer when the DOM is loaded
 document.addEventListener('DOMContentLoaded', loadHeaderAndFooter);

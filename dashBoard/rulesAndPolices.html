@@ -12,7 +12,10 @@
   <link href="../css/slick-slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/s-custom.css">
+  <link rel="stylesheet" href="../css/scrollbar.css">
   <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/message.css">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
@@ -158,9 +161,9 @@
     <hr class="mt-0">
   </div>
 
-  <div class="container mobile-padding-none" style="max-width: 1550px;">
-    <div class="d-flex flex-wrap justify-content-between align-items-start container">
-      <div class="mobile-flex">
+  <div class="container" style="max-width: 1550px;">
+    <div class="d-flex justify-content-between align-items-start container">
+      <div class="">
         <p class=" dashboard-font-5">A small room in denver</p>
         <div class="mb-0 pi-font-4 d-flex gap-1 align-items-center">
           Change listing
@@ -189,8 +192,8 @@
 
   <hr>
 
-  <div class="container mobile-padding-none" style="max-width: 1550px;">
-    <div class="container mobile-padding-none d-flex justify-content-evenly align-items-start">
+  <div class="container" style="max-width: 1550px;">
+    <div class="container d-flex justify-content-evenly align-items-start">
       <div class="left-l-d">
         <div class="1">
           <p class="ph-font-2" style="color: #4b4b4d;">Listing details</p>
@@ -347,31 +350,33 @@
           <hr class="mt-0">
           <div class="p-3">
           <p class="dashboard-font-14 ">Check-in window</p>
-             <div class="d-flex dropdown-time dropdown-time-1  border" >
-              <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+             <div class=" dropdown-time  border" >
+              <select class="" aria-label="Default select example">
+                <option selected>Starting Time</option>
+                <option value="1">12:00</option>
+                <option value="1">1:00</option>
+                <option value="2">2:00</option>
+                <option value="3">3:00</option>
               </select>
-              <div class="divider-line"></div>
-              <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+
+              <select class="" aria-label="Default select example">
+                <option selected>End time</option>
+                <option value="1">12:00</option>
+                <option value="1">1:00</option>
+                <option value="2">2:00</option>
+                <option value="3">3:00</option>
               </select>
              </div>
           </div>
           <div class="p-3">
             <p class="dashboard-font-14 ">Check-in window</p>
-            <div class="dropdown-time dropdown-time-2" >
-              <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+            <div class=" dropdown-time  border" >
+             <select class="" aria-label="Default select example">
+               <option selected>Starting Time</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
           </div>
         </div>
         <hr>
@@ -400,7 +405,7 @@
           <p class="dashboard-font-16">Long-term: <span> Standard</span></p>
         </div>
 
-        <div class="border p-3" style="border-radius: 1rem;">
+        <div class="boder p-3">
           <p class="dashboard-font-18">Short-term</p>
           <div class="d-flex align-items-center">
             <div class="form-check">

@@ -14,7 +14,3 @@ $(function () {
 $(function () {
   $("#rulesAndPolices1").load("rulesAndPolices1.html");
 });
-
-$(function () {
-  $("#dashboardHeader").load("dashboardHeader.html");
-});

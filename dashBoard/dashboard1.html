@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../css/scrollbar.css">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/message.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
@@ -53,99 +54,20 @@
       background: #FFF;
     }
 
+    .date-box-active p {
+      color: #0D99FF;
+    }
+
+
     .scroll-body-calander::-webkit-scrollbar {
       display: none !important;
-    }
-
-    .coll {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      min-width: fit-content;
-    }
-
-    .activeblu {
-      color: #0D99FF;
-      background-color: #F3FAFE;
-      border: 1px solid #F3FAFE;
-    }
-
-    .dashboard-items {
-      display: block;
-      margin-bottom: 3rem;
-    }
-
-    .dashboard-item {
-      width: 293px;
-      border-radius: 10px;
-      border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-      background: var(--White-White-100, #FFF);
-    }
-
-    .dashboard-item p {
-      line-height: 21px !important;
-    }
-
-    .dashboard-item hr {
-      border: 1px solid rgba(214, 215, 216, 0.8);
-      margin: 0 !important;
-    }
-
-    .dashboard-item-top {
-      padding: 24px;
-      width: 100%;
-    }
-
-    .dashboard-item-bottom {
-      display: flex;
-      padding: 16px 24px;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 10px;
-      align-self: stretch;
-      color: var(--GREY, #747474);
-      font-family: "DM Sans";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 21px;
-      /* 175% */
-      letter-spacing: -0.32px;
-    }
-
-    .dot {
-      display: block !important;
-      color: #acacb0;
-      fill: var(--Grayscale-Gray-60, #ACACB0);
-    }
-    .max-w {
-      max-width: 1550px;
-    }
-
-    @media (max-width:700px) {
-      #profile-mobile-version {
-        display: block !important;
-      }
-
-      .profile-desktop-version {
-        display: none !important;
-      }
-      .overflow {
-        margin-right: 0px !important;
-        padding-right: 0px !important;
-      }
-      .overflow::-webkit-scrollbar {
-   display: none !important;
-}
     }
   </style>
 </head>
 
 <body>
-
   <div>
-    <div class="container">
+    <div class="px-3">
       <div class=" mx-3">
         <div class="w-100">
           <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-2">
@@ -180,11 +102,12 @@
        </ul> -->
               <!--menu items-->
               <div class="d-flex gap-3 align-items-center">
-                <a href="#" class="help-text mb-0 pb-1 link-not-active  " style="color: #444444;">Dashboard</a>
-                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active link-active"
-                  style="color: #444444;">Bookings</a>
+                <a href="dashboard.html" class="help-text mb-0 pb-1 link-not-active  link-active"
+                  style="color: #444444;">Dashboard</a>
+                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active " style="color: #444444;">Bookings</a>
                 <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Calendar</a>
-                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Listings</a>
+                <a href="listingDashboard.html" class="help-text mb-0 pb-1 link-not-active"
+                  style="color: #444444;">Listings</a>
                 <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Inbox</a>
                 <div class="mobile-display-none" style="cursor: pointer;" onclick="toggleNotification()">
                   <svg class="not-selected" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="18"
@@ -218,7 +141,7 @@
                     <hr class="dropdown-divider">
                   </li>
                   <li><a class="dropdown-item header-dropdown-font-2" href="#">Search and traveling</a></li>
-                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Log Out</a></li>
+                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Loh Out</a></li>
                 </ul>
               </div>
             </div>
@@ -230,143 +153,143 @@
     <hr class="mt-0">
   </div>
 
-<div class="container" >
-
-
-  <div class=" mobile-none container max-w">
-    <h1 class="offer-header-font-1">Booking</h1>
-  </div>
-
-  <br>
-  <div class="container max-w overflow" style="overflow-x: scroll;">
-  <div class="d-flex gap-2">
-    <div class="coll col-message-1 activeblu" onclick="showContent('content1')">All bookings</div>
-    <div class="coll col-message-1" onclick="showContent('content2')">Requests</div>
-    <div class="coll col-message-1" onclick="showContent('content3')">Checking out</div>
-    <div class="coll col-message-1" onclick="showContent('content4')">Currently hosting</div>
-    <div class="coll col-message-1" onclick="showContent('content5')">Upcoming </div>
-    <div class="coll col-message-1" onclick="showContent('content6')">Pending review</div>
-  </div>
-</div>
-
-  <section class="container max-w">
-
-    <div class="mt-3">
-
-      <div id="content1" class=" content boxes ">
-        <div class=" dashboard-items w-100 d-flex flex-wrap gap-3">
-
-          <div class="dashboard-item">
-
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Currently hosting</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-              <p class="details-header-font-4 mb-0 d-flex gap-1">July 4 - Aug 8 <span class="dot">•</span>2 Guests</p>
+  <section class="">
+    <div class="container">
+      <h1 class="dashboard-font-1">Welcome, Mob</h1>
+      <br>
+      <br>
+      <div class="d-flex justify-content-between">
+        <p class="mb-0 dashboard-font-2">Schedule</p>
+        <button class="personalinfor-nav border py-2 px-4" style="border-radius: 1rem; background-color: white;">Show
+          Calander</button>
+      </div>
+      <br>
+      <div class="scroll-body-calander" style="overflow-x: scroll;">
+        <div class=" d-flex dashboard-font-3 ">
+          <div class="date-box date-box-active">
+            <div class="d-flex w-100 justify-content-between ">
+              <p class="mb-0">13</p>
+              <p class="mb-0">today</p>
             </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+            <div>No bookings</div>
           </div>
-          <div class="dashboard-item">
-
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #747474;">Upcoming</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-              <p class="details-header-font-4 mb-0 d-flex gap-1">July 4 - Aug 8 <span class="dot">•</span>2 Guests</p>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">12</p>
+              <p class="mb-0"></p>
             </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+            <div>No bookings</div>
           </div>
-          <div class="dashboard-item">
-
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #F06060;">Pending review</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-              <p class="details-header-font-4 mb-0 d-flex gap-1">July 4 - Aug 8 <span class="dot">•</span>2 Guests</p>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">13</p>
+              <p class="mb-0"></p>
             </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+            <div>No bookings</div>
           </div>
-          <div class="dashboard-item">
-
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Arriving today</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-              <p class="details-header-font-4 mb-0 d-flex gap-1">July 4 - Aug 8 <span class="dot">•</span>2 Guests</p>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">14</p>
+              <p class="mb-0"></p>
             </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+            <div>No bookings</div>
           </div>
-          <div class="dashboard-item">
-
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Arriving today</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-              <p class="details-header-font-4 mb-0 d-flex gap-1">July 4 - Aug 8 <span class="dot">•</span>2 Guests</p>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">15</p>
+              <p class="mb-0"></p>
             </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+            <div>No bookings</div>
           </div>
-
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">16</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">17</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">18</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">19</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">20</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">21</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">22</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">23</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
         </div>
       </div>
 
-      <div id="content2" class=" content boxes ">
-        <div class=" dashboard-items w-100 d-flex flex-wrap gap-3">
-
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Arriving today</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
+      <br>
+      <h1 class="dashboard-font-1">Welcome, Mob</h1>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="text-center pb-2">
+          <div class="d-flex gap-2 flex-wrap w-100">
+            <p class="col-message-1 activeblue">Requests</p>
+            <p class="col-message-1">Currently hosting</p>
+            <p class="col-message-1">Upcoming</p>
           </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Currently hosting</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">Dimitri Stanic</p>
-              <p class="details-header-font-4 mb-0">An apartment in texas</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
-          </div>
-
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Currently hosting</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">Dimitri Stanic</p>
-              <p class="details-header-font-4 mb-0">A beach house in Malibu</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
-          </div>
-
         </div>
-
+        <a href="" class="dashboard-font-4">See all Bookings</a>
       </div>
-
-      <div id="content3" class=" content boxes ">3</div>
-      <div id="content4" class=" content boxes ">4</div>
-      <div id="content5" class=" content boxes ">5</div>
-      <div id="content6" class=" content boxes ">6</div>
+      <div class=" w-100 d-flex justify-content-center" style="padding: 3rem 0;">
+        <div class="d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="43" viewBox="0 0 38 43" fill="none">
+            <path
+              d="M11 16.9785C10.4477 16.9785 10 17.4262 10 17.9785C10 18.5308 10.4477 18.9785 11 18.9785V16.9785ZM27 18.9785C27.5523 18.9785 28 18.5308 28 17.9785C28 17.4262 27.5523 16.9785 27 16.9785V18.9785ZM11 24.9785C10.4477 24.9785 10 25.4262 10 25.9785C10 26.5308 10.4477 26.9785 11 26.9785V24.9785ZM27 26.9785C27.5523 26.9785 28 26.5308 28 25.9785C28 25.4262 27.5523 24.9785 27 24.9785V26.9785ZM11 32.9785C10.4477 32.9785 10 33.4262 10 33.9785C10 34.5308 10.4477 34.9785 11 34.9785V32.9785ZM17 34.9785C17.5523 34.9785 18 34.5308 18 33.9785C18 33.4262 17.5523 32.9785 17 32.9785V34.9785ZM5.12215 40.0687L5.70993 39.2597L5.12215 40.0687ZM2.90983 37.8564L3.71885 37.2686L2.90983 37.8564ZM35.0902 37.8564L34.2812 37.2686L35.0902 37.8564ZM32.8779 40.0687L32.2901 39.2597L32.8779 40.0687ZM32.8779 3.88835L33.4656 3.07933L32.8779 3.88835ZM35.0902 6.10066L34.2812 6.68845L35.0902 6.10066ZM5.12215 3.88835L5.70993 4.69736L5.12215 3.88835ZM2.90983 6.10066L3.71885 6.68845L2.90983 6.10066ZM21.2923 11.1691L21.4487 12.1568L21.4487 12.1568L21.2923 11.1691ZM18.1636 11.1691L18.0072 12.1568L18.0072 12.1568L18.1636 11.1691ZM11 18.9785H27V16.9785H11V18.9785ZM11 26.9785H27V24.9785H11V26.9785ZM11 34.9785H17V32.9785H11V34.9785ZM36 19.9785V23.9785H38V19.9785H36ZM2 23.9785V19.9785H0V23.9785H2ZM19 40.9785C15.228 40.9785 12.4793 40.9771 10.3422 40.7456C8.22387 40.5161 6.82538 40.0701 5.70993 39.2597L4.53436 40.8777C6.04757 41.9771 7.83828 42.486 10.1268 42.734C12.3966 42.9799 15.2725 42.9785 19 42.9785V40.9785ZM0 23.9785C0 27.706 -0.00137261 30.5819 0.244547 32.8517C0.492494 35.1402 1.0014 36.931 2.10081 38.4442L3.71885 37.2686C2.90843 36.1531 2.46242 34.7547 2.23291 32.6363C2.00137 30.4992 2 27.7505 2 23.9785H0ZM5.70993 39.2597C4.94588 38.7046 4.27396 38.0326 3.71885 37.2686L2.10081 38.4442C2.77929 39.378 3.60052 40.1992 4.53436 40.8777L5.70993 39.2597ZM36 23.9785C36 27.7505 35.9986 30.4992 35.7671 32.6363C35.5376 34.7547 35.0916 36.1531 34.2812 37.2686L35.8992 38.4442C36.9986 36.931 37.5075 35.1402 37.7555 32.8517C38.0014 30.5819 38 27.706 38 23.9785H36ZM19 42.9785C22.7275 42.9785 25.6034 42.9799 27.8732 42.734C30.1617 42.486 31.9524 41.9771 33.4656 40.8777L32.2901 39.2597C31.1746 40.0701 29.7761 40.5161 27.6578 40.7456C25.5207 40.9771 22.772 40.9785 19 40.9785V42.9785ZM34.2812 37.2686C33.726 38.0326 33.0541 38.7046 32.2901 39.2597L33.4656 40.8777C34.3995 40.1992 35.2207 39.378 35.8992 38.4442L34.2812 37.2686ZM38 19.9785C38 16.2511 38.0014 13.3751 37.7555 11.1053C37.5075 8.81679 36.9986 7.02609 35.8992 5.51288L34.2812 6.68845C35.0916 7.8039 35.5376 9.20239 35.7671 11.3207C35.9986 13.4578 36 16.2065 36 19.9785H38ZM32.2901 4.69736C33.0541 5.25248 33.726 5.9244 34.2812 6.68845L35.8992 5.51288C35.2207 4.57904 34.3995 3.7578 33.4656 3.07933L32.2901 4.69736ZM2 19.9785C2 16.2065 2.00137 13.4578 2.23291 11.3208C2.46242 9.20239 2.90843 7.8039 3.71885 6.68845L2.10081 5.51288C1.0014 7.02609 0.492494 8.81679 0.244547 11.1053C-0.00137261 13.3751 0 16.2511 0 19.9785H2ZM4.53436 3.07933C3.60052 3.7578 2.77929 4.57904 2.10081 5.51288L3.71885 6.68845C4.27396 5.9244 4.94588 5.25248 5.70993 4.69736L4.53436 3.07933ZM21.1358 10.1814C20.2031 10.3292 19.2528 10.3292 18.32 10.1814L18.0072 12.1568C19.1472 12.3374 20.3086 12.3374 21.4487 12.1568L21.1358 10.1814ZM31.1741 2.57386C28.6998 5.04636 26.87 6.84943 25.2806 8.10113C23.7061 9.3411 22.4475 9.9737 21.1358 10.1814L21.4487 12.1568C23.2281 11.875 24.8019 11.0239 26.518 9.67237C28.2192 8.33261 30.1381 6.43652 32.5878 3.98858L31.1741 2.57386ZM19 2.97852C22.3159 2.97852 24.8449 2.97922 26.869 3.13828C28.8897 3.29708 30.309 3.60847 31.4307 4.17412L32.3312 2.38832C30.8696 1.65127 29.1491 1.3113 27.0256 1.14443C24.9054 0.97781 22.2857 0.978516 19 0.978516V2.97852ZM31.4307 4.17412C31.735 4.32755 32.0197 4.50091 32.2901 4.69736L33.4656 3.07933C33.1066 2.81846 32.7297 2.58926 32.3312 2.38832L31.4307 4.17412ZM6.43735 3.55801C9.02591 6.14646 11.0298 8.14619 12.7893 9.55438C14.5634 10.9744 16.1766 11.8669 18.0072 12.1568L18.32 10.1814C16.9707 9.96773 15.6777 9.30448 14.039 7.99292C12.3856 6.66957 10.4699 4.762 7.85153 2.14377L6.43735 3.55801ZM19 0.978516C16.1223 0.978516 13.7584 0.978159 11.7979 1.08916C9.83847 1.20011 8.2113 1.42492 6.81827 1.90558L7.47061 3.7962C8.60589 3.40448 10.0187 3.19311 11.911 3.08596C13.8024 2.97887 16.102 2.97852 19 2.97852V0.978516ZM6.81827 1.90558C5.97926 2.19507 5.22598 2.57684 4.53436 3.07933L5.70993 4.69736C6.22676 4.32186 6.80039 4.02746 7.47061 3.7962L6.81827 1.90558Z"
+              fill="#747474" />
+          </svg>
+          <p class="details-header-font-4">No bookings</p>
+        </div>
+      </div>
     </div>
+    </div>
+
+
   </section>
 
-</div>
+
 
 
 
@@ -375,24 +298,6 @@
   <script src="../script.js"></script>
   <script src="../js/jquery-3.7.1.js"></script>
   <script src="../js/headerFooter.js"></script>
-
-  <script>
-    document.getElementById('content1').classList.add('active');
-
-    function showContent(contentId) {
-      let contents = document.getElementsByClassName('content');
-      for (let i = 0; i < contents.length; i++) {
-        contents[i].classList.remove('active');
-      }
-      document.getElementById(contentId).classList.add('active');
-
-      let cols = document.querySelectorAll('.coll');
-      for (let i = 0; i < cols.length; i++) {
-        cols[i].classList.remove('activeblu');
-      }
-      event.target.classList.add('activeblu');
-    }
-  </script>
 
 </body>
 

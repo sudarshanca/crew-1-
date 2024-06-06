@@ -12,7 +12,10 @@
   <link href="../css/slick-slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/s-custom.css">
+  <link rel="stylesheet" href="../css/scrollbar.css">
   <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/message.css">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
@@ -184,8 +187,8 @@
 
   <hr>
 
-  <div class="container mobile-padding-none" style="max-width: 1550px;">
-    <div class="container mobile-padding-none d-flex justify-content-evenly align-items-start ">
+  <div class="container" style="max-width: 1550px;">
+    <div class="container d-flex justify-content-evenly align-items-start ">
       <div class="left-l-d">
         <div class="1">
           <p class="ph-font-2" style="color: #4b4b4d;">Listing details</p>
@@ -242,12 +245,12 @@
             <div class="">
               <p class="msg-side-font-14">Daily</p>
               <div class="pricing-daily " style="position: relative;">
-
-                <div class="input-11" style=" width: 200px; max-width: 100%;">
-                    <p class="mb-0">$</p>
-                    <input type="text" placeholder="24" class="damage-placeholder-text form-control"> 
-                  </div>
+                <div class="input-name "
+                  style="margin-bottom: 20px; padding: 5px 10px !important; border-radius: 16px;">
+                  <p class=" mb-0 edit-name" style="color: #ACACB0; text-decoration: none;">$</p>
+                  <input class="" style="border: none; outline: none; width: 93%;" type="text" placeholder="24">
                 </div>
+              </div>
             </div>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
@@ -267,9 +270,10 @@
               </div>
 
               <div class="pricing-weekly " style="position: relative;">
-                <div class="input-11" style=" width: 200px; max-width: 100%;">
-                  <p class="mb-0">$</p>
-                  <input type="text" placeholder="24" class="damage-placeholder-text form-control"> 
+                <div class="input-name "
+                  style="margin-bottom: 20px; padding: 5px 10px !important; border-radius: 16px;">
+                  <p class=" mb-0 edit-name" style="color: #ACACB0; text-decoration: none;">$</p>
+                  <input class="" style="border: none; outline: none; width: 93%;" type="text" placeholder="24">
                 </div>
               </div>
             </div>
@@ -292,9 +296,10 @@
               </div>
 
               <div class="pricing-Monthly " style="position: relative;">
-                <div class="input-11" style=" width: 200px; max-width: 100%;">
-                  <p class="mb-0">$</p>
-                  <input type="text" placeholder="24" class="damage-placeholder-text form-control"> 
+                <div class="input-name "
+                  style="margin-bottom: 20px; padding: 5px 10px !important; border-radius: 16px;">
+                  <p class=" mb-0 edit-name" style="color: #ACACB0; text-decoration: none;">$</p>
+                  <input class="" style="border: none; outline: none; width: 93%;" type="text" placeholder="24">
                 </div>
               </div>
             </div>
@@ -403,27 +408,13 @@
         </div>
         <hr>
         <p class="dashboard-font-11 mb-0">Length of stay discounts</p>
-        <div class=" d-flex flex-column-mobile w-100 justify-content-evenly gap-5 mt-3">
-            <div class="w-100"><p class="dashboard-font-12">Weekly for 7 nights or more</p>
-              <div class="input-11">
-                <p class="mb-0">%</p>
-                <input type="text" class="form-control">
-                <a href="#">Edit</a> 
-              </div>
-              </div>
-            <div class="w-100" >
-              <p class="dashboard-font-12">Monthly for 28 nights or more</p> 
-              <div class="input-11">
-                <p class="mb-0">%</p>
-                <input type="text" class="form-control">
-                <a href="#">Edit</a> 
-              </div>
-            </div>
+        <div class="d-flex w-100 justify-content-evenly gap-2 mt-3">
+            <div class="w-100"><p class="dashboard-font-12">Length of stay discounts</p> <input type="text"> </div>
+            <div class="w-100" ><p class="dashboard-font-12">Length of stay discounts</p> <input type="text"> </div>
           
         </div>
-        <hr>
         <div class="border p-3 " style="border-radius: 1rem;">
- 
+
        
         <div class="d-flex justify-content-between flex-wrap">
           <div>
@@ -445,27 +436,19 @@
            <p class="dashboard-font-12" style="color: #ACACB0;">Optional</p> 
         </div>
        
-        <div class="input-11">
-          <p class="mb-0">%</p>
-          <input type="text" placeholder="1000" class="damage-placeholder-text form-control">
-          <a href="#">Edit</a> 
-        </div>
+        <input type="text">
        </div>
 
        <br>
        <p class="msg-side-font-14">Free</p>
        <p class="dashboard-font-12">Total amount per stay</p>
-       <div class="input-11">
-        <p class="mb-0">%</p>
-        <input type="text" placeholder="1000" class="form-control">
-        <a href="#">Edit</a> 
-      </div>
+       <input type="text">
        <hr>
        <p class="msg-side-font-14">Free</p>
        <div class="d-flex justify-content-between gap-2 align-items-center" >
         <div class="d-flex gap-2 w-100">
-        <div class="w-100" style="max-width: 500px;"><p class="dashboard-font-12">Name</p> <input type="text" placeholder="State tax" class="taxes-place-hold-text form-control"> </div>
-        <div class="w-100" style="max-width: 200px;" ><p class="dashboard-font-12">Tax</p> <input type="text" placeholder="24 %" class="taxes-place-hold-text form-control"> </div>
+        <div class="w-100" style="max-width: 500px;"><p class="dashboard-font-12">Name</p> <input type="text"> </div>
+        <div class="w-100" style="max-width: 200px;" ><p class="dashboard-font-12">Tax</p> <input type="text"> </div>
         </div>
         <div class="d-flex gap-2 mt-5">
           <p class="edit-delet-1">Edit</p>

@@ -285,6 +285,7 @@ textarea{
   width: 100%;
   resize: none;
   overflow-y: scroll;
+
 }
 
 
@@ -701,6 +702,7 @@ text-align: left;
   .home-discover-main{
     min-width: auto !important;
   }
+
 }
 
 

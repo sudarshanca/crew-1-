@@ -1,11 +1,12 @@
 body,
 html {
-  overflow-x: hidden;
   font-size: 18px;
 }
-
-a {
-  text-decoration: none !important;
+.book-gallery a {
+  text-decoration: none;
+}
+.book-gallery h5 {
+  font-size: 1rem !important;
 }
 
 

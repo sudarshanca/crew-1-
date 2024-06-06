@@ -36,6 +36,38 @@
           </p>
         </div>
       </div>
+      <div class="filter-button ">
+        <button type="button" class="btn d-flex   gap-1 btn-cd-secondary btn-pill" data-bs-toggle="modal"
+         style="background-color: white;"
+        data-bs-target="#exampleModalScrollable">
+          <span class=" d-flex align-itemx-center justify-content-center " style="border-radius: 50%; width: 25px;  border: 1px solid #076CB6; color: #076CB6;">
+            3
+          </span>
+        </button>
+      </div>
+      </div>
+      <div class="filter-menu mt-1 d-flex" style="overflow-x: scroll;">
+        <button type="button" class="btn btn-cd-light btn-pill active">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
       </div>
       </div>
 
@@ -185,7 +217,7 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
           <i class="bi bi-power"></i> Entire Place
         </button>
         <button type="button" class="btn btn-cd-light btn-pill">
-          <i class="bi bi-power"></i> Entire Place
+          <i class="bi bi-power"></i> Room
         </button>
         <button type="button" class="btn btn-cd-light btn-pill">
           <i class="bi bi-power"></i> Entire Place
@@ -374,9 +406,10 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
 </script>
 
   <script>
-  //mobile search bar
-  let prevScrollPos = window.pageYOffset;
-const scrollThreshold = 10; // Adjust this value to control when the search bar should appear
+
+//mobile search bar
+let prevScrollPos = window.pageYOffset;
+const scrollThreshold = 550; // Adjust this value to control when the search bar should appear
 
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
@@ -387,6 +420,7 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
+
 
 //mobile footer
 let lastScrollTop = 0;

@@ -20,7 +20,8 @@
 </head>
 
 <body>
-  <div id="search-bar" class="search-main " >
+
+   <div id="search-bar" class="search-main " >
     <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2">
       <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
         style="border-radius: 2rem; padding: 6px 16px;">
@@ -34,15 +35,159 @@
           </p>
         </div>
       </div>
+      <div class="filter-button ">
+        <button type="button" class="btn d-flex   gap-1 btn-cd-secondary btn-pill" data-bs-toggle="modal"
+         style="background-color: white;"
+        data-bs-target="#exampleModalScrollable">
+          <span class=" d-flex align-itemx-center justify-content-center " style="border-radius: 50%; width: 25px;  border: 1px solid #076CB6; color: #076CB6;">
+            3
+          </span>
+        </button>
       </div>
       </div>
-
+      <div class="filter-menu mt-1 d-flex" style="overflow-x: scroll;">
+        <button type="button" class="btn btn-cd-light btn-pill active">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+        <button type="button" class="btn btn-cd-light btn-pill">
+          <i class="bi bi-power"></i> Entire Place
+        </button>
+      </div>
+      </div>
   <div class="float-btn-listing" style="z-index: 100;">
     <button class="btn dm-show-map-font" style="background: #0D99FF; color: #ffffff; border-radius: 24px;  ">Show map <i class="bi bi-map"></i></button>
   </div>
 
- 
-    <div id="header2" ></div>
+  <div class="  header-fixed " style="z-index: 100; background-color: #fff; border-bottom: 1px solid #74747436; position: fixed; top: 0; left: 0; right: 0; ">
+    <header class="d-flex container flex-wrap align-items-center justify-content-between justify-content-md-between py-3">
+  
+  
+      <div class="col-md-3 mb-md-0 mx-auto">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+         <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+  
+     <div class="col-md-6 mb-md-0  mobile-version-none justify-content-center d-flex">
+        <div class="hero-search search-small">
+  
+          <div class="d-flex">
+            <div class="search-box d-flex ">
+  
+              <div class="dropdown d-flex align-items-center justify-content-center">
+                <a class="hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Place
+                </a>
+  
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+  
+              <div class="dropdown d-flex align-items-center justify-content-center">
+                <a class="hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Date
+                </a>
+  
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+  
+              <div class="dropdown d-flex align-items-center justify-content-center">
+                <a class="hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Guest
+                </a>
+  
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+  
+              <a class="btn btn-lg btn-primary" style="background: #0D99FF;" href="#">Search</a>
+  
+            </div>
+  
+          </div>
+  
+  
+        </div>
+  
+      </div>
+      
+        <div class="col-md-3 d-flex justify-content-end mobile-version-none">
+          <ul class="nav nav-pills">
+              <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my place</a></li>
+          </ul>
+        <!--menu items-->
+        <div class="dropdown mobile-version-none">
+          <button class="dropdown" style="background-color: white; display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                  <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+  
+              <li class="cdmenu-item">
+                  <div class="d-grid">
+                      <button class="btn dropdown header-dropdown-font-1"
+                              style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                          Sign up
+                      </button>
+                  </div>
+              </li>
+              <li class="cdmenu-item">
+                  <div class="d-grid">
+                      <button class="btn header-dropdown-font-2 border dropdown"
+                              style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Log in
+                      </button>
+                  </div>
+              </li>
+              <li>
+                  <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+              <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+          </ul>
+      </div>
+        <!--menu items end-->
+    </header>
+  </div>
 
 
   <section class="banner-section">
@@ -120,7 +265,6 @@
             <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41422 0.585786 6.75 1 6.75L1 5.25ZM17 6.75C17.4142 6.75 17.75 6.41421 17.75 6C17.75 5.58579 17.4142 5.25 17 5.25V6.75ZM13.528 0.467309C13.2338 0.175726 12.7589 0.177844 12.4673 0.472041C12.1757 0.766238 12.1778 1.24111 12.472 1.53269L13.528 0.467309ZM14.763 2.74731L14.235 3.28L14.763 2.74731ZM14.763 9.25269L15.2909 9.78538L14.763 9.25269ZM12.472 10.4673C12.1778 10.7589 12.1757 11.2338 12.4673 11.528C12.7589 11.8222 13.2338 11.8243 13.528 11.5327L12.472 10.4673ZM16.9801 5.68667L17.7241 5.59184V5.59184L16.9801 5.68667ZM16.9801 6.31333L17.7241 6.40816V6.40816L16.9801 6.31333ZM1 6.75L17 6.75V5.25L1 5.25L1 6.75ZM12.472 1.53269L14.235 3.28L15.2909 2.21462L13.528 0.467309L12.472 1.53269ZM14.235 8.72L12.472 10.4673L13.528 11.5327L15.2909 9.78538L14.235 8.72ZM14.235 3.28C14.9505 3.98914 15.4413 4.47718 15.7734 4.8907C16.096 5.2924 16.2067 5.55042 16.2361 5.7815L17.7241 5.59184C17.6453 4.97372 17.3504 4.45878 16.9429 3.95146C16.545 3.45597 15.9814 2.89892 15.2909 2.21462L14.235 3.28ZM15.2909 9.78538C15.9814 9.10108 16.545 8.54403 16.9429 8.04854C17.3504 7.54121 17.6453 7.02628 17.7241 6.40816L16.2361 6.2185C16.2067 6.44958 16.096 6.7076 15.7734 7.10929C15.4413 7.52282 14.9505 8.01086 14.235 8.72L15.2909 9.78538ZM16.2361 5.7815C16.2546 5.92659 16.2546 6.07341 16.2361 6.2185L17.7241 6.40816C17.7586 6.13714 17.7586 5.86286 17.7241 5.59184L16.2361 5.7815Z" fill="#B4B4B4"/>
           </svg>
         </button>
-      
       </div>
       
 
@@ -1172,8 +1316,79 @@
   </section>
 
 
-<div id="footer"></div>
-
+  <footer class="desktop-version-footer">
+    <div class="container-xxl container-sm">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 me-auto">
+          <a href="/" style="position: relative !important;" class=" header-home-icon d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="d-flex gap-1 mb-5">
+            <a href="#" title=""><img src="img/ios-store-badge.png" alt=""></a>
+            <a href="#" title=""><img src="img/play-store-badge.png" alt=""></a>
+  
+          </div>
+        </div>
+  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h5>Links</h5>
+          <ul class="f-menu">
+            <li><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Add my place</a></li>
+            <li><a href="#" title="">Collections</a></li>
+            <li><a href="#" title="">About</a></li>
+          </ul>
+  
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h5>Help</h5>
+          <ul class="f-menu">
+            <li><a href="#" title="">Terms &amp; conditions</a></li>
+            <li><a href="#" title="">Privacy policy</a></li>
+            <li><a href="#" title="">FAQ's</a></li>
+            <li><a href="#" title="">The tee</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="copy bs-3">
+        &copy; 2024 Crewdogs.llc All Rights Reserved
+      </div>
+  
+    </div>
+  
+  </footer>
+  
+  <footer class="mobile-version-footer p-2 " 
+    id="mobileFooter">
+    <div class=" mf-icon">
+      <img class="d-none " src="img/Search.svg"  alt="">
+      <img  src="img/Search-filled.svg"  alt="">
+      <p id="toggleBtn" class="m-0 mobile-text-footer" style="color: #0D99FF;">Search</p>
+    </div>
+    <div class="mf-icon">
+      <img src="img/travel.svg"  alt="">
+      <img class="d-none" src="img/travel-filled.svg"  alt="">
+      <p class=" m-0 mobile-text-footer">Travel</p>
+    </div>
+    <div class="mf-icon ">
+      <img src="img/Home.svg"  alt="">
+      <img class="d-none" src="img/Home-filled.svg" alt="">
+      <p class=" m-0 mobile-text-footer">Home</p>
+    </div>
+    <div class=" mf-icon">
+      <img src="img/Message.svg"  alt="">
+      <img class="d-none" src="img/Message-filled.svg" alt="">
+      <p class=" m-0 mobile-text-footer">Message</p>
+    </div>
+    <div class="mf-icon">
+      <img src="img/Profile.svg"  alt="">
+      <img class="d-none" src="img/Profile-filled.svg"  alt="">
+      <p class="m-0 mobile-text-footer" >Log in</p>
+    </div>
+  </footer>
 
 
    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -1456,7 +1671,7 @@
 
 //mobile search bar
 let prevScrollPos = window.pageYOffset;
-const scrollThreshold = 10; // Adjust this value to control when the search bar should appear
+const scrollThreshold = 550; // Adjust this value to control when the search bar should appear
 
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
@@ -1467,6 +1682,7 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
+
 
 //mobile footer
 let lastScrollTop = 0;

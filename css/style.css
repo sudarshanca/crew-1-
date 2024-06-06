@@ -6,9 +6,15 @@ html {
   text-decoration: none;
 }
 .book-gallery h5 {
-  font-size: 1rem !important;
+color: var(--Grayscale-Gray-100, #1E1E20);
+font-size: 17px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: -0.408px;
 }
-
+.book-gallery .card-text {
+  font-size: 14px;
+}
 
 .btn-rounded {
   border-radius: 50px;

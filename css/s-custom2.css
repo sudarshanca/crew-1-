@@ -58,25 +58,17 @@
   height: 100%;
 }
 
-.grid-container img {
+/* Images in the Carousel */
+.carousel-slide img {
+  flex: 0 0 auto; /* Ensures images don't shrink or grow */
   width: 100%;
-  aspect-ratio: 1;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  /* Maintain aspect ratio while covering the container */
 }
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Maintain aspect ratio while covering the container */
-}
-
 .slick-dots {
   display: none !important;
 }
-
-
 .p-a {
   margin-top: 5rem;
 }
@@ -449,4 +441,58 @@ letter-spacing: -0.2px;
   height: 6px;
   background-color: #FFF;
   border-radius: 50%;
+}
+
+
+
+.filter-menu button img{
+  width: 18px !important ;
+  height: 18px !important;
+  object-fit: fill;
+}
+.filter-menu button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.filter-menu button img:hover{
+fill: #076CB6;
+}
+
+
+
+@media (max-width:700px) {
+  .scroll-next {
+    display: none !important;
+  }
+  .main-container {
+  margin-top: 4rem;
+}
+
+.filter-button-m button {
+  border: 1px solid #75757524 !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+}
+
+.filter-button-m .bouble-notification {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+}
 }

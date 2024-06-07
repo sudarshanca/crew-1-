@@ -459,27 +459,15 @@ letter-spacing: -0.2px;
 fill: #076CB6;
 }
 
-
-
-@media (max-width:700px) {
-  .scroll-next {
-    display: none !important;
-  }
-  .main-container {
-  margin-top: 4rem;
-}
-
-.filter-button-m button {
+ button {
   border: 1px solid #75757524 !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 38px;
-  width: 38px;
 }
 
-.filter-button-m .bouble-notification {
+.bouble-notification {
   background-color: red;
   color: white;
   border: none;
@@ -494,5 +482,29 @@ fill: #076CB6;
   width: 16px;
   height: 16px;
   font-size: 8px;
+}
+
+.filter-button-m button {
+  width: 38px ;
+  height: 38px ;
+}
+
+
+
+
+
+@media (max-width:700px) {
+  .scroll-next {
+    display: none !important;
+  }
+  .main-container {
+  margin-top: 4rem;
+}
+.filter-menu-main {
+  padding: 0 0 0 .5rem !important;
+
+}
+.px-m-none {
+  padding: 0 !important;
 }
 }

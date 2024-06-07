@@ -48,6 +48,12 @@
   /* Required for positioning the dots */
 }
 
+.grid-container .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .one {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
@@ -62,7 +68,6 @@
 .carousel-slide img {
   flex: 0 0 auto; /* Ensures images don't shrink or grow */
   width: 100%;
-  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -223,7 +228,6 @@
   }
 
   .grid-container {
-
     display: flex;
     aspect-ratio: 16/12;
     padding: 0 !important;

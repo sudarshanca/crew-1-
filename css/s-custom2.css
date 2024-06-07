@@ -66,10 +66,9 @@
 
 /* Images in the Carousel */
 .carousel-slide img {
-  flex: 0 0 auto; /* Ensures images don't shrink or grow */
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+
+  min-width: 100%;
+
 }
 .slick-dots {
   display: none !important;
@@ -483,9 +482,9 @@ fill: #076CB6;
   position: absolute;
   top: -2px;
   right: -2px;
-  width: 16px;
-  height: 16px;
-  font-size: 8px;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
 }
 
 .filter-button-m button {

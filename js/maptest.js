@@ -7,11 +7,13 @@ async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
+    
     map = new Map(document.getElementById("map"), {
         center: position,
         zoom: 10,
         mapId: "4b2dddd7241f0f38",
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        gestureHandling: 'greedy' // or 'cooperative' for a different behavior
     });
     
     const priceTag = document.createElement("div");

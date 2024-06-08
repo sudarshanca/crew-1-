@@ -465,7 +465,7 @@ letter-spacing: -0.2px;
 fill: #076CB6;
 }
 
- button {
+ .filter-menu button {
   border: 1px solid #75757524 !important;
   border-radius: 50%;
   display: flex;

@@ -378,14 +378,23 @@ background: var(--Gray-04, #FCFCFC);
   align-items: center;
   width: 100%;
 }
+.tabel-1 p {
+  width: 50%;
+}
 .tabel-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+.tabel-2 p {
+  flex-grow: 1;
+}
+.wth-100 {
+  width: 100% !important;
+}
 
-.tabel-1 img {
+.grid-2 img {
 display: flex;
 width: 72px;
 height: 48px;
@@ -394,6 +403,18 @@ gap: 10px;
 flex-shrink: 0;
 border-radius: 8px;
 background: lightgray 50% / cover no-repeat, #FFF;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.grid-2 .d-flex-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 1;
 }
 
 .availabel-button-tabel,
@@ -509,4 +530,59 @@ border-radius: 16px;
 border: 1px solid #E7E7E7;
 background: var(--Gray-04, #FCFCFC);
 }
+
+/*----------------------------------
+calander availability css
+----------------------------------*/
+
+
+
+.clndr-stnc-main {
+display: flex;
+padding: 24px;
+justify-content: space-between;
+align-items: flex-start;
+border-radius: 16px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: #FAFAFA;
+}
+
+.clndr-stnc-main .clndr-stnc-main-buttons {
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+.clndr-stnc-main .clndr-stnc-main-buttons button {
+display: flex;
+padding: 10px 12px 12px 12px;
+align-items: center;
+justify-content: center;
+gap: 24px;
+border-radius: 12px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: var(--White-White-100, #FFF);
+}
+
+.model-button {
+display: flex;
+width: 113px;
+padding: 12px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 16px;
+background: var(--Primary-Primary-50, #0D99FF);
+color: white !important;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 138%; /* 19.32px */
+letter-spacing: -0.28px;
+border: none ;
+}
+
+
+
+
 

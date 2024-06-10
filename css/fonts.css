@@ -1387,3 +1387,40 @@ fonts
   text-align: left;
   color: #4B4B4D;
 }
+
+
+/*----------------------------------
+calander availability font
+----------------------------------*/
+
+.clndr-stnc-main-font-1 {
+color: var(--Grayscale-Gray-80, #4B4B4D);
+leading-trim: both;
+text-edge: cap;
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.clndr-stnc-main-font-2 {
+  color: var(--Grayscale-Gray-80, #4B4B4D);
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+}
+
+.clndr-stnc-main-font-3::placeholder {
+  color: var(--Grayscale-Gray-60, #ACACB0);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
+

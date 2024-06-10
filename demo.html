@@ -1,1005 +1,300 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crew dogs</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/menu.css" rel="stylesheet">
-  <link href="css/slick-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/s-custom.css">
-  <link rel="stylesheet" href="css/s-custom2.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/menu.css" rel="stylesheet">
+
+  <link href="../css/slick-slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/s-custom.css">
+  <link rel="stylesheet" href="../css/scrollbar.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/message.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
- <style>
-  @media (max-width: 768px) {
-    .hero-search {
-        margin-top: 0 !important;
-        max-width: 80%;
-    }
+
+  <style>
+    .coll {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 3px;
     }
 
-    .book-gallery .bb {
-      color: #747474 !important;
-      text-decoration: line-through;
+    .activeblu {
+      color: #0D99FF;
+      background-color: #F3FAFE;
+      border: 1px solid #F3FAFE;
     }
-    .book-gallery .b {
-      color: #333 !important;
+
+    .input-search {
+      display: flex;
+      border: 1px solid #a5a3a3;
+      border-radius: 1rem;
+      align-items: center;
+      padding: 0 .5rem;
     }
- </style>
+
+    .input-search input {
+      border: none;
+      padding: 0 0 0 5px !important;
+    }
+
+    .input-search input:focus {
+      outline: none;
+    }
+
+
+
+
+    @media (max-width:700px) {
+      #profile-mobile-version {
+        display: block !important;
+      }
+
+      .profile-desktop-version {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <div id="search-bar" class="search-main ">
-    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2 "
-      style="z-index: 100;">
-      <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
-        style="border-radius: 2rem; padding: 6px 16px;">
-        <div>
-          <img src="img/Search 2.png" width="20px" height="20px" alt="">
-        </div>
-        <div class="">
-          <p class="dm-bold-6 m-0" style="color: #4B4B4D;">Where to?</p>
-          <p class="custom-search m-0 p-0" style="color: #4B4B4D;">
-            Anytime • Add guests
-          </p>
+  <div>
+    <div class="container">
+      <div class=" mx-3">
+        <div class="w-100">
+          <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-2">
+            <div class="col-md-3 mb-md-0 ">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="../img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 gap-2 d-flex justify-content-end">
+              <!-- <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3" aria-current="page">Add my place</a></li>
+        
+       </ul> -->
+              <!--menu items-->
+              <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="help-text mb-0 pb-1 link-not-active  " style="color: #444444;">Dashboard</a>
+                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active link-active"
+                  style="color: #444444;">Bookings</a>
+                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Calendar</a>
+                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Listings</a>
+                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Inbox</a>
+                <div class="mobile-display-none" style="cursor: pointer;" onclick="toggleNotification()">
+                  <svg class="not-selected" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="18"
+                    height="21" viewBox="0 0 18 21" fill="none">
+                    <path
+                      d="M5.18336 17L5.58336 17.6857C7.38336 20.7714 10.9834 20.7714 12.7834 17.6857L13.1834 17M1.36619 14.5496L1.46954 14.7627C2.13331 16.1311 3.52054 17 5.04144 17H13.2623C14.5656 17 15.7785 16.3342 16.4783 15.2347C17.4661 13.6826 17.2045 11.6465 15.8564 10.3945L15.8125 10.3538C14.8972 9.50376 14.4466 8.26543 14.6015 7.02598L14.6662 6.50905C15.0318 3.58379 12.7509 1 9.80286 1H8.09995C5.15552 1 2.87737 3.58064 3.24258 6.50234L3.32194 7.13719C3.46808 8.30631 3.04102 9.4741 2.17514 10.2731C0.99242 11.3645 0.663827 13.1016 1.36619 14.5496Z"
+                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                  <svg class="selected" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="18" height="21"
+                    viewBox="0 0 12 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66593 5.06227C1.38515 2.81605 3.13661 0.832031 5.40031 0.832031H6.53559C8.80169 0.832031 10.555 2.81815 10.2739 5.06675L10.2308 5.41137C10.1475 6.07811 10.3899 6.74425 10.8823 7.2015L10.9115 7.22867C11.9871 8.22751 12.1958 9.85197 11.4077 11.0903C10.8926 11.8996 10.0291 12.4143 9.08197 12.4892L8.95448 12.7078C8.27928 13.8653 7.22728 14.4987 6.12259 14.4987C5.0179 14.4987 3.9659 13.8653 3.2907 12.7078L3.16518 12.4926C2.03765 12.4224 1.0276 11.7509 0.530172 10.7254L0.461271 10.5833C-0.103163 9.41969 0.160901 8.02373 1.11135 7.14666C1.57003 6.7234 1.79625 6.10481 1.71883 5.48551L1.66593 5.06227ZM4.34708 12.4987C4.85331 13.1905 5.5085 13.4987 6.12259 13.4987C6.73668 13.4987 7.39187 13.1905 7.8981 12.4987H4.34708Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="dropdown ">
+                <button class=" d-flex gap-1 align-items-center  dropdown"
+                  style="border: none; background-color: white;" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../img/people.jpg" style="width: 30px; height: 30px; border-radius: 50%;" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                    <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Profile</a></li>
+                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Help Center</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Search and traveling</a></li>
+                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Log Out</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--menu items end-->
+          </header>
         </div>
       </div>
+    </div>
+    <hr class="mt-0">
+  </div>
 
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-1 align-items-center">
+        <p class="mb-0 dashboard-font-5">Listing </p>
+        <div class="coll col-message-1 activeblu">4</div>
+      </div>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="d-flex input-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path
+              d="M15.7753 14.5607C15.5312 14.3167 15.1355 14.3167 14.8914 14.5607C14.6473 14.8048 14.6473 15.2005 14.8914 15.4446L15.7753 14.5607ZM18.2246 18.7779C18.4687 19.022 18.8645 19.022 19.1085 18.7779C19.3526 18.5338 19.3526 18.1381 19.1085 17.894L18.2246 18.7779ZM7.27922 4.00454C7.62015 3.95054 7.85276 3.63039 7.79876 3.28946C7.74476 2.94853 7.42461 2.71593 7.08368 2.76993L7.27922 4.00454ZM3.10059 6.75302C3.04659 7.09395 3.2792 7.4141 3.62012 7.46809C3.96105 7.52209 4.2812 7.28949 4.3352 6.94856L3.10059 6.75302ZM14.8914 15.4446L18.2246 18.7779L19.1085 17.894L15.7753 14.5607L14.8914 15.4446ZM8.66663 15.2109C4.86967 15.2109 1.79163 12.1329 1.79163 8.33594H0.541626C0.541626 12.8232 4.17931 16.4609 8.66663 16.4609V15.2109ZM15.5416 8.33594C15.5416 12.1329 12.4636 15.2109 8.66663 15.2109V16.4609C13.1539 16.4609 16.7916 12.8232 16.7916 8.33594H15.5416ZM8.66663 1.46094C12.4636 1.46094 15.5416 4.53898 15.5416 8.33594H16.7916C16.7916 3.84862 13.1539 0.210938 8.66663 0.210938V1.46094ZM8.66663 0.210938C4.17931 0.210938 0.541626 3.84862 0.541626 8.33594H1.79163C1.79163 4.53898 4.86967 1.46094 8.66663 1.46094V0.210938ZM7.08368 2.76993C5.03336 3.09467 3.42533 4.7027 3.10059 6.75302L4.3352 6.94856C4.57522 5.43311 5.76377 4.24456 7.27922 4.00454L7.08368 2.76993Z"
+              fill="#ACACB0" />
+          </svg>
+          <input type="text" placeholder="Search">
+        </div>
+
+        <button class="save px-3" style="width: fit-content;"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+            height="16" viewBox="0 0 15 16" fill="none">
+            <path d="M0.833313 8.0026H14.1666M7.49998 14.6693V8.0026L7.49998 1.33594" stroke="white" stroke-width="1.25"
+              stroke-linecap="round" />
+          </svg> New listing</button>
+      </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="d-flex flex-column gap-1">
+
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+              <p class="personalinfor-header-1">Title</p>
+             </div>
+            <div class="d-flex">
+              <p class="personalinfor-header-1" style="text-align: center; margin-right: 4rem;">Status</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="personalinfor-header-1">Address</p>
+            <p class="personalinfor-header-1" style="margin-left: 9rem;">Listing type</p>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
     </div>
   </div>
 
 
-  <section class="hero-section hero-section-1 pt-0 pb-0">
-    <div class="header-section " id="bg-white"
-      style="position: fixed; left: 0; right: 0;  box-shadow: none; z-index: 100 !important; background: transparent;">
-      <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between p-3 mt-0">
-        <div class="col-md-3 mb-md-0 d-flex align-items-center">
-          <!--logo-->
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <img src="img/logo.svg" alt="">
-          </a>
-        </div>
 
 
 
-        <div class="col-md-3 d-flex justify-content-end mobile-version-none">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my
-                place</a></li>
-          </ul>
-          <!--menu items-->
 
-          <div class="dropdown mobile-version-none" style="z-index: 102;">
-            <button class="dropdown" style="background-color: white; display: flex;
-            padding: 16px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 16px;
-            border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-            background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
-
-              <li class="cdmenu-item">
-                <div class="d-grid">
-                  <button class="btn dropdown header-dropdown-font-1"
-                    style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Sign up
-                  </button>
-                </div>
-              </li>
-              <li class="cdmenu-item">
-                <div class="d-grid"><button class="btn header-dropdown-font-2 border dropdown"
-                    style="  border-radius: 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Log in
-                  </button></div>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
-              <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
-            </ul>
-          </div>
-
-          <!--menu items end-->
-
-      </header>
-    </div>
-
-    <div class="hero-search" style="padding-top: 6rem;">
-      <h1>Bringing the military community together</h1>
-
-      <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
-        <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class="drop-sticky hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span>Select a</span> destination
-            </a>
-              <ul class="dropdown-menu p-2 px-3" style="z-index: 100; border-radius: 1rem; max-height: 400px;">
-                <li>
-                  <div class="dropdown-item p-0 ">
-                    <div class="d-flex gap-2 align-items-end justify-content-between">
-                        <div class="border d-flex"
-                          style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
-                          </svg>
-                        </div>
-                        <div class="w-100 flex-grow-1" >
-                          <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
-                          <hr class="m-0">
-                        </div>
-                    </div>
-                  </div>
-                </li>
-              
-   
-                <li>
-                  <div class="dropdown-item p-0 mb-2">
-                    <div class="d-flex gap-2 align-items-end justify-content-between">
-                        <div class="border d-flex"
-                          style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
-                          </svg>
-                        </div>
-                        <div class="w-100 flex-grow-1" >
-                          <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
-                          <hr class="m-0">
-                        </div>
-                    </div>
-                  </div>
-                </li>
-              
-   
-                <li>
-                  <div class="dropdown-item p-0 mb-2">
-                    <div class="d-flex gap-2 align-items-end justify-content-between">
-                        <div class="border d-flex"
-                          style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
-                          </svg>
-                        </div>
-                        <div class="w-100 flex-grow-1" >
-                          <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
-                          <hr class="m-0">
-                        </div>
-                    </div>
-                  </div>
-                </li>
-              
-   
-                <li>
-                  <div class="dropdown-item p-0 mb-2">
-                    <div class="d-flex gap-2 align-items-end justify-content-between">
-                        <div class="border d-flex"
-                          style=" align-items: center; justify-content: center; width: 48px; height: 40px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M10.342 16.9848L9.84499 16.5951L10.342 16.9848ZM5.65853 16.9848L5.16155 17.3746L5.65853 16.9848ZM8.00025 18.9259V18.2943V18.9259ZM14.1055 8.48649C14.1055 9.51933 13.5669 10.9014 12.7192 12.4C11.8855 13.874 10.808 15.367 9.84499 16.5951L10.839 17.3746C11.821 16.1223 12.9411 14.5734 13.8187 13.0219C14.6823 11.4951 15.3687 9.86815 15.3687 8.48649H14.1055ZM6.15552 16.5951C5.19249 15.367 4.11502 13.874 3.28131 12.4C2.43362 10.9014 1.89499 9.51933 1.89499 8.48649H0.631834C0.631834 9.86815 1.31824 11.4951 2.18185 13.0219C3.05943 14.5734 4.17952 16.1223 5.16155 17.3746L6.15552 16.5951ZM1.89499 8.48649C1.89499 4.78714 4.67123 1.86864 8.00025 1.86864V0.605482C3.88797 0.605482 0.631834 4.17834 0.631834 8.48649H1.89499ZM8.00025 1.86864C11.3293 1.86864 14.1055 4.78714 14.1055 8.48649H15.3687C15.3687 4.17834 12.1125 0.605482 8.00025 0.605482V1.86864ZM9.84499 16.5951C9.32376 17.2598 8.98057 17.694 8.67325 17.9731C8.39297 18.2277 8.20588 18.2943 8.00025 18.2943V19.5575C8.6142 19.5575 9.09058 19.3005 9.52258 18.9081C9.92753 18.5403 10.3454 18.0039 10.839 17.3746L9.84499 16.5951ZM5.16155 17.3746C5.65508 18.0039 6.07298 18.5403 6.47793 18.9081C6.90993 19.3005 7.38631 19.5575 8.00025 19.5575V18.2943C7.79463 18.2943 7.60754 18.2277 7.32726 17.9731C7.01994 17.694 6.67675 17.2598 6.15552 16.5951L5.16155 17.3746ZM4.84236 8.81601C4.84236 10.5601 6.2562 11.9739 8.00025 11.9739V10.7107C6.95382 10.7107 6.10552 9.86244 6.10552 8.81601H4.84236ZM8.00025 11.9739C9.74431 11.9739 11.1581 10.5601 11.1581 8.81601H9.89499C9.89499 9.86244 9.04669 10.7107 8.00025 10.7107V11.9739ZM11.1581 8.81601C11.1581 7.07195 9.74431 5.65811 8.00025 5.65811V6.92127C9.04669 6.92127 9.89499 7.76957 9.89499 8.81601H11.1581ZM8.00025 5.65811C6.2562 5.65811 4.84236 7.07195 4.84236 8.81601H6.10552C6.10552 7.76957 6.95382 6.92127 8.00025 6.92127V5.65811Z" fill="#747474"/>
-                          </svg>
-                        </div>
-                        <div class="w-100 flex-grow-1" >
-                          <p class=" pi-font-4-1" style="margin-bottom: 13px;">Charleston AFB</p>
-                          <hr class="m-0">
-                        </div>
-                    </div>
-                  </div>
-                </li>
-              
-   
-
-            </ul>
-          </div>
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class="drop-sticky hero-down  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span> Choose a</span> date
-            </a>
-
-            <ul class="dropdown-menu">
-
-              <li class="dropdown-item"> <div id="calande">calander</div> </li>
-   
-            </ul>
-          </div>
-
-          <div class="dropdown d-flex align-items-center justify-content-center">
-            <a class=" drop-sticky  hero-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span>Add a</span> guest
-            </a>
-
-            <ul class="dropdown-menu p-2 pb-4 px-3" style="z-index: 100; border-radius: 1rem; max-height: 400px;">
-              <li>
-                <div class="dropdown-item p-0">
-
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <p class="mb-0 pi-font-4-1">Adults</p>
-                      <p class="mb-0 msg-side-font-13">Aged 13 and above</p>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                          <path
-                            d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                      <p class="mb-0">5</p>
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <hr>
-              <li>
-                <div class="dropdown-item p-0">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <p class="mb-0 pi-font-4-1">Children</p>
-                      <p class="mb-0 msg-side-font-13">Ages 2- 12</p>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                          <path
-                            d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                      <p class="mb-0">5</p>
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <hr>
-              <li>
-                <div class="dropdown-item p-0">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <p class="mb-0 pi-font-4-1">Infants</p>
-                      <p class="mb-0 msg-side-font-13">Under 2</p>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                          <path
-                            d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                      <p class="mb-0">5</p>
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <hr>
-              <li>
-                <div class="dropdown-item p-0">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <p class="mb-0 pi-font-4-1">Pets</p>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                          <path
-                            d="M0.667969 0.5C0.391826 0.5 0.167969 0.723858 0.167969 1C0.167969 1.27614 0.391826 1.5 0.667969 1.5H11.3346C11.6108 1.5 11.8346 1.27614 11.8346 1C11.8346 0.723858 11.6108 0.5 11.3346 0.5H0.667969Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                      <p class="mb-0">5</p>
-                      <div class="border d-flex "
-                        style=" align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--GREY, #747474);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
-                            fill="#747474" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-
-          <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;"
-            href="#">Search</a>
-
-        </div>
-
-      </div>
-      <a href="#item-why" title="" class="btn btn-link">Can I Join?</a>
-
-    </div>
-  </section>
-
-
-  <section class="py-5">
-    <div class="container-xxl container-sm discover-main">
-      <h3>A trusted option for whatever you need</h3>
-
-      <div class="" id="slider-main" style=" height: 0px; overflow: hidden;">
-        <div id="discover-box" class="discover-box">
-
-          <div class="item">
-            <img src="./img/g1.jpg" loading="lazy">
-
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                <a href="listings.html">
-                     <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-
-          </div>
-          <div class="item">
-
-            <img src="./img/g2.jpg" loading="lazy">
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                   <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-
-          </div>
-          <div class="item">
-            <img src="./img/g3.jpg" loading="lazy">
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                   <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-
-          </div>
-          <div class="item">
-            <img src="./img/g4.jpg" loading="lazy">
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                   <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-          </div>
-          <div class="item">
-            <img src="./img/g3.jpg" loading="lazy">
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                   <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-
-          </div>
-          <div class="item">
-            <img src="./img/g2.jpg" loading="lazy">
-
-            <div class="discover-text d-flex">
-              <div>
-                <span>Collection</span>
-                <p>Short term and vacation rentals</p>
-              </div>
-              <div>
-                   <a href="listings.html">
-                  <button class="btn btn-light">See all</button>
-                </a>
-              </div>
-            </div><!--discover-text end-->
-          </div>
-
-
-
-        </div><!--discover-box end -->
-      </div>
-    </div>
-  </section>
-
-
-  <section class="py-5">
-    <div class="container-xxl container-sm">
-      <h3 class="mb-4">Find homes, rooms, or spaces shared by each other</h3>
-
-      <div class="row book-main">
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b class="bb">$350</b> <b class="b" >$300</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="0"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="0"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g4.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                  <p><b class="b">$320</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b class="b">$320</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g4.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-              <p><b class="b">$320</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-              <p><b class="b">$320</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                  <p><b class="bb">$350</b> <b class="b" >$300</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-              <p><b class="b">$320</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                    <img src="img/g2.jpg" loading="lazy" alt="Image 2">
-                    <img src="img/g1.jpg" loading="lazy" alt="Image 3">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                  <p><b class="bb">$350</b> <b class="b" >$300</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-        <div class="cd-col">
-          <div class="book-gallery" style="position: relative;">
-            <a href="details.html">
-              <div class="bgallery-img mb-3">
-                <div class="carousel-container">
-                  <div class="carousel-slide">
-                    <img src="img/g3.jpg" loading="lazy" alt="Image 1">
-                  </div>
-                </div>
-                <div class="dots"></div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                  <p><b class="bb">$350</b> <b class="b" >$300</b> <Span class="bs-3">per night</Span></p>
-              </div>
-            </a>
-            <button class="prev" data-carousel="1"><img src="img/arrow_back.svg" alt=""></button>
-            <button class="next" data-carousel="1"><img src="img/arrow_forward.svg" alt=""></button>
-          </div>
-        </div><!--col card end here-->
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class=" pb-5" style="background-image: url(img/BG\ \(2\).jpg);">
-    <section class="py-5">
-      <div class="container-xxl container-sm">
-        <h3 class="mb-4">Why crewdogs?</h2>
-
-          <p class="py-2 btc-3">
-            <b>Save money. Support each other. Give back to the community. </b><br><br>
-
-            Founded by Veterans who want to bring our military community together to support each other. Crewdogs
-            connects
-            those looking for a place to stay with those who own or manage one. It’s as easy as Airbnb, but run by
-            Veterans and exclusively for the military community.<br><br>
-
-            Discover a worldwide collection of cabins, beach houses, house boats, extra rooms or spaces, and more, All
-            exclusively owned or managed by the military community. Find discounted vacation rentals, per diem rates for
-            government travel, or even free places and spaces.
-          </p>
-      </div>
-    </section>
-
-
-    <section class="" style="padding-top: 5rem !important;" id="item-why">
-      <div class="container-xxl container-sm">
-        <h3 class="mb-4">Who can join?</h2>
-
-          <p class="py-2 btc-3">
-            Secured by ID.me or a military email, Crewdogs verifies Active Duty, National Guard, Reserves, Veterans,
-            Retirees,
-            Military Spouses, Surviving Spouses, Immediate Military Family Members, Dependents, and Parents.</p>
-
-          <ul class="cd-highlights">
-            <li>
-              <span><i class="bi bi-tag"></i></span> <b>Military members</b>
-            </li>
-            <li>
-              <span><i class="bi bi-award"></i></span> <b>Veterans and retirees</b>
-            </li>
-            <li>
-              <span><i class="bi bi-people"></i></span> <b>Family members</b>
-            </li>
-          </ul>
-      </div>
-    </section>
-
-
-    <section class="mt-5">
-      <div class=" review-box-m container-xxl container-sm">
-        <h3 class="mb-4">Reviews from our community</h3>
-
-
-        <div class="review-box">
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“1 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“2 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“3 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“4 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“5 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“6 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“7 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“8 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“9 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-          <div class="item">
-            <div class="review-card">
-              <h3>“10 Exceptional service. Can’t be faulted ”</h3>
-              <p class="btc-3 mt-3 fs-16">Norem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputatelibero
-                et velit interdum, ac aliquet odio mattis.Class aptent taciti sociosquad litora torquent per
-              </p>
-              <div class="d-flex">
-                <div class="avatar"><img src="img/avatar.png" alt=""></div>
-                <div class="reviewer"><b>Kristie</b><span>Jun 2022</span></div>
-              </div>
-            </div><!--review card end-->
-
-          </div> <!--item end-->
-
-
-
-
-
-        </div><!--review-box end -->
-
-      </div>
-    </section>
-  </section>
-
-  <div id="footer" style="margin-top: -5rem;"></div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src="js/jquery-3.7.1.js"></script>
-  <script src="js/headerFooter.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/script.js"></script>
-
-  <script>
-    //index header 
-    window.addEventListener('scroll', function () {
-      // Check if window width is greater than or equal to 700px
-      var scrollHeight = window.scrollY;
-      var searchBox = document.getElementById('search-box-m');
-      var searchBg = document.getElementById('bg-white');
-
-      if (window.innerWidth <= 1000) {
-
-        if (scrollHeight > 10) {
-          searchBg.classList.add('bg-white');
-        } else {
-          searchBg.classList.remove('bg-white');
-        }
-      }
-      if (window.innerWidth >= 1000) {
-
-        if (scrollHeight > 350) {
-          searchBg.classList.add('bg-white');
-        } else {
-          searchBg.classList.remove('bg-white');
-        }
-      }
-
-      if (window.innerWidth >= 1000) {
-
-        if (scrollHeight > 350) {
-          searchBox.classList.add('search-box-m');
-          searchBg.classList.add('bg-white');
-        } else {
-          searchBox.classList.remove('search-box-m');
-          searchBg.classList.remove('bg-white');
-        }
-      }
-
-    });
-  </script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="../js/jquery-3.7.1.js"></script>
+  <script src="../js/headerFooter.js"></script>
 
 </body>
 

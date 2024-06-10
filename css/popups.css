@@ -150,7 +150,19 @@ letter-spacing: -0.408px;
 /* -----------------------------
  Filter Model Poupup ends
 ------------------------------*/
-
+#filter-menu-1 {
+  width: 100% !important; /* Adjust width as needed */
+  overflow-x: auto !important; /* Enable horizontal scrolling */
+  white-space: nowrap !important; /* Prevent line breaks */
+}
+.item {
+  display: inline-block; /* Keep items inline */
+  width: 150px; /* Adjust item width as needed */
+  height: 100px; /* Adjust item height as needed */
+}
+#scroll-next {
+  display: none; /* Hide button by default */
+}
 
 /* -----------------------------
  listing map starts
@@ -159,8 +171,8 @@ letter-spacing: -0.408px;
   display: flex;
   width: 100%;
   margin-top: 2rem;
-  gap: 1rem;
   position: relative;
+  gap: 1rem;
   padding: 1rem 0;
 }
 .left-Map {
@@ -186,14 +198,14 @@ letter-spacing: -0.408px;
 .left-Map .listing-map {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: start;
+  gap: 1rem;
   background: white;
 }
 .left-Map .listing-item {
 display: flex;
-width: 304px;
-max-width: 365px;
+width: 350px;
+max-width: 350px;
 padding-bottom: 16px;
 flex-direction: column;
 align-items: flex-start;
@@ -210,7 +222,6 @@ background: var(--Shades-White, #FFF);
   display: flex;
   flex-direction: column;
   position: absolute;
-  gap: 0.5rem;
   top: 1rem;
   left: 1rem;
   z-index: 1;
@@ -218,11 +229,12 @@ background: var(--Shades-White, #FFF);
 
 .map-container .button-div button {
   min-width: max-content;
-  border: 1px solid rgba(172, 172, 176, 0.24);
+  border: 1px solid #74747447;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: .3rem;
 }
 .map-container .button-div button img {
    width: 20px;
@@ -237,6 +249,7 @@ background: var(--Shades-White, #FFF);
 .decreade-Map .left-Map {
   width: 0px !important;
   height: 0px;
+  margin-left: 0;
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
@@ -247,11 +260,18 @@ background: var(--Shades-White, #FFF);
 }
 .increase-Map .left-Map {
   width: 100% !important;
+  margin-right: 1rem;
+}
+.increase-Map .Right-Map .button-div button,
+.decreade-Map .Right-Map .button-div button {
+  border-radius: 10px; 
+  background-color: white;
+  font-size: 16px;
 }
 
 .increase-Map .Right-Map .button-div{
-  top: 3rem !important;
-  left: -7rem !important;
+  top: 1rem !important;
+  left: -10rem !important;
 }
 .decreade-Map .left-map {
   width: 0px !important;
@@ -266,6 +286,7 @@ background: var(--Shades-White, #FFF);
   transition: all 1s ease-in-out;
 }
 
+
 .decreade-Map .left-Map .filter-menu-main {
   position: fixed;
   top: 0;
@@ -273,11 +294,13 @@ background: var(--Shades-White, #FFF);
   transition: none;
   z-index: -1;
 }
-
-@media (max-width:700px){
+.increase-Map .left-Map .filter-menu-main {
+ margin-right: 15%;
 }
 
 
+@media (max-width:700px){
+}
 #map {
   width:100%;
   height: 100%;

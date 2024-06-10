@@ -5,11 +5,48 @@
   padding: 0.5rem;
 }
 
+@media (max-width:700px) {
+  .left-l-d {
+    display: none;
+  }
+  .flex-column-mobile {
+    flex-direction: column !important;
+  }
+  .flex-column-mobile .w-100-m  {
+    width: 100% !important;
+  }
+  .mobile-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .edit-remove{
+    left: 20%;
+  }
+  .cover-photo {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .cover-image {
+    width: 100% !important;
+    aspect-ratio: 16/13;
+    height: auto !important;
+  }
+  .mobile-padding-none{
+    padding: 0px !important;
+  }
+}
 .right-l-d {
   width: 100%;
   padding: 0.5rem;
 }
-
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  resize: none;
+  overflow-y: scroll;
+}
 .photos-right img {
   max-width: 110px;
   gap: 10px;
@@ -44,6 +81,119 @@
   letter-spacing: -0.078px;
 }
 
+
+.ui, input[type="text"], select {
+  width: 100%;
+   max-width: 200px !important;
+   padding: 12px !important;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 1rem;
+   box-sizing: border-box;
+   font-size: 12px;
+ }
+ .l-d-d .ui {
+   max-width: 100% !important;
+ }
+ 
+ .dropdown {
+   border-radius: 1rem;
+ }
+ .nput-ft {
+   display: flex;
+   align-items: center;
+   border: 1px solid #444;
+   border-radius: 1rem;
+   gap: 5px;
+   padding: 0 1rem;
+ border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+ background: #FDFDFD;
+ }
+ 
+ .nput-ft input{
+   width: 40px !important;
+   outline: none;
+   border: none;
+ }
+ 
+ .input-11 {
+ display: flex;
+ align-items: center;
+ position: relative;
+ color: var(--Grayscale-Gray-60, #ACACB0);
+ font-size: 14px;
+ font-weight: 700;
+ line-height: 26px; /* 185.714% */
+ letter-spacing: -0.078px;
+ }
+ .input-11 input {
+   max-width: 100% !important;
+   padding-left: 30px !important;
+   height: 48px;
+ }
+ 
+ .input-11 input::placeholder {
+ color: var(--Grayscale-Gray-80, #4B4B4D);
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 26px; /* 185.714% */
+ letter-spacing: -0.078px;
+ }
+ 
+ .damage-placeholder-text::placeholder {
+   color: var(--Grayscale-Gray-60, #ACACB0) !important;
+   font-size: 14px !important;
+   font-weight: 400 !important;
+   line-height: 26px; /* 185.714% */
+   letter-spacing: -0.078px;
+ }
+ 
+ .taxes-place-hold-text::placeholder {
+   color: var(--Grayscale-Gray-60, #ACACB0);
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 26px; /* 185.714% */
+   letter-spacing: -0.078px;
+ }
+ .select-time {
+   max-width: 100% !important;
+   border-radius: 16px;
+   margin-bottom: 0 !important;
+   border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80)) !important;
+ }
+ 
+ .dropdown-time-1 .select-time {
+   border: none !important;
+ }
+ .dropdown-time-2 {
+   height: auto !important;
+ }
+ .dropdown-time-2 .select-time {
+   padding: 1rem !important;
+ }
+ 
+ .divider-line {
+   width: 2px !important;
+   background-color: var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+ }
+ 
+ .input-11 a {
+   position: absolute;
+   right: 10px;
+ color: var(--Primary-Primary-50, #0D99FF);
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 18px; /* 128.571% */
+ letter-spacing: -0.078px;
+ text-decoration-line: underline;
+ }
+ 
+ .input-11 p {
+  position: absolute;
+  left: 10px;
+ }
+ 
 .edit-name {
   color: var(--Primary-Primary-50, #0d99ff);
   font-family: "DM Sans";
@@ -531,6 +681,243 @@ border: 1px solid #E7E7E7;
 background: var(--Gray-04, #FCFCFC);
 }
 
+
+/* bookings */
+
+.date-box {
+  display: flex;
+  width: 128px;
+  min-width: 128px;
+  height: 128px;
+  min-height: 128px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  border-right: 0.5px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  border-bottom: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  border-left: 0.5px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: #FFF;
+}
+
+.date-box-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.date-box-active {
+  border-top: 1px solid var(--Primary-Primary-50, #0D99FF);
+  border-right: 0.5px solid var(--Primary-Primary-50, #0D99FF);
+  border-bottom: 1px solid var(--Primary-Primary-50, #0D99FF);
+  border-left: 1px solid var(--Primary-Primary-50, #0D99FF);
+  background: #FFF;
+}
+
+.scroll-body-calander::-webkit-scrollbar {
+  display: none !important;
+}
+
+.coll {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  min-width: fit-content;
+}
+
+.activeblu {
+  color: #0D99FF;
+  background-color: #F3FAFE;
+  border: 1px solid #F3FAFE;
+}
+
+.dashboard-items {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.dashboard-item {
+  width: 293px;
+  border-radius: 10px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: var(--White-White-100, #FFF);
+}
+
+.dashboard-item p {
+  line-height: 21px !important;
+}
+
+.dashboard-item hr {
+  border: 1px solid rgba(214, 215, 216, 0.8);
+  margin: 0 !important;
+}
+
+.dashboard-item-top {
+  padding: 24px;
+  width: 100%;
+}
+
+.dashboard-item-bottom {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  /* 175% */
+  letter-spacing: -0.32px;
+}
+
+.dot {
+  display: block !important;
+  color: #acacb0;
+  fill: var(--Grayscale-Gray-60, #ACACB0);
+}
+.max-w {
+  max-width: 1550px;
+}
+.overflow::-webkit-scrollbar {
+  display: none !important;
+  }
+
+@media (max-width:700px) {
+  #profile-mobile-version {
+    display: block !important;
+  }
+
+  .profile-desktop-version {
+    display: none !important;
+  }
+  .overflow {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  } 
+  .mobile-margin-r-none{
+    padding: 0 !important;
+  }
+  .dashboard-item{
+    width: 100% !important;
+  }
+}
+
+
+
+/*-----------------------------
+myplace.html
+------------------------------*/
+.custom-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.custom-carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-slide img {
+  width: 100%;
+  aspect-ratio: 16/13;
+}
+
+.custom-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.custom-dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+
+.custom-dot.active {
+  background-color: #747474;
+}
+
+.buttons-edit-calander {
+display: flex;
+gap: 1rem;
+position: absolute;
+bottom: 1rem;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.edit-button {
+display: flex;
+width: 116px;
+padding: 10px 16px;
+align-items: center;
+gap: 2px;
+border-radius: 16px;
+border: 1px solid #E7E7E7;
+background: var(--Gray-04, #FCFCFC);
+}
+
+.listing-footer {
+display: flex;
+justify-content: space-between;
+}
+.listing-footer div {
+display: flex;
+gap: 5px;
+}
+.m-r-1rem {
+margin-right: 1rem;
+}
+.header-icon div {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.listing-name {
+color: #FFF;
+text-align: center;
+font-size: 11px;
+line-height: 17px; /* 154.545% */
+letter-spacing: -0.07px;
+
+display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+border-radius: 12px;
+border: 0.5px solid var(--White-White-24, rgba(255, 255, 255, 0.24));
+background: rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(12px);
+
+position: absolute;
+top: 15%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+
 /*----------------------------------
 calander availability css
 ----------------------------------*/
@@ -580,6 +967,16 @@ font-weight: 500;
 line-height: 138%; /* 19.32px */
 letter-spacing: -0.28px;
 border: none ;
+}
+
+
+.dashboard-sidenav-font {
+color: var(--GREY, #747474);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
 }
 
 

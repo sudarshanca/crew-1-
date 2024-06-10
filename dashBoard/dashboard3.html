@@ -45,11 +45,6 @@
       position: sticky;
       top: 100px;
     }
-    #mainList{
-    display: flex;
-    flex-direction: column;
-    margin: 0 10%;
-    }
 
     .dashboard-left {
       width: 100%;
@@ -63,14 +58,10 @@
       overflow: hidden;
       transition: all 1s ease;
       border-radius: 0;
-      margin-left: 1rem;
-      padding: 4px 24px !important;
     }
     .list-group-item {
       border: none !important;
-      border-left: 5px solid white !important;
-      transition: all .5s ease-in-out;
-      width: max-content;
+      border-left: 5px solid #d5d3d3 !important;
     }
     .dashBoard-page-nav-active .nav-bar-listing-details {
       height: auto;
@@ -103,85 +94,69 @@
     }
 
     /* Style for active navbar item */
-    .dashBoard-page-nav-active .dashBoard-page-nav {
-     background: #FAFAFA;
-    }
-    .dashBoard-page-nav {
-      cursor: pointer;
-      border-radius: 12px;
-      display: flex;
-      height: 48px;
-      padding: 0px 24px;
-      align-items: center;
-      gap: 2px;
-      align-self: stretch;
-      margin: 0 !important;
-    }
     .dashboard-right .dashBoard-page-nav-active p {
      color: var(--Grayscale-Gray-80, #4B4B4D) !important;
-    }
-    .list-group-item + .list-group-item.active {
-      margin-top: 0px !important;
-     
     }
   </style>
 </head>
 
 <body>
 
-  <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
+  <div id="dashboardHeader" style="border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
 
   <div class="dashboard-main container">
     <div class="dashboard-right">
       <div id="mainList">
         <div id="page1" data-page="page1" class="dashBoard-page-nav-active">
-          <p class="dashboard-sidenav-font dashBoard-page-nav">Listing details</p>
-          <div id="ListingDetails" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Photos">Photos</a>
-            <a class="list-group-item list-group-item-action" href="#Property-information">Property information</a>
-            <a class="list-group-item list-group-item-action" href="#Address">Address</a>
-            <a class="list-group-item list-group-item-action" href="#Amenities">Amenities</a>
-            <a class="list-group-item list-group-item-action" href="#Stay-types">Stay types</a>
+          <p class="dashboard-sidenav-font">Listing details</p>
+          <div id="list-example" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Standard rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Seasonal rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Official travel rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Discounts</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Taxes and fees</a>
           </div>
         </div>
         <div id="page2" data-page="page2">
-          <p class="dashboard-sidenav-font dashBoard-page-nav">Pricing</p>
-          <div id="PricingApi" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Standard-rates">Standard rates</a>
-            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Seasonal rates</a>
-            <a class="list-group-item list-group-item-action" href="#Official-travel rates">Official travel rates</a>
-            <a class="list-group-item list-group-item-action" href="#Discounts">Discounts</a>
-            <a class="list-group-item list-group-item-action" href="#Taxes-and-fees">Taxes and fees</a>
+          <p class="dashboard-sidenav-font">Pricing</p>
+          <div id="list-example" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Standard rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Seasonal rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Official travel rates</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Discounts</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Taxes and fees</a>
           </div>
         </div>
         <div id="page3" data-page="page3">
-           <p class="dashboard-sidenav-font dashBoard-page-nav" >Rules and Policies</p>
-          <div id="Rules-and-Policies" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Standard-rates">House Rules</a>
-            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Cancellation policy</a>
-          </div>
+          <p class="dashboard-sidenav-font" >page3</p>
         </div>
         <div id="page4" data-page="page4">
-          <p class="dashboard-sidenav-font dashBoard-page-nav" >Calendar and availability</p>
-          <div id="Calendar-and-availability" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Standard-rates">Availability</a>
-            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Calendar Sync</a>
-          </div>
+          <p class="dashboard-sidenav-font" >Page4</p>
+        </div>
+        <div id="page5" data-page="page5">
+          <p class="dashboard-sidenav-font" >Page5</p>
         </div>
       </div>
     </div>
     <div class="dashboard-left">
       <div id="page1" class="page dashBoard-page-active">
-        <div id="listing-details-photo"></div>
+        <h1>Lorem ipsum dolor sit amet, Page 2.</h1>
+        <p>This is the content of Page 2.</p>
       </div>
       <div id="page2" class="page">
         <div id="pricingapi1"></div>
       </div>
       <div id="page3" class="page">
-         <div id="rulesAndPolices"></div>
+        <h1>Lorem ipsum dolor sit amet, Page 3.</h1>
+        <p>This is the content of Page 3.</p>
       </div>
       <div id="page4" class="page">
-        <div id="calander-availability"></div>
+        <h1>Lorem ipsum dolor sit amet, Page 4.</h1>
+        <p>This is the content of Page 4.</p>
+      </div>
+      <div id="page5" class="page">
+        <h1>Lorem ipsum dolor sit amet, Page 5.</h1>
+        <p>This is the content of Page 5.</p>
       </div>
     </div>
   </div>
@@ -198,11 +173,6 @@
           if (page.id === pageId) {
             page.classList.add("dashBoard-page-active");
           }
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
         });
 
         // Update navbar color
@@ -227,7 +197,6 @@
 
       // Show the active page by default
       document.getElementById("page1").classList.add("dashBoard-page-active");
-      
     });
   </script>
 

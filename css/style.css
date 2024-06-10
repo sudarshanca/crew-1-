@@ -479,9 +479,6 @@ ul.cd-highlights b {
   font-weight: normal;
 }
 
-.filter-area {
-  margin-bottom: 1rem;
-}
 
 .filter-area .filter-button {
   border-right: solid 1px #E7E7E7;
@@ -490,12 +487,58 @@ ul.cd-highlights b {
 
 .filter-area .filter-menu {
   padding-left: 20px;
-  width: 90%;
+  width: 100%;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow-x: auto;
 }
+
+/* filter-menu*/
+
+.col-message-1 {
+  border: 1px solid #4444;
+  border-radius: 1rem;
+  color: #222;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  padding: 11px 17px;
+  cursor: pointer;
+  margin-bottom: 0 !important;
+}
+
+.filter-area {
+  display: flex;
+}
+
+
+.filter-menu::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+  }
+.filter-menu button {
+  min-width: fit-content;
+}
+
+.filter-menu .active {
+  color: #076CB6;
+  background-color: #EEF8FF;
+}
+
+.filter-menu-main .scroll-next {
+  background-color: #fff;
+  border: 1px solid #747474;
+  border-radius: 50%;
+}
+
+.filter-menu-main .over-x-scroll {
+  overflow-x: auto;
+}
+
 
 .badge-icon {
   width: 50px;
@@ -1488,58 +1531,6 @@ main {
   height: 21.75;
 }
 
-
-/* filter-menu*/
-
-.col-message-1 {
-  border: 1px solid #4444;
-  border-radius: 1rem;
-  color: #222;
-  text-align: center;
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  /* 128.571% */
-  padding: 11px 17px;
-  cursor: pointer;
-  margin-bottom: 0 !important;
-}
-
-.filter-area {
-  display: flex;
-}
-.filter-menu {
-  display: flex;
-  flex-wrap: nowrap !important;
-  flex-grow: 1;
-}
-
-.filter-menu::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
-  }
-.filter-menu button {
-  min-width: fit-content;
-}
-
-.filter-menu .active {
-  color: #076CB6;
-  background-color: #EEF8FF;
-}
-
-.filter-menu-main .scroll-next {
-  background-color: #fff;
-  border: 1px solid #747474;
-  border-radius: 50%;
-}
-
-.filter-menu-main .over-x-scroll {
-  overflow-x: scroll;
-}
-.over-x-scroll::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
-  }
   @media (max-width:1000px) {
     .flex-wrap-1000 {
       flex-direction: column !important;

@@ -150,19 +150,6 @@ letter-spacing: -0.408px;
 /* -----------------------------
  Filter Model Poupup ends
 ------------------------------*/
-#filter-menu-1 {
-  width: 100% !important; /* Adjust width as needed */
-  overflow-x: auto !important; /* Enable horizontal scrolling */
-  white-space: nowrap !important; /* Prevent line breaks */
-}
-.item {
-  display: inline-block; /* Keep items inline */
-  width: 150px; /* Adjust item width as needed */
-  height: 100px; /* Adjust item height as needed */
-}
-#scroll-next {
-  display: none; /* Hide button by default */
-}
 
 /* -----------------------------
  listing map starts
@@ -187,7 +174,7 @@ letter-spacing: -0.408px;
   width: 40%;
   transition: width 1s ease-in-out;
   position: sticky;
-  top: 6rem;
+  top: 5.4rem;
 }
 .map-container {
   width: 100%;
@@ -196,16 +183,13 @@ letter-spacing: -0.408px;
 }
 
 .left-Map .listing-map {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 1rem;
+  display: grid;
+  grid-gap: .5rem;
   background: white;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr)); /* Spread items evenly */
 }
 .left-Map .listing-item {
 display: flex;
-width: 350px;
-max-width: 350px;
 padding-bottom: 16px;
 flex-direction: column;
 align-items: flex-start;
@@ -215,6 +199,10 @@ flex-grow: 1;
 border-radius: 13px;
 border: 0px solid var(--Grayscale-Gray-40, rgba(172, 172, 176, 0.24));
 background: var(--Shades-White, #FFF);
+}
+
+.left-Map .listing-item img {
+  width: 100%;
 }
 
 .map-container .button-div {
@@ -253,7 +241,7 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
-  margin: 5rem 0;
+  margin: 3.5rem 0;
 }
 .increase-Map .Right-Map {
   width: 0px !important;
@@ -270,8 +258,8 @@ background: var(--Shades-White, #FFF);
 }
 
 .increase-Map .Right-Map .button-div{
-  top: 1rem !important;
-  left: -10rem !important;
+  top: 0.7rem !important;
+  left: -7rem !important;
 }
 .decreade-Map .left-map {
   width: 0px !important;
@@ -290,12 +278,12 @@ background: var(--Shades-White, #FFF);
 .decreade-Map .left-Map .filter-menu-main {
   position: fixed;
   top: 0;
-  margin-top: 6rem !important;
+  margin-top: 5.5rem !important;
   transition: none;
   z-index: -1;
 }
 .increase-Map .left-Map .filter-menu-main {
- margin-right: 15%;
+ margin-right: 10%;
 }
 
 

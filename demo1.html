@@ -219,8 +219,8 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
        <div id="Left-Map" class="left-Map">
 
         <!-- filter -->
-        <div class=" mt-4 filter-menu-main d-flex justify-content-between align-items-center"> 
-          <div class="over-x-scroll">
+        <div  class=" mt-2 filter-menu-main d-flex justify-content-between align-items-center"> 
+          <div id="filter-menu-main" class="over-x-scroll">
             <div class="filter-area p-1 d-flex align-items-center">
              <!--
               <div class="filter-button ">
@@ -271,18 +271,37 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
                 </div>
             </div>
         </div>
-        <button id="scroll-next" class="scroll-next" style="margin-top: -1rem;">
+        <button id="scroll-next" class="scroll-next">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
               <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41422 0.585786 6.75 1 6.75L1 5.25ZM17 6.75C17.4142 6.75 17.75 6.41421 17.75 6C17.75 5.58579 17.4142 5.25 17 5.25V6.75ZM13.528 0.467309C13.2338 0.175726 12.7589 0.177844 12.4673 0.472041C12.1757 0.766238 12.1778 1.24111 12.472 1.53269L13.528 0.467309ZM14.763 2.74731L14.235 3.28L14.763 2.74731ZM14.763 9.25269L15.2909 9.78538L14.763 9.25269ZM12.472 10.4673C12.1778 10.7589 12.1757 11.2338 12.4673 11.528C12.7589 11.8222 13.2338 11.8243 13.528 11.5327L12.472 10.4673ZM16.9801 5.68667L17.7241 5.59184V5.59184L16.9801 5.68667ZM16.9801 6.31333L17.7241 6.40816V6.40816L16.9801 6.31333ZM1 6.75L17 6.75V5.25L1 5.25L1 6.75ZM12.472 1.53269L14.235 3.28L15.2909 2.21462L13.528 0.467309L12.472 1.53269ZM14.235 8.72L12.472 10.4673L13.528 11.5327L15.2909 9.78538L14.235 8.72ZM14.235 3.28C14.9505 3.98914 15.4413 4.47718 15.7734 4.8907C16.096 5.2924 16.2067 5.55042 16.2361 5.7815L17.7241 5.59184C17.6453 4.97372 17.3504 4.45878 16.9429 3.95146C16.545 3.45597 15.9814 2.89892 15.2909 2.21462L14.235 3.28ZM15.2909 9.78538C15.9814 9.10108 16.545 8.54403 16.9429 8.04854C17.3504 7.54121 17.6453 7.02628 17.7241 6.40816L16.2361 6.2185C16.2067 6.44958 16.096 6.7076 15.7734 7.10929C15.4413 7.52282 14.9505 8.01086 14.235 8.72L15.2909 9.78538ZM16.2361 5.7815C16.2546 5.92659 16.2546 6.07341 16.2361 6.2185L17.7241 6.40816C17.7586 6.13714 17.7586 5.86286 17.7241 5.59184L16.2361 5.7815Z" fill="#B4B4B4"/>
           </svg>
       </button>
         </div>
 
+         <div class="m-auto">
 
+       
         <div class="listing-map">
           <div class="listing-item">
             <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
+              <div class="bgallery-img mb-3"> <img src="img/g1.jpg" alt=""></div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5>Apartment</h5>
+                  <div class="d-flex rating align-items-center">
+                    <img src="img/star.svg" alt=""><span>4.0</span>
+                  </div>
+                </div>
+                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                  apartment/room<br>Period of time</p>
+                <p><b>$320</b> <span class="bs-3">per night</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="listing-item">
+            <div class="book-gallery">
+              <div class="bgallery-img mb-3"> <img src="img/g4.jpg" alt=""></div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5>Apartment</h5>
@@ -316,7 +335,7 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
           </div>
           <div class="listing-item">
             <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
+              <div class="bgallery-img mb-3"> <img src="img/g3.jpg" alt=""></div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5>Apartment</h5>
@@ -350,7 +369,58 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
           </div>
           <div class="listing-item">
             <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
+              <div class="bgallery-img mb-3"> <img src="img/g1.jpg" alt=""></div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5>Apartment</h5>
+                  <div class="d-flex rating align-items-center">
+                    <img src="img/star.svg" alt=""><span>4.0</span>
+                  </div>
+                </div>
+                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                  apartment/room<br>Period of time</p>
+                <p><b>$320</b> <span class="bs-3">per night</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="listing-item">
+            <div class="book-gallery">
+              <div class="bgallery-img mb-3"> <img src="img/g3.jpg" alt=""></div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5>Apartment</h5>
+                  <div class="d-flex rating align-items-center">
+                    <img src="img/star.svg" alt=""><span>4.0</span>
+                  </div>
+                </div>
+                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                  apartment/room<br>Period of time</p>
+                <p><b>$320</b> <span class="bs-3">per night</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="listing-item">
+            <div class="book-gallery">
+              <div class="bgallery-img mb-3"> <img src="img/g4.jpg" alt=""></div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5>Apartment</h5>
+                  <div class="d-flex rating align-items-center">
+                    <img src="img/star.svg" alt=""><span>4.0</span>
+                  </div>
+                </div>
+                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
+                  apartment/room<br>Period of time</p>
+                <p><b>$320</b> <span class="bs-3">per night</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="listing-item">
+            <div class="book-gallery">
+              <div class="bgallery-img mb-3"> <img src="img/g1.jpg" alt=""></div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5>Apartment</h5>
@@ -384,75 +454,7 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
           </div>
           <div class="listing-item">
             <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b>$320</b> <span class="bs-3">per night</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="listing-item">
-            <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b>$320</b> <span class="bs-3">per night</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="listing-item">
-            <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b>$320</b> <span class="bs-3">per night</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="listing-item">
-            <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Apartment</h5>
-                  <div class="d-flex rating align-items-center">
-                    <img src="img/star.svg" alt=""><span>4.0</span>
-                  </div>
-                </div>
-                <p class="card-text bs-3 py-2 mb-0">Distance in kilometers/meters/miles<br>Address of
-                  apartment/room<br>Period of time</p>
-                <p><b>$320</b> <span class="bs-3">per night</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="listing-item">
-            <div class="book-gallery">
-              <div class="bgallery-img mb-3"> <img src="img/g2.jpg" alt=""></div>
+              <div class="bgallery-img mb-3"> <img src="img/g1.jpg" alt=""></div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5>Apartment</h5>
@@ -468,7 +470,7 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
             </div>
           </div>
         </div>
-          
+      </div>   
        </div>
        <div id="Right-Map" class="Right-Map">
         <div class="map-container">
@@ -554,66 +556,81 @@ window.addEventListener("scroll", function () {
 </script>
 
 
-  <script>
-    let rightArrowButton = document.getElementById("right-arrow")
-    let leftArrowButton = document.getElementById("left-arrow")
+<script>
+  let rightArrowButton = document.getElementById("right-arrow")
+  let leftArrowButton = document.getElementById("left-arrow")
+
   function increaseMap() {
     document.querySelector('.map-main').classList.toggle('increase-Map');
     document.querySelector('.map-main').classList.remove('decreade-Map');
-     if (leftArrowButton.style.display === "flex") {
+    if (leftArrowButton.style.display === "flex") {
       leftArrowButton.style.display = "none";
       rightArrowButton.innerHTML = `<img src="img/arrow_back.svg" alt=""> Show Map `;
-     } else {
-       leftArrowButton.style.display = "flex";
+    } else {
+      leftArrowButton.style.display = "flex";
       rightArrowButton.innerHTML = `<img src="img/arrow_forward.svg" alt="">`;
       }   
-      window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
       });
+    // Toggle scroll button visibility after changing map size
+    setTimeout(toggleScrollButtonVisibility, 1000); // Adjust timeout as needed
   }
+
   function decreaseMap() {
     document.querySelector('.map-main').classList.toggle('decreade-Map');
     document.querySelector('.map-main').classList.remove('increase-Map');
     if (rightArrowButton.style.display === "flex") {
       rightArrowButton.style.display = "none";
       leftArrowButton.innerHTML = `show list <img src="img/arrow_forward.svg" alt="">`;
-     } else {
-       rightArrowButton.style.display = "flex";
+    } else {
+      rightArrowButton.style.display = "flex";
       leftArrowButton.innerHTML = `<img src="img/arrow_back.svg" alt="">`;
-      }  
+    }  
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
+    // Toggle scroll button visibility after changing map size
+    setTimeout(toggleScrollButtonVisibility, 1000); // Adjust timeout as needed
   }
-</script>
-<script>
-  function updateScrollButtonVisibility() {
-    var scrollableDiv = document.getElementById('filter-menu');
-    var scrollButton = document.getElementById('scroll-next');
+
+  // Function to toggle the visibility of the scroll-next button based on overflow
+  function toggleScrollButtonVisibility() {
+    var filterMenu = document.querySelector('.filter-menu');
+    var scrollNextButton = document.getElementById('scroll-next');
 
     // Check if the content overflows horizontally
-    if (scrollableDiv.scrollWidth > scrollableDiv.clientWidth) {
-      scrollButton.style.display = 'block'; // Show button
+    if (filterMenu.scrollWidth > filterMenu.clientWidth) {
+      scrollNextButton.style.display = 'block'; // Show button
     } else {
-      scrollButton.style.display = 'none'; // Hide button
+      scrollNextButton.style.display = 'none'; // Hide button
     }
   }
 
-  // Scroll event listener to show/hide button
+  // Event listener for the scroll-next button click
   document.getElementById('scroll-next').addEventListener('click', function() {
-    var scrollableDiv = document.getElementById('filter-menu-1');
-    scrollableDiv.scrollBy({
+    var filterMenu = document.querySelector('.filter-menu');
+    filterMenu.scrollBy({
       left: 150,
       behavior: 'smooth'
     });
     // Update button visibility after scrolling
-    setTimeout(updateScrollButtonVisibility, 300); // Adjust timeout as needed
+    setTimeout(toggleScrollButtonVisibility, 300); // Adjust timeout as needed
   });
 
-  // Initial check on page load
-  window.addEventListener('load', updateScrollButtonVisibility);
+  // Initial check and update on page load
+  window.addEventListener('load', toggleScrollButtonVisibility);
 
-  // Re-check on window resize
-  window.addEventListener('resize', updateScrollButtonVisibility);
+  // Re-check and update on resize
+  window.addEventListener('resize', toggleScrollButtonVisibility);
+
 </script>
+
+
+
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script type="module" src="Js/maptest.js"></script>

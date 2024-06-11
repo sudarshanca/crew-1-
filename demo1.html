@@ -640,63 +640,38 @@ window.addEventListener("scroll", function () {
 // Select the element to transform
 const leftMap = document.querySelector('.left-Map');
 
-// Variable to keep track of the starting position and current transform state
+// Set the initial position
+leftMap.style.transform = 'translateY(0vh)';
+
+// Variables to keep track of touch start and end positions
 let startY = 0;
-let initialTransform = 0;
-let isDragging = false;
+let isTransformed = false;
 
 // Function to handle touch start
 function handleTouchStart(event) {
-  // Get the initial touch position and current transform
   startY = event.touches[0].clientY;
-  const transformMatrix = window.getComputedStyle(leftMap).transform;
-  if (transformMatrix !== 'none') {
-    initialTransform = parseFloat(transformMatrix.split(',')[5]);
-  } else {
-    initialTransform = 0;
-  }
-  isDragging = true;
-  // Remove the transition for real-time dragging
-  leftMap.style.transition = 'none';
 }
 
 // Function to handle touch move
 function handleTouchMove(event) {
-  if (!isDragging) return;
-
-  // Calculate the movement difference
   const currentY = event.touches[0].clientY;
   const deltaY = currentY - startY;
 
-  // Translate the element based on the movement
-  const newTransform = initialTransform + deltaY;
-
-  // Ensure the element doesn't go beyond the set limits
-  if (newTransform >= 0 && newTransform <= window.innerHeight * 0.7) {
-    leftMap.style.transform = `translateY(${newTransform}px)`;
-  }
-}
-
-// Function to handle touch end
-function handleTouchEnd() {
-  isDragging = false;
-  // Add the transition for smooth snapping
-  leftMap.style.transition = 'transform 0.3s ease';
-  
-  // Determine the final position
-  const currentTransform = parseFloat(leftMap.style.transform.match(/translateY\((.*?)px\)/)[1]);
-  const midpoint = window.innerHeight * 0.35;
-  if (currentTransform > midpoint) {
+  // Check if swipe is more than 10px and scrollTop is 0
+  if (deltaY > 10 && window.scrollY === 0 && !isTransformed) {
+    // Transform to 70vh
     leftMap.style.transform = 'translateY(70vh)';
-  } else {
+    isTransformed = true;
+  } else if (deltaY < -10 && isTransformed) {
+    // Transform back to 0vh when swiping back up
     leftMap.style.transform = 'translateY(0vh)';
+    isTransformed = false;
   }
 }
 
 // Add event listeners
 document.addEventListener('touchstart', handleTouchStart);
 document.addEventListener('touchmove', handleTouchMove);
-document.addEventListener('touchend', handleTouchEnd);
 
 </script>
   

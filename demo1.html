@@ -198,9 +198,6 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
             <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
         </ul>
     </div>
-
-
-
       <!--menu items end-->
 
   </header>
@@ -216,8 +213,11 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
 
 <section class="">
     <div class="map-main">
-       <div id="Left-Map" class="left-Map">
-
+       <div id="Left-Map " class="left-Map ">
+                   <div class="mobile-map-result" style="display: none;">
+                        <div class="line-l-m"></div>
+                        <p class="card-text">7</p>
+                   </div>
         <!-- filter -->
         <div  class=" mt-2 filter-menu-main d-flex justify-content-between align-items-center"> 
           <div id="filter-menu-main" class="over-x-scroll">
@@ -480,8 +480,8 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
        </div>
     </div>
 </section>
+<div id="footer" class="footer-listing-map" style="z-index: 1;"></div>
  
- <div id="footer" style="position: relative; z-index: 1;"></div>
    <script src="js/maptest.js"></script>
     <script src="js/jquery-3.7.1.js"></script>
   <script src="./js/headerFooter.js"></script>
@@ -639,6 +639,8 @@ window.addEventListener("scroll", function () {
 <script>
 // Select the element to transform
 const leftMap = document.querySelector('.left-Map');
+const footerListingMap = document.querySelector('.footer-listing-map');
+const mobileMapResult = document.querySelector('.mobile-map-result');
 
 // Set the initial position
 leftMap.style.transform = 'translateY(0vh)';
@@ -648,12 +650,12 @@ let startY = 0;
 let isTransformed = false;
 
 // Function to handle touch start
-function handleTouchStart(event) {
+leftMap.addEventListener('touchstart', function(event) {
   startY = event.touches[0].clientY;
-}
+});
 
 // Function to handle touch move
-function handleTouchMove(event) {
+leftMap.addEventListener('touchmove', function(event) {
   const currentY = event.touches[0].clientY;
   const deltaY = currentY - startY;
 
@@ -661,23 +663,19 @@ function handleTouchMove(event) {
   if (deltaY > 10 && window.scrollY === 0 && !isTransformed) {
     // Transform to 70vh
     leftMap.style.transform = 'translateY(70vh)';
+    leftMap.classList.add('mobile-map-result')
+    footerListingMap.style.display = 'none';
+    mobileMapResult.style.display = 'block';
     isTransformed = true;
   } else if (deltaY < -10 && isTransformed) {
     // Transform back to 0vh when swiping back up
     leftMap.style.transform = 'translateY(0vh)';
+    footerListingMap.style.display = 'block';
+    mobileMapResult.style.display = 'none';
     isTransformed = false;
   }
-}
-
-// Add event listeners
-document.addEventListener('touchstart', handleTouchStart);
-document.addEventListener('touchmove', handleTouchMove);
-
+});
 </script>
-  
-
-
-
 </body>
 
 </html>

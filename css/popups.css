@@ -157,7 +157,6 @@ letter-spacing: -0.408px;
 .map-main {
   display: flex;
   width: 100%;
-  margin-top: 2rem;
   position: relative;
   gap: 1rem;
   padding: 1rem 0 0 0;
@@ -280,6 +279,10 @@ background: var(--Shades-White, #FFF);
  margin-right: 10%;
 }
 
+.mobile-map-result-div{
+  display: none !important;
+}
+
 /*----------------------------
 listing map mobile wersion
 ----------------------------*/
@@ -288,6 +291,9 @@ listing map mobile wersion
 
     margin-top: 5.5rem !important;
 
+  }
+  .mobile-map-result-div {
+    display:  block !important;
   }
   .map-main{
   flex-direction: column-reverse;
@@ -330,6 +336,7 @@ listing map mobile wersion
     background-color: #4b4b4d26 !important;
     margin: auto !important;
     border-radius: 1rem !important;
+    margin-top: 10px !important;
   }
 
   }

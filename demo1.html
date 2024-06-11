@@ -20,9 +20,23 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <style>
+    .search-bar {
+      display: none !important;
+
+    }
+    .search-main{
+      padding: 0 !important;
+    }
+
     @media (max-width:700px) {
        .filter-button-m-n  {
         display: none;
+       }
+       .search-bar {
+        display: flex !important;
+       }
+       .filter-menu-main {
+        padding: 0 !important;
        }
     }
    </style>
@@ -31,7 +45,7 @@
 <body>
 
    <div id="search-bar" class="search-main " style="top:50px;" >
-    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2">
+    <div class="d-flex desktop-version-none align-items-center justify-content-evenly gap-2 mt-2" style="padding: 0 10px;">
       <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
         style="border-radius: 2rem; padding: 6px 16px;">
         <div>
@@ -206,20 +220,12 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
   </header>
 </div> 
 
-<div class="filter-button">
-  <button type="button" class="btn btn-cd-secondary btn-pill">
-   Filter <i class="bi bi-filter"></i>
-  </button>
- </div>
-
-
-
 <section class="">
     <div class="map-main">
        <div id="Left-Map " class="left-Map ">
                    <div class="mobile-map-result-div" style="display: block;">
                         <div class="line-l-m"></div>
-                        <h5 class="result-places-text"> <span>7</span> Places </h5>
+                        <h6 class="result-places-text"> <span>7</span> Places </h6>
                    </div>
         <!-- filter -->
         <div  class=" mt-2 filter-menu-main mobile-none d-flex justify-content-between align-items-center"> 
@@ -279,12 +285,12 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
                 </button>    
                 </div>
             </div>
+          <button id="scroll-next" class="scroll-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41422 0.585786 6.75 1 6.75L1 5.25ZM17 6.75C17.4142 6.75 17.75 6.41421 17.75 6C17.75 5.58579 17.4142 5.25 17 5.25V6.75ZM13.528 0.467309C13.2338 0.175726 12.7589 0.177844 12.4673 0.472041C12.1757 0.766238 12.1778 1.24111 12.472 1.53269L13.528 0.467309ZM14.763 2.74731L14.235 3.28L14.763 2.74731ZM14.763 9.25269L15.2909 9.78538L14.763 9.25269ZM12.472 10.4673C12.1778 10.7589 12.1757 11.2338 12.4673 11.528C12.7589 11.8222 13.2338 11.8243 13.528 11.5327L12.472 10.4673ZM16.9801 5.68667L17.7241 5.59184V5.59184L16.9801 5.68667ZM16.9801 6.31333L17.7241 6.40816V6.40816L16.9801 6.31333ZM1 6.75L17 6.75V5.25L1 5.25L1 6.75ZM12.472 1.53269L14.235 3.28L15.2909 2.21462L13.528 0.467309L12.472 1.53269ZM14.235 8.72L12.472 10.4673L13.528 11.5327L15.2909 9.78538L14.235 8.72ZM14.235 3.28C14.9505 3.98914 15.4413 4.47718 15.7734 4.8907C16.096 5.2924 16.2067 5.55042 16.2361 5.7815L17.7241 5.59184C17.6453 4.97372 17.3504 4.45878 16.9429 3.95146C16.545 3.45597 15.9814 2.89892 15.2909 2.21462L14.235 3.28ZM15.2909 9.78538C15.9814 9.10108 16.545 8.54403 16.9429 8.04854C17.3504 7.54121 17.6453 7.02628 17.7241 6.40816L16.2361 6.2185C16.2067 6.44958 16.096 6.7076 15.7734 7.10929C15.4413 7.52282 14.9505 8.01086 14.235 8.72L15.2909 9.78538ZM16.2361 5.7815C16.2546 5.92659 16.2546 6.07341 16.2361 6.2185L17.7241 6.40816C17.7586 6.13714 17.7586 5.86286 17.7241 5.59184L16.2361 5.7815Z" fill="#B4B4B4"/>
+            </svg>
+        </button>
         </div>
-        <button id="scroll-next" class="scroll-next">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
-              <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41422 0.585786 6.75 1 6.75L1 5.25ZM17 6.75C17.4142 6.75 17.75 6.41421 17.75 6C17.75 5.58579 17.4142 5.25 17 5.25V6.75ZM13.528 0.467309C13.2338 0.175726 12.7589 0.177844 12.4673 0.472041C12.1757 0.766238 12.1778 1.24111 12.472 1.53269L13.528 0.467309ZM14.763 2.74731L14.235 3.28L14.763 2.74731ZM14.763 9.25269L15.2909 9.78538L14.763 9.25269ZM12.472 10.4673C12.1778 10.7589 12.1757 11.2338 12.4673 11.528C12.7589 11.8222 13.2338 11.8243 13.528 11.5327L12.472 10.4673ZM16.9801 5.68667L17.7241 5.59184V5.59184L16.9801 5.68667ZM16.9801 6.31333L17.7241 6.40816V6.40816L16.9801 6.31333ZM1 6.75L17 6.75V5.25L1 5.25L1 6.75ZM12.472 1.53269L14.235 3.28L15.2909 2.21462L13.528 0.467309L12.472 1.53269ZM14.235 8.72L12.472 10.4673L13.528 11.5327L15.2909 9.78538L14.235 8.72ZM14.235 3.28C14.9505 3.98914 15.4413 4.47718 15.7734 4.8907C16.096 5.2924 16.2067 5.55042 16.2361 5.7815L17.7241 5.59184C17.6453 4.97372 17.3504 4.45878 16.9429 3.95146C16.545 3.45597 15.9814 2.89892 15.2909 2.21462L14.235 3.28ZM15.2909 9.78538C15.9814 9.10108 16.545 8.54403 16.9429 8.04854C17.3504 7.54121 17.6453 7.02628 17.7241 6.40816L16.2361 6.2185C16.2067 6.44958 16.096 6.7076 15.7734 7.10929C15.4413 7.52282 14.9505 8.01086 14.235 8.72L15.2909 9.78538ZM16.2361 5.7815C16.2546 5.92659 16.2546 6.07341 16.2361 6.2185L17.7241 6.40816C17.7586 6.13714 17.7586 5.86286 17.7241 5.59184L16.2361 5.7815Z" fill="#B4B4B4"/>
-          </svg>
-      </button>
         </div>
          <div class="m-auto">
         <div class="listing-map">
@@ -602,53 +608,52 @@ window.addEventListener("scroll", function () {
     // Toggle scroll button visibility after changing map size
     setTimeout(toggleScrollButtonVisibility, 1000); // Adjust timeout as needed
   }
+
 // Function to toggle the visibility of the scroll buttons based on overflow and position
 function toggleScrollButtonVisibility() {
-  var filterMenu = document.querySelector('.filter-menu');
-  var scrollNextButton = document.getElementById('scroll-next');
-  var scrollBackButton = document.getElementById('scroll-back');
+  const filterMenu = document.querySelector('.filter-menu');
+  const scrollNextButton = document.getElementById('scroll-next');
+  const scrollBackButton = document.getElementById('scroll-back');
 
   // Calculate if content overflows horizontally
-  var isOverflowing = filterMenu.scrollWidth > filterMenu.clientWidth;
+  const isOverflowing = filterMenu.scrollWidth > filterMenu.clientWidth;
+
   // Calculate if we are at the end or beginning of the scroll
-  var isAtEnd = Math.ceil(filterMenu.scrollLeft + filterMenu.clientWidth) >= filterMenu.scrollWidth;
-  var isAtStart = filterMenu.scrollLeft <= 0;
+  const isAtEnd = Math.ceil(filterMenu.scrollLeft + filterMenu.clientWidth) >= filterMenu.scrollWidth;
+  const isAtStart = filterMenu.scrollLeft <= 0;
+
+  // Log for debugging
+  console.log('Overflow:', isOverflowing, 'At Start:', isAtStart, 'At End:', isAtEnd);
 
   // Show or hide the "scroll-next" button
-  if (isOverflowing && !isAtEnd) {
-    scrollNextButton.style.display = 'block';
-  } else {
-    scrollNextButton.style.display = 'none';
-  }
+  scrollNextButton.style.display = (isOverflowing && !isAtEnd) ? 'block' : 'none';
 
   // Show or hide the "scroll-back" button
-  if (isOverflowing && !isAtStart) {
-    scrollBackButton.style.display = 'block';
-  } else {
-    scrollBackButton.style.display = 'none';
-  }
+  scrollBackButton.style.display = (isOverflowing && !isAtStart) ? 'block' : 'none';
 }
 
 // Event listener for the scroll-next button click
 document.getElementById('scroll-next').addEventListener('click', function() {
-  var filterMenu = document.querySelector('.filter-menu');
+  const filterMenu = document.querySelector('.filter-menu');
   filterMenu.scrollBy({
     left: 150,
     behavior: 'smooth'
   });
-  // Update button visibility after scrolling
-  setTimeout(toggleScrollButtonVisibility, 300); // Adjust timeout as needed
+
+  // Use requestAnimationFrame for better visibility update
+  requestAnimationFrame(toggleScrollButtonVisibility);
 });
 
 // Event listener for the scroll-back button click
 document.getElementById('scroll-back').addEventListener('click', function() {
-  var filterMenu = document.querySelector('.filter-menu');
+  const filterMenu = document.querySelector('.filter-menu');
   filterMenu.scrollBy({
     left: -150,
     behavior: 'smooth'
   });
-  // Update button visibility after scrolling
-  setTimeout(toggleScrollButtonVisibility, 300); // Adjust timeout as needed
+
+  // Use requestAnimationFrame for better visibility update
+  requestAnimationFrame(toggleScrollButtonVisibility);
 });
 
 // Initial check and update on page load
@@ -658,7 +663,9 @@ window.addEventListener('load', toggleScrollButtonVisibility);
 window.addEventListener('resize', toggleScrollButtonVisibility);
 
 // Re-check and update on scroll for real-time feedback
-document.querySelector('.filter-menu').addEventListener('scroll', toggleScrollButtonVisibility);
+document.querySelector('.filter-menu').addEventListener('scroll', () => {
+  requestAnimationFrame(toggleScrollButtonVisibility);
+});
 
 </script>
 
@@ -694,13 +701,13 @@ function handleTouchMove(event) {
   // Check if swipe is more than 10px and scrollTop is 0
   if (deltaY > 10 && window.scrollY === 0 && !isTransformed) {
     // Transform to 70vh
-    leftMap.style.transform = 'translateY(75vh)';
+    leftMap.style.transform = 'translateY(80vh)';
     leftMap.classList.add('mobile-map-result-div');
     footerListingMap.style.display = 'none';
     isTransformed = true;
   } else if (deltaY < -10 && isTransformed) {
     // Transform back to 0vh when swiping back up
-    leftMap.style.transform = 'translateY(3vh)';
+    leftMap.style.transform = 'translateY(8vh)';
     footerListingMap.style.display = 'block';
     isTransformed = false;
   }
@@ -712,7 +719,7 @@ document.addEventListener('scroll', function () {
     // Check the scroll position
     if (window.scrollY > seventyVh) {
         // Set the transform if scrolled more than 70vh
-        leftMap.style.transform = 'translateY(3vh)';
+        leftMap.style.transform = 'translateY(8vh)';
     }
 });
 

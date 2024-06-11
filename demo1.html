@@ -55,35 +55,38 @@
         </button>
       </div>
       </div>
-      <!--
-    
-      <div class="filter-menu d-flex mt-1" style="overflow-x: scroll;">
-        <button type="button" class="btn btn-cd-light btn-pill active">
-          <img src="img/bed-1.svg" alt=""> Room
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill ">
-          <img src="img/bag.svg" alt=""> Short Term
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill">
-          <img src="img/file-1.svg" alt=""> Per diem
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill">
-          <img src="img/network-1.svg" alt=""> Home swap
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill">
-          <img src="img/Home.svg" alt=""> Entire place
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill">
-         <img src="img/mike.png" alt=""> Free
-        </button>
-        <button type="button" class="btn btn-cd-light btn-pill">
-          <img src="img/dog-1.png" alt=""> pet Friendly
-        </button>    
-        <button type="button" class="btn btn-cd-light btn-pill">
-          <img src="img/truck-long-term.svg" alt=""> Long Term
-        </button>    
-        </div>
-      -->
+      <div  class=" mt-2 filter-menu-main d-flex justify-content-between align-items-center"> 
+        <div id="filter-menu-main" class="over-x-scroll">
+          <div class="filter-area p-1 d-flex align-items-center">
+            <div id="filter-menu-1" class="filter-menu d-flex p-1" style="padding-left: 0;">
+              <button type="button" class="btn btn-cd-light btn-pill active">
+                <img src="img/bed-1.svg" alt=""> Room
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill ">
+                <img src="img/bag.svg" alt=""> Short Term
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill">
+                <img src="img/file-1.svg" alt=""> Per diem
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill">
+                <img src="img/network-1.svg" alt=""> Home swap
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill">
+                <img src="img/Home.svg" alt=""> Entire place
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill">
+               <img src="img/mike.png" alt=""> Free
+              </button>
+              <button type="button" class="btn btn-cd-light btn-pill">
+                <img src="img/dog-1.png" alt=""> pet Friendly
+              </button>    
+              <button type="button" class="btn btn-cd-light btn-pill">
+                <img src="img/truck-long-term.svg" alt=""> Long Term
+              </button>    
+              </div>
+          </div>
+      </div>
+      </div>
       </div>
 
  <div class="  header-fixed " style="z-index: 100; background-color: #fff; border-bottom: 1px solid #74747436; position: fixed; top: 0; left: 0; right: 0; ">
@@ -214,12 +217,12 @@ background: #FFF;" type="button" data-bs-toggle="dropdown" aria-expanded="false"
 <section class="">
     <div class="map-main">
        <div id="Left-Map " class="left-Map ">
-                   <div class="mobile-map-result-div" style="display: none;">
+                   <div class="mobile-map-result-div" style="display: block;">
                         <div class="line-l-m"></div>
                         <h5 class="result-places-text"> <span>7</span> Places </h5>
                    </div>
         <!-- filter -->
-        <div  class=" mt-2 filter-menu-main d-flex justify-content-between align-items-center"> 
+        <div  class=" mt-2 filter-menu-main mobile-none d-flex justify-content-between align-items-center"> 
           <div id="filter-menu-main" class="over-x-scroll">
             <div class="filter-area p-1 d-flex align-items-center">
              <!--
@@ -673,9 +676,6 @@ document.querySelector('.filter-menu').addEventListener('scroll', toggleScrollBu
 // Select the elements to transform
 const leftMap = document.querySelector('.left-Map');
 const footerListingMap = document.querySelector('.footer-listing-map');
-const mobileMapResult = document.querySelector('.mobile-map-result-div');
-
-
 
 // Variables to keep track of touch start and end positions
 let startY = 0;
@@ -697,16 +697,24 @@ function handleTouchMove(event) {
     leftMap.style.transform = 'translateY(75vh)';
     leftMap.classList.add('mobile-map-result-div');
     footerListingMap.style.display = 'none';
-    mobileMapResult.style.display = 'block';
     isTransformed = true;
   } else if (deltaY < -10 && isTransformed) {
     // Transform back to 0vh when swiping back up
-    leftMap.style.transform = 'translateY(0vh)';
+    leftMap.style.transform = 'translateY(3vh)';
     footerListingMap.style.display = 'block';
-    mobileMapResult.style.display = 'none';
     isTransformed = false;
   }
 }
+document.addEventListener('scroll', function () {
+    // Calculate 70% of the viewport height
+    const seventyVh = window.innerHeight * 0.1;
+
+    // Check the scroll position
+    if (window.scrollY > seventyVh) {
+        // Set the transform if scrolled more than 70vh
+        leftMap.style.transform = 'translateY(3vh)';
+    }
+});
 
 // Function to add event listeners if width is below 700px
 function addEventListeners() {

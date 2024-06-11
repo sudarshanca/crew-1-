@@ -645,7 +645,7 @@ border: 1px solid #EAEBEDCC;
     left: 0;
     width: 100%;
     background-color: white;
-    padding: 10px;
+    padding: 0 10px;
     z-index: 1000;
     transition: top 0.3s;
    }

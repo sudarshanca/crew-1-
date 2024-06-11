@@ -4,62 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map and Listing Toggle</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="Js/maptest.js"></script>
     <style>
-        body, html {
+        *{
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
             font-family: Arial, sans-serif;
         }
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
 
-        .map {
-            position: absolute;
+        .maps-mob-map {
+            position: absolute; /* Fixed at the top */
             top: 0;
             left: 0;
-            width: 100%;
-            height: calc(100% - 30px); /* Adjusted height to accommodate the footer */
-            background: lightblue;
-            z-index: 1;
-            transition: transform 0.3s ease;
-            transform: translateY(-100%); /* Initially hidden above the viewport */
+            bottom:0;
         }
-
-        .map-footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
+        .listing-mob-map {
             width: 100%;
-            height: 30px;
-            background: rgba(255, 255, 255, 0.7);
-            z-index: 2;
-        }
-
-        .listing {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background: lightcoral;
-            overflow-y: auto;
-            z-index: 2;
             transition: transform 0.3s ease;
+            z-index: 100;
+            position: relative;
         }
 
-        .handle {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 20px;
+        .listing-content-mob-map {
+            padding: 10px;
+        }
+
+        .handle-mob-map {
+            width: 100%;
+            height: 40px;
             background: darkgray;
             cursor: pointer;
             z-index: 3;
@@ -67,97 +41,192 @@
             color: white;
             line-height: 20px;
             border-radius: 0 0 10px 10px;
-            transition: top 0.3s ease; /* Smooth transition for the handle */
-            touch-action: none; /* Disable browser default touch actions */
+            transition: top 0.3s ease;
+            touch-action: none;
         }
+        #map {
+                width:100%;
+                height: 100%;
+               }
+
+               /*
+        * Optional: Makes the sample page fill the window.
+        */
+
+        .price-tag {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            color: #000000;
+            font-size: 14px;
+            padding: 10px 15px;
+            position: relative;
+            font-weight:600;
+        }
+
+            .price-tag::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, 0);
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid #FFFFFF;
+            }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="map" id="map">
-            <!-- Map content goes here -->
-            <p>Map</p>
-            <div class="map-footer"></div>
-        </div>
-        <div class="listing" id="listing">
+    <div style="height: 40px;">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+    <div class="container-mob-map" style="min-height:calc(100dvh - 40px); position:relative;" >
+        <div class="listing-mob-map" id="listing-mob-map">
+             <div class="handle-mob-map" id="handle-mob-map">Drag</div>
             <!-- Listing content goes here -->
-            <p>Listing</p>
-            <div style="height: 2000px; padding: 10px;">Scroll down to see more items...</div>
+            <div class="listing-content">
+                <p>Listing</p>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <div>Long content to demonstrate the effect...</div>
+                <!-- Removed drag button from listing -->
+                <p>Listing</p>
+                <button onclick="goToMapPage()">Go to Map Page</button>
+                <a href="#maps">map</a>
+               </div>
         </div>
-        <div class="handle" id="handle">Drag</div>
+        <div>
+            <div class="maps-mob-map" id="map">
+            </div>
+        </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const map = document.getElementById("map");
-            const listing = document.getElementById("listing");
-            const handle = document.getElementById("handle");
+    document.addEventListener("DOMContentLoaded", function () {
+    const listing = document.getElementById("listing-mob-map");
+    const handle = document.getElementById("handle-mob-map");
+    let startY = 0;
+    let initialHandleTop = 0;
+    let initialListingTransform = 0;
+    let isDragging = false;
+    let isSwiping = false;
 
-            let startY = 0;
-            let initialHandleTop = 0;
-            let initialMapY = 0;
-            let initialListingY = 0;
-            let isDragging = false;
-            let previousDeltaY = 0;
+    handle.addEventListener("touchstart", dragStart);
+    handle.addEventListener("touchmove", dragMove);
+    handle.addEventListener("touchend", dragEnd);
+    handle.addEventListener("mousedown", dragStart);
+    handle.addEventListener("mousemove", dragMove);
+    handle.addEventListener("mouseup", dragEnd);
+    handle.addEventListener("mouseleave", dragEnd);
 
-            handle.addEventListener("touchstart", touchStart);
-            handle.addEventListener("touchmove", touchMove);
-            handle.addEventListener("touchend", touchEnd);
+    listing.addEventListener("touchstart", swipeStart);
+    listing.addEventListener("touchmove", swipeMove);
+    listing.addEventListener("touchend", swipeEnd);
+    listing.addEventListener("mousedown", swipeStart);
+    listing.addEventListener("mousemove", swipeMove);
+    listing.addEventListener("mouseup", swipeEnd);
+    listing.addEventListener("mouseleave", swipeEnd);
 
-            function touchStart(e) {
-                startY = e.touches[0].clientY;
-                initialHandleTop = handle.getBoundingClientRect().top;
-                initialMapY = map.getBoundingClientRect().top;
-                initialListingY = listing.getBoundingClientRect().top;
-                isDragging = true;
-                previousDeltaY = 0;
-            }
+    function dragStart(e) {
+        e.preventDefault(); // Prevent default behavior of dragging elements
 
-            function touchMove(e) {
-                if (!isDragging) return;
-                const currentY = e.touches[0].clientY;
-                const deltaY = currentY - startY;
-                const handleTop = Math.min(Math.max(initialHandleTop + deltaY, 0), window.innerHeight - handle.clientHeight);
-                const mapY = initialMapY + deltaY;
-                const listingY = initialListingY + deltaY;
+        startY = e.touches ? e.touches[0].pageY : e.pageY;
+        initialHandleTop = handle.getBoundingClientRect().top;
+        isDragging = true;
+    }
 
-                handle.style.top = handleTop + "px";
-                map.style.transform = `translateY(${mapY}px)`;
-                listing.style.transform = `translateY(${listingY}px)`;
-                previousDeltaY = deltaY;
-            }
+    function dragMove(e) {
+        if (!isDragging) return;
 
-            function touchEnd() {
-                if (!isDragging) return;
-                isDragging = false;
+        const currentY = e.touches ? e.touches[0].pageY : e.pageY;
+        const deltaY = currentY - startY;
+        const handleTop = Math.min(Math.max(initialHandleTop + deltaY, 0), window.innerHeight - handle.clientHeight);
 
-                if (previousDeltaY > 0) {
-                    showMap();
-                } else {
-                    showListing();
-                }
+        handle.style.top = handleTop + "px";
+        initialListingTransform = parseFloat(getComputedStyle(listing).transform.split(',')[5].replace(')', '')) || 0;
+        const listingY = initialListingTransform + deltaY;
 
-                // Reset initial positions
-                startY = 0;
-                initialHandleTop = handle.getBoundingClientRect().top;
-                initialMapY = map.getBoundingClientRect().top;
-                initialListingY = listing.getBoundingClientRect().top;
-            }
+        listing.style.transform = `translateY(${listingY}px)`;
+    }
 
-            function showMap() {
-                map.style.transform = "translateY(0)";
-                listing.style.transform = "translateY(100%)";
-                handle.style.top = "calc(100% - 20px)";
-            }
+    function dragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
 
-            function showListing() {
-                map.style.transform = "translateY(-100%)";
-                listing.style.transform = "translateY(0)";
-                handle.style.top = "0";
-            }
-
-            // Initially, show listing
+        if (initialListingTransform > window.innerHeight / 2) {
+            showMap();
+        } else {
             showListing();
-        });
+        }
+    }
+
+    function swipeStart(e) {
+        startY = e.touches ? e.touches[0].pageY : e.pageY;
+        initialListingTransform = parseFloat(getComputedStyle(listing).transform.split(',')[5].replace(')', '')) || 0;
+        isSwiping = true;
+    }
+
+    function swipeMove(e) {
+        if (!isSwiping) return;
+        const currentY = e.touches ? e.touches[0].pageY : e.pageY;
+        const deltaY = currentY - startY;
+
+        // Allow swiping only if the listing is at the top
+        if (listing.scrollTop === 0) {
+            const listingTransform = Math.max(initialListingTransform + deltaY, 0);
+            listing.style.transform = `translateY(${listingTransform}px)`;
+            handle.style.top = `${listingTransform}px`;
+        }
+    }
+
+    function swipeEnd(e) {
+        if (!isSwiping) return;
+        isSwiping = false;
+
+        // Determine if swipe is up or down
+        const endY = e.changedTouches ? e.changedTouches[0].pageY : e.pageY;
+        const deltaY = endY - startY;
+
+        if (listing.scrollTop === 0) {
+            if (deltaY > 50) {
+                showMap();
+            } else if (deltaY < -50) {
+                showListing();
+            } else {
+                // Snap back if swipe was too short
+                if (initialListingTransform > 0) {
+                    showListing();
+                } else {
+                    showMap();
+                }
+            }
+        }
+    }
+
+    function showMap() {
+        listing.style.transform = "translateY(85vh)";
+    }
+
+    function showListing() {
+        listing.style.transform = "translateY(0)";
+        handle.style.top = "0";
+    }
+
+    // Initially, show listing
+    showListing();
+});
+
+
     </script>
+     <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyCOw87eJaP-4vV_kWiycPExCaPasiudSYg", v: "weekly" });</script>
 </body>
 </html>
+

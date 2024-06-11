@@ -160,7 +160,7 @@ letter-spacing: -0.408px;
   margin-top: 2rem;
   position: relative;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 .left-Map {
   height: 100%;
@@ -168,6 +168,7 @@ letter-spacing: -0.408px;
   transition: all 1s ease-in-out;
   overflow: hidden;
   margin-left: 1rem;
+  background-color: white;
 }
 .Right-Map {
   height: calc(100vh - 110px);
@@ -287,6 +288,9 @@ background: var(--Shades-White, #FFF);
 }
 
 
+/*----------------------------
+listing map mobile wersion
+----------------------------*/
 @media (max-width:700px){
   .map-main{
     flex-direction: column-reverse;
@@ -296,11 +300,15 @@ background: var(--Shades-White, #FFF);
     width: 100%;
     margin-left: 0rem !important;
     padding: 0 .5rem;
+    z-index: 1;
+    transform: translateY(0vh);
+    transition: transform 0.3s ease; /* Smooth transition */
   }
   .Right-Map{
     width: 100%;
-    position: relative;
-    top: 0;
+    position: fixed;
+    top: 135px;
+    height: 74dvh;
   }
   .map-container .button-div {
     display: none;
@@ -308,9 +316,6 @@ background: var(--Shades-White, #FFF);
   .left-Map .filter-menu-main{
     padding: 0 0 0 0 !important;
   }
-}
-
-
 
 /*
 * Optional: Makes the sample page fill the window.
@@ -346,4 +351,4 @@ border-top: 8px solid #FFFFFF;
 /* -----------------------------
  listing map Ends
 ------------------------------*/
-
+}

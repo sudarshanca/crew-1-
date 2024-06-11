@@ -165,15 +165,12 @@ letter-spacing: -0.408px;
 .left-Map {
   height: 100%;
   width: 60%;
-  transition: all 1s ease-in-out;
-  overflow: hidden;
   margin-left: 1rem;
   background-color: white;
 }
 .Right-Map {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 98px);
   width: 40%;
-  transition: width 1s ease-in-out;
   position: sticky;
   top: 5.4rem;
 }
@@ -237,12 +234,15 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .left-Map {
   width: 0px !important;
-  height: 0px;
   margin-left: 0;
+}
+.decreade-Map .left-Map .listing-item {
+   display: none;
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
   margin: 3.5rem 0 0 0;
+  height: calc(100vh - 155px);
 }
 .increase-Map .Right-Map {
   width: 0px !important;
@@ -264,21 +264,15 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .left-map {
   width: 0px !important;
-
+  height: 0px;
 }
 
 .increase-Map .Right-map{
   width: 0px !important;
 }
-
-.left-Map .filter-menu-main {
-  transition: all 1s ease-in-out;
-}
-
 .decreade-Map .left-Map .filter-menu-main {
   position: fixed;
   top: 0;
-  margin-top: 5.5rem !important;
   transition: none;
   z-index: -1;
 }
@@ -290,17 +284,23 @@ background: var(--Shades-White, #FFF);
 listing map mobile wersion
 ----------------------------*/
 @media (max-width:700px){
+  .decreade-Map .left-Map .filter-menu-main {
+
+    margin-top: 5.5rem !important;
+
+  }
   .map-main{
-    flex-direction: column-reverse;
-    margin-top: 3.45rem;
+  flex-direction: column-reverse;
+  margin-top: 3.45rem;
   }
   .left-Map {
     width: 100%;
     margin-left: 0rem !important;
     padding: 0 .5rem;
     z-index: 1;
-    transform: translateY(0vh);
+    transform: translateY(50vh);
     transition: transform 0.3s ease; /* Smooth transition */
+    border-radius: 1rem 1rem 0 0;
   }
   .Right-Map{
     width: 100%;
@@ -315,22 +315,26 @@ listing map mobile wersion
     padding: 0 0 0 0 !important;
   }
 
-  .mobile-map-result{
+  .mobile-map-result-div{
     flex-direction: column;
-    gap: .5rem;
     transition: all 1s ease;
   }
-  .mobile-map-result p {
+  .mobile-map-result-div .result-places-text {
     text-align: center;
-    font-size: 24px;
+    margin-top: .5rem;
   }
   .line-l-m{
     height: 5px !important;
     width: 100px !important;
-    background-color: #4B4B4D !important;
+    background-color: #4b4b4d26 !important;
     margin: auto !important;
     border-radius: 1rem !important;
   }
+
+  .filter-menu-main .scroll-next,
+.filter-menu-main .scroll-back {
+ display: none;
+}
 
   }
   

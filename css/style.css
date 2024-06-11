@@ -529,11 +529,17 @@ ul.cd-highlights b {
   background-color: #EEF8FF;
 }
 
-.filter-menu-main .scroll-next {
+.filter-menu-main .scroll-next,
+.filter-menu-main .scroll-back {
   background-color: #fff;
   border: 1px solid #747474;
   border-radius: 50%;
 }
+
+.filter-menu-main .scroll-back {
+  rotate: 180deg;
+}
+
 
 .filter-menu-main .over-x-scroll {
   overflow-x: auto;

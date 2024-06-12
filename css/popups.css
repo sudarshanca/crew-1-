@@ -165,6 +165,7 @@ letter-spacing: -0.408px;
   height: 100%;
   width: 60%;
   margin-left: 1rem;
+  margin-top: .5rem;
   background-color: white;
 }
 .Right-Map {
@@ -241,7 +242,7 @@ background: var(--Shades-White, #FFF);
 .decreade-Map .Right-Map {
   width: 100% !important;
   margin: 3.5rem 0 0 0;
-  height: calc(100vh - 155px);
+  height: calc(100vh - 145px);
 }
 .increase-Map .Right-Map {
   width: 0px !important;
@@ -271,26 +272,25 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .left-Map .filter-menu-main {
   position: fixed;
-  top: 0;
+  top: 4.6rem;
   transition: none;
-  z-index: -1;
 }
 .increase-Map .left-Map .filter-menu-main {
  margin-right: 10%;
 }
 
+
 .mobile-map-result-div{
   display: none !important;
 }
+
 
 /*----------------------------
 listing map mobile wersion
 ----------------------------*/
 @media (max-width:700px){
   .decreade-Map .left-Map .filter-menu-main {
-
     margin-top: 5.5rem !important;
-
   }
   .mobile-map-result-div {
     display:  block !important;
@@ -303,6 +303,7 @@ listing map mobile wersion
     width: 100%;
     margin-left: 0rem !important;
     padding: 0 .5rem;
+    margin-top: 0 !important;
     z-index: 1;
     transform: translateY(50vh);
     transition: transform 0.3s ease; /* Smooth transition */
@@ -340,6 +341,7 @@ listing map mobile wersion
   }
 
   }
+  
   
   /*
   * Optional: Makes the sample page fill the window.

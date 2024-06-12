@@ -534,6 +534,7 @@ ul.cd-highlights b {
   background-color: #fff;
   border: 1px solid #747474;
   border-radius: 50%;
+  display: none !important;
 }
 
 .filter-menu-main .scroll-back {

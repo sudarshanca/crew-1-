@@ -183,7 +183,6 @@ textarea {
 
 .ui, input[type="text"], select {
   width: 100%;
-   max-width: 200px !important;
    padding: 12px !important;
    display: inline-block;
    border: 1px solid #ccc;
@@ -1087,6 +1086,26 @@ line-height: 18px; /* 128.571% */
 /*----------------------------------
 calander availability css end
 ----------------------------------*/
+
+/*----------------------------
+dashboard mobile starts
+----------------------------*/
+
+.dashboard-mobile-header{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.dashboard-mobile-header p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+  margin-left: -1rem;
+}
+/*----------------------------
+dashboard mobile ends
+----------------------------*/
 
 /*----------------------------
 responsive mobile versio

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>stay Length</title>
+  <link href="../../../css/bootstrap.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/fonts.css">
+  <link rel="stylesheet" href="../../../css/dashboard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .right-arrow {height: 12px;}
+    .mobile-profile-font-2 {font-size: 14px !important;}
+    .mobile-profile-font-1 {font-size: 18px !important;}
+    .bb-hr {border-bottom: 1px solid var(--LIGHT-GRAY, #F1F1F1);}
+    @media (max-width:700px) {
+      .desktop-version-footer { display: none;}
+    }
+   .dropdpwn-statlength {
+      display: inline-flex;
+      width: 150px !important;
+height: 48px;
+padding: 12px;
+align-items: center;
+gap: 24px;
+border-radius: 16px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: var(--White-White-100, #FFF);
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <section class=" mt-2">
+      <div class="dashboard-mobile-header">
+        <a href="../myplacepage2.html" class="">
+          <img src="../../../img/arrow_back.svg" alt="">
+          </a>
+        <p class="personalinfor-header-1" style="color: #090A0A; padding: 12px;">Pricing</p>
+      </div>
+
+      <div class="px-2">
+        <div class="d-flex flex-column gap-3">
+          <p class="mobile-profile-font-1 py-3 mb-0">Minimum stay length</p>
+          <div class="d-flex gap-3">
+            <input type="text" class="" style="flex-grow: 1;">
+            <select name="" id="" class="dropdpwn-statlength">
+              <option value="days">days</option>
+              <option value="months">months</option>
+              <option value="years">years</option>
+            </select>
+          </div>
+          </div>
+        <div class="d-flex flex-column gap-3">
+          <p class="mobile-profile-font-1 py-3 mb-0">Maximum stay length</p>
+          <div class="d-flex gap-3">
+            <input type="text" placeholder="Optional" class="" style="flex-grow: 1;">
+            <select name="" id="" class="dropdpwn-statlength">
+              <option value="days">days</option>
+              <option value="months">months</option>
+              <option value="years">years</option>
+            </select>
+          </div>
+          </div>
+         <button class="save w-100 mt-3">Save</button>
+      </div>
+    </section>
+  <script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

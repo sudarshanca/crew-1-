@@ -1,3 +1,7 @@
+*{
+  font-family: "DM Sans";
+}
+
 .who-can-join {
   color: var(--Grayscale-Gray-100, #1E1E20);
   text-align: center;
@@ -184,7 +188,6 @@
 .pin-font {
   color: var(--Grayscale-Gray-80, #4B4B4D);
   text-align: center;
-
   font-size: 28px;
   font-weight: 500;
   line-height: 118%;
@@ -1388,7 +1391,35 @@ fonts
   color: #4B4B4D;
 }
 
+.dashboard-font-22 {
+color: var(--Grayscale-Gray-100, #1E1E20);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 185.714% */
+letter-spacing: -0.078px;
+}
 
+.dashboard-font-23 {
+color: #000;
+font-feature-settings: 'ss03' on;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 225% */
+}
+.dashboard-font-24 {
+color: var(--Primary-Primary-50, #0D99FF);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.078px;
+text-decoration-line: underline;
+}
 /*----------------------------------
 calander availability font
 ----------------------------------*/

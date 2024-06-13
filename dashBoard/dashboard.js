@@ -11,7 +11,7 @@ $(function () {
     });
   });
   
-  $("#pricingapi1").load("pricingapi1.html", function() {
+  $("#pricingapi").load("pricingapi.html", function() {
     // Initialize Scrollspy after content is loaded
     const scrollElement2 = document.querySelector('#PricingApi');
     const scrollSpy2 = new bootstrap.ScrollSpy(scrollElement2, {

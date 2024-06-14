@@ -52,6 +52,30 @@
       align-items: start;
       margin-bottom: .5rem;
     }
+
+    .start-end-time{
+display: flex;
+gap: .5rem;
+justify-content: space-between;
+align-items: center;
+flex: 1 0 0;
+border-radius: 16px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: var(--Gray-04, #FCFCFC);
+    }
+    .start-end-time select {
+      border: none !important;
+      margin-bottom: 0px !important;
+    }
+    .start-end-time select:focus {
+      outline: none;
+      border: none;
+    }
+    .line {
+      width: 1px;
+      height: 24px;
+      background: #D9D9D9;
+    }
   </style>
 
 </head>
@@ -186,15 +210,34 @@
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <p class="personalinfor-header-1 mb-0" id="exampleModalLabel">Check-in and Checkout times</p>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          1
+        <div class="modal-body px-1">
+          <p class="">Check-in window</p>
+            
+          <div class="start-end-time">
+            <select class="ui dropdown form-select " style=" margin-bottom: 20px; max-width: 100% !important; padding: 24px !important;">
+              <option value="">Starting time</option>
+              <option value="1">yes</option>
+              <option value="0">no</option>
+            </select>
+            <div class="line"></div>
+            <select class="ui dropdown form-select " style=" margin-bottom: 20px; max-width: 100% !important; padding: 24px !important;">
+              <option value="">End time</option>
+              <option value="1">yes</option>
+              <option value="0">no</option>
+            </select>
+          </div>
+
+          <p class="">Checkout time</p>
+          <select class="ui dropdown form-select " style=" margin-bottom: 20px; max-width: 100% !important; padding: 24px !important;">
+            <option value="">Select time</option>
+            <option value="1">yes</option>
+            <option value="0">no</option>
+          </select>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
-            data-bs-dismiss="modal">Delete</button>
+        <div class="modal-footer d-flex justify-content-end">
           <button type="button" class="save" style="border-radius: 2rem;">Save</button>
         </div>
       </div>
@@ -207,15 +250,17 @@
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <p class="personalinfor-header-1 mb-0" id="exampleModalLabel">Check-in and Checkout times</p>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          2
+          <div class="px-2">
+            <p class="">Check-in window</p>
+            <input type="text" class="form-select"
+            placeholder="Card number">
+          </div>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
-            data-bs-dismiss="modal">Delete</button>
+        <div class="modal-footer d-flex justify-content-end">
           <button type="button" class="save" style="border-radius: 2rem;">Save</button>
         </div>
       </div>

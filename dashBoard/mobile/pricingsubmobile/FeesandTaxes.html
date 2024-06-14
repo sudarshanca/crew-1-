@@ -40,11 +40,17 @@
     .hidden {
       display: none;
     }
+    .fee-added-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+    }
+
   </style>
 </head>
 
 <body>
-  <section class="mt-2">
+  <section class="mt-2" style="margin-bottom: 6rem !important;">
     <div class="dashboard-mobile-header">
       <a href="../pricingmobile.html">
         <img src="../../../img/arrow_back.svg" alt="">
@@ -54,17 +60,38 @@
    <div class="container">
      <div class="addfee">
        <p class="dashboard-font-23 mb-0">Fees</p>
+      <div class="fee-added-box">
+        <div>
+          <p class="dashboard-font-10">Cleaning fee</p>
+          <p class="pi-font-6-1 mb-0">$180 per night</p>
+        </div>
+      <button class="edit-button" style="width: fit-content;">Edit</button>
+      </div> 
 <!-- Button trigger modal Add Fee -->
 <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#Addfees">
-  Add fee
+  Add Another
 </button>
     </div>
     <hr class="" style="background-color: #f1f1f1;">
   <div class="addtax">
     <p class="dashboard-font-23 mb-0">Taxes</p>
+    <div class="fee-added-box">
+      <div>
+        <p class="dashboard-font-10">Stay tax</p>
+        <p class="pi-font-6-1 mb-0">9% per stay</p>
+      </div>
+    <button class="edit-button" style="width: fit-content;">Edit</button>
+    </div>
+    <div class="fee-added-box">
+      <div>
+        <p class="dashboard-font-10">Local Tax</p>
+        <p class="pi-font-6-1 mb-0">5% per syay</p>
+      </div>
+    <button class="edit-button" style="width: fit-content;">Edit</button>
+    </div>
     <!-- Button trigger modal Add Tax-->
     <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#AddTax">
-      Add Tax
+      Add Another
     </button>
   </div>
   <hr class="" style="background-color: #f1f1f1;">
@@ -91,12 +118,12 @@
       <input type="text" placeholder="1000" class="form-control">
     </div>
   </div>
-  <button class="save" style="position: absolute; bottom: 1rem; width: 90%;">Save</button>
+  <button class="save" style="position: fixed; bottom: 1rem; width: 90%;">Save</button>
 </div>
 
   </section>
 
-<!-- Modal -->
+<!-- Modal 1 -->
 <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;" id="Addfees" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
@@ -143,7 +170,7 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal 2 -->
 <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;" id="AddTax" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">

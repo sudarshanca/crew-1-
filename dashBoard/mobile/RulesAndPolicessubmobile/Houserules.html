@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>stay Length</title>
+  <link href="../../../css/bootstrap.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/fonts.css">
+  <link rel="stylesheet" href="../../../css/dashboard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .right-arrow {
+      height: 12px;
+    }
+
+    .mobile-profile-font-2 {
+      font-size: 14px !important;
+    }
+
+    .mobile-profile-font-1 {
+      font-size: 18px !important;
+    }
+
+    .bb-hr {
+      border-bottom: 1px solid var(--LIGHT-GRAY, #F1F1F1);
+    }
+
+    @media (max-width:700px) {
+      .desktop-version-footer {
+        display: none;
+      }
+    }
+
+    .dropdpwn-statlength {
+      display: inline-flex;
+      width: 150px !important;
+      height: 48px;
+      padding: 12px;
+      align-items: center;
+      gap: 24px;
+      border-radius: 16px;
+      border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+      background: var(--White-White-100, #FFF);
+    }
+
+    .fee-added-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: .5rem;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section class=" mt-2">
+    <div class="dashboard-mobile-header bb-hr">
+      <a href="../rulesAndPolicesMobile.html" class="">
+        <img src="../../../img/arrow_back.svg" alt="">
+      </a>
+      <p class="personalinfor-header-1" style="color: #090A0A; padding: 12px;">House Rules</p>
+    </div>
+
+
+    <div class="px-2">
+      <div class="bb-hr  py-2 d-flex justify-content-between align-items-center">
+        <p class="personalinfor-header-1 mb-0">Pets Allowed</p>
+        <div class="flex-c-1">
+          <div class="svg-1">
+            <img src="../../../img/Close.svg" alt="">
+          </div>
+          <div class="svg-1">
+            <img src="../../../img/Tick.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="bb-hr  py-2 d-flex justify-content-between align-items-center">
+        <p class="personalinfor-header-1 mb-0">Smoking & Vaping allowed</p>
+        <div class="flex-c-1">
+          <div class="svg-1">
+            <img src="../../../img/Close.svg" alt="">
+          </div>
+          <div class="svg-1">
+            <img src="../../../img/Tick.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="bb-hr  py-2 d-flex justify-content-between align-items-center">
+        <p class="personalinfor-header-1 mb-0">Events allowed</p>
+        <div class="flex-c-1">
+          <div class="svg-1">
+            <img src="../../../img/Close.svg" alt="">
+          </div>
+          <div class="svg-1">
+            <img src="../../../img/Tick.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="bb-hr  py-2 d-flex justify-content-between align-items-center">
+        <p class="personalinfor-header-1 mb-0">Parties allowed</p>
+        <div class="flex-c-1">
+          <div class="svg-1">
+            <img src="../../../img/Close.svg" alt="">
+          </div>
+          <div class="svg-1">
+            <img src="../../../img/Tick.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="bb-hr  py-2 d-flex justify-content-between align-items-center">
+        <p class="personalinfor-header-1 mb-0">Number of guests</p>
+        <div class="flex-c-1">
+          <div class="svg-1" style="width: 35px; height: 35px;">
+            <img src="../../../img/Close.svg" alt="">
+          </div>
+          <div>
+            <p class="mb-0">5</p>
+          </div>
+          <div class="svg-1" style="width: 35px; height: 35px;">
+            <img src="../../../img/Tick.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div>
+
+        <div class="addfee">
+          <p class="dashboard-font-23 mb-0">Check-in and Checkout times</p>
+          <div class="fee-added-box">
+            <div>
+              <p class="dashboard-font-10 mb-0">Check-in: 12:00 PM - 2:00 PM</p>
+              <p class="pi-font-6-1 mb-0">Checkout: Flexible</p>
+            </div>
+            <button type="button" class="edit-button" style="width: fit-content;" data-bs-toggle="modal"
+            data-bs-target="#checkin-checkout-edit-1">
+            Edit
+          </button>
+          </div>
+          <!-- Button trigger modal Add Fee -->
+          <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal"
+            data-bs-target="#Check-in-and-Checkout-times">
+            Add
+          </button>
+        </div>
+
+
+        <div class="addfee">
+          <p class="dashboard-font-23 mb-0">Additional Rules</p>
+          <div class="fee-added-box">
+            <div>
+              <p class="mb-0"> Rule 1: </p>
+              <p>
+                We do not allow small children on the dock due to the raised planks. Please keep all children....
+              </p>
+            </div>
+            <button type="button" class="edit-button" style="width: fit-content;" data-bs-toggle="modal"
+              data-bs-target="#edit-riles-1">
+              Edit
+            </button>
+          </div>
+          <!-- Button trigger modal Add Fee -->
+          <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal"
+            data-bs-target="#Additional-Rules">
+            Add
+          </button>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;"
+    id="Check-in-and-Checkout-times" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
+            data-bs-dismiss="modal">Delete</button>
+          <button type="button" class="save" style="border-radius: 2rem;">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;"
+    id="Additional-Rules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          2
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
+            data-bs-dismiss="modal">Delete</button>
+          <button type="button" class="save" style="border-radius: 2rem;">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit -->
+  <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;"
+    id="edit-riles-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Modal Edit
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
+            data-bs-dismiss="modal">Delete</button>
+          <button type="button" class="save" style="border-radius: 2rem;">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- checkin-checkout-edit-1 -->
+  <div class="modal fade" style="border-radius: 1rem 1rem 0 0;margin-top: 1rem; height:calc(100dvh - 1rem) !important;"
+    id="checkin-checkout-edit-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        checkin-checkout-edit-1
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="Delete " style="border: none; background-color: white; color: #0D99FF;"
+            data-bs-dismiss="modal">Delete</button>
+          <button type="button" class="save" style="border-radius: 2rem;">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

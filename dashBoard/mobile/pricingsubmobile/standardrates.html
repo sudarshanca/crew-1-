@@ -41,6 +41,34 @@
     .hidden {
       display: none;
     }
+    .fee-added-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+    }
+    .add-rate-period{
+      display: flex;
+width: 327px;
+height: 56px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 64px;
+flex-shrink: 0;border-radius: 16px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+    }
+    .circle-plus{
+      display: flex;
+width: 36px;
+height: 36px;
+padding: 3.368px 3.368px 3.369px 3.369px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 1684.211px;
+border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+background: #FAFAFA;
+    }
   </style>
 </head>
 
@@ -121,8 +149,24 @@
   <!-- base ends -->
 
 <!-- seasonal starts -->
-  <div class="Seasonal hidden">
-    Seasonal
+  <div class="Seasonal hidden p-3">
+   <p class="pi-font-6" style="color: #000;">Seasonal rates</p>
+    <div class="fee-added-box">
+      <div>
+        <p class="dashboard-font-10 mb-0">2nd Feb - 29th Aug</p>
+        <p class="pi-font-4 mb-0" style="font-weight: 500;">$180/Nt, $300/Wk, $1,000/Mo</p>
+      </div>
+    <button class="edit-button pi-font-6-1" style="width: fit-content;">Edit</button>
+    </div>
+    <hr>
+    <br>
+    <div class="add-rate-period pi-font-4">
+       <div class="circle-plus ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+          <path d="M0.761719 7.99856H14.2354M7.49856 14.7354V7.99856L7.49856 1.26172" stroke="#4B4B4D" stroke-width="1.26316" stroke-linecap="round"/>
+        </svg>
+       </div>  Add rate period
+    </div>
   </div>
  <!-- seasonal ends --> 
   <script src="../../../js/bootstrap.bundle.min.js"></script>

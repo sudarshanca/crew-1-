@@ -8,237 +8,230 @@
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/menu.css" rel="stylesheet">
+
   <link href="../css/slick-slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/s-custom.css">
+  <link rel="stylesheet" href="../css/scrollbar.css">
   <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/message.css">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <style>
+    .coll {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .activeblu {
+      color: #0D99FF;
+      background-color: #F3FAFE;
+      border: 1px solid #F3FAFE;
+    }
+
+    .input-search {
+      display: flex;
+      border: 1px solid #a5a3a3;
+      border-radius: 1rem;
+      align-items: center;
+      padding: 0 .5rem;
+    }
+
+    .input-search input {
+      border: none;
+      padding: 0 0 0 5px !important;
+    }
+
+    .input-search input:focus {
+      outline: none;
+    }
+
+
+
+
+    @media (max-width:700px) {
+      #profile-mobile-version {
+        display: block !important;
+      }
+
+      .profile-desktop-version {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container mt-2" style="max-width: 700px;">
-    <div class="d-flex justify-content-between">
-          <p class="dashboard-font-2">My Place</p>
-          <div class="header-icon d-flex gap-2">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <rect width="40" height="40" rx="20" fill="#FCFCFC"/>
-                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#EAEBED" stroke-opacity="0.8"/>
-                <path d="M11.9028 28.421C11.3779 28.421 10.9295 28.2351 10.5577 27.8633C10.1859 27.4915 10 27.0431 10 26.5181V15.587C10 15.062 10.1859 14.6137 10.5577 14.2419C10.9295 13.8701 11.3779 13.6842 11.9028 13.6842H16.3158V11.9028C16.3158 11.3779 16.5017 10.9295 16.8735 10.5577C17.2453 10.1859 17.6937 10 18.2187 10H21.7813C22.3063 10 22.7547 10.1859 23.1265 10.5577C23.4983 10.9295 23.6842 11.3779 23.6842 11.9028V13.6842H28.0972C28.6221 13.6842 29.0705 13.8701 29.4423 14.2419C29.8141 14.6137 30 15.062 30 15.587V26.5181C30 27.0431 29.8141 27.4915 29.4423 27.8633C29.0705 28.2351 28.6221 28.421 28.0972 28.421H11.9028ZM17.8947 13.6842H22.1053V11.9028C22.1053 11.8218 22.0715 11.7476 22.0041 11.6801C21.9366 11.6126 21.8623 11.5789 21.7813 11.5789H18.2187C18.1377 11.5789 18.0634 11.6126 17.9959 11.6801C17.9285 11.7476 17.8947 11.8218 17.8947 11.9028V13.6842ZM14.2105 15.2631H11.9028C11.8219 15.2631 11.7476 15.2968 11.6801 15.3643C11.6127 15.4318 11.5789 15.506 11.5789 15.587V26.5181C11.5789 26.5991 11.6127 26.6734 11.6801 26.7409C11.7476 26.8083 11.8219 26.8421 11.9028 26.8421H14.2105V15.2631ZM24.2105 26.8421V15.2631H15.7895V26.8421H24.2105ZM25.7895 15.2631V26.8421H28.0972C28.1781 26.8421 28.2524 26.8083 28.3199 26.7409C28.3873 26.6734 28.4211 26.5991 28.4211 26.5181V15.587C28.4211 15.506 28.3873 15.4318 28.3199 15.3643C28.2524 15.2968 28.1781 15.2631 28.0972 15.2631H25.7895Z" fill="#4B4B4D"/>
-              </svg>
-            </div>
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <rect width="40" height="40" rx="20" fill="#FCFCFC"/>
-                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#EAEBED" stroke-opacity="0.8"/>
-                <path d="M12 20H28M20 28V20L20 12" stroke="#4B4B4D" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </div>
+  <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
+
+
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-1 align-items-center">
+        <p class="mb-0 dashboard-font-5">Listing </p>
+        <div class="coll col-message-1 activeblu">4</div>
+      </div>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="d-flex input-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path
+              d="M15.7753 14.5607C15.5312 14.3167 15.1355 14.3167 14.8914 14.5607C14.6473 14.8048 14.6473 15.2005 14.8914 15.4446L15.7753 14.5607ZM18.2246 18.7779C18.4687 19.022 18.8645 19.022 19.1085 18.7779C19.3526 18.5338 19.3526 18.1381 19.1085 17.894L18.2246 18.7779ZM7.27922 4.00454C7.62015 3.95054 7.85276 3.63039 7.79876 3.28946C7.74476 2.94853 7.42461 2.71593 7.08368 2.76993L7.27922 4.00454ZM3.10059 6.75302C3.04659 7.09395 3.2792 7.4141 3.62012 7.46809C3.96105 7.52209 4.2812 7.28949 4.3352 6.94856L3.10059 6.75302ZM14.8914 15.4446L18.2246 18.7779L19.1085 17.894L15.7753 14.5607L14.8914 15.4446ZM8.66663 15.2109C4.86967 15.2109 1.79163 12.1329 1.79163 8.33594H0.541626C0.541626 12.8232 4.17931 16.4609 8.66663 16.4609V15.2109ZM15.5416 8.33594C15.5416 12.1329 12.4636 15.2109 8.66663 15.2109V16.4609C13.1539 16.4609 16.7916 12.8232 16.7916 8.33594H15.5416ZM8.66663 1.46094C12.4636 1.46094 15.5416 4.53898 15.5416 8.33594H16.7916C16.7916 3.84862 13.1539 0.210938 8.66663 0.210938V1.46094ZM8.66663 0.210938C4.17931 0.210938 0.541626 3.84862 0.541626 8.33594H1.79163C1.79163 4.53898 4.86967 1.46094 8.66663 1.46094V0.210938ZM7.08368 2.76993C5.03336 3.09467 3.42533 4.7027 3.10059 6.75302L4.3352 6.94856C4.57522 5.43311 5.76377 4.24456 7.27922 4.00454L7.08368 2.76993Z"
+              fill="#ACACB0" />
+          </svg>
+          <input type="text" placeholder="Search">
+        </div>
+
+        <button class="save px-3" style="width: fit-content;"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+            height="16" viewBox="0 0 15 16" fill="none">
+            <path d="M0.833313 8.0026H14.1666M7.49998 14.6693V8.0026L7.49998 1.33594" stroke="white" stroke-width="1.25"
+              stroke-linecap="round" />
+          </svg> New listing</button>
+      </div>
+
     </div>
     <br>
-<div class=" listing-main d-flex flex-column gap-5">
+    <br>
 
-    <div class="custom-book-gallery" >
-      <div class="custom-bgallery-img mb-3" style="position: relative;" >
-          <div class="custom-carousel-container">
-              <div class="custom-carousel-slide">
-                  <img src="../img/d-img1.jpg" alt="Image 1">
-                  <img src="../img/d-img2.jpg" alt="Image 2">
-                  <img src="../img/d-img3.jpg" alt="Image 3">
-                  <img src="../img/d-img4.jpg" alt="Image 4">
-              </div>
-          </div>
-          <div class="buttons-edit-calander">
-            <button class="edit-button d-flex gap-2"><img src="../img/Edit 2.svg" alt=""> Edit </button>
-            <button class="edit-button">Calendar</button>
-          </div>
-           <p class="listing-name">Listing name</p>
-          <div class="custom-dots"></div>
-      </div>
-      <div class="listing-footer">
-        <div>
-          <p class="mb-0">Available</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-          </div>
-        </div>
-        <div class="m-r-1rem">
-          <p class="mb-0">4</p>
-            <img src="../img/star.svg" alt="">
-        </div>
-      </div>
-  </div> <!--listing items ends-->
+    <div class="d-flex flex-column gap-1">
 
-    <div class="custom-book-gallery" >
-      <div class="custom-bgallery-img mb-3" style="position: relative;" >
-          <div class="custom-carousel-container">
-              <div class="custom-carousel-slide">
-                <img src="../img/d-img2.jpg" alt="Image 2">
-                <img src="../img/d-img1.jpg" alt="Image 1">
-                  <img src="../img/d-img3.jpg" alt="Image 3">
-                  <img src="../img/d-img4.jpg" alt="Image 4">
-              </div>
-          </div>
-          <div class="buttons-edit-calander">
-            <button class="edit-button d-flex gap-2"><img src="../img/Edit 2.svg" alt=""> Edit </button>
-            <button class="edit-button">Calendar</button>
-          </div>
-           <p class="listing-name">Listing name</p>
-          <div class="custom-dots"></div>
-      </div>
-      <div class="listing-footer">
-        <div>
-          <p class="mb-0">Available</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+              <p class="personalinfor-header-1">Title</p>
+             </div>
+            <div class="d-flex">
+              <p class="personalinfor-header-1" style="text-align: center; margin-right: 4rem;">Status</p>
+            </div>
           </div>
         </div>
-        <div class="m-r-1rem">
-          <p class="mb-0">4</p>
-            <img src="../img/star.svg" alt="">
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="personalinfor-header-1">Address</p>
+            <p class="personalinfor-header-1" style="margin-left: 9rem;">Listing type</p>
+          </div>
         </div>
       </div>
-  </div> <!--listing items ends-->
+      
+      <hr>
 
-    <div class="custom-book-gallery" >
-      <div class="custom-bgallery-img mb-3" style="position: relative;" >
-          <div class="custom-carousel-container">
-              <div class="custom-carousel-slide">
-                <img src="../img/d-img3.jpg" alt="Image 3">
-                <img src="../img/d-img1.jpg" alt="Image 1">
-                  <img src="../img/d-img2.jpg" alt="Image 2">
-                  <img src="../img/d-img4.jpg" alt="Image 3">
-              </div>
-          </div>
-          <div class="buttons-edit-calander">
-            <button class="edit-button d-flex gap-2"><img src="../img/Edit 2.svg" alt=""> Edit </button>
-            <button class="edit-button">Calendar</button>
-          </div>
-           <p class="listing-name">Listing name</p>
-          <div class="custom-dots"></div>
-      </div>
-      <div class="listing-footer">
-        <div>
-          <p class="mb-0">Available</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
           </div>
         </div>
-        <div class="m-r-1rem">
-          <p class="mb-0">4</p>
-            <img src="../img/star.svg" alt="">
-        </div>
-      </div>
-  </div> <!--listing items ends-->
-
-    <div class="custom-book-gallery" >
-      <div class="custom-bgallery-img mb-3" style="position: relative;" >
-          <div class="custom-carousel-container">
-              <div class="custom-carousel-slide">
-                
-                <img src="../img/d-img4.jpg" alt="Image 3">
-                <img src="../img/d-img1.jpg" alt="Image 1">
-                  <img src="../img/d-img2.jpg" alt="Image 2">
-                  <img src="../img/d-img3.jpg" alt="Image 3">
-              </div>
-          </div>
-          <div class="buttons-edit-calander">
-            <button class="edit-button d-flex gap-2"><img src="../img/Edit 2.svg" alt=""> Edit </button>
-            <button class="edit-button">Calendar</button>
-          </div>
-           <p class="listing-name">Listing name</p>
-          <div class="custom-dots"></div>
-      </div>
-      <div class="listing-footer">
-        <div>
-          <p class="mb-0">Available</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
           </div>
         </div>
-        <div class="m-r-1rem">
-          <p class="mb-0">4</p>
-            <img src="../img/star.svg" alt="">
+      </div>
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
         </div>
       </div>
-  </div> <!--listing items ends-->
-
-   
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid-2 gap-5">
+        <div class="d-flex-1">
+          <div class="d-flex gap-2 justify-content-between w-100" >
+            <div class="d-flex gap-2">
+            <img src="../img/g1.jpg" alt="">
+            <div class=" d-flex  justify-content-evenly flex-column" >
+              <p class="personalinfor-header-1 mb-0">A small room in denver</p>
+              <p class="msg-font-3 mb-0">Denver, Colorado</p>
+            </div>
+             </div>
+            <div class="d-flex">
+              <button class="availabel-button-tabel active-button-blue">Available</button>
+              <button class="Unavailable-button-tabel">Unavailable</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex-1">
+          <div class="tabel-2">
+            <p class="offer-header-font-4 mb-0">Address of apartment/room</p>
+            <p class="offer-header-font-4 mb-0">Room</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
   </div>
-</div>
+
+
+
+
+
 
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="../js/jquery-3.7.1.js"></script>
+  <script src="dashboard.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const carousels = document.querySelectorAll('.custom-book-gallery');
-  
-      carousels.forEach(carousel => {
-          const slides = carousel.querySelectorAll('.custom-carousel-slide img');
-          const dotsContainer = carousel.querySelector('.custom-dots');
-          const carouselSlide = carousel.querySelector('.custom-carousel-slide');
-          let currentIndex = 0;
-          let startX, endX;
-          const threshold = 20; // Swipe threshold in pixels
-  
-          // Create dots
-          slides.forEach((_, index) => {
-              const dot = document.createElement('span');
-              dot.classList.add('custom-dot');
-              if (index === 0) dot.classList.add('active');
-              dotsContainer.appendChild(dot);
-          });
-  
-          const dots = dotsContainer.querySelectorAll('.custom-dot');
-  
-          function showSlide(index) {
-              const slideWidth = slides[0].clientWidth;
-              carouselSlide.style.transform = `translateX(${-index * slideWidth}px)`;
-  
-              dots.forEach(dot => dot.classList.remove('active'));
-              dots[index].classList.add('active');
-          }
-  
-          dots.forEach((dot, index) => {
-              dot.addEventListener('click', () => {
-                  currentIndex = index;
-                  showSlide(currentIndex);
-              });
-          });
-  
-          // Swipe functionality
-          carouselSlide.addEventListener('touchstart', (e) => {
-              startX = e.touches[0].clientX;
-          });
-  
-          carouselSlide.addEventListener('touchmove', (e) => {
-              endX = e.touches[0].clientX;
-          });
-  
-          carouselSlide.addEventListener('touchend', () => {
-              const distance = endX - startX;
-              if (Math.abs(distance) > threshold) {
-                  if (distance < 0) {
-                      // Swipe left
-                      currentIndex = (currentIndex + 1) % slides.length;
-                  } else {
-                      // Swipe right
-                      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-                  }
-                  showSlide(currentIndex);
-              }
-          });
-      });
-  });
-  </script>
-  
 </body>
 
 </html>

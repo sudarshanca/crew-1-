@@ -66,73 +66,7 @@
 </head>
 
 <body>
-  <div>
-    <div class="px-3">
-      <div class=" mx-3">
-        <div class="w-100">
-          <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-between py-2">
-            <div class="col-md-3 mb-md-0 ">
-              <a href="../index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img src="../img/logo.svg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3 gap-2 d-flex justify-content-end">
-              <!-- <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3" aria-current="page">Add my place</a></li>
-        
-       </ul> -->
-              <!--menu items-->
-              <div class="d-flex gap-3 align-items-center">
-                <a href="dashboard.html" class="help-text mb-0 pb-1 link-not-active  link-active"
-                  style="color: #444444;">Dashboard</a>
-                <a href="booking.html" class="help-text mb-0 pb-1 link-not-active " style="color: #444444;">Bookings</a>
-                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Calendar</a>
-                <a href="listingDashboard.html" class="help-text mb-0 pb-1 link-not-active"
-                  style="color: #444444;">Listings</a>
-                <a href="#" class="help-text mb-0 pb-1 link-not-active" style="color: #444444;">Inbox</a>
-                <div class="mobile-display-none" style="cursor: pointer;" onclick="toggleNotification()">
-                  <svg class="not-selected" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="18"
-                    height="21" viewBox="0 0 18 21" fill="none">
-                    <path
-                      d="M5.18336 17L5.58336 17.6857C7.38336 20.7714 10.9834 20.7714 12.7834 17.6857L13.1834 17M1.36619 14.5496L1.46954 14.7627C2.13331 16.1311 3.52054 17 5.04144 17H13.2623C14.5656 17 15.7785 16.3342 16.4783 15.2347C17.4661 13.6826 17.2045 11.6465 15.8564 10.3945L15.8125 10.3538C14.8972 9.50376 14.4466 8.26543 14.6015 7.02598L14.6662 6.50905C15.0318 3.58379 12.7509 1 9.80286 1H8.09995C5.15552 1 2.87737 3.58064 3.24258 6.50234L3.32194 7.13719C3.46808 8.30631 3.04102 9.4741 2.17514 10.2731C0.99242 11.3645 0.663827 13.1016 1.36619 14.5496Z"
-                      stroke="#444444" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                  <svg class="selected" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="18" height="21"
-                    viewBox="0 0 12 15" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M1.66593 5.06227C1.38515 2.81605 3.13661 0.832031 5.40031 0.832031H6.53559C8.80169 0.832031 10.555 2.81815 10.2739 5.06675L10.2308 5.41137C10.1475 6.07811 10.3899 6.74425 10.8823 7.2015L10.9115 7.22867C11.9871 8.22751 12.1958 9.85197 11.4077 11.0903C10.8926 11.8996 10.0291 12.4143 9.08197 12.4892L8.95448 12.7078C8.27928 13.8653 7.22728 14.4987 6.12259 14.4987C5.0179 14.4987 3.9659 13.8653 3.2907 12.7078L3.16518 12.4926C2.03765 12.4224 1.0276 11.7509 0.530172 10.7254L0.461271 10.5833C-0.103163 9.41969 0.160901 8.02373 1.11135 7.14666C1.57003 6.7234 1.79625 6.10481 1.71883 5.48551L1.66593 5.06227ZM4.34708 12.4987C4.85331 13.1905 5.5085 13.4987 6.12259 13.4987C6.73668 13.4987 7.39187 13.1905 7.8981 12.4987H4.34708Z"
-                      fill="white" />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="dropdown ">
-                <button class=" d-flex gap-1 align-items-center  dropdown"
-                  style="border: none; background-color: white;" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="../img/people.jpg" style="width: 30px; height: 30px; border-radius: 50%;" alt="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                    <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
-                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Profile</a></li>
-                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Help Center</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Search and traveling</a></li>
-                  <li><a class="dropdown-item header-dropdown-font-2" href="#">Loh Out</a></li>
-                </ul>
-              </div>
-            </div>
-            <!--menu items end-->
-          </header>
-        </div>
-      </div>
-    </div>
-    <hr class="mt-0">
-  </div>
+  <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
 
  <section class="container">
   <div class="d-flex justify-content-between align-items-center">
@@ -197,7 +131,7 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>
   <script src="../js/jquery-3.7.1.js"></script>
-  <script src="../js/headerFooter.js"></script>
+  <script src="dashboard.js"></script>
 
 </body>
 

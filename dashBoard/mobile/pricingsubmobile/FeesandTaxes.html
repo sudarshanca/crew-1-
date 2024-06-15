@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../../../css/fonts.css">
   <link rel="stylesheet" href="../../../css/dashboard.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <style>
     .navrates {
       display: flex;
@@ -65,7 +66,7 @@
           <p class="dashboard-font-10">Cleaning fee</p>
           <p class="pi-font-6-1 mb-0">$180 per night</p>
         </div>
-      <button class="edit-button" style="width: fit-content;">Edit</button>
+      <button class="edit-button pi-font-6-1" style="width: fit-content;">Edit</button>
       </div> 
 <!-- Button trigger modal Add Fee -->
 <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#Addfees">
@@ -80,14 +81,14 @@
         <p class="dashboard-font-10">Stay tax</p>
         <p class="pi-font-6-1 mb-0">9% per stay</p>
       </div>
-    <button class="edit-button" style="width: fit-content;">Edit</button>
+    <button class="edit-button pi-font-6-1" style="width: fit-content;">Edit</button>
     </div>
     <div class="fee-added-box">
       <div>
         <p class="dashboard-font-10">Local Tax</p>
         <p class="pi-font-6-1 mb-0">5% per syay</p>
       </div>
-    <button class="edit-button" style="width: fit-content;">Edit</button>
+    <button class="edit-button pi-font-6-1" style="width: fit-content;">Edit</button>
     </div>
     <!-- Button trigger modal Add Tax-->
     <button type="button" class="dashboard-font-24" style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#AddTax">
@@ -118,7 +119,7 @@
       <input type="text" placeholder="1000" class="form-control">
     </div>
   </div>
-  <button class="save" style="position: fixed; bottom: 1rem; width: 90%;">Save</button>
+  <button class="save" style=" margin: 10% auto 1rem auto; width: 90%;">Save</button>
 </div>
 
   </section>
@@ -128,33 +129,33 @@
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Add fee</h1>
+        <p class="dashboard-font-14 modal-title fs-5" style="font-size: 16px !important;" id="exampleModalLabel">Add fee</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div>
-          <p class="personalinfor-header-1">Fee type</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <p class="dashboard-font-14">Fee type</p>
+          <select class="select-time form-select mb-3" aria-label=".form-select-lg example">
             <option selected>select</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
         </div>
-
+        <br>
         <div>
-          <p class="personalinfor-header-1">Free amount</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <p class="dashboard-font-14">Free amount</p>
+          <select class="select-time pi-font-6-1 form-select mb-3" aria-label=".form-select-lg example">
             <option selected>$</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
         </div>
-
+        <br>
         <div>
           <p class="personalinfor-header-1">How is it applied?</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <select class="select-time pi-font-6-1 form-select mb-3" aria-label=".form-select-lg example">
             <option selected>Per Stay</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -175,33 +176,33 @@
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="personalinfor-header-1" id="exampleModalLabel">Add fee</h1>
+        <h1 class="dashboard-font-14" id="exampleModalLabel">Add tax</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div>
-          <p class="personalinfor-header-1">Tax Name</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <p class="dashboard-font-14">Tax Name</p>
+          <select class="select-time form-select mb-3" aria-label=".form-select-lg example">
             <option selected></option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
         </div>
-
+        <br>
         <div>
-          <p class="personalinfor-header-1">Tax amount</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <p class="dashboard-font-14">Tax amount</p>
+          <select class="select-time pi-font-6-1 form-select mb-3" aria-label="example">
             <option selected></option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
         </div>
-        
+         <br>
         <div>
-          <p class="personalinfor-header-1">How is it applied?</p>
-          <select class="select-time form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <p class="dashboard-font-14">How is it applied?</p>
+          <select class="select-time pi-font-6-1 form-select mb-3" aria-label="example">
             <option selected>Per Stay</option>
             <option value="1">One</option>
             <option value="2">Two</option>

@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew dogs</title>
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/menu.css" rel="stylesheet">
+  <link href="../css/slick-slider.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/s-custom.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
+
 <body>
 
+  <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
+
+  <div class="dashboard-main container">
+    <div class="dashboard-right">
+      <div id="mainList">
+        <div id="page1" data-page="page1" class="dashBoard-page-nav-active">
+          <p class="dashboard-sidenav-font dashBoard-page-nav">Listing details</p>
+          <div id="ListingDetails" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#Photos">Photos</a>
+            <a class="list-group-item list-group-item-action" href="#Property-information">Property information</a>
+            <a class="list-group-item list-group-item-action" href="#Address">Address</a>
+            <a class="list-group-item list-group-item-action" href="#Amenities">Amenities</a>
+            <a class="list-group-item list-group-item-action" href="#Stay-types">Stay types</a>
+          </div>
+        </div>
+        <div id="page2" data-page="page2">
+          <p class="dashboard-sidenav-font dashBoard-page-nav">Pricing</p>
+          <div id="PricingApi" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#Standard-rates">Standard rates</a>
+            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Seasonal rates</a>
+            <a class="list-group-item list-group-item-action" href="#Official-travel rates">Official travel rates</a>
+            <a class="list-group-item list-group-item-action" href="#Discounts">Discounts</a>
+            <a class="list-group-item list-group-item-action" href="#Taxes-and-fees">Taxes and fees</a>
+          </div>
+        </div>
+        <div id="page3" data-page="page3">
+           <p class="dashboard-sidenav-font dashBoard-page-nav" >Rules and Policies</p>
+          <div id="Rules-and-Policies" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#Standard-rates">House Rules</a>
+            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Cancellation policy</a>
+          </div>
+        </div>
+        <div id="page4" data-page="page4">
+          <p class="dashboard-sidenav-font dashBoard-page-nav" >Calendar and availability</p>
+          <div id="Calendar-and-availability" class="list-group nav-bar-listing-details popup-font-3">
+            <a class="list-group-item list-group-item-action" href="#Standard-rates">Availability</a>
+            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Calendar Sync</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-left">
       <div class="right-l-d">
         <div class="d-flex justify-content-between">
           <p class="personalinfor-header">House Rules</p>
         </div>
-
-
+      
+      
         <div class="choose-furniture d-flex justify-content-between align-items-center">
           <p class="dashboard-font-13 mb-0">Pets Allowed</p>
           <div class="flex-c-1">
@@ -23,7 +79,7 @@
                   fill="#444444" />
               </svg>
             </div>
-
+      
             <div class="svg-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                 <path
@@ -33,7 +89,7 @@
             </div>
           </div>
         </div>
-
+      
         <hr>
         <div class="choose-furniture d-flex justify-content-between align-items-center">
           <p class="dashboard-font-13 mb-0">Smoking, vaping, e-cigarettes allowed</p>
@@ -45,7 +101,7 @@
                   fill="#444444" />
               </svg>
             </div>
-
+      
             <div class="svg-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                 <path
@@ -55,7 +111,7 @@
             </div>
           </div>
         </div>
-
+      
         <hr>
         <div class="choose-furniture d-flex justify-content-between align-items-center">
           <p class="dashboard-font-13 mb-0">Events allowed</p>
@@ -67,7 +123,7 @@
                   fill="#444444" />
               </svg>
             </div>
-
+      
             <div class="svg-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                 <path
@@ -77,7 +133,7 @@
             </div>
           </div>
         </div>
-
+      
         <hr>
         <div class="choose-furniture d-flex justify-content-between align-items-center">
           <p class="dashboard-font-13 mb-0">Parties allowed</p>
@@ -89,7 +145,7 @@
                   fill="#444444" />
               </svg>
             </div>
-
+      
             <div class="svg-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                 <path
@@ -100,7 +156,7 @@
           </div>
         </div>
         <hr>
-
+      
         <div class="choose-furniture d-flex justify-content-between align-items-center">
           <p class="dashboard-font-13 mb-0">Number of guests</p>
           <div class="flex-c-1">
@@ -113,7 +169,7 @@
             </div>
             <p class="mb-0">5</p>
             <div class="svg-1" style="border: 1px solid var(--GREY, #747474);">
-
+      
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path
                   d="M6.5013 0.664063C6.5013 0.38792 6.27744 0.164062 6.0013 0.164062C5.72516 0.164062 5.5013 0.38792 5.5013 0.664063L5.5013 5.4974H0.667969C0.391826 5.4974 0.167969 5.72125 0.167969 5.9974C0.167969 6.27354 0.391826 6.4974 0.667969 6.4974H5.5013V11.3307C5.5013 11.6069 5.72516 11.8307 6.0013 11.8307C6.27744 11.8307 6.5013 11.6069 6.5013 11.3307V6.4974H11.3346C11.6108 6.4974 11.8346 6.27354 11.8346 5.9974C11.8346 5.72125 11.6108 5.4974 11.3346 5.4974H6.5013L6.5013 0.664063Z"
@@ -123,12 +179,12 @@
           </div>
         </div>
         <hr>
-
+      
         <div class="border " style="border-radius: 1rem;">
-
+      
           <div class=" p-3 choose-furniture d-flex   justify-content-between align-items-center">
             <p class="dashboard-font-13 mb-0">Number of guests</p>
-
+      
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
               <path
                 d="M3.66356 4.29613L3.72407 4.22603C3.94596 4.00414 4.29318 3.98397 4.53786 4.16551L4.60796 4.22603L9.99935 9.61714L15.3907 4.22603C15.6348 3.98195 16.0305 3.98195 16.2746 4.22603C16.5187 4.4701 16.5187 4.86583 16.2746 5.10991L10.8835 10.5013L16.2746 15.8927C16.4965 16.1146 16.5167 16.4618 16.3351 16.7065L16.2746 16.7766C16.0527 16.9985 15.7055 17.0186 15.4608 16.8371L15.3907 16.7766L9.99935 11.3855L4.60796 16.7766C4.36388 17.0207 3.96815 17.0207 3.72407 16.7766C3.48 16.5325 3.48 16.1368 3.72407 15.8927L9.11518 10.5013L3.72407 5.10991C3.50219 4.88802 3.48201 4.5408 3.66356 4.29613L3.72407 4.22603L3.66356 4.29613Z"
@@ -171,7 +227,7 @@
           <button class="save-2" >save</button>
        </div>
         </div>
-
+      
         <hr>
         <div>
           <div class="d-flex justify-content-between">
@@ -184,13 +240,13 @@
           <input type="text" class="form-control input-fonts" placeholder="Add rule here">
         </div>
         <hr>
-
+      
         <p class="dashboard-font-15" style="line-height: 32px; font-size: 18px;">Cancellation Policy</p>
         <div class="d-flex gap-2">
           <p class="dashboard-font-16">Short-term: <span> Flexible</span></p>
           <p class="dashboard-font-16">Long-term: <span> Standard</span></p>
         </div>
-
+      
         <div class="border p-3" style="border-radius: 1rem;">
           <p class="dashboard-font-18">Short-term</p>
           <div class="d-flex align-items-center">
@@ -236,8 +292,8 @@
           <p class="details-header-font-4" style="margin-left: 1.5rem;">Full refund for cancellations within 48 hours of
             booking and atleast 30 days before check-in. No refund after that. </p>
           <hr>
-
-
+      
+      
           <p class="dashboard-font-18">Long-term</p>
           <p class="details-header-font-4">Applies for stays 28 nights to 4 months. After which, hosts can use
             discretion per the agreed upon lease agreement. </p>
@@ -252,13 +308,19 @@
             that, the first 30 days of the stay are non-refundable. This is not applied for stays of greater than 4
             months. This should be covered in the lease agreement. </p>
           <hr>
-
+      
           <div class="d-flex justify-content-between align-items-center">
              <p class="dashboard-font-19 mb-0">Reset</p>
              <button class="save-2" >save</button>
           </div>
         </div>
+      
+      </div>      
+  </div>
+  </div>
 
-      </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/jquery-3.7.1.js"></script>
+<script src="dashboard.js"></script>
 </body>
 </html>

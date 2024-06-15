@@ -83,10 +83,24 @@
       .profile-desktop-version {
         display: none !important;
       }
-    .photos-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-   }
+
+      .photos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .mobile-font-14px {
+        font-size: 14px !important;
+      }
+
+      .plus-button {
+        height: 30px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
     }
   </style>
 </head>
@@ -124,7 +138,7 @@
     </div>
   </div>
 
-  <a href="./mobile/myListings.html" style="text-decoration: none; z-index: 1;">
+  <a href="./mobile/myListings.html" class="container mt-3 desktop-none" style="text-decoration: none; z-index: 1;">
     <div>
       <img src="../../img/arrow_back.svg" alt="">
     </div>
@@ -160,34 +174,42 @@
 
 
       <div class="right-l-d">
-     <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
 
-       <p class="msg-side-font-9 mb-0 mobile-none" style="font-weight: 500;">Photos</p>
-       <p class="who-can-join mb-0 desktop-none" style=" font-size: 24px; font-weight: 500;">Edit pictures</p>
-       <div class="plus-button">
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-          <path d="M0.666748 5.9974H11.3334M6.00008 11.3307V5.9974L6.00008 0.664062" stroke="#4B4B4D" stroke-linecap="round"/>
-        </svg></div>
-        <p class="msg-side-font-9 mb-0">
-          Add more <span class="mobile-none">photos</span> 
-        </p>
-       </div>
-      </div>
+          <p class="msg-side-font-9 mb-0 mobile-none" style="font-weight: 500;">Photos</p>
+          <p class="who-can-join mb-0 desktop-none" style=" font-size: 24px; font-weight: 500;">Edit pictures</p>
+          <div class="plus-button">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M0.666748 5.9974H11.3334M6.00008 11.3307V5.9974L6.00008 0.664062" stroke="#4B4B4D"
+                  stroke-linecap="round" />
+              </svg></div>
+            <p class="msg-side-font-9 mb-0 mobile-font-14px">
+              Add more <span class="mobile-none">photos</span>
+            </p>
+          </div>
+        </div>
 
         <div>
           <p class="dashboard-font-14 mobile-none">Cover</p>
           <p class="dashboard-font-14 desktop-none">Drag to reorder</p>
           <div class="cover-photo">
-             <div class="edit-remove show-edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <hr class="m-auto" style="border-bottom: .1px solid #7474744b !important; border: none; background-color: transparent; width:80%">
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-             </div>
+            <div class="edit-remove show-edit-remove">
+              <p class="mb-0 dashboard-font-21">Remove from cover</p>
+              <hr class="m-auto"
+                style="border-bottom: .1px solid #7474744b !important; border: none; background-color: transparent; width:80%">
+              <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+            </div>
             <div class="edit-remove-cover-photo">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
+                <path
+                  d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                  fill="#444444" />
+                <path
+                  d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                  fill="#444444" />
+                <path
+                  d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                  fill="#444444" />
               </svg>
             </div>
             <div class="cover-image">
@@ -195,109 +217,139 @@
             </div>
           </div>
         </div>
-    <br>
-    <br>
+        <br>
+        <br>
         <div>
           <p class="dashboard-font-14">Other Pictures</p>
           <div class="d-flex gap-2 flex-wrap photos-grid">
             <div class="cover-photo">
               <div class="edit-remove ">
-                 <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                 <hr class="" style="border-bottom: .5px solid #747474; width:80%">
-                 <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+                <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                <hr class="" style="border-bottom: .5px solid #747474; width:80%">
+                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
               </div>
-             <div class="edit-remove-cover-photo">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                 <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                 <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                 <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
-               </svg>
-             </div>
-             <div class="cover-image">
-               <img src="../img/d-img2.jpg" alt="">
-             </div>
-           </div>
+              <div class="edit-remove-cover-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
+                  <path
+                    d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                    fill="#444444" />
+                </svg>
+              </div>
+              <div class="cover-image">
+                <img src="../img/d-img2.jpg" alt="">
+              </div>
+            </div>
 
-           
-            <div class="cover-photo">
-              <div class="edit-remove ">
-                 <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                 <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div>
-             <div class="edit-remove-cover-photo">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                 <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                 <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                 <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
-               </svg>
-             </div>
-             <div class="cover-image">
-               <img src="../img/d-img2.jpg" alt="">
-             </div>
-           </div>
 
             <div class="cover-photo">
               <div class="edit-remove ">
-                 <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                 <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+                <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
               </div>
-             <div class="edit-remove-cover-photo">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                 <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                 <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                 <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
-               </svg>
-             </div>
-             <div class="cover-image">
-               <img src="../img/d-img3.jpg" alt="">
-             </div>
-           </div>
+              <div class="edit-remove-cover-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
+                  <path
+                    d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                    fill="#444444" />
+                </svg>
+              </div>
+              <div class="cover-image">
+                <img src="../img/d-img2.jpg" alt="">
+              </div>
+            </div>
 
             <div class="cover-photo">
               <div class="edit-remove ">
-                 <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                 <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+                <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
               </div>
-             <div class="edit-remove-cover-photo">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                 <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                 <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                 <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
-               </svg>
-             </div>
-             <div class="cover-image">
-               <img src="../img/d-img4.jpg" alt="">
-             </div>
-           </div>
+              <div class="edit-remove-cover-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
+                  <path
+                    d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                    fill="#444444" />
+                </svg>
+              </div>
+              <div class="cover-image">
+                <img src="../img/d-img3.jpg" alt="">
+              </div>
+            </div>
 
             <div class="cover-photo">
               <div class="edit-remove ">
-                 <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                 <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+                <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
               </div>
-             <div class="edit-remove-cover-photo">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
-                 <path d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z" fill="#444444"/>
-                 <path d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z" fill="#444444"/>
-                 <path d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z" fill="#444444"/>
-               </svg>
-             </div>
-             <div class="cover-image">
-               <img src="../img/d-img1.jpg" alt="">
-             </div>
-           </div>
+              <div class="edit-remove-cover-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
+                  <path
+                    d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                    fill="#444444" />
+                </svg>
+              </div>
+              <div class="cover-image">
+                <img src="../img/d-img4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="cover-photo">
+              <div class="edit-remove ">
+                <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
+              </div>
+              <div class="edit-remove-cover-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4" fill="none">
+                  <path
+                    d="M2.99998 1.9974C2.99998 2.73378 2.40303 3.33073 1.66665 3.33073C0.930267 3.33073 0.333313 2.73378 0.333313 1.9974C0.333313 1.26102 0.930267 0.664062 1.66665 0.664062C2.40303 0.664062 2.99998 1.26102 2.99998 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M8.33331 1.9974C8.33331 2.73378 7.73636 3.33073 6.99998 3.33073C6.2636 3.33073 5.66665 2.73378 5.66665 1.9974C5.66665 1.26102 6.2636 0.664062 6.99998 0.664062C7.73636 0.664062 8.33331 1.26102 8.33331 1.9974Z"
+                    fill="#444444" />
+                  <path
+                    d="M13.6666 1.9974C13.6666 2.73378 13.0697 3.33073 12.3333 3.33073C11.5969 3.33073 11 2.73378 11 1.9974C11 1.26102 11.5969 0.664062 12.3333 0.664062C13.0697 0.664062 13.6666 1.26102 13.6666 1.9974Z"
+                    fill="#444444" />
+                </svg>
+              </div>
+              <div class="cover-image">
+                <img src="../img/d-img1.jpg" alt="">
+              </div>
+            </div>
 
 
-           <div class="file-upload desktop-none flex-column gap-3" style="height: auto; margin-bottom: 0;">
-            <img src="../img/plus.png" alt="Upload Icon" class="icon">
-            <span class="file-name">Add Another</span>
-            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
-          </div>
+            <div class="file-upload desktop-none flex-column gap-3" style="height: auto; margin:5px !important;">
+              <img src="../img/plus.png" alt="Upload Icon" class="icon">
+              <span class="file-name" style="font-size: 14px; margin-left: 0;">Add Another</span>
+              <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            </div>
 
 
           </div>
         </div>
-     
+
       </div>
     </div>
     <br>
@@ -311,11 +363,12 @@
   <script src="../js/jquery-3.7.1.js"></script>
   <script src="dashboard.js"></script>
 
-<script>
+  <script>
     function toggleClass(button) {
-    const image = button.previousElementSibling;
-    image.classList.toggle('show-edit-remove');
-}
-</script>
+      const image = button.previousElementSibling;
+      image.classList.toggle('show-edit-remove');
+    }
+  </script>
 </body>
+
 </html>

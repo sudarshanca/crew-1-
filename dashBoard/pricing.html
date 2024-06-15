@@ -15,12 +15,64 @@
   <link rel="stylesheet" href="../css/dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+   .button-001 {
+      display: flex;
+      padding: 6px 20px;
+      align-items: center;
+      gap: 2px;
+      border-radius: 16px;
+      border: 1px solid #E7E7E7;
+      background: var(--Gray-04, #FCFCFC);
 
+    }
+
+    .green-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 6px;
+      background: var(--System-Success-Success-50, #25C26E);
+      position: absolute;
+      right: 13.2px;
+      top: 10.664px;
+      display: block;
+    }
+
+</style>
 </head>
 
 <body>
 
   <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
+  <br>
+  <div class="container" style="max-width: 1550px;">
+    <div class="d-flex justify-content-between align-items-start container">
+      <div class="">
+        <p class=" dashboard-font-5">A small room in denver</p>
+        <div class="mb-0 pi-font-4 d-flex gap-1 align-items-center">
+          Change listing
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M9 1L5 5L1 1" stroke="#4B4B4D" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-center">
+        <div><span class="bluedot"></span>Available</div>
+
+        <div class="d-flex align-items-center justify-content-center border"
+          style="border-radius: 50%; width: 40px; height: 40px; position: relative;">
+          <span class="green-dot"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path
+              d="M10.6666 3.83073C10.9427 3.83073 11.1666 3.60687 11.1666 3.33073C11.1666 3.05459 10.9427 2.83073 10.6666 2.83073V3.83073ZM2.52627 1.59596L2.1743 1.24083L2.1743 1.24083L2.52627 1.59596ZM3.81849 1.01919C4.01462 0.824801 4.01604 0.508221 3.82165 0.31209C3.62726 0.115959 3.31068 0.114546 3.11455 0.308935L3.81849 1.01919ZM9.60707 10.3988L9.95904 10.754L9.95904 10.754L9.60707 10.3988ZM8.31484 10.9756C8.11871 11.17 8.1173 11.4866 8.31169 11.6827C8.50608 11.8788 8.82266 11.8802 9.01879 11.6859L8.31484 10.9756ZM10.7895 8.83117L11.2855 8.89439L11.2855 8.89439L10.7895 8.83117ZM1.33325 8.16406C1.05711 8.16406 0.833253 8.38792 0.833253 8.66406C0.833253 8.9402 1.05711 9.16406 1.33325 9.16406V8.16406ZM10.7934 8.7974L11.2909 8.84784L10.7934 8.7974ZM1.50081 3.83073H10.6666V2.83073H1.50081V3.83073ZM2.87824 1.95109L3.81849 1.01919L3.11455 0.308935L2.1743 1.24083L2.87824 1.95109ZM2.1743 1.24083C1.80773 1.60414 1.50226 1.90583 1.28565 2.17556C1.0627 2.45317 0.893115 2.74494 0.847807 3.1004L1.83978 3.22684C1.8522 3.1294 1.89894 3.00892 2.06534 2.80172C2.23807 2.58664 2.49498 2.33095 2.87824 1.95109L2.1743 1.24083ZM9.25509 10.0437L8.31484 10.9756L9.01879 11.6859L9.95904 10.754L9.25509 10.0437ZM9.95904 10.754C10.3256 10.3907 10.6311 10.089 10.8477 9.81923C11.0706 9.54162 11.2402 9.24986 11.2855 8.89439L10.2936 8.76795C10.2811 8.86539 10.2344 8.98588 10.068 9.19307C9.89526 9.40815 9.63836 9.66384 9.25509 10.0437L9.95904 10.754ZM10.296 8.74695C10.2952 8.75396 10.2944 8.76096 10.2936 8.76795L11.2855 8.89439C11.2875 8.87889 11.2893 8.86337 11.2909 8.84784L10.296 8.74695ZM10.6666 8.16406H1.33325V9.16406H10.6666V8.16406ZM11.2909 8.84784C11.3316 8.44595 11.0012 8.16406 10.6666 8.16406L10.6666 9.16406C10.4795 9.16406 10.2701 9.00207 10.296 8.74695L11.2909 8.84784ZM1.50081 2.83073C1.66431 2.83073 1.87167 2.97669 1.83978 3.22684L0.847807 3.1004C0.792522 3.53414 1.15223 3.83073 1.50081 3.83073V2.83073Z"
+              fill="#444444" />
+          </svg>
+        </div>
+
+        <button class="button-001">Preview listing</button>
+      </div>
+    </div>
+  </div>
 
   <div class="dashboard-main container">
     <div class="dashboard-right">

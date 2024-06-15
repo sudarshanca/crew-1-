@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/message.css">
   <link rel="stylesheet" href="../css/dashboard.css">
-
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
@@ -55,89 +54,18 @@
       background: #FFF;
     }
 
+    .date-box-active p {
+      color: #0D99FF;
+    }
+
+
     .scroll-body-calander::-webkit-scrollbar {
       display: none !important;
-    }
-
-    .coll {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 3px;
-    }
-
-    .activeblu {
-      color: #0D99FF;
-      background-color: #F3FAFE;
-      border: 1px solid #F3FAFE;
-    }
-
-    .activeblu .bluedot {
-      display: none;
-    }
-
-    .bluedot {
-      display: block;
-      width: 8px;
-      height: 8px;
-      border-radius: 12px;
-      background: var(--Primary-Primary-50, #0D99FF);
-      box-shadow: 0 0 15px #0d9aff8c;
-    }
-
-    .dashboard-items {
-      display: block;
-      margin-bottom: 3rem;
-    }
-
-    .dashboard-item {
-      width: 293px;
-      border-radius: 10px;
-      border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-      background: var(--White-White-100, #FFF);
-    }
-
-    .dashboard-item hr {
-      border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-      margin: 0 !important;
-    }
-
-    .dashboard-item-top {
-      padding: 24px;
-      width: 100%;
-    }
-
-    .dashboard-item-bottom {
-      display: flex;
-      padding: 16px 24px;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 10px;
-      align-self: stretch;
-      color: var(--GREY, #747474);
-      font-family: "DM Sans";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 21px;
-      /* 175% */
-      letter-spacing: -0.32px;
-    }
-
-    @media (max-width:700px) {
-      #profile-mobile-version {
-        display: block !important;
-      }
-
-      .profile-desktop-version {
-        display: none !important;
-      }
     }
   </style>
 </head>
 
 <body>
-
   <div id="dashboardHeader" style="z-index: 1; border-bottom:1px solid rgba(0, 0, 0, 0.085) ;"></div>
 
 
@@ -152,119 +80,116 @@
           Calander</button>
       </div>
       <br>
-
       <div class="scroll-body-calander" style="overflow-x: scroll;">
-
         <div class=" d-flex dashboard-font-3 ">
-
           <div class="date-box date-box-active">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0">Today</p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-          <div class="date-box ">
-            <div class="date-box-item">
-              <p class="mb-0">13</p>
-              <p class="mb-0"></p>
-            </div>
-            <div class="bookinsa-box-notification">
-              <p class="mb-0 n-1">M</p>
-              <p class="mb-0 n-2">+3</p>
-            </div>
-          </div>
-
-
-          <div class="date-box">
             <div class="d-flex w-100 justify-content-between ">
               <p class="mb-0">13</p>
               <p class="mb-0">today</p>
             </div>
             <div>No bookings</div>
           </div>
-
           <div class="date-box ">
-            <div class="d-flex w-100 justify-content-between ">
-              <p class="mb-0">13</p>
-              <p class="mb-0">today</p>
+            <div class="date-box-item">
+              <p class="mb-0">12</p>
+              <p class="mb-0"></p>
             </div>
             <div>No bookings</div>
           </div>
-
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">13</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">14</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">15</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">16</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">17</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">18</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">19</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">20</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">21</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">22</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
+          <div class="date-box ">
+            <div class="date-box-item">
+              <p class="mb-0">23</p>
+              <p class="mb-0"></p>
+            </div>
+            <div>No bookings</div>
+          </div>
         </div>
       </div>
 
       <br>
-      <p class="mb-0 dashboard-font-2">Schedule</p>
+      <p class="mb-0 dashboard-font-2">Booking</p>
       <br>
       <div class="d-flex justify-content-between">
-        <div class="d-flex gap-2 ">
-          <div class="coll col-message-1 activeblu" onclick="showContent('content1')">Requests <span
-              class="bluedot"></span></div>
-          <div class="coll col-message-1" onclick="showContent('content2')">Currently hosting <span
-              class="bluedot"></span></div>
-          <div class="coll col-message-1" onclick="showContent('content3')">Upcoming <span class="bluedot"></span></div>
+        <div class="text-center pb-2">
+          <div class="d-flex gap-2 flex-wrap w-100">
+            <p class="col-message-1 activeblue">Requests</p>
+            <p class="col-message-1">Currently hosting</p>
+            <p class="col-message-1">Upcoming</p>
+          </div>
         </div>
-
-        <a href="" class="dashboard-font-4" style="text-decoration: underline;" >See all Bookings</a>
+        <a href="" class="dashboard-font-4">See all Bookings</a>
       </div>
-
-      <!--
-         <div class=" w-100 d-flex justify-content-center" style="padding: 3rem 0;">
+      <div class=" w-100 d-flex justify-content-center" style="padding: 3rem 0;">
         <div class="d-flex flex-column align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="38" height="43" viewBox="0 0 38 43" fill="none">
             <path
@@ -273,57 +198,11 @@
           </svg>
           <p class="details-header-font-4">No bookings</p>
         </div>
-
       </div>
-      -->
-
     </div>
     </div>
-    <div class="container mt-3">
 
-      <div id="content1" class=" content boxes ">1</div>
 
-      <div id="content2" class=" content boxes ">
-        <div class=" dashboard-items w-100 d-flex flex-wrap gap-3">
-
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Arriving today</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">David Pam</p>
-              <p class="details-header-font-4 mb-0">A small room in denver</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
-          </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Currently hosting</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">Dimitri Stanic</p>
-              <p class="details-header-font-4 mb-0">An apartment in texas</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
-          </div>
-
-          <div class="dashboard-item">
-            <div class="dashboard-item-top">
-              <p class="details-header-font-4 mb-0" style="color: #0D99FF;">Currently hosting</p>
-              <br>
-              <p class="personalinfor-header-1 mb-0">Dimitri Stanic</p>
-              <p class="details-header-font-4 mb-0">A beach house in Malibu</p>
-            </div>
-            <hr>
-            <div class="dashboard-item-bottom">Trip details</div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="content3" class=" content boxes ">3</div>
-    </div>
   </section>
 
 
@@ -335,24 +214,6 @@
   <script src="../script.js"></script>
   <script src="../js/jquery-3.7.1.js"></script>
   <script src="dashboard.js"></script>
-
-  <script>
-    document.getElementById('content1').classList.add('active');
-
-    function showContent(contentId) {
-      let contents = document.getElementsByClassName('content');
-      for (let i = 0; i < contents.length; i++) {
-        contents[i].classList.remove('active');
-      }
-      document.getElementById(contentId).classList.add('active');
-
-      let cols = document.querySelectorAll('.coll');
-      for (let i = 0; i < cols.length; i++) {
-        cols[i].classList.remove('activeblu');
-      }
-      event.target.classList.add('activeblu');
-    }
-  </script>
 
 </body>
 

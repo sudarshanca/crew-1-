@@ -75,6 +75,17 @@
       display: block;
     }
 
+    .pricing-daily{
+      position: relative;
+    }
+
+    .percent{
+      position: absolute;
+      left: .5rem;
+      top: 30%;
+      margin-bottom: 0;
+    }
+
     @media (max-width:700px) {
       #profile-mobile-version {
         display: block !important;
@@ -152,7 +163,6 @@
 
       <div class="right-l-d">
 
-
         <p class="msg-side-font-9 mb-0" style="font-weight: 500;">Base rates</p>
         <p class="ph-font-2">Only one rate is required. </p>
         <div class="border p-3" style="border-radius: 1rem;">
@@ -160,8 +170,9 @@
           <div class="d-flex justify-content-between align-items-start">
             <div class="">
               <p class="msg-side-font-14">Nightly</p>
-              <div class="pricing-daily " style="position: relative;">
-                <input class="" style="outline: none;" type="text" placeholder="Filled by an external source">        
+              <div class="pricing-daily">
+                <p class="percent">%</p>
+                <input class="" style="outline: none;" type="text" placeholder="24">        
               </div>
             </div>
            <button class="api-button ">API filled</button>
@@ -235,10 +246,11 @@
         <hr>
         <p class="dashboard-font-11 mb-0">Length of stay discounts</p>
         <div class="d-flex w-100 justify-content-evenly gap-2 mt-3">
-            <div class="w-100"><p class="dashboard-font-12">Length of stay discounts</p> <input type="text"> </div>
-            <div class="w-100" ><p class="dashboard-font-12">Length of stay discounts</p> <input type="text"> </div>
+            <div class="w-100"><p class="dashboard-font-12">Length of stay discounts</p> <input  class="form-select" type="text"> </div>
+            <div class="w-100" ><p class="dashboard-font-12">Length of stay discounts</p> <input class="form-select" type="text"> </div>
           
         </div>
+        <hr>
         <div class="border p-3 " style="border-radius: 1rem;">
 
        
@@ -262,19 +274,19 @@
            <p class="dashboard-font-12" style="color: #ACACB0;">Optional</p> 
         </div>
        
-        <input type="text">
+        <input type="text" class="form-select">
        </div>
 
        <br>
        <p class="msg-side-font-14">Free</p>
        <p class="dashboard-font-12">Total amount per stay</p>
-       <input type="text">
+       <input type="text" class="form-select">
        <hr>
        <p class="msg-side-font-14">Taxes</p>
        <div class="d-flex justify-content-between gap-2 align-items-center" >
         <div class="d-flex gap-2 w-100">
-        <div class="w-100" style="max-width: 500px;"><p class="dashboard-font-12">Name</p> <input type="text"> </div>
-        <div class="w-100" style="max-width: 200px;" ><p class="dashboard-font-12">Tax</p> <input type="text"> </div>
+        <div class="w-100" style="max-width: 500px;"><p class="dashboard-font-12">Name</p> <input class="form-select" type="text"> </div>
+        <div class="w-100" style="max-width: 200px;" ><p class="dashboard-font-12">Tax</p> <input class="form-select" type="text"> </div>
         </div>
         <div class="d-flex gap-2 mt-5">
           <p class="edit-delet-1">Edit</p>

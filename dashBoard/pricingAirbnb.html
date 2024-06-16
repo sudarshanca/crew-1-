@@ -75,16 +75,36 @@
       display: block;
     }
 
-    .pricing-daily{
+    .pricing-daily {
       position: relative;
     }
 
-    .percent{
+    .pricing-daily input {
+      padding: 12px 12px 12px 30px !important;
+    }
+
+    .pricing-daily input::placeholder {
+      color: var(--Grayscale-Gray-80, #4B4B4D);
+      font-size: 14px !important;
+      font-weight: 700 !important;
+      line-height: 26px;
+      /* 185.714% */
+      letter-spacing: -0.078px;
+    }
+
+    .percent {
       position: absolute;
       left: .5rem;
-      top: 30%;
+      top: 22px;
       margin-bottom: 0;
+      color: #acacac;
     }
+    .pricing-daily .Edit-input{
+      position: absolute;
+      right: 1rem;
+      top: 22px;
+    }
+
 
     @media (max-width:700px) {
       #profile-mobile-version {
@@ -171,11 +191,11 @@
             <div class="">
               <p class="msg-side-font-14">Nightly</p>
               <div class="pricing-daily">
-                <p class="percent">%</p>
-                <input class="" style="outline: none;" type="text" placeholder="24">        
+                <p class="percent dm-show-map-font">%</p>
+                <input class="" style="outline: none;" type="text" placeholder="24">
               </div>
             </div>
-           <button class="api-button ">API filled</button>
+            <button class="api-button ">API filled</button>
           </div>
 
           <hr>
@@ -183,12 +203,14 @@
           <div class="d-flex justify-content-between align-items-start">
             <div class="">
               <p class="msg-side-font-14">Weekly</p>
-              <p class="dashboard-font-12">For stays of 7 nights or more. Weekly length of stay discounts are not possible if you provide a Weekly rate.</p>
-              <div class="pricing-daily " style="position: relative;">
-                <input class="" style="outline: none; max-width: fit-content;" type="text" placeholder="Filled by an external source">        
+              <p class="dashboard-font-12">For stays of 7 nights or more. Weekly length of stay discounts are not
+                possible if you provide a Weekly rate.</p>
+                <div class="pricing-daily">
+                  <p class="percent dm-show-map-font">%</p>
+                  <input class="" style="outline: none;" type="text" placeholder="24">
+                </div>
               </div>
-            </div>
-           <button class="api-button ">API filled</button>
+            <button class="api-button ">API filled</button>
           </div>
 
           <hr>
@@ -196,18 +218,20 @@
           <div class="d-flex justify-content-between align-items-start">
             <div class="">
               <p class="msg-side-font-14">monthly</p>
-              <p class="dashboard-font-12">For full month stays or 30 nights or more. Monthly length of stay discounts are not possible if you provide a monthly rate.</p>
-              <div class="pricing-daily " style="position: relative;">
-                <input class="" style="outline: none; max-width: fit-content;" type="text" placeholder="Filled by an external source">        
-              </div>
+              <p class="dashboard-font-12">For full month stays or 30 nights or more. Monthly length of stay discounts
+                are not possible if you provide a monthly rate.</p>
+                <div class="pricing-daily">
+                  <p class="percent dm-show-map-font">%</p>
+                  <input class="" style="outline: none;" type="text" placeholder="24">
+                </div>
             </div>
-           <button class="api-button ">API filled</button>
+            <button class="api-button ">API filled</button>
           </div>
 
           <hr>
           <p class="msg-side-font-14">Free</p>
           <p class="dashboard-font-12 mb-0">Join the Space-A crewdogs and host your place for no charge. </p>
-         
+
         </div>
 
         <p class="msg-side-font-9 mb-0" style="font-weight: 500;">Seasonal rates</p>
@@ -219,7 +243,8 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="">
             <p class="dashboard-font-11 mb-0">Official travel rates</p>
-            <p class="dashboard-font-12 mb-0">Rates are set by fiscal year, effective Oct. 1 each year. See them here. </p>
+            <p class="dashboard-font-12 mb-0">Rates are set by fiscal year, effective Oct. 1 each year. See them here.
+            </p>
           </div>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -236,7 +261,9 @@
         <br>
         <div class="">
           <p class="dashboard-font-11 mb-0">Crewdogs military discount</p>
-          <p class="dashboard-font-12 mb-0">We charge lower fees so you can pay it forward to the military community. This is a final discount applied to the total price, before fees and taxes. <span style="color: #0D99FF; text-decoration: underline;"> More Info</span></p>
+          <p class="dashboard-font-12 mb-0">We charge lower fees so you can pay it forward to the military community.
+            This is a final discount applied to the total price, before fees and taxes. <span
+              style="color: #0D99FF; text-decoration: underline;"> More Info</span></p>
         </div>
         <div class="discount-rate">
           <p class="mb-0">Discount rate:</p>
@@ -246,56 +273,107 @@
         <hr>
         <p class="dashboard-font-11 mb-0">Length of stay discounts</p>
         <div class="d-flex w-100 justify-content-evenly gap-2 mt-3">
-            <div class="w-100"><p class="dashboard-font-12">Length of stay discounts</p> <input  class="form-select" type="text"> </div>
-            <div class="w-100" ><p class="dashboard-font-12">Length of stay discounts</p> <input class="form-select" type="text"> </div>
+          <div class="w-100">
+            <p class="dashboard-font-12">Length of stay discounts</p> 
+            <div class="pricing-daily">
+              <p class="percent dm-show-map-font">%</p>
+              <input class="plcholdr-font-400" style="outline: none;" type="text" placeholder="5">
+              <a class="dashboard-font-24 Edit-input" href="">Edit</a>
+            </div>
           
+          </div>
+          <div class="w-100">
+            <p class="dashboard-font-12">Length of stay discounts</p> 
+             <div class="pricing-daily">
+                <p class="percent dm-show-map-font">%</p>
+                <input class="" style="outline: none;" type="text" placeholder="5">
+                <a class="dashboard-font-24 Edit-input" href="">Edit</a>
+              </div>
+          </div>
+
         </div>
         <hr>
         <div class="border p-3 " style="border-radius: 1rem;">
 
-       
-        <div class="d-flex justify-content-between flex-wrap">
-          <div>
-            <p class="msg-side-font-14">Crewdogs damage protection</p>
-            <p class="dashboard-font-12">Damage reimbursement added to each stay costing guest $1 per day.</p>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-          </div>
-        </div>
-        <p class="learnmore">Learn more</p>
-       <hr>
 
-        <div class="d-flex justify-content-between flex-wrap">
-          <div>
-            <p class="msg-side-font-14">Damage deposit</p>
-            <p class="dashboard-font-12">Refunded by you after confirmation of no damages at the end of the stay. We do not facilitate this transaction. </p>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <p class="msg-side-font-14">Crewdogs damage protection</p>
+              <p class="dashboard-font-12">Damage reimbursement added to each stay costing guest $1 per day.</p>
+            </div>
+            <div class="form-check form-switch"> 
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
           </div>
-           <p class="dashboard-font-12" style="color: #ACACB0;">Optional</p> 
-        </div>
-       
-        <input type="text" class="form-select">
-       </div>
+          <p class="learnmore">Learn more</p>
+          <hr>
 
-       <br>
-       <p class="msg-side-font-14">Free</p>
-       <p class="dashboard-font-12">Total amount per stay</p>
-       <input type="text" class="form-select">
-       <hr>
-       <p class="msg-side-font-14">Taxes</p>
-       <div class="d-flex justify-content-between gap-2 align-items-center" >
-        <div class="d-flex gap-2 w-100">
-        <div class="w-100" style="max-width: 500px;"><p class="dashboard-font-12">Name</p> <input class="form-select" type="text"> </div>
-        <div class="w-100" style="max-width: 200px;" ><p class="dashboard-font-12">Tax</p> <input class="form-select" type="text"> </div>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <p class="msg-side-font-14">Damage deposit</p>
+              <p class="dashboard-font-12">Refunded by you after confirmation of no damages at the end of the stay. We
+                do not facilitate this transaction. </p>
+            </div>
+            <p class="dashboard-font-12" style="color: #ACACB0;">Optional</p>
+          </div>
+
+          <div class="pricing-daily">
+            <p class="percent dm-show-map-font">$</p>
+            <input class="" style="outline: none;" type="text" placeholder="1000">
+            <a class="dashboard-font-24 Edit-input" href="">Edit</a>
+          </div>
         </div>
-        <div class="d-flex gap-2 mt-5">
-          <p class="edit-delet-1">Edit</p>
-          <p class="edit-delet-1" style="color: #F06060;">Delet</p>
+
+        <br>
+        <p class="msg-side-font-14">Free</p>
+        <div class="d-flex justify-content-between gap-5 align-items-center">
+          <div class="d-flex gap-2 w-100">
+            <div class="" style="flex-grow: 2;">
+              <p class="dashboard-font-12" style="margin-bottom: 1.5rem;">Type</p> 
+              <select class="form-select " style="border-radius: 1rem; font-size: 14px; color: #444;" >
+                <option selected>select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="flex-grow-1" >
+              <p class="dashboard-font-12">Amount </p> <input class="form-select" placeholder="24" type="text">
+            </div>
+            <div class="flex-grow-1">
+              <p class="dashboard-font-12">How is it applied?</p> <input class="form-select" placeholder="Per stay" type="text">
+            </div>
+          </div>
+          <div class="d-flex gap-2 mt-5">
+            <p class="edit-delet-1">Edit</p>
+            <p class="edit-delet-1" style="color: #F06060;">Delet</p>
+          </div>
         </div>
-       </div>
-       <br>
-       <p class="edit-delet-1" style="color: #0D99FF;"> Add Another</p>
-<br>
+        <br>
+        <p class="edit-delet-1" style="color: #0D99FF;"> Add Another</p>
+        <br>
+        <p class="msg-side-font-14">Taxes</p>
+        <div class="d-flex justify-content-between gap-5 align-items-center">
+          <div class="d-flex gap-2 w-100">
+            <div class="flex-grow-1">
+              <p class="dashboard-font-12">Name</p> <input class="form-select" placeholder="State tax" type="text">
+            </div>
+            <div class="flex-grow-1" style="position: relative;">
+              <p class="dashboard-font-12">Amount </p> <input class="form-select" placeholder="24" type="text">
+               <p class="dm-show-map-font mb-0" style="position: absolute; right: 2rem; bottom: 22px;">%</p>
+            </div>
+            <div class="flex-grow-1">
+              <p class="dashboard-font-12">How is it applied?</p> <input class="form-select" placeholder="Per stay" type="text">
+            </div>
+          </div>
+          <div class="d-flex gap-2 mt-5">
+            <p class="edit-delet-1">Edit</p>
+            <p class="edit-delet-1" style="color: #F06060;">Delet</p>
+          </div>
+        </div>
+        <br>
+        <p class="edit-delet-1" style="color: #0D99FF;"> Add Another</p>
+        <br>
       </div>
     </div>
   </div>

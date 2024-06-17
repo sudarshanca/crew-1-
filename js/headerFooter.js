@@ -37,6 +37,20 @@ $(function () {
     $("#calander").load("calander.html");
 });
 
+// Load searchbarmain.html and append it to #searchbarmain
+$(function () {
+    $.get("searchbarmain.html", function (data) {
+        $("#searchbarmain").append(data);
+        // Call function to initialize JavaScript after appending
+        initializeDynamicContent();
+    });
+});
+
+
+
+
+
+
 
 // Call the function to load header and footer when the DOM is loaded
 document.addEventListener('DOMContentLoaded', loadHeaderAndFooter);

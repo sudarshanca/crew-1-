@@ -15,7 +15,12 @@
   <link rel="stylesheet" href="../css/dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <style>
+    .list-group-item-content{
+     margin-top: -80px;
+     padding-top: 80px;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,10 +42,10 @@
         </div>
         <div id="page2" data-page="page2">
           <p class="dashboard-sidenav-font dashBoard-page-nav">Pricing</p>
-          <div id="PricingApi" class="list-group nav-bar-listing-details popup-font-3">
+          <div id="PricingAirbnb" class="list-group nav-bar-listing-details popup-font-3">
             <a class="list-group-item list-group-item-action" href="#Standard-rates">Standard rates</a>
             <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Seasonal rates</a>
-            <a class="list-group-item list-group-item-action" href="#Official-travel rates">Official travel rates</a>
+            <a class="list-group-item list-group-item-action" href="#Official-travel-rates">Official travel rates</a>
             <a class="list-group-item list-group-item-action" href="#Discounts">Discounts</a>
             <a class="list-group-item list-group-item-action" href="#Taxes-and-fees">Taxes and fees</a>
           </div>
@@ -48,15 +53,15 @@
         <div id="page3" data-page="page3">
            <p class="dashboard-sidenav-font dashBoard-page-nav" >Rules and Policies</p>
           <div id="Rules-and-Policies" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Standard-rates">House Rules</a>
-            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Cancellation policy</a>
+            <a class="list-group-item list-group-item-action" href="#House-Rules">House Rules</a>
+            <a class="list-group-item list-group-item-action" href="#Cancellation-polic">Cancellation policy</a>
           </div>
         </div>
         <div id="page4" data-page="page4">
           <p class="dashboard-sidenav-font dashBoard-page-nav" >Calendar and availability</p>
           <div id="Calendar-and-availability" class="list-group nav-bar-listing-details popup-font-3">
-            <a class="list-group-item list-group-item-action" href="#Standard-rates">Availability</a>
-            <a class="list-group-item list-group-item-action" href="#Seasonal-rates">Calendar Sync</a>
+            <a class="list-group-item list-group-item-action" href="#Availability">Availability</a>
+            <a class="list-group-item list-group-item-action" href="#Calendar-Sync">Calendar Sync</a>
           </div>
         </div>
       </div>
@@ -64,10 +69,10 @@
 
     <div class="dashboard-left">
       <div id="page1" class="page dashBoard-page-active">
-        <div id="listing-details-photo"></div>
+        <div id="listingdetails"></div>
       </div>
       <div id="page2" class="page">
-        <div id="pricingapi"></div>
+        <div id="pricingAirbnb"></div>
       </div>
       <div id="page3" class="page">
          <div id="rulesAndPolices"></div>
@@ -78,50 +83,77 @@
     </div>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const pages = document.querySelectorAll(".page");
-      const links = document.querySelectorAll(".dashboard-right > #mainList > div");
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const pages = document.querySelectorAll(".page");
+  const links = document.querySelectorAll(".dashboard-right > #mainList > div");
 
-      // Function to show the corresponding page
-      function showPage(pageId) {
-        pages.forEach(page => {
-          page.classList.remove("dashBoard-page-active");
-          if (page.id === pageId) {
-            page.classList.add("dashBoard-page-active");
-          }
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-        });
-
-        // Update navbar color
-        const navItems = document.querySelectorAll(".dashboard-right > #mainList > div");
-        navItems.forEach(item => {
-          item.classList.remove("dashBoard-page-nav-active");
-          if (item.id === pageId) {
-            item.classList.add("dashBoard-page-nav-active");
-          }
-        });
+  // Function to show the corresponding page
+  function showPage(pageId) {
+    pages.forEach(page => {
+      page.classList.remove("dashBoard-page-active");
+      if (page.id === pageId) {
+        page.classList.add("dashBoard-page-active");
+        // Initialize Scrollspy for the current page
+        initScrollSpy(pageId);
       }
-
-      links.forEach(link => {
-        link.addEventListener("click", function (event) {
-          const pageId = this.getAttribute("data-page");
-          showPage(pageId);
-
-          // Prevent the click event from bubbling up to parent elements
-          event.stopPropagation();
-        });
-      });
-
-      // Show the active page by default
-      document.getElementById("page1").classList.add("dashBoard-page-active");
-      
     });
-  </script>
+
+    // Update navbar color
+    links.forEach(item => {
+      item.classList.remove("dashBoard-page-nav-active");
+      if (item.id === pageId) {
+        item.classList.add("dashBoard-page-nav-active");
+      }
+    });
+
+    // Scroll to the top
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Function to initialize Scrollspy
+  function initScrollSpy(pageId) {
+    // Get the Scrollspy target container
+    const targetContainer = document.querySelector(`#${pageId} .nav-bar-listing-details`);
+    if (targetContainer) {
+      // Remove any existing Scrollspy
+      const existingSpy = bootstrap.ScrollSpy.getInstance(document.body);
+      if (existingSpy) {
+        existingSpy.dispose();
+      }
+      
+      // Initialize new Scrollspy instance
+      new bootstrap.ScrollSpy(document.body, {
+        target: `#${pageId} .nav-bar-listing-details`,
+        offset: 100 // Adjust offset to match your header height
+      });
+    }
+  }
+
+  // Event listeners for page navigation
+  links.forEach(link => {
+    link.addEventListener("click", function (event) {
+      const pageId = this.getAttribute("data-page");
+      showPage(pageId);
+
+      // Prevent the click event from bubbling up to parent elements
+      event.stopPropagation();
+    });
+  });
+
+  // Show the active page by default and initialize Scrollspy
+  const defaultPage = document.getElementById("page1");
+  if (defaultPage) {
+    defaultPage.classList.add("dashBoard-page-active");
+    initScrollSpy(defaultPage.id);
+  }
+});
+</script>
+
 
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/jquery-3.7.1.js"></script>

@@ -1,40 +1,32 @@
 $(function () {
-  $("#dashboardHeader").load("dashboardHeader.html", function() {
-  });
+  // Load the dashboard header
+  $("#dashboardHeader").load("dashboardHeader.html");
 
-  $("#listing-details-photo").load("listing-details-photo.html", function() {
-    // Initialize Scrollspy after content is loaded
-    const scrollElement1 = document.querySelector('#ListingDetails1');
-    const scrollSpy1 = new bootstrap.ScrollSpy(scrollElement1, {
-      target: '#page1',
-      smoothScroll: true 
-    });
-  });
-  
-  $("#pricingapi").load("pricingapi.html", function() {
-    // Initialize Scrollspy after content is loaded
-    const scrollElement2 = document.querySelector('#PricingApi');
-    const scrollSpy2 = new bootstrap.ScrollSpy(scrollElement2, {
-      target: '#page2',
-      smoothScroll: true 
+  // Load the listing details and initialize Scrollspy
+  $("#listingdetails").load("listingdetails.html", function() {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#ListingDetails'
     });
   });
 
+  // Load the pricing API content and initialize Scrollspy
+  $("#pricingAirbnb").load("pricingAirbnb.html", function() {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#PricingApi'
+    });
+  });
+
+  // Load the rules and policies and initialize Scrollspy
   $("#rulesAndPolices").load("rulesAndPolices.html", function() {
-    // Initialize Scrollspy after content is loaded
-    const scrollElement2 = document.querySelector('#PricingApi');
-    const scrollSpy2 = new bootstrap.ScrollSpy(scrollElement2, {
-      target: '#page2',
-      smoothScroll: true 
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#Rules-and-Policies'
     });
   });
 
+  // Load the calendar and availability and initialize Scrollspy
   $("#calander-availability").load("calander-availability.html", function() {
-    // Initialize Scrollspy after content is loaded
-    const scrollElement2 = document.querySelector('#PricingApi');
-    const scrollSpy2 = new bootstrap.ScrollSpy(scrollElement2, {
-      target: '#page2',
-      smoothScroll: true 
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#Calendar-and-availability'
     });
   });
 });

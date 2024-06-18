@@ -50,19 +50,18 @@
   height: 0px;
   overflow: hidden;
 }
-.dropdown-menu {
+.dropdown-menu-position {
   right: auto !important;
-  left: 50% !important;
-  top: 105% !important;
+  left: 68% !important;
+  top: 100% !important;
   -webkit-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0) !important;
 }
+
 /*----------------------------
  homepage searchbar ends
  --------------------------- */
-
-
 
 @media (max-width:700px) {
   .search-main {

@@ -7,21 +7,25 @@
     <title>Crew dogs</title>
     <link rel="stylesheet" href="css/calander.css">
     <style>
-        .choose-a-date {
+        .choose-a-date,
+        .Select-a-destination,
+        .add-a-guest-main {
             display: flex;
             align-self: center;
             justify-content: space-between;
             min-width: 200px;
+            gap: 1.5rem;
         }
-        .choose-a-date::after{
-            margin: auto;
+
+        .dropdown-toggle::after {
+            margin: auto !important;
         }
+
         .show::after {
-            opacity: 0;
-        }
-         .show.choose-a-date::after {
             display: none;
         }
+
+
 
         .show .searchbar-default-text {
             display: none;
@@ -47,29 +51,90 @@
             height: 24px;
             background: #D9D9D9;
         }
+
+        .add-a-guest {
+            display: flex;
+            width: 300px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .flex-c-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid #E7E7E7;
+            padding: .5rem 0;
+        }
+        .flex-c-main:last-child {
+            border-bottom: 1px solid white !important;
+        }
+
+        .flex-c-sub {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flex-c-sub .svg-1 {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 80px;
+            border: 1px solid #e7e7e7;
+        }
+        
+        .dropdown-search-input {
+            outline: none;
+            display: none;
+        }
+        .show .Select-a-destination p{
+            display: none;
+        }
+       .show .dropdown-search-input {
+           display: block;
+        }
     </style>
 </head>
 
 <body>
     <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
         <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
-
+           
             <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="guest-dropdown" class="drop-sticky hero-down dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu">
-                    <span>Select a</span> destination
+                <a id="Select-a-destination" class="Select-a-destination drop-sticky hero-down dropdown-toggle" href="#" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                    <div class="searchbar-default-text">
+                        <span>Select a</span> destination
+                    </div>
+                    <input class="dropdown-search-input form-control" placeholder="Destination" type="text">
                 </a>
-
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                        hello
+                <ul class="dropdown-menu w-100" aria-labelledby="Select-a-destination" id="guest-menu">
+                    <li>
+                        <div class="dropdown-item">New York</div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">Los Angeles</div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">Chicago</div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">Houston</div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">Miami</div>
                     </li>
                 </ul>
             </div>
+            
 
             <div class="dropdown d-flex align-items-center justify-content-center">
                 <a id="guest-dropdown" class="choose-a-date drop-sticky hero-down dropdown-toggle" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu">
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
 
                     <div class="searchbar-default-text">
                         <span> Choose a</span>date
@@ -90,7 +155,8 @@
                     </div>
                 </a>
 
-                <ul class="dropdown-menu dropdown-menu-position  p-0" style="overflow: hidden; margin: auto; min-width: 850px;">
+                <ul class="dropdown-menu dropdown-menu-position  p-0"
+                    style="overflow: hidden; margin: auto; min-width: 850px;">
                     <li class="dropdown-item calander-main p-2 pt-4" style=" background-color: #fff ;">
                         <div class="w-100 d-flex flex-column" style="z-index: 999  !important;">
 
@@ -135,7 +201,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="weeks d-flex justify-content-between py-2">
+                                        <div class="weeks d-flex gap-4 justify-content-between py-2">
                                             <div class="calander-weeks">
                                                 <div class="weeks">
                                                     <p>Sun</p>
@@ -390,16 +456,84 @@
             </div>
 
             <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="guest-dropdown" class="drop-sticky hero-down dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"> <span>Add a</span> guest
+                <a id="guest-dropdown" class="add-a-guest-main drop-sticky hero-down dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                    <div>
+                        <span>Add a</span> guest
+                    </div> 
                 </a>
-                <ul class="dropdown-menu">
-                    <label for="">1</label>
-                    <li class="dropdown-item"><input type="radio" name="guest"></li>
-                    <label for="">2</label>
-                    <li class="dropdown-item"><input type="radio" name="guest"></li>
-                    <label for="">3</label>
-                    <li class="dropdown-item"><input type="radio" name="guest"></li>
+                <ul class="dropdown-menu" style="border-radius: 1rem;">
+                    <li class="dropdown-item">
+                        <div class="add-a-guest">
+                            <div class="flex-c-main">
+                                <div>
+                                    <p class="mb-0 pi-font-4">Adults</p>
+                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                                </div>
+                                <div class="flex-c-sub">
+                                    <div class="svg-1">
+                                        <img src="../img/Minus.svg" alt="">
+                                    </div>
+                                    <p class="mb-0">1</p>
+
+                                    <div class="svg-1">
+                                        <img src="../img/Add.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-c-main">
+                                <div>
+                                    <p class="mb-0 pi-font-4">Adults</p>
+                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                                </div>
+                                <div class="flex-c-sub">
+                                    <div class="svg-1">
+                                        <img src="../img/Minus.svg" alt="">
+                                    </div>
+                                    <p class="mb-0">1</p>
+
+                                    <div class="svg-1">
+                                        <img src="../img/Add.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-c-main">
+                                <div>
+                                    <p class="mb-0 pi-font-4">Adults</p>
+                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                                </div>
+                                <div class="flex-c-sub">
+                                    <div class="svg-1">
+                                        <img src="../img/Minus.svg" alt="">
+                                    </div>
+                                    <p class="mb-0">1</p>
+
+                                    <div class="svg-1">
+                                        <img src="../img/Add.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-c-main">
+                                <div>
+                                    <p class="mb-0 pi-font-4">Adults</p>
+                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                                </div>
+                                <div class="flex-c-sub">
+                                    <div class="svg-1">
+                                        <img src="../img/Minus.svg" alt="">
+                                    </div>
+                                    <p class="mb-0">1</p>
+
+                                    <div class="svg-1">
+                                        <img src="../img/Add.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                    </li>
                 </ul>
             </div>
 
@@ -457,30 +591,6 @@
         });
     </script>
 
-
-
-    <script>
-        // Prevent dropdown from closing when clicking inside
-        document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
-            menu.addEventListener('click', function (event) {
-                event.stopPropagation(); // Prevent event from bubbling up
-            });
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function (event) {
-            // Close all dropdowns except the one being clicked
-            document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-                if (!dropdown.contains(event.target)) {
-                    var dropdownMenu = dropdown.querySelector('.dropdown-menu');
-                    if (dropdownMenu) {
-                        dropdownMenu.classList.remove('show');
-                    }
-                }
-            });
-        });
-    </script>
-
-</body>
+ </body>
 
 </html>

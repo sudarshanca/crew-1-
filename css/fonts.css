@@ -1465,3 +1465,10 @@ line-height: 26px; /* 185.714% */
 letter-spacing: -0.078px;
 }
 
+.clndr-stnc-main-font-4{
+  color: var(--Grayscale-Gray-60, #ACACB0);
+font-size: 13px;
+font-weight: 400;
+line-height: 18px; /* 138.462% */
+letter-spacing: -0.078px;
+}

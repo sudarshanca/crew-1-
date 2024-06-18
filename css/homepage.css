@@ -39,10 +39,11 @@
   .search-box-m .drop-sticky {
     padding: 15px !important;
   }
-
+  /*
   .search-box-m .drop-sticky span {
     display: none;
   }
+  */
 
 }
 /* dropdown*/

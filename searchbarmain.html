@@ -67,6 +67,7 @@
             border-bottom: 1px solid #E7E7E7;
             padding: .5rem 0;
         }
+
         .flex-c-main:last-child {
             border-bottom: 1px solid white !important;
         }
@@ -86,17 +87,67 @@
             border-radius: 80px;
             border: 1px solid #e7e7e7;
         }
-        
+
         .dropdown-search-input {
             outline: none;
             border: none;
             display: none;
         }
-        .show .Select-a-destination p{
+
+        .show .Select-a-destination p {
             display: none;
         }
-       .show .dropdown-search-input {
-           display: block;
+
+        .show .dropdown-search-input {
+            display: block;
+        }
+
+        .Select-a-destination-dropdown {
+            width: 420px !important;
+            padding: 16px 0px;
+            border-radius: 16px;
+            border: 1px solid #E7E7E7;
+            background: #FFF;
+            /* Elevation */
+            box-shadow: 0px 20px 70px 0px rgba(194, 194, 194, 0.10);
+        }
+
+        .Select-a-destination-empty {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20% 0 0 0;
+            gap: 1rem;
+            min-height: 316px;
+        }
+
+        .Select-a-destination-suggestions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .location-icon {
+            display: flex;
+            width: 48px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 8.421px;
+            border-radius: 1684.211px;
+            border: 0.842px solid #E7E7E7;
+            background: #FAFAFA;
+        }
+        .suggest-text{
+            border-bottom: 1px solid #E7E7E7;
+            width: 100%;
+        }
+        .suggested-list-place {
+            display: flex;
+            gap: 1rem;
+            align-items: end;
+            width: 100%;
         }
     </style>
 </head>
@@ -104,38 +155,45 @@
 <body>
     <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
         <div id="search-box-m" class="search-box d-flex " style="z-index: 101;">
-           
+
             <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="Select-a-destination" class="Select-a-destination drop-sticky hero-down dropdown-toggle" href="#" role="button"
-                   data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                <a id="Select-a-destination" class="Select-a-destination drop-sticky hero-down dropdown-toggle" href="#"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
+                    data-bs-auto-close="outside">
                     <div class="searchbar-default-text">
                         <span>Select a</span> destination
                     </div>
-                    <input class="dropdown-search-input form-control" placeholder="Destination" type="text">
+                    <input class="dropdown-search-input " placeholder="Destination" type="text">
                 </a>
-                <ul class="dropdown-menu w-100" aria-labelledby="Select-a-destination" id="guest-menu">
-                    <li>
-                        <div class="dropdown-item">New York</div>
+                <ul class="dropdown-menu Select-a-destination-dropdown" aria-labelledby="Select-a-destination"
+                    id="guest-menu">
+                    <li class="dropdown-item Select-a-destination-empty" style="display: none;">
+                        <img src="img/Search 1.svg" alt="">
+                        <p class="clndr-stnc-main-font-4">Search by destinations, or base </p>
                     </li>
-                    <li>
-                        <div class="dropdown-item">Los Angeles</div>
+                    <li class="dropdown-item Select-a-destination-suggestions">
+                        <div class="suggested-list-place">
+                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
+                        </div>
+                        <div class="suggested-list-place">
+                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
+                        </div>
+                        <div class="suggested-list-place">
+                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
+                        </div>
                     </li>
-                    <li>
-                        <div class="dropdown-item">Chicago</div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">Houston</div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">Miami</div>
-                    </li>
+
                 </ul>
             </div>
-            
+
 
             <div class="dropdown d-flex align-items-center justify-content-center">
                 <a id="guest-dropdown" class="choose-a-date drop-sticky hero-down dropdown-toggle" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
+                    data-bs-auto-close="outside">
 
                     <div class="searchbar-default-text">
                         <span> Choose a</span>date
@@ -457,11 +515,12 @@
             </div>
 
             <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="guest-dropdown" class="add-a-guest-main drop-sticky hero-down dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                <a id="guest-dropdown" class="add-a-guest-main drop-sticky hero-down dropdown-toggle" href="#"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
+                    data-bs-auto-close="outside">
                     <div>
                         <span>Add a</span> guest
-                    </div> 
+                    </div>
                 </a>
                 <ul class="dropdown-menu" style="border-radius: 1rem;">
                     <li class="dropdown-item">
@@ -482,7 +541,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="flex-c-main">
                                 <div>
                                     <p class="mb-0 pi-font-4">Adults</p>
@@ -533,7 +592,7 @@
                             </div>
 
                         </div>
-                      
+
                     </li>
                 </ul>
             </div>
@@ -592,6 +651,6 @@
         });
     </script>
 
- </body>
+</body>
 
 </html>

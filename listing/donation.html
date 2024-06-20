@@ -33,20 +33,27 @@
         </a>
       </header>
 
+      <div class="desktop-back-button">
+          <img src="../img/Left 1.svg" alt="">
+      </div>
+
       <div class="donation-publish">
         <p class="your-payout-font text-center mb-0">Select your cause</p>
           <p class="pi-font-3 t-c">Crewdogs is a military only community where service fees are discounted. Apply your
-            discount below to pass the savings to your guests.
-            <a  href="./learnmore.html" class="pi-font-3 more-info-btn" >
-              learn more
-            </a>
+              <!-- Button trigger modal -->
+          <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            learn more
+          </button>
           </p>
           <div class="search-box">
             <p class="listing-font-3">Select your military charity</p>
             <div class="listing-search-main">
               <div class="search-box-input">
                 <input type="text" class="form-select" placeholder="Search" style="--bs-form-select-bg-img: none;">
+                <!-- search icone -->
                 <img src="../img/Search 2.svg" alt="">
+                <!-- close icon -->
+              <!--   <img src="../img/Close Circle.svg" alt=""> -->
               </div>
             <!-- listing search suggestions -->
              <!--  <div class="listing-search-suggestions">
@@ -102,6 +109,28 @@
 
 
   </section>
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" >
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <p class="pi-font-7 pt-4 mb-2">How it works</p>
+          <p class="pi-font-4">Pick your charity, then select a % or a $ amount per payout to donate. <br>
+            100% of this amount will be donated, plus Crewdogs will donate from our profits to your cause. <br>
+            At end of year, we will provide you a receipt for your tax deduction. </p>
+          <div class="divider mb-3"></div>
+          <p class="dm-small-4 mb-2">Your donation is removed and donated from each payout</p>
+          <p class="pi-font-4">Plus, you’ll be able to track how much we donate to your cause</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 

@@ -1,6 +1,4 @@
 .calander-main {
-  max-width: 792px;
-  min-height: 400px;
   width: 100%;
   overflow-x: scroll;
 }

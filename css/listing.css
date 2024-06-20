@@ -3,6 +3,9 @@
   width: 100%;
   background: #F1F1F1;
 }
+.bb-n {
+  border-bottom: none !important;
+}
 
 
 .listing-section-1 {
@@ -19,6 +22,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+}
+.listing-header div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .help {
@@ -41,7 +49,7 @@
   margin-top: 2rem;
 }
 
-.add-a-listing-main {
+.add-a-listing-main, .afterimport {
   display: flex;
   margin: auto;
   margin-top: 3rem;
@@ -55,6 +63,10 @@
   border-radius: 16px;
   border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
   background: var(--White-White-100, #FFF);
+}
+.afterimport {
+  border: none;
+  gap: 32px;
 }
 
 .import-create-listing {
@@ -203,9 +215,33 @@ box-shadow: 0px 20px 70px 0px rgba(194, 194, 194, 0.10);
 
 
 
+
+/*------------------------------
+ afterimport starts
+------------------------------*/
+
+
+.afterimport-listing {
+  display: flex;
+  padding: 24px;
+  padding-bottom: 32px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+}
+.afterimport-listing:last-child {
+  border-bottom: 1px solid white !important;
+}
+
+
+
 /*------------------------------
  buttons 
 ------------------------------*/
+
+
 
 .continue-button {
   display: flex;
@@ -248,14 +284,27 @@ box-shadow: 0px 20px 70px 0px rgba(194, 194, 194, 0.10);
   letter-spacing: -0.32px;
 }
 
+.button-blue {
+  background-color: #0D99FF;
+  color: white;
+}
+
 /*----------------------------
  mobile respomsive 
 -----------------------------*/
+/* desktop-none */
+ .d-n {
+  display: none;
+ }
 @media (max-width:700px) {
 
   /* mobile none */
   .m-n {
     display: none;
+  }
+  /* mobile block */
+  .d-n {
+    display: block;
   }
 
   .listing-header {
@@ -272,6 +321,22 @@ box-shadow: 0px 20px 70px 0px rgba(194, 194, 194, 0.10);
     padding: 2%;
     padding: 2rem;
     margin-top: 1rem;
+  }
+  .afterimport {
+    border-radius: 0;
+    padding-top: 3rem;
+    padding: 5%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .afterimport-listing {
+    padding: 1rem 0;
+    flex-direction: row-reverse;
+    gap: 12px;
+    padding: 12px 0px;
+    align-items: center; 
+    align-self: stretch;
   }
 
   .import-create-listing {

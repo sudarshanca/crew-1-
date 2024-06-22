@@ -1573,3 +1573,42 @@ main {
         transform: rotate(360deg);
     }
 }
+
+
+/* host info*/
+.host-info {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+
+.host-info .avatar, 
+.review-box .avatar,
+.review-card .avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.float-btn-listing {
+  display: none;
+}
+
+/* style="width: 100%;height: 400px;position: relative;overflow: hidden;" */
+/* remove inline css and add class name listing-details-map */
+/* <div id="map" class="listing-details-map"></div> */
+.listing-details-map {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width:700px) {
+  .listing-details-map {
+    height: 60vh;
+    height: 300px;
+  }
+}
+
+
+/* class="filter-button mobile-version-none" */
+/* replace this or add calss name mb-3 */
+/* class="filter-area mb-3 d-flex align-items-center" */

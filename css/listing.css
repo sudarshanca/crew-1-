@@ -90,7 +90,8 @@
 }
 
 
-.import-create-listing {
+.import-create-listing, 
+.Describe-your-Airbnb {
   cursor: pointer;
   display: flex;
   padding: 24px;
@@ -103,15 +104,18 @@
   background: var(--Gray-04, #FCFCFC);
 }
 
-.import-create-listing.active {
+.import-create-listing.active ,
+.Describe-your-Airbnb.active {
   background-color: #0D99FF;
 }
 
-.import-create-listing.active p {
+.import-create-listing.active p ,
+.Describe-your-Airbnb.active p {
   color: white;
 }
 
-.import-create-listing.active img {
+.import-create-listing.active img ,
+.Describe-your-Airbnb.active img {
   filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(0%) hue-rotate(87deg) brightness(106%) contrast(101%);
 }
 
@@ -882,6 +886,9 @@ letter-spacing: -0.078px;
 
   .import-create-listing {
     height: 54px;
+  }
+  .Describe-your-Airbnb {
+    padding: 10px;
   }
 
   .Military-discount {

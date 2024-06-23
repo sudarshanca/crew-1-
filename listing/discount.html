@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,26 +37,57 @@
       </div>
 
       <div class="Military-discount">
-        <p class="your-payout-font text-center">Add damage protection</p>
-        <div class="learm-more-discount">
-          <div>
-            <p class="pi-font-3">Crewdogs is a military only community where service fees are discounted. Apply your
-              discount below to pass the savings to your guests.</p>
-            <!-- Button trigger modal -->
-            <a href="./learnmore.html" class="pi-font-3 more-info-btn">
-              learn more
-            </a>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <div>
+        <p class="your-payout-font text-center">Crewdogs military discount</p>
+          <p class="pi-font-3 mb-0">Crewdogs is a military only community where service fees are discounted. Apply your discount below to pass the savings to your guests.</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            learn more
+          </button>
+
+          <div class="set-discount">
+            <div class="discount-minus">
+              <img src="../img/Minus.svg" alt="">
+            </div>
+            <div class="discount-number">
+              <p class="mb-0 percent-num">10</p>
+              <p class="mb-0 percent">%</p>
+            </div>
+            <div class="discount-plus">
+              <img src="../img/Add.svg" alt="">
+            </div>
           </div>
         </div>
-        <button class="continue-button button-blue">continue</button>
+
+
+        <button class="continue-button active">continue</button>
       </div>
     </div>
 
 
   </section>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <p class="pi-font-7 pt-4 mb-2">The military discount</p>
+          <p class="pi-font-4">Your military discount is applied to the total nightly or monthly rate, not including
+            fees or deposits. It is stacked on top of any length of stay discounts you apply (added on next page). We
+            display this prominently on your listing for guests to see. </p>
+          <div class="divider mb-3"></div>
+          <p class="dm-small-4 mb-2">When the military discount is not applied:</p>
+          <p class="pi-font-4">Official gov’t travel stays where your rates have been reduced to reflect per diem
+            amounts (if opted in for official gov’t hosting).</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

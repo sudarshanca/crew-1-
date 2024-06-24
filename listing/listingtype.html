@@ -39,17 +39,17 @@
 
       <div class="afterimport">
         <p class="your-payout-font">Describe your Airbnb</p>
-          <div class="Describe-your-Airbnb">
+        <div id="ownAccount" class="Describe-your-Airbnb">
             <div>
               <p class="dashboard-font-11 mb-0">You own the account</p>
-              <p class="dashboard-font-12 mb-0">You are the Airbnb  listing owner</p>
+              <p class="dashboard-font-12 mb-0">You are the Airbnb listing owner</p>
             </div>
             <div>
               <img src="../img/Download.svg" alt="">
             </div>
-          </div>
+        </div>
           
-          <div class="Describe-your-Airbnb">
+        <div id="ownedByOther" class="Describe-your-Airbnb">
             <div>
               <p class="dashboard-font-11 mb-0">Owned by someone else</p>
               <p class="dashboard-font-12 mb-0">A PM or co-host owns your listing</p>
@@ -57,24 +57,56 @@
             <div>
               <img src="../img/Add.svg" width="32px" height="32px" alt="">
             </div>
-          </div>
-          <p class="dashboard-font-12 mb-0">Only the Airbnb listing owner can import a listing into Crewdogs. If you do not own the listing or do not have the Airbnb account credentials, we will send an email to the listing owner with instructions.  </p>
-          <br>
-     <button class="continue-button ">Continue</button>
-     <br>     
-  </div>
-  </div>
-     
-
-
+        </div>
+        <p class="dashboard-font-12 mb-0">Only the Airbnb listing owner can import a listing into Crewdogs. If you do not own the listing or do not have the Airbnb account credentials, we will send an email to the listing owner with instructions.  </p>
+        <br>
+        <!-- Button for continue action -->
+        <button id="continueButton" class="continue-button">Continue</button>
+        <br>
+      </div>
+    </div>
   </section>
 
-
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the elements
+      const divs = document.querySelectorAll('.Describe-your-Airbnb');
+      const continueButton = document.getElementById('continueButton');
+      
+      let selectedDiv = null;
+      
+      // Add event listeners to each div
+      divs.forEach(div => {
+        div.addEventListener('click', function () {
+          // Remove 'active' class from all divs
+          divs.forEach(d => d.classList.remove('active'));
+          
+          // Add 'active' class to the clicked div
+          this.classList.add('active');
+          
+          // Track the selected div
+          selectedDiv = this;
+          
+          // Add 'active' class to the continue button
+          continueButton.classList.add('active');
+        });
+      });
+      
+      // Add click event listener to the continue button
+      continueButton.addEventListener('click', function () {
+        // Check if a div has been selected
+        if (selectedDiv) {
+          // Redirect to the new page
+          window.location.href = './listingtype2.html';
+        } else {
+          // Optional: Provide some feedback to the user
+          alert('Please select an option before continuing.');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

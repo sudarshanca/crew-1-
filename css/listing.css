@@ -560,11 +560,12 @@ border: 1px solid var(--GREY, #747474);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: auto;
 }
 .General-features {
 display: flex;
-width: 180px;
 padding: 16px;
+width: 29%;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
@@ -751,6 +752,7 @@ letter-spacing: -0.078px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.32px;
+  text-decoration: none;
 }
 
 .Add-listing-button {
@@ -908,6 +910,14 @@ letter-spacing: -0.078px;
 
   .mission-display {
     height: 132px;
+  }
+
+  .General-features-main {
+    gap: 12px;
+}
+
+  .General-features p {
+    font-size: 14px;
   }
 
 }

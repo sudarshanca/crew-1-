@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew dogs</title>
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/listing.css">
+  <link rel="stylesheet" href="../css/slick-slider.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <section class="listing-main">
+    <div class="listing-section mb-5">
+      <header class="listing-header m-n">
+        <img src="../img/logo.svg" alt="">
+        <div>
+          <button class="help">help</button>
+          <button class="help">Save and exit</button>
+        </div>
+      </header>
+      <header class="listing-header d-n">
+        <a href="./addlisting.html">
+          <img src="../img/arrow_back.svg" alt="">
+        </a>
+      </header>
+      <div class="desktop-back-button">
+        <img src="../img/Left 1.svg" alt="">
+      </div>
+
+      <div class="afterimport">
+        <p class="your-payout-font">Describe your Airbnb</p>
+        <div id="ownAccount" class="Describe-your-Airbnb">
+            <div>
+              <p class="dashboard-font-11 mb-0">You own the account</p>
+              <p class="dashboard-font-12 mb-0">You are the Airbnb listing owner</p>
+            </div>
+            <div>
+              <img src="../img/Download.svg" alt="">
+            </div>
+        </div>
+          
+        <div id="ownedByOther" class="Describe-your-Airbnb">
+            <div>
+              <p class="dashboard-font-11 mb-0">Owned by someone else</p>
+              <p class="dashboard-font-12 mb-0">A PM or co-host owns your listing</p>
+            </div>
+            <div>
+              <img src="../img/Add.svg" width="32px" height="32px" alt="">
+            </div>
+        </div>
+        <p class="dashboard-font-12 mb-0">Only the Airbnb listing owner can import a listing into Crewdogs. If you do not own the listing or do not have the Airbnb account credentials, we will send an email to the listing owner with instructions.  </p>
+        <br>
+        <!-- Button for continue action -->
+        <button id="continueButton" class="continue-button">Continue</button>
+        <br>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const divs = document.querySelectorAll('.Describe-your-Airbnb');
+      const continueButton = document.getElementById('continueButton');
+      
+      let selectedDiv = null;
+  
+      divs.forEach(div => {
+        div.addEventListener('click', function () {
+          divs.forEach(d => d.classList.remove('active'));
+          
+          this.classList.add('active');
+          
+          selectedDiv = this;
+          
+          continueButton.classList.add('active');
+        });
+      });
+      
+      continueButton.addEventListener('click', function () {
+        if (selectedDiv) {
+          window.location.href = './listingtype2.html';
+        } else {
+          alert('Please select an option before continuing.');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

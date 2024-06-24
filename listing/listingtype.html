@@ -37,56 +37,34 @@
         <img src="../img/Left 1.svg" alt="">
       </div>
 
-      <div class="afterimport">
-        <p class="your-payout-font">Describe your Airbnb</p>
-        <div id="ownAccount" class="Describe-your-Airbnb">
-            <div>
-              <p class="dashboard-font-11 mb-0">You own the account</p>
-              <p class="dashboard-font-12 mb-0">You are the Airbnb listing owner</p>
-            </div>
-            <div>
-              <img src="../img/Download.svg" alt="">
-            </div>
-        </div>
-          
-        <div id="ownedByOther" class="Describe-your-Airbnb">
-            <div>
-              <p class="dashboard-font-11 mb-0">Owned by someone else</p>
-              <p class="dashboard-font-12 mb-0">A PM or co-host owns your listing</p>
-            </div>
-            <div>
-              <img src="../img/Add.svg" width="32px" height="32px" alt="">
-            </div>
-        </div>
-        <p class="dashboard-font-12 mb-0">Only the Airbnb listing owner can import a listing into Crewdogs. If you do not own the listing or do not have the Airbnb account credentials, we will send an email to the listing owner with instructions.  </p>
-        <br>
-        <!-- Button for continue action -->
-        <button id="continueButton" class="continue-button">Continue</button>
-        <br>
-      </div>
-    </div>
       <div class="Military-discount">
         <p class="your-payout-font text-center">What type of listing is this?</p>
         <div class="property-type">
           <div class="property-type-radio-select">
-             <div class="property-select-radio">
+             <div class="property-select-radio active">
               <div class="prt-slt-rdo-top">
                  <img src="../img/bed.svg" alt="">
-                 <input type="radio">
+                 <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault" checked>
+                </div>
               </div>
               <p class="mb-0" >room</p>
              </div>
              <div class="property-select-radio">
               <div class="prt-slt-rdo-top">
                  <img src="../img/cottage.svg" alt="">
-                 <input type="radio">
+                 <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault">
+                </div>
               </div>
               <p class="mb-0 " >Entire place</p>
              </div>
              <div class="property-select-radio">
               <div class="prt-slt-rdo-top">
                  <img src="../img/nest_multi_room.svg" alt="">
-                 <input type="radio">
+                 <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault">
+                </div>
               </div>
               <p class="mb-0 ">Multiple rooms</p>
              </div>
@@ -109,44 +87,23 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get the elements
-      const divs = document.querySelectorAll('.Describe-your-Airbnb');
-      const continueButton = document.getElementById('continueButton');
-      
-      let selectedDiv = null;
-      
-      // Add event listeners to each div
-      divs.forEach(div => {
-        div.addEventListener('click', function () {
-          // Remove 'active' class from all divs
-          divs.forEach(d => d.classList.remove('active'));
-          
-          // Add 'active' class to the clicked div
-          this.classList.add('active');
-          
-          // Track the selected div
-          selectedDiv = this;
-          
-          // Add 'active' class to the continue button
-          continueButton.classList.add('active');
-        });
+<script>
+  document.querySelectorAll('.property-select-radio').forEach(radio => {
+      radio.addEventListener('click', () => {
+          const isActive = radio.classList.contains('active');
+
+          document.querySelectorAll('.property-select-radio').forEach(r => {
+              r.classList.remove('active');
+              r.querySelector('.form-check-input').checked = false;
+          });
+
+          if (!isActive) {
+              radio.classList.add('active');
+              radio.querySelector('.form-check-input').checked = true;
+          }
       });
-      
-      // Add click event listener to the continue button
-      continueButton.addEventListener('click', function () {
-        // Check if a div has been selected
-        if (selectedDiv) {
-          // Redirect to the new page
-          window.location.href = './listingtype2.html';
-        } else {
-          // Optional: Provide some feedback to the user
-          alert('Please select an option before continuing.');
-        }
-      });
-    });
-  </script>
+  });
+</script>
 </body>
 
 </html>

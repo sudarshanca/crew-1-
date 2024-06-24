@@ -116,12 +116,31 @@
 
         </div>
        </div>
-        <button class="continue-button active">continue</button>
+        <button id="General-features-button" class="continue-button ">continue</button>
       </div>
     </div>
 
 
   </section>
+
+  <script>
+document.querySelectorAll('.General-features').forEach(feature => {
+    feature.addEventListener('click', () => {
+        // Toggle active class on the clicked feature
+        feature.classList.toggle('active');
+
+        // Update General-features-button based on active class
+        const button = document.getElementById('General-features-button');
+        const anyActive = document.querySelector('.General-features.active');
+
+        if (anyActive) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+});
+  </script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>

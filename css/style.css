@@ -1598,6 +1598,7 @@ main {
 .review-card .avatar {
   border-radius: 50%;
   overflow: hidden;
+  min-width: fit-content;
 }
 .float-btn-listing {
   display: none;

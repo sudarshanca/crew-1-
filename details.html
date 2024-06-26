@@ -11,6 +11,7 @@
   <link href="css/slick-slider.css" rel="stylesheet">
   <link rel="stylesheet" href="css/s-custom.css">
   <link rel="stylesheet" href="css/s-custom2.css">
+  <link rel="stylesheet" href="css/homepage.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,6 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="js/script.js"></script>
   <script src="js/jquery-3.7.1.js"></script>
   <script src="js/headerFooter.js"></script>
 
@@ -37,8 +37,60 @@
 
 <body>
 
-  <!--header2-->
-  <div id="header2" class="mobile-none"></div>
+  <div class="listing-map-header m-n">
+    <header class="container">
+      <a href="/" class="text-decoration-none home-crew-logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <div class="hero-search search-small m-n">
+        <div id="searchbarmain"></div>
+      </div>
+
+      <div class="d-flex gap-1 m-n">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link fs-16 bp-3 fit-content" aria-current="page">Add my place</a>
+          </li>
+        </ul>
+        <!--menu items-->
+        <div class="dropdown header-drpdn-icon m-n">
+          <button class="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+              <path d="M1 7H15M1 1H15" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end cd-menu-item" style="border-radius: 1rem;">
+
+            <li class="cdmenu-item">
+              <div class="d-grid">
+                <button class="btn dropdown header-dropdown-font-1"
+                  style="border-radius: 1rem; background-color: #0D99FF; " type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sign up
+                </button>
+              </div>
+            </li>
+            <li class="cdmenu-item">
+              <div class="d-grid">
+                <button class="btn header-dropdown-font-2 border dropdown" style="  border-radius: 1rem;" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Log in
+                </button>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">View collections</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Add my place</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">FAQs</a></li>
+            <li><a class="dropdown-item header-dropdown-font-2" href="#">Help</a></li>
+          </ul>
+        </div>
+        <!--menu items end-->
+      </div>
+    </header>
+  </div>
+
 
   <div class="container margin-top-none" style=" margin-top: 5rem; max-width: 1500px;">
 
@@ -611,7 +663,7 @@
 
   <div id="footer"></div>
 
-  <div class="details-footer py-2 px-3 pb-3 d-flex align-items-center justify-content-between desktop-version-none ">
+  <div class="d-n-f details-footer py-2 px-3 pb-3 align-items-center justify-content-between desktop-version-none ">
     <div>
       <p class="mb-0 dm-small-3 text-center" style="color: #4B4B4D;">$190 <span style="font-size: 12px;">/night</span>
       </p>

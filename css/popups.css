@@ -159,20 +159,18 @@ letter-spacing: -0.408px;
   width: 100%;
   position: relative;
   gap: 1rem;
-  padding: 1rem 0 0 0;
 }
 .left-Map {
   height: 100%;
   width: 60%;
   margin-left: 1rem;
-  margin-top: .5rem;
   background-color: white;
 }
 .Right-Map {
-  height: calc(100vh - 98px);
+  height: calc(100vh - 82px);
   width: 40%;
   position: sticky;
-  top: 5.4rem;
+  top: 4.5rem;
 }
 .map-container {
   width: 100%;
@@ -241,7 +239,7 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
-  margin: 3.5rem 0 0 0;
+  margin: 3rem 0 0 0;
   height: calc(100vh - 145px);
 }
 .increase-Map .Right-Map {
@@ -272,7 +270,7 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .left-Map .filter-menu-main {
   position: fixed;
-  top: 4.6rem;
+  top: 4.5rem;
   transition: none;
 }
 .increase-Map .left-Map .filter-menu-main {
@@ -310,11 +308,11 @@ listing map mobile wersion
     border-radius: 1rem 1rem 0 0;
     background-color: white;
   }
-  .Right-Map{
+  .Right-Map {
     width: 100%;
     position: fixed;
-    top: 135px;
-    height: 74dvh;
+    top: 174px;
+    height: 65dvh;
   }
   .map-container .button-div {
     display: none;

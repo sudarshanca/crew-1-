@@ -139,479 +139,484 @@
             border: 0.842px solid #E7E7E7;
             background: #FAFAFA;
         }
-        .suggest-text{
+
+        .suggest-text {
             border-bottom: 1px solid #E7E7E7;
             width: 100%;
         }
+
         .suggested-list-place {
             display: flex;
             gap: 1rem;
             align-items: end;
             width: 100%;
         }
-        .search-box-m{
+
+        .search-box-m {
             z-index: 111;
         }
+
         @media (max-width:700px) {
-            .search-box-m{
+            .search-box-m {
                 z-index: 1 !important;
             }
         }
-
     </style>
 </head>
 
 <body>
-    <div class="d-flex mb-4" style=" min-height: 100px; height: fit-content;">
-        <div id="search-box-m" class="search-box d-flex " >
 
-            <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="Select-a-destination" class="Select-a-destination drop-sticky hero-down dropdown-toggle" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
-                    data-bs-auto-close="outside">
-                    <div class="searchbar-default-text">
-                        <span>Select a</span> destination
-                    </div>
-                    <input class="dropdown-search-input " placeholder="Destination" type="text">
-                </a>
-                <ul class="dropdown-menu Select-a-destination-dropdown" aria-labelledby="Select-a-destination"
-                    id="guest-menu">
-                    <li class="dropdown-item Select-a-destination-empty" style="display: none;">
-                        <img src="img/Search 1.svg" alt="">
-                        <p class="clndr-stnc-main-font-4">Search by destinations, or base </p>
-                    </li>
-                    <li class="dropdown-item Select-a-destination-suggestions">
-                        <div class="suggested-list-place">
-                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
-                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
-                        </div>
-                        <div class="suggested-list-place">
-                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
-                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
-                        </div>
-                        <div class="suggested-list-place">
-                            <div class="location-icon"><img src="img/location.svg" alt=""></div>
-                            <div class="suggest-text"><p class=" pi-font-4 mb-2" >Charleston AFB</p></div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-
-            <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="guest-dropdown" class="choose-a-date drop-sticky hero-down dropdown-toggle" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
-                    data-bs-auto-close="outside">
-
-                    <div class="searchbar-default-text">
-                        <span> Choose a</span>date
-                    </div>
-
-                    <div class="searchbar-start-end-date">
-                        <p class="mb-0">Start date</p>
-                        <div class="searchbar-start-date searchbar-date ">
-                            <p class="mb-0" style="font-weight: 700; color: #444;"> jan 10</p>
-                            <img src="img/Close Circle.svg" alt="">
-                        </div>
-                        <div class="line"></div>
-                        <p class="mb-0">end date</p>
-                        <div class="searchbar-end-date searchbar-date ">
-                            <p class="mb-0" style="font-weight: 700; color: #444;"> jan 15</p>
-                            <img src="img/Close Circle.svg" alt="">
+    <div id="search-box-m" class="search-box d-flex ">
+        <div class="dropdown d-flex align-items-center justify-content-center">
+            <a id="Select-a-destination" class="Select-a-destination drop-sticky hero-down dropdown-toggle" href="#"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
+                data-bs-auto-close="outside">
+                <div class="searchbar-default-text">
+                    <span>Select a</span> destination
+                </div>
+                <input class="dropdown-search-input " placeholder="Destination" type="text">
+            </a>
+            <ul class="dropdown-menu Select-a-destination-dropdown" aria-labelledby="Select-a-destination"
+                id="guest-menu">
+                <li class="dropdown-item Select-a-destination-empty" style="display: none;">
+                    <img src="img/Search 1.svg" alt="">
+                    <p class="clndr-stnc-main-font-4">Search by destinations, or base </p>
+                </li>
+                <li class="dropdown-item Select-a-destination-suggestions">
+                    <div class="suggested-list-place">
+                        <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                        <div class="suggest-text">
+                            <p class=" pi-font-4 mb-2">Charleston AFB</p>
                         </div>
                     </div>
-                </a>
+                    <div class="suggested-list-place">
+                        <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                        <div class="suggest-text">
+                            <p class=" pi-font-4 mb-2">Charleston AFB</p>
+                        </div>
+                    </div>
+                    <div class="suggested-list-place">
+                        <div class="location-icon"><img src="img/location.svg" alt=""></div>
+                        <div class="suggest-text">
+                            <p class=" pi-font-4 mb-2">Charleston AFB</p>
+                        </div>
+                    </div>
+                </li>
 
-                <ul class="dropdown-menu dropdown-menu-position  p-0"
-                    style="overflow: hidden; margin: auto; min-width: 850px; border-radius: 1rem;">
-                    <li class="dropdown-item calander-main p-2 pt-4" style=" background-color: #fff ;">
-                        <div class="w-100 d-flex flex-column" style="z-index: 999  !important;">
+            </ul>
+        </div>
 
-                            <div>
-                                <p class="offer-header-font-2 text-center">Choose stay Duration</p>
-                            </div>
-                            <div class="d-m-y container d-flex justify-content-evenly align-items-center">
-                                <p class="addpaymentmethod-font-3 calander-d-m-y mb-0 active-d-m-y"
-                                    onclick="showContent('content1', event)">Days</p>
-                                <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
-                                    onclick="showContent('content2', event)">Months
-                                </p>
-                                <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
-                                    onclick="showContent('content3', event)">Years
-                                </p>
-                            </div>
 
-                            <div class="">
-                                <div class="days-calander pt-3 w-100 m-auto content active" id="content1"
-                                    style="max-width: 744px;">
-                                    <div class="m-auto">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
-                                                    viewBox="0 0 13 16" fill="none">
-                                                    <path
-                                                        d="M10.0533 16.0001C9.4222 16.0008 8.8101 15.7843 8.31994 15.3868L1.51995 9.77343C1.25329 9.56114 1.03794 9.29144 0.889921 8.98442C0.741907 8.67739 0.665039 8.34093 0.665039 8.00009C0.665039 7.65925 0.741907 7.32279 0.889921 7.01577C1.03794 6.70874 1.25329 6.43905 1.51995 6.22676L8.31994 0.613426C8.72932 0.285418 9.22261 0.0790069 9.74359 0.0177151C10.2646 -0.0435768 10.7923 0.0427154 11.2666 0.266759C11.6788 0.448465 12.0301 0.74499 12.2783 1.12092C12.5266 1.49685 12.6614 1.93629 12.6666 2.38676V13.6134C12.6614 14.0639 12.5266 14.5033 12.2783 14.8793C12.0301 15.2552 11.6788 15.5517 11.2666 15.7334C10.8855 15.9068 10.472 15.9976 10.0533 16.0001Z"
-                                                        fill="#CDCDCD" />
-                                                </svg>
-                                            </div>
-                                            <div class="months-column flex-grow-1">
-                                                <p class="mb-0">January</p>
-                                                <p class="mb-0">February</p>
-                                            </div>
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
-                                                    viewBox="0 0 13 16" fill="none">
-                                                    <path
-                                                        d="M2.94634 16.0001C2.52763 15.9976 2.11416 15.9068 1.73301 15.7334C1.32078 15.5517 0.969559 15.2552 0.721305 14.8793C0.47305 14.5033 0.338252 14.0639 0.333008 13.6134V2.38676C0.338252 1.93629 0.47305 1.49685 0.721305 1.12092C0.969559 0.74499 1.32078 0.448465 1.73301 0.266759C2.20733 0.0427154 2.73505 -0.0435768 3.25603 0.0177151C3.77701 0.0790069 4.2703 0.285418 4.67968 0.613426L11.4797 6.22676C11.7463 6.43905 11.9617 6.70874 12.1097 7.01577C12.2577 7.32279 12.3346 7.65925 12.3346 8.00009C12.3346 8.34093 12.2577 8.67739 12.1097 8.98442C11.9617 9.29144 11.7463 9.56114 11.4797 9.77343L4.67968 15.3868C4.18951 15.7843 3.57742 16.0008 2.94634 16.0001Z"
-                                                        fill="#CDCDCD" />
-                                                </svg>
-                                            </div>
+        <div class="dropdown d-flex align-items-center justify-content-center">
+            <a id="guest-dropdown" class="choose-a-date drop-sticky hero-down dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+
+                <div class="searchbar-default-text">
+                    <span> Choose a</span>date
+                </div>
+
+                <div class="searchbar-start-end-date">
+                    <p class="mb-0">Start date</p>
+                    <div class="searchbar-start-date searchbar-date ">
+                        <p class="mb-0" style="font-weight: 700; color: #444;"> jan 10</p>
+                        <img src="img/Close Circle.svg" alt="">
+                    </div>
+                    <div class="line"></div>
+                    <p class="mb-0">end date</p>
+                    <div class="searchbar-end-date searchbar-date ">
+                        <p class="mb-0" style="font-weight: 700; color: #444;"> jan 15</p>
+                        <img src="img/Close Circle.svg" alt="">
+                    </div>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-position  p-0"
+                style="overflow: hidden; margin: auto; min-width: 850px; border-radius: 1rem;">
+                <li class="dropdown-item calander-main p-2 pt-4" style=" background-color: #fff ;">
+                    <div class="w-100 d-flex flex-column" style="z-index: 999  !important;">
+
+                        <div>
+                            <p class="offer-header-font-2 text-center">Choose stay Duration</p>
+                        </div>
+                        <div class="d-m-y container d-flex justify-content-evenly align-items-center">
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0 active-d-m-y"
+                                onclick="showContent('content1', event)">Days</p>
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
+                                onclick="showContent('content2', event)">Months
+                            </p>
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
+                                onclick="showContent('content3', event)">Years
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <div class="days-calander pt-3 w-100 m-auto content active" id="content1"
+                                style="max-width: 744px;">
+                                <div class="m-auto">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                viewBox="0 0 13 16" fill="none">
+                                                <path
+                                                    d="M10.0533 16.0001C9.4222 16.0008 8.8101 15.7843 8.31994 15.3868L1.51995 9.77343C1.25329 9.56114 1.03794 9.29144 0.889921 8.98442C0.741907 8.67739 0.665039 8.34093 0.665039 8.00009C0.665039 7.65925 0.741907 7.32279 0.889921 7.01577C1.03794 6.70874 1.25329 6.43905 1.51995 6.22676L8.31994 0.613426C8.72932 0.285418 9.22261 0.0790069 9.74359 0.0177151C10.2646 -0.0435768 10.7923 0.0427154 11.2666 0.266759C11.6788 0.448465 12.0301 0.74499 12.2783 1.12092C12.5266 1.49685 12.6614 1.93629 12.6666 2.38676V13.6134C12.6614 14.0639 12.5266 14.5033 12.2783 14.8793C12.0301 15.2552 11.6788 15.5517 11.2666 15.7334C10.8855 15.9068 10.472 15.9976 10.0533 16.0001Z"
+                                                    fill="#CDCDCD" />
+                                            </svg>
                                         </div>
+                                        <div class="months-column flex-grow-1">
+                                            <p class="mb-0">January</p>
+                                            <p class="mb-0">February</p>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                viewBox="0 0 13 16" fill="none">
+                                                <path
+                                                    d="M2.94634 16.0001C2.52763 15.9976 2.11416 15.9068 1.73301 15.7334C1.32078 15.5517 0.969559 15.2552 0.721305 14.8793C0.47305 14.5033 0.338252 14.0639 0.333008 13.6134V2.38676C0.338252 1.93629 0.47305 1.49685 0.721305 1.12092C0.969559 0.74499 1.32078 0.448465 1.73301 0.266759C2.20733 0.0427154 2.73505 -0.0435768 3.25603 0.0177151C3.77701 0.0790069 4.2703 0.285418 4.67968 0.613426L11.4797 6.22676C11.7463 6.43905 11.9617 6.70874 12.1097 7.01577C12.2577 7.32279 12.3346 7.65925 12.3346 8.00009C12.3346 8.34093 12.2577 8.67739 12.1097 8.98442C11.9617 9.29144 11.7463 9.56114 11.4797 9.77343L4.67968 15.3868C4.18951 15.7843 3.57742 16.0008 2.94634 16.0001Z"
+                                                    fill="#CDCDCD" />
+                                            </svg>
+                                        </div>
+                                    </div>
 
-                                        <div class="weeks d-flex gap-4 justify-content-between py-2">
-                                            <div class="calander-weeks">
-                                                <div class="weeks">
-                                                    <p>Sun</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Mon</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Tue</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Wed</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Thu</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Fri</p>
-                                                </div>
-                                                <div class="weeks">
-                                                    <p>Sat</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>1</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>2</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>3</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>4</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>5</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>6</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>7</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>8</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>9</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>10</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>11</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>12</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>13</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>14</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>15</p>
-                                                </div>
-                                                <div class="dates selected-range selected-range-start">
-                                                    <p>16</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>17</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>18</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>19</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>20</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>21</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>22</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>23</p>
-                                                </div>
-                                                <div class="dates selected-range ">
-                                                    <p>24</p>
-                                                </div>
-                                                <div class="dates selected-range selected-range-endes ">
-                                                    <p>25</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>26</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>27</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>28</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>29</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>30</p>
-                                                </div>
-                                                <div class="dates">
-                                                    <p>31</p>
-                                                </div>
-                                            </div>
-                                            <div class="calander-weeks">
+                                    <div class="weeks d-flex gap-4 justify-content-between py-2">
+                                        <div class="calander-weeks">
+                                            <div class="weeks">
                                                 <p>Sun</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Mon</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Tue</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Wed</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Thu</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Fri</p>
+                                            </div>
+                                            <div class="weeks">
                                                 <p>Sat</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>1</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>2</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>3</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>4</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>5</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>6</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>7</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>8</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>9</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>10</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>11</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>12</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>13</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>14</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>15</p>
+                                            </div>
+                                            <div class="dates selected-range selected-range-start">
                                                 <p>16</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>17</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>18</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>19</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>20</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>21</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>22</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>23</p>
+                                            </div>
+                                            <div class="dates selected-range ">
                                                 <p>24</p>
+                                            </div>
+                                            <div class="dates selected-range selected-range-endes ">
                                                 <p>25</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>26</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>27</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>28</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>29</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>30</p>
+                                            </div>
+                                            <div class="dates">
                                                 <p>31</p>
                                             </div>
                                         </div>
+                                        <div class="calander-weeks">
+                                            <p>Sun</p>
+                                            <p>Mon</p>
+                                            <p>Tue</p>
+                                            <p>Wed</p>
+                                            <p>Thu</p>
+                                            <p>Fri</p>
+                                            <p>Sat</p>
+                                            <p>1</p>
+                                            <p>2</p>
+                                            <p>3</p>
+                                            <p>4</p>
+                                            <p>5</p>
+                                            <p>6</p>
+                                            <p>7</p>
+                                            <p>8</p>
+                                            <p>9</p>
+                                            <p>10</p>
+                                            <p>11</p>
+                                            <p>12</p>
+                                            <p>13</p>
+                                            <p>14</p>
+                                            <p>15</p>
+                                            <p>16</p>
+                                            <p>17</p>
+                                            <p>18</p>
+                                            <p>19</p>
+                                            <p>20</p>
+                                            <p>21</p>
+                                            <p>22</p>
+                                            <p>23</p>
+                                            <p>24</p>
+                                            <p>25</p>
+                                            <p>26</p>
+                                            <p>27</p>
+                                            <p>28</p>
+                                            <p>29</p>
+                                            <p>30</p>
+                                            <p>31</p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div id="content2" class=" content months-calander  w-100" style="overflow: hidden;">
-                                    <div class="w-100">
-                                        <p class="duration-font text-center mb-5">Duration</p>
-                                        <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
+                            <div id="content2" class=" content months-calander  w-100" style="overflow: hidden;">
+                                <div class="w-100">
+                                    <p class="duration-font text-center mb-5">Duration</p>
+                                    <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
 
-                                            <div class="slider-container">
-                                                <input type="range" min="1" max="12" value="1"
-                                                    class="input-slider-range" id="durationSlider">
-                                                <div class="slider-tooltip" id="sliderTooltip">1 month</div>
-                                                <div class="slider-scale">
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <div class="scale-mark"></div>
-
-                                                </div>
+                                        <div class="slider-container">
+                                            <input type="range" min="1" max="12" value="1" class="input-slider-range"
+                                                id="durationSlider">
+                                            <div class="slider-tooltip" id="sliderTooltip">1 month</div>
+                                            <div class="slider-scale">
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
 
                                             </div>
+
                                         </div>
                                     </div>
-
-                                    <p class="calander-font-1"
-                                        style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
-                                        Select start date</p>
-
                                 </div>
 
-                                <div id="content3" class="content years-calander ">
-                                    <div>
-                                        <p class="duration-font text-center">Duration</p>
-                                        <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
-                                            <button class="years-button ">1 yrs</button>
-                                            <button class="years-button ">1.5 yrs</button>
-                                            <button class="years-button ">2 yrs</button>
-                                            <button class="years-button years-button-active">2.5 yrs</button>
-                                            <button class="years-button ">3+ years</button>
-                                            <button class="years-button ">Custon</button>
-                                        </div>
-                                    </div>
-
-                                    <p class="calander-font-1"> Starting May 1, 2024 <span
-                                            style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit
-                                            date</span></p>
-                                </div>
+                                <p class="calander-font-1"
+                                    style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
+                                    Select start date</p>
 
                             </div>
 
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                            <div id="content3" class="content years-calander ">
+                                <div>
+                                    <p class="duration-font text-center">Duration</p>
+                                    <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
+                                        <button class="years-button ">1 yrs</button>
+                                        <button class="years-button ">1.5 yrs</button>
+                                        <button class="years-button ">2 yrs</button>
+                                        <button class="years-button years-button-active">2.5 yrs</button>
+                                        <button class="years-button ">3+ years</button>
+                                        <button class="years-button ">Custon</button>
+                                    </div>
+                                </div>
 
-            <div class="dropdown d-flex align-items-center justify-content-center">
-                <a id="guest-dropdown" class="add-a-guest-main drop-sticky hero-down dropdown-toggle" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu"
-                    data-bs-auto-close="outside">
-                    <div>
-                        <span>Add a</span> guest
+                                <p class="calander-font-1"> Starting May 1, 2024 <span
+                                        style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit
+                                        date</span></p>
+                            </div>
+
+                        </div>
+
                     </div>
-                </a>
-                <ul class="dropdown-menu" style="border-radius: 1rem;">
-                    <li class="dropdown-item">
-                        <div class="add-a-guest">
-                            <div class="flex-c-main">
-                                <div>
-                                    <p class="mb-0 pi-font-4">Adults</p>
-                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
-                                </div>
-                                <div class="flex-c-sub">
-                                    <div class="svg-1">
-                                        <img src="../img/Minus.svg" alt="">
-                                    </div>
-                                    <p class="mb-0">1</p>
-
-                                    <div class="svg-1">
-                                        <img src="../img/Add.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex-c-main">
-                                <div>
-                                    <p class="mb-0 pi-font-4">Adults</p>
-                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
-                                </div>
-                                <div class="flex-c-sub">
-                                    <div class="svg-1">
-                                        <img src="../img/Minus.svg" alt="">
-                                    </div>
-                                    <p class="mb-0">1</p>
-
-                                    <div class="svg-1">
-                                        <img src="../img/Add.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-c-main">
-                                <div>
-                                    <p class="mb-0 pi-font-4">Adults</p>
-                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
-                                </div>
-                                <div class="flex-c-sub">
-                                    <div class="svg-1">
-                                        <img src="../img/Minus.svg" alt="">
-                                    </div>
-                                    <p class="mb-0">1</p>
-
-                                    <div class="svg-1">
-                                        <img src="../img/Add.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-c-main">
-                                <div>
-                                    <p class="mb-0 pi-font-4">Adults</p>
-                                    <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
-                                </div>
-                                <div class="flex-c-sub">
-                                    <div class="svg-1">
-                                        <img src="../img/Minus.svg" alt="">
-                                    </div>
-                                    <p class="mb-0">1</p>
-
-                                    <div class="svg-1">
-                                        <img src="../img/Add.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-            <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;"
-                href="#">Search</a>
-
+                </li>
+            </ul>
         </div>
 
+        <div class="dropdown d-flex align-items-center justify-content-center">
+            <a id="guest-dropdown" class="add-a-guest-main drop-sticky hero-down dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-controls="guest-menu" data-bs-auto-close="outside">
+                <div>
+                    <span>Add a</span> guest
+                </div>
+            </a>
+            <ul class="dropdown-menu" style="border-radius: 1rem;">
+                <li class="dropdown-item">
+                    <div class="add-a-guest">
+                        <div class="flex-c-main">
+                            <div>
+                                <p class="mb-0 pi-font-4">Adults</p>
+                                <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                            </div>
+                            <div class="flex-c-sub">
+                                <div class="svg-1">
+                                    <img src="../img/Minus.svg" alt="">
+                                </div>
+                                <p class="mb-0">1</p>
+
+                                <div class="svg-1">
+                                    <img src="../img/Add.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-c-main">
+                            <div>
+                                <p class="mb-0 pi-font-4">Adults</p>
+                                <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                            </div>
+                            <div class="flex-c-sub">
+                                <div class="svg-1">
+                                    <img src="../img/Minus.svg" alt="">
+                                </div>
+                                <p class="mb-0">1</p>
+
+                                <div class="svg-1">
+                                    <img src="../img/Add.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-c-main">
+                            <div>
+                                <p class="mb-0 pi-font-4">Adults</p>
+                                <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                            </div>
+                            <div class="flex-c-sub">
+                                <div class="svg-1">
+                                    <img src="../img/Minus.svg" alt="">
+                                </div>
+                                <p class="mb-0">1</p>
+
+                                <div class="svg-1">
+                                    <img src="../img/Add.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-c-main">
+                            <div>
+                                <p class="mb-0 pi-font-4">Adults</p>
+                                <p class="mb-0 clndr-stnc-main-font-4">Aged 13 and above</p>
+                            </div>
+                            <div class="flex-c-sub">
+                                <div class="svg-1">
+                                    <img src="../img/Minus.svg" alt="">
+                                </div>
+                                <p class="mb-0">1</p>
+
+                                <div class="svg-1">
+                                    <img src="../img/Add.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <a class="btn btn-lg btn-primary" style=" border: 1px solid #0D99FF; background: #0D99FF !important;"
+            href="#">Search</a>
+
     </div>
+
 
     <script>
         function initializeDynamicContent() {

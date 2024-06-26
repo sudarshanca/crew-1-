@@ -601,11 +601,11 @@ border: 1px solid #EAEBEDCC;
   }
 
   #searchBar.active {
-    display: block; /* Search bar is displayed when it has the active class */
+    display: block;
   }
 
   .hidden, .mobile-none {
-    display: none !important ; /* Hide the content div initially */
+    display: none !important ;
   }
   .mobile-view {
     display: flex !important;

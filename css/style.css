@@ -222,8 +222,19 @@ a.btn-brand:hover {
   border-bottom: solid 1px #E7E7E7;
 }
 
+.header-drpdn-icon button{
+  background-color: white; 
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
+  background: #FFF;
+}
+
 .banner-section {
-  margin-top: 96px;
   background: #000;
   position: relative;
 }

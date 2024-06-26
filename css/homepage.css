@@ -99,6 +99,7 @@
  --------------------------- */
 
 .listing-header,
+.details-header,
 .listing-map-header {
   z-index: 100;
   background-color: #fff;
@@ -109,6 +110,7 @@
   right: 0;
 }
 .listing-header header,
+.details-header header,
 .listing-map-header header {
   display: flex;
   justify-content: space-between;
@@ -119,14 +121,17 @@
 }
 
 .listing-header .searchbar-default-text span,
+.details-header .searchbar-default-text span,
 .listing-map-header .searchbar-default-text span {
   display: none;
 }
 .listing-header header input,
+.details-header header input,
 .listing-map-header header input {
   width: 110px;
 }
 .listing-header .dropdown a,
+.details-header .dropdown a,
 .listing-map-header .dropdown a {
   min-width: fit-content !important;
 }

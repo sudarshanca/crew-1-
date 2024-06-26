@@ -15,6 +15,7 @@
             justify-content: space-between;
             min-width: 200px;
             gap: 1.5rem;
+            position: relative;
         }
 
         .dropdown-toggle::after {
@@ -89,9 +90,11 @@
         }
 
         .dropdown-search-input {
-            outline: none;
-            border: none;
+            outline: none !important;
+            border: none !important;
             display: none !important;
+            max-height: 30px;
+            margin: 0 !important;
         }
 
         .show .Select-a-destination p {
@@ -99,7 +102,7 @@
         }
 
         .show .dropdown-search-input {
-            display: block;
+            display: block !important;
         }
 
         .Select-a-destination-dropdown {
@@ -174,7 +177,7 @@
                 <div class="searchbar-default-text">
                     <span>Select a</span> destination
                 </div>
-                <input class="dropdown-search-input " placeholder="Destination" type="text">
+                <input class="dropdown-search-input" placeholder="Destination" type="text">
             </a>
             <ul class="dropdown-menu Select-a-destination-dropdown" aria-labelledby="Select-a-destination"
                 id="guest-menu">

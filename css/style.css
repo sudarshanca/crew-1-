@@ -528,6 +528,7 @@ ul.cd-highlights b {
 
 .filter-area {
   display: flex;
+  padding: .5rem 0;
 }
 
 
@@ -549,7 +550,6 @@ ul.cd-highlights b {
   background-color: #fff;
   border: 1px solid #747474;
   border-radius: 50%;
-  margin-top: 1rem;
   display: block;
 }
 

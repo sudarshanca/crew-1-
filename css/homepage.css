@@ -106,7 +106,7 @@
   z-index: 100;
   background-color: #fff;
   border-bottom: 1px solid #74747436;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -176,7 +176,7 @@
   display: flex;
   align-items: center;
   overflow-x: scroll;
-  margin-bottom: .5rem;
+  margin-left: 2%;
 }
 .filter-menu-main::-webkit-scrollbar {
   display: none;
@@ -185,7 +185,6 @@
 .filter-button {
   position: relative;
   border: none;
-  margin-top: 1rem;
   margin-right: 5px;
 }
 
@@ -205,7 +204,6 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 1rem;
 }
 .filter-menu button img:hover {
   fill: #076cb6;

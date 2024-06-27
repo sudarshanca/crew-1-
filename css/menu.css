@@ -1,10 +1,5 @@
-
-
 body.overflow {
     overflow: hidden;
-}
-header {
-    margin-top: 1px !important;
 }
 .navbar-inverse {
     background-color: #ffffff52 !important;

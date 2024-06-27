@@ -14,10 +14,10 @@
   background-color: white;
 }
 .Right-Map {
-  height: calc(100vh - 82px);
+  height: calc(100vh - 132px);
   width: 40%;
   position: sticky;
-  top: 4.5rem;
+  top: 132px;
 }
 .map-container {
   width: 100%;
@@ -53,7 +53,6 @@ background: var(--Shades-White, #FFF);
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 1rem;
   left: 1rem;
   z-index: 1;
 }
@@ -86,8 +85,6 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
-  margin: 2.5rem 0 0 0;
-  height: calc(100vh - 126px);
 }
 .increase-Map .Right-Map {
   width: 0px !important;
@@ -104,7 +101,6 @@ background: var(--Shades-White, #FFF);
 }
 
 .increase-Map .Right-Map .button-div{
-  top: 0.7rem !important;
   left: -7rem !important;
 }
 .decreade-Map .left-map {
@@ -146,6 +142,7 @@ listing map mobile wersion
   .map-main{
   flex-direction: column-reverse;
   margin-top: 3.45rem;
+  margin-bottom: -6.4rem;
   }
   .left-Map {
     width: 100%;
@@ -153,7 +150,7 @@ listing map mobile wersion
     padding: 0 .5rem;
     margin-top: 0 !important;
     z-index: 1;
-    transform: translateY(50vh);
+    transform: translateY(30vh);
     transition: transform 0.3s ease; /* Smooth transition */
     border-radius: 1rem 1rem 0 0;
     background-color: white;
@@ -186,8 +183,12 @@ listing map mobile wersion
     margin: auto !important;
     border-radius: 1rem !important;
     margin-top: 10px !important;
+    
   }
 
+  .filter-menu-main {
+    margin-top: 60px;
+  }
   }
   
   

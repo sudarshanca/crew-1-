@@ -76,9 +76,6 @@
 .slick-dots {
   display: none !important;
 }
-.p-a {
-  margin-top: 5rem;
-}
 
 .details-mobile-icons {
   padding: 3px;
@@ -458,10 +455,6 @@ letter-spacing: -0.2px;
 @media (max-width:700px) {
   .main-container {
   margin-top: 4rem;
-}
-.filter-menu-main {
-  padding: 0 0 0 .5rem !important;
-
 }
 .px-m-none {
   padding: 0 !important;

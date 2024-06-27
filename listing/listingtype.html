@@ -20,7 +20,7 @@
 
 <body>
   <section class="listing-main">
-    <div class="listing-section mb-5">
+    <div class="listing-section">
       <header class="listing-header m-n">
         <img src="../img/logo.svg" alt="">
         <div>
@@ -28,11 +28,6 @@
           <button class="help">Save and exit</button>
         </div>
       </header>
-
-      <div class="process-status-indicator">
-        <div class="process-status-fill"></div>
-      </div>
-
       <header class="listing-header d-n">
         <a href="./addlisting.html">
           <img src="../img/arrow_back.svg" alt="">
@@ -40,75 +35,72 @@
       </header>
       <div class="desktop-back-button">
         <img src="../img/Left 1.svg" alt="">
-      </div>
-
-      <div class="Military-discount">
-        <p class="your-payout-font text-center">What type of listing is this?</p>
-        <div class="property-type">
-          <div class="property-type-radio-select">
-             <div class="property-select-radio active">
-              <div class="prt-slt-rdo-top">
-                 <img src="../img/bed.svg" alt="">
-                 <div class="form-check">
-                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault" checked>
-                </div>
-              </div>
-              <p class="mb-0" >room</p>
-             </div>
-             <div class="property-select-radio">
-              <div class="prt-slt-rdo-top">
-                 <img src="../img/cottage.svg" alt="">
-                 <div class="form-check">
-                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault">
-                </div>
-              </div>
-              <p class="mb-0 " >Entire place</p>
-             </div>
-             <div class="property-select-radio">
-              <div class="prt-slt-rdo-top">
-                 <img src="../img/nest_multi_room.svg" alt="">
-                 <div class="form-check">
-                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value="" id="flexCheckDefault">
-                </div>
-              </div>
-              <p class="mb-0 ">Multiple rooms</p>
-             </div>
-          </div>
-           <br>
-           <br>
-          <div>
-            <p class="your-payout-font text-center">What type of property are you listing?</p>
-            <br>
-            <input type="text" class="form-select placeholder-font-1" placeholder="Select property type e.g apartment">
-          </div>
-
-        </div>
-        <button class="continue-button button-blue">continue</button>
-      </div>
     </div>
 
+      <div class="afterimport">
+        <p class="your-payout-font text-center mb-0">Import your listing using another Airbnb account</p>
+        <p class="dashboard-font-12 text-center mb-0">You will be notified when the listing owner has completed the import. This individual will not become a host on Crewdogs. It will only allow the listing to be imported, connected, and updated.
+         <!-- Button trigger modal -->
+         <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          learn more
+        </button>
+        </p>
 
+         <div class="w-100">
+          <div>
+            <p class="personalinfor-header-1">Step 1: Enter the Airbnb URL for your listing(s)</p>
+            <input type="text" class="form-select" style="background: none; height: 48px;">
+            <p class="dashboard-font-4 mt-2" style="text-align: left;">Add Another</p>
+          </div>
+          <br>
+          <div>
+            <p class="personalinfor-header-1">Step 1: Enter the Airbnb URL for your listing(s)</p>
+            <input type="text" placeholder="e.g. name@gmail.com" class="form-select" style="background: none; height: 48px;">
+          </div>
+         </div>
+     <button class="continue-button ">Continue</button>
+     <br>     
+  </div>
+  </div>
+    
   </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" style="--bs-modal-width: 720px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <p class="pi-font-7 pt-4 mb-2">Hosting on Crewdogs</p>
+            <p class="pi-font-4">We do not allow non-verified Property Managers (PM) or Co-hosts to create accounts on the Crewdogs platform.</p>
+            <br>
+            <p class="dashboard-font-13 mb-2">Before a booking confirmation</p>
+            <ul class="dashboard-font-16">
+              <li>All requests to book and messaging must be accomplished by you, the verified member using Crewdogs.</li>
+            </ul>
+            <br>
+            <p class="dashboard-font-13 mb-2">After a booking confirmation</p>
+            <ul class="dashboard-font-16">
+              <li>Payments, payouts, and receipting will be accomplished automatically via Crewdogs.</li>
+              <li>All guest contact info and booking details will be provided to you and your PM / Co-host after a booking via email. </li>
+              <li>Payments, payouts, and receipting will be accomplished automatically via Crewdogs.
+                All guest contact info and booking details will be provided to you and your PM / Co-host after a booking via email. 
+                Off-platform communication may be accomplished by your PM / Co-host to ensure a seamless travel experience.</li>
+            </ul>
+             <br>
+             <br>
+             <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
-<script>
-  document.querySelectorAll('.property-select-radio').forEach(radio => {
-      radio.addEventListener('click', () => {
-          const isActive = radio.classList.contains('active');
 
-          document.querySelectorAll('.property-select-radio').forEach(r => {
-              r.classList.remove('active');
-              r.querySelector('.form-check-input').checked = false;
-          });
-
-          if (!isActive) {
-              radio.classList.add('active');
-              radio.querySelector('.form-check-input').checked = true;
-          }
-      });
-  });
-</script>
 </body>
 
 </html>

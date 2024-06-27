@@ -21,7 +21,6 @@
     .section {
       display: none;
     }
-
     .section.active {
       display: block;
     }
@@ -43,8 +42,7 @@
     </div>
 
     <header class="listing-header d-n">
-      <button onclick="prevSection()" style="cursor: progress; background: none; border: none;"
-        href="./addlisting.html">
+      <button onclick="prevSection()" style="cursor: progress; background: none; border: none;" href="./addlisting.html">
         <img src="../img/arrow_back.svg" alt="">
       </button>
     </header>
@@ -54,128 +52,622 @@
 
     <div class="listing-section-main">
 
-      <div id="section1" class="section active">
-        <p class="your-payout-font text-center">Airbnb import details</p>
-        <div class="afterimport-listing">
-          <di>
-            <p class="dashboard-font-11 mb-0">What was imported?</p>
-            <p class="dashboard-font-12 mb-0">Property type, details, nickname, title, and photos for all selected
-              listings. Any duplicate listings will be merged.</p>
-          </di>
+     <div id="section1" class="section active ">
+        <p class="your-payout-font text-center">What type of listing is this?</p>
+        <div class="property-type">
+          <div class="property-type-radio-select">
+            <div class="property-select-radio active">
+              <div class="prt-slt-rdo-top">
+                <img src="../img/bed.svg" alt="">
+                <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                    id="flexCheckDefault" checked>
+                </div>
+              </div>
+              <p class="mb-0">room</p>
+            </div>
+            <div class="property-select-radio">
+              <div class="prt-slt-rdo-top">
+                <img src="../img/cottage.svg" alt="">
+                <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                    id="flexCheckDefault">
+                </div>
+              </div>
+              <p class="mb-0 ">Entire place</p>
+            </div>
+            <div class="property-select-radio">
+              <div class="prt-slt-rdo-top">
+                <img src="../img/nest_multi_room.svg" alt="">
+                <div class="form-check">
+                  <input class="form-check-input" style="border-radius: 50%;" type="checkbox" value=""
+                    id="flexCheckDefault">
+                </div>
+              </div>
+              <p class="mb-0 ">Multiple rooms</p>
+            </div>
+          </div>
+          <br>
+          <br>
           <div>
-            <img src="../img/Download.svg" alt="">
+            <p class="your-payout-font text-center">What type of property are you listing?</p>
+            <br>
+            <input type="text" class="form-select placeholder-font-1" placeholder="Select property type e.g apartment">
           </div>
         </div>
-
-        <div class="afterimport-listing">
-          <di>
-            <p class="dashboard-font-11 mb-0">What is now synced with Airbnb?</p>
-            <p class="dashboard-font-12 mb-0">Calendar availability, stay lengths, and Airbnb pricing or an external
-              pricing tool that feeds your Airbnb pricing.</p>
-          </di>
-          <div>
-            <img src="../img/Arrow Swap Horizontal.svg" width="32px" height="32px" alt="">
-          </div>
-        </div>
-
-        <div class="afterimport-listing bb-n">
-          <di>
-            <p class="dashboard-font-11 mb-0">Let’s finish up</p>
-            <p class="dashboard-font-12 mb-0">Add your bio, setup pricing discounts and charity of choice. Add any fees
-              after setup.</p>
-          </di>
-          <div>
-            <img src="../img/Edit 2.svg" width="32px" height="32px" alt="">
-          </div>
-        </div>
-        <button class="continue-button active" onclick="nextSection()">continue</button>
+        <button class="continue-button active"  onclick="nextSection()">continue</button>
       </div>
 
       <div id="section2" class="section">
-        <div class="about-details-offer w-100">
-          <p class="your-payout-font text-center">Tell others about you </p>
-          <textarea name="" id="" placeholder="Describe yourself" class="form-select"></textarea>
+        <p class="your-payout-font text-center">Enter property details</p>
+        <div class="w-100">
+
+          <div class="sqft-input-main">
+            <p class="pi-font-4">Sqft</p>
+            <input type="text" class="form-select " placeholder="Square feet" style="background:white;">
+          </div>
+          <br>
+
+          <div class="listin-rooms bb">
+            <p class="addpaymentmethod-font-3 mb-0">Bedrooms</p>
+            <div class="rooms-number">
+              <div><img src="../img/Minus.svg" alt=""></div>
+              <p class="pi-font-6 mb-0">5</p>
+              <div><img src="../img/Add.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="listin-rooms bb">
+            <p class="addpaymentmethod-font-3 mb-0">Bathrooms</p>
+            <div class="rooms-number">
+              <div><img src="../img/Minus.svg" alt=""></div>
+              <p class="pi-font-6 mb-0">5</p>
+              <div><img src="../img/Add.svg" alt=""></div>
+            </div>
+          </div>
         </div>
 
-        <button class="continue-button active" onclick="nextSection()">continue</button>
+
+        <div class="w-100">
+          <p class="your-payout-font text-center">Enter room details</p>
+          <div class="sqft-input-main">
+            <input type="text" class="form-select " placeholder="Square feet">
+          </div>
+
+          <div class="listin-rooms bb">
+            <p class="addpaymentmethod-font-3 mb-0">How many people live here?</p>
+            <div class="rooms-number">
+              <div><img src="../img/Minus.svg" alt=""></div>
+              <p class="pi-font-6 mb-0">5</p>
+              <div><img src="../img/Add.svg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="listin-rooms bb">
+            <p class="addpaymentmethod-font-3 mb-0">Is the room furnished?</p>
+            <div class="rooms-number">
+              <div class=""><img src="../img/Close.svg" alt=""></div>
+
+              <div class="active"><img src="../img/Tick.svg" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="continue-button active"  onclick="nextSection()">continue</button>
       </div>
 
       <div id="section3" class="section">
-        <p class="your-payout-font text-center">Military discount</p>
-        <div>
-          <p class="pi-font-3 mb-0">Crewdogs is a military only community where service fees are discounted. Apply your
-            discount below to pass the savings to your guests.</p>
-          <!-- Button trigger modal -->
-          <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#learnmore-1">
-            learn more
-          </button>
+        <p class="your-payout-font text-center">Share the location</p>
+        <div class="w-100">
+            <input type="text" class="form-select " style="font-size: 14px;" placeholder="Enter street address">
+          <br>
+          <div class="d-flex gap-1 align-items-center justify-content-center">
+            <img src="../img/Information Circle.svg" alt="">
+            <p class="pi-font-4-1 mb-0">We do not display the exact location </p>
+          </div>
+          <br>
+          <div class="add-location">
 
-          <div class="set-discount">
-            <div class="discount-minus">
-              <img src="../img/Minus.svg" alt="">
-            </div>
-            <div class="discount-number">
-              <p class="mb-0 percent-num">10</p>
-              <p class="mb-0 percent">%</p>
-            </div>
-            <div class="discount-plus">
-              <img src="../img/Add.svg" alt="">
-            </div>
+            <img class="w-100" src="../img/full-map.PNG" alt="">
           </div>
-        </div>
-        <div class="">
-          <p class="your-payout-font text-center">Length of stay discounts</p>
-          <p class="pi-font-3 text-center">These discounts are applied to all imported listings. To change, access each
-            listing individually.</p>
-        </div>
-        <div style="width: 100%;">
-          <p class="pi-font-3">Weekly - For 7 nights or more</p>
-          <div>
-            <div class="mb-3 input-type">
-              <input type="type" class="input-percent form-control" placeholder="Enter rate">
-              <div class="percent percent-absut m-0" style="font-size: 18px; ">%</div>
-            </div>
-          </div>
-        </div>
-        <div style="width: 100%;">
-          <p class="pi-font-3">Monthly - For 7 nights or more</p>
-          <div>
-            <div class="mb-3 input-type">
-              <input type="type" class="input-percent form-control" placeholder="Enter rate">
-              <div class="percent percent-absut m-0" style="font-size: 18px; ">%</div>
-            </div>
-          </div>
-        </div>
-
+          <br>
+          <br>
         <button class="continue-button active" onclick="nextSection()">continue</button>
       </div>
+    </div>
 
-      <div id="section4" class="section">
+    <div id="section4" class="section">
 
+      <p class="your-payout-font text-center">Set the availability</p>
+      <div class="w-100">
 
+        <div class="d-flex gap-3">
+          <input type="text" class="form-select " placeholder="Today">
+          <input type="text" class="form-select " placeholder="End date (optional)">
+        </div>
+        <br>
+
+        <div class="d-flex gap-3">
+          <input type="text" class="form-select " placeholder="Minimum Length of stay">
+          <select class="form-select dropdown-2" style="width: 150px;" aria-label="Default select example">
+            <option selected>Days</option>
+            <option value="1">Months</option>
+          </select>
+        </div>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <div>
+          <p class="pi-font-1">Listed on another platform?</p>
+          <button class="dashboard-font-4 p-0" style="background: none; border: none;">Import/Export Calendar</button>
+        </div>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <p class="your-payout-font">Optional: Select specialty stays for your place</p>
+        <br>
+        <div class="import-create-listing align-items-end">
+          <di>
+            <p class="dashboard-font-11 mb-0">Per diem friendly</p>
+            <p class="dashboard-font-12 mb-0 m-n ">Host official government travel. You will agree to reimburse at or
+              below federal rates and follow our
+              <!-- government travel policy modal Button -->
+              <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal"
+                data-bs-target="#government-travel-policy">
+                government travel policy
+              </button>
+              agreement.
+            </p>
+          </di>
+          <div>
+            <img src="../img/card.svg" alt="">
+          </div>
+        </div>
+        <br>
+        <div class="import-create-listing align-items-end">
+          <di>
+            <p class="dashboard-font-11 mb-0">Home swap </p>
+            <p class="dashboard-font-12 mb-0 m-n ">Agree to a short-term exchange of your home with another member of
+              Crewdogs for no cost. </p>
+          </di>
+          <div>
+            <img src="../img/sync_alt.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+    </div>
+
+    <div id="section5" class="section">
+      <p class="your-payout-font text-center">Set your pricing</p>
+      <div class="w-100">
         <div class="free-paid-radio">
           <div class="free-radio">
             <div class="flex-grow-1">
-              <p class="pi-font-1 mb-1">Crewdogs damage protection</p>
-              <p class="pi-font-7-1 mb-0">Damage reimbursement added to each stay costing guest $1 per day.</p>
+              <p class="pi-font-1">Free</p>
+              <p class="pi-font-7-1 mb-0">Join the Space-A community and host your place for no charge. </p>
             </div>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             </div>
           </div>
-          <a href="./damagewaiver.html" class="dashboard-font-24">Learn More</a>
+
+          <div class="divider"></div>
+
+          <div class="free-radio">
+            <div class="flex-grow-1">
+              <p class="pi-font-1">Free</p>
+              <p class="pi-font-7-1 mb-0">Join the Space-A community and host your place for no charge. </p>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            </div>
+          </div>
         </div>
 
-        <button class="continue-button active" onclick="nextSection()">continue</button>
+        <br>
+        <br>
+        <p class="your-payout-font text-center mb-0">Add damage protection and fees</p>
+        <br>
+
+        <div class="section-2">
+          <div class="damage-section">
+            <div class="flex-grow-1">
+              <p class="pi-font-1">Crewdogs damage protection</p>
+              <p class="pi-font-7-1 mb-0">Damage reimbursement added to each stay costing guest $1 per day.</p>
+              <button class="dashboard-font-4 p-0" style="background: none; border: none;">Import/Export Calendar</button>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            </div>
+          </div>
+
+          <div class="divider"></div>
+           <div class="w-100">
+            <div class="d-flex w-100 justify-content-between">
+              <p class="pi-font-1">Damage deposit</p>
+              <p class="pi-font-7-1">Optional</p>
+            </div>
+            <p class="pi-font-7-1">Refunded by you after confirmation of no damages at the end of the stay. We do not facilitate this transaction. </p>
+             <br>
+             <input type="text" class="form-select" placeholder=" $ 1,000" style="background: white;">
+           </div>
+        </div>
+        <br>
+        <div class="d-flex w-100 justify-content-between">
+          <p class="pi-font-1">Free</p>
+          <p class="pi-font-7-1">Optional</p>
+        </div>
+        <p class="pi-font-7-1">These are taxed and not reimbursed.</p>
+         <br>
+         <input type="text" class="form-select" placeholder=" $ Amount" style="background: white;">
+
       </div>
 
-      <div id="section5" class="section">
-        <p class="your-payout-font text-center mb-0">Select your cause</p>
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+    </div>
+
+
+    <div id="section6" class="section">
+      <p class="your-payout-font text-center">Military discount</p>
+      <div>
+        <p class="pi-font-3 mb-0">Crewdogs is a military only community where service fees are discounted. Apply your
+          discount below to pass the savings to your guests.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#learnmore-1">
+          learn more
+        </button>
+
+        <div class="set-discount">
+          <div class="discount-minus">
+            <img src="../img/Minus.svg" alt="">
+          </div>
+          <div class="discount-number">
+            <p class="mb-0 percent-num">10</p>
+            <p class="mb-0 percent">%</p>
+          </div>
+          <div class="discount-plus">
+            <img src="../img/Add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="your-payout-font text-center">Length of stay discounts</p>
+        <p class="pi-font-3 text-center">These discounts are applied to all imported listings. To change, access each
+          listing individually.</p>
+      </div>
+      <div style="width: 100%;">
+        <p class="pi-font-3">Weekly - For 7 nights or more</p>
+        <div>
+          <div class="mb-3 input-type">
+            <input type="type" class="input-percent form-control" placeholder="Enter rate">
+            <div class="percent percent-absut m-0" style="font-size: 18px; ">%</div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%;">
+        <p class="pi-font-3">Monthly - For 7 nights or more</p>
+        <div>
+          <div class="mb-3 input-type">
+            <input type="type" class="input-percent form-control" placeholder="Enter rate">
+            <div class="percent percent-absut m-0" style="font-size: 18px; ">%</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+    </div>
+
+
+    <div id="section7" class="section">
+      <p class="your-payout-font text-center">Tell us what your place has to offer</p>
+     <div class="w-100">
+      <p class="listing-font-4">General features</p>
+      <div class="General-features-main">
+         <div class="General-features active">
+          <div>
+             <img src="../img/desktop_windows.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Furnished</p>
+         </div>
+
+         
+         <div class="General-features">
+          <div>
+             <img src="../img/nest_remote_comfort_sensor.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Wi-fi</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/oven_gen.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Kitchen</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/dishwasher_gen.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Washer</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/driyer.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Dryer</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/dishwasher.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Dishwasher</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/pool.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Pool</p>
+         </div>
+
+         <div class="General-features">
+          <div>
+             <img src="../img/hot-tub.svg" alt="">
+             <img src="../img/Tick-blue.svg" class="feature-tick-icon" alt="">
+          </div>
+          <p class="pi-font-6 mb-0">Hot tub</p>
+         </div>
+
+      </div>
+
+      <br>
+      <div class="Parking-type">
+      <p class="listing-font-4">Parking type</p>
+       <input type="text" class="form-select" placeholder="Select">
+
+      </div>
+     </div>
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+    </div>
+
+
+    <div id="section8" class="section">
+      <div class="about-details-offer w-100">
+        <p class="your-payout-font text-center">Tell others about you </p>
+        <textarea name="" id="" placeholder="Describe yourself" class="form-select"></textarea>
+      </div>
+      <div class="about-details-place w-100">
+        <p class="your-payout-font text-center">Describe your place to make it stand out</p>
+        <textarea name="" id="" placeholder="Tell us about your place" class="form-select"></textarea>
+      </div>
+      <div class="about-details-offer w-100">
+        <p class="your-payout-font text-center">Give your place a name</p>
+        <textarea name="" id="" placeholder="Type in your listing title" class="form-select"></textarea>
+      </div>
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+    </div>
+
+
+    <div id="section9" class="section">
+      
+      <p class="your-payout-font text-center">Share pictures of your place</p>
+      <div class="drag-picture w-100">
+        <div class="added-pictures added-pictures-button-1 ">
+          <br>
+          <img src="../img/Image.svg" style="width: 38px; height: 38px" alt=""/>
+          <div>
+            <p class="mb-0 font-1 text-center">Drag pictures here to upload</p>
+            <p class="mb-0 offer-header-font-4 text-center">You need at least 5 pictures</p>
+          </div>
+          <br>
+          <a href="#" class="dashboard-font-24" style="font-weight: 400;">Upload from your device</a>
+        </div>
+      </div>
+
+      <button class="continue-button active" onclick="nextSection()">continue</button>
+      
+      <p class="your-payout-font text-center" style="display: none;">Re-arrange your pictures</p>
+      <div class="pictures-grid" style="display: none;">
+        <button href="./donation.html" class="continue-button-2 active" style=" position: absolute; right: 5%; top: 100px;"  onclick="nextSection()">continue</button>
+        <div class="added-pictures">
+          <img src="../img/g1.jpg" alt="" />
+          <p class="cover-photo active">Cover photo</p>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g1.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g2.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g3.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g4.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g2.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures">
+          <img src="../img/g4.jpg" alt="" />
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../img/More Circle.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="edit-remove">
+                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                  <div class="divider my-1"></div>
+                  <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                    Delete picture
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="added-pictures added-pictures-button">
+          <img
+            src="../img/Add.svg"
+            style="width: 38px; height: 38px"
+            alt=""
+          />
+          <p>Add another</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="section10" class="section">
+      <p class="your-payout-font text-center mb-0">Select your cause</p>
         <p class="pi-font-3 t-c">Crewdogs is a military only community where service fees are discounted. Apply your
-          <!-- Button trigger modal -->
-          <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#learnmore-2">
-            learn more
-          </button>
+            <!-- Button trigger modal -->
+        <button type="button" class="pi-font-3 more-info-btn" data-bs-toggle="modal" data-bs-target="#learnmore-2">
+          learn more
+        </button>
         </p>
         <div class="search-box">
           <p class="listing-font-3">Select your military charity</p>
@@ -185,10 +677,10 @@
               <!-- search icone -->
               <img src="../img/Search 2.svg" alt="">
               <!-- close icon -->
-              <!--   <img src="../img/Close Circle.svg" alt=""> -->
+            <!--   <img src="../img/Close Circle.svg" alt=""> -->
             </div>
-            <!-- listing search suggestions -->
-            <!--  <div class="listing-search-suggestions">
+          <!-- listing search suggestions -->
+           <!--  <div class="listing-search-suggestions">
                 <div class="listing-suggested-location">
                   <div class="search-location-icon" style="position: relative;"> <img src="../img/Location.svg" alt=""></div>
                   <p class="pi-font-6-1 mb-0">Wounded Warriors <span class="offer-header-font-4 "> Project</span></p>
@@ -206,29 +698,24 @@
           </div>
         </div>
         <!-- mission display -->
-        <div class="mission-display mb-3">
+       <div class="mission-display">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <path
-              d="M13.9993 24.3307C13.9993 24.883 14.4471 25.3307 14.9993 25.3307C15.5516 25.3307 15.9993 24.883 15.9993 24.3307H13.9993ZM15.9993 5.66406C15.9993 5.11178 15.5516 4.66406 14.9993 4.66406C14.4471 4.66406 13.9993 5.11178 13.9993 5.66406H15.9993ZM18.2497 10.2664C18.5258 10.7447 19.1374 10.9086 19.6157 10.6324C20.094 10.3563 20.2579 9.74469 19.9817 9.2664L18.2497 10.2664ZM18.6149 8.89907L17.7489 9.39907L17.7489 9.39907L18.6149 8.89907ZM13.8394 14.5707L14.1847 13.6322L14.1846 13.6322L13.8394 14.5707ZM16.1596 15.4241L16.5048 14.4856L16.5047 14.4856L16.1596 15.4241ZM11.3841 21.0957L10.518 21.5957L10.518 21.5957L11.3841 21.0957ZM11.7493 19.7284C11.4732 19.2501 10.8616 19.0862 10.3833 19.3624C9.90502 19.6385 9.74114 20.2501 10.0173 20.7284L11.7493 19.7284ZM16.7699 22.5389L16.2699 21.6728L16.7699 22.5389ZM13.2291 7.45595L13.7291 8.32197L13.7291 8.32197L13.2291 7.45595ZM27.3327 14.9974C27.3327 21.8089 21.8109 27.3307 14.9993 27.3307V29.3307C22.9154 29.3307 29.3327 22.9135 29.3327 14.9974H27.3327ZM14.9993 27.3307C8.18784 27.3307 2.66602 21.8089 2.66602 14.9974H0.666016C0.666016 22.9135 7.08327 29.3307 14.9993 29.3307V27.3307ZM2.66602 14.9974C2.66602 8.18588 8.18784 2.66406 14.9993 2.66406V0.664062C7.08327 0.664062 0.666016 7.08131 0.666016 14.9974H2.66602ZM14.9993 2.66406C21.8109 2.66406 27.3327 8.18588 27.3327 14.9974H29.3327C29.3327 7.08131 22.9154 0.664062 14.9993 0.664062V2.66406ZM19.9817 9.2664L19.481 8.39907L17.7489 9.39907L18.2497 10.2664L19.9817 9.2664ZM12.2501 20.5957L11.7493 19.7284L10.0173 20.7284L10.518 21.5957L12.2501 20.5957ZM15.8144 16.3626C18.1559 17.2239 18.4305 20.4254 16.2699 21.6728L17.2699 23.4049C20.899 21.3096 20.4378 15.9322 16.5048 14.4856L15.8144 16.3626ZM12.7291 6.58992C9.09998 8.68522 9.56125 14.0626 13.4942 15.5092L14.1846 13.6322C11.8431 12.7709 11.5685 9.56943 13.7291 8.32197L12.7291 6.58992ZM15.9993 24.3307V23.0628H13.9993V24.3307H15.9993ZM15.9993 23.0628V14.9974H13.9993V23.0628H15.9993ZM16.2699 21.6728C15.8504 21.915 15.3988 22.0415 14.9492 22.064L15.0495 24.0615C15.8084 24.0235 16.5694 23.8093 17.2699 23.4049L16.2699 21.6728ZM14.9492 22.064C13.8787 22.1178 12.8207 21.584 12.2501 20.5957L10.518 21.5957C11.4783 23.259 13.2587 24.1514 15.0495 24.0615L14.9492 22.064ZM13.4942 15.5092L14.6541 15.9359L15.3446 14.0589L14.1847 13.6322L13.4942 15.5092ZM14.6542 15.9359L15.8144 16.3626L16.5047 14.4856L15.3445 14.0589L14.6542 15.9359ZM15.9993 14.9974L15.9993 6.93203L13.9993 6.93203L13.9993 14.9974L15.9993 14.9974ZM15.9993 6.93203V5.66406H13.9993V6.93203H15.9993ZM19.481 8.39907C18.5206 6.73565 16.74 5.84329 14.9492 5.93329L15.0495 7.93077C16.1202 7.87696 17.1783 8.41071 17.7489 9.39907L19.481 8.39907ZM14.9492 5.93329C14.1904 5.97142 13.4295 6.18559 12.7291 6.58992L13.7291 8.32197C14.1485 8.07983 14.6 7.95336 15.0495 7.93077L14.9492 5.93329Z"
-              fill="#ACACB0" />
+            <path d="M13.9993 24.3307C13.9993 24.883 14.4471 25.3307 14.9993 25.3307C15.5516 25.3307 15.9993 24.883 15.9993 24.3307H13.9993ZM15.9993 5.66406C15.9993 5.11178 15.5516 4.66406 14.9993 4.66406C14.4471 4.66406 13.9993 5.11178 13.9993 5.66406H15.9993ZM18.2497 10.2664C18.5258 10.7447 19.1374 10.9086 19.6157 10.6324C20.094 10.3563 20.2579 9.74469 19.9817 9.2664L18.2497 10.2664ZM18.6149 8.89907L17.7489 9.39907L17.7489 9.39907L18.6149 8.89907ZM13.8394 14.5707L14.1847 13.6322L14.1846 13.6322L13.8394 14.5707ZM16.1596 15.4241L16.5048 14.4856L16.5047 14.4856L16.1596 15.4241ZM11.3841 21.0957L10.518 21.5957L10.518 21.5957L11.3841 21.0957ZM11.7493 19.7284C11.4732 19.2501 10.8616 19.0862 10.3833 19.3624C9.90502 19.6385 9.74114 20.2501 10.0173 20.7284L11.7493 19.7284ZM16.7699 22.5389L16.2699 21.6728L16.7699 22.5389ZM13.2291 7.45595L13.7291 8.32197L13.7291 8.32197L13.2291 7.45595ZM27.3327 14.9974C27.3327 21.8089 21.8109 27.3307 14.9993 27.3307V29.3307C22.9154 29.3307 29.3327 22.9135 29.3327 14.9974H27.3327ZM14.9993 27.3307C8.18784 27.3307 2.66602 21.8089 2.66602 14.9974H0.666016C0.666016 22.9135 7.08327 29.3307 14.9993 29.3307V27.3307ZM2.66602 14.9974C2.66602 8.18588 8.18784 2.66406 14.9993 2.66406V0.664062C7.08327 0.664062 0.666016 7.08131 0.666016 14.9974H2.66602ZM14.9993 2.66406C21.8109 2.66406 27.3327 8.18588 27.3327 14.9974H29.3327C29.3327 7.08131 22.9154 0.664062 14.9993 0.664062V2.66406ZM19.9817 9.2664L19.481 8.39907L17.7489 9.39907L18.2497 10.2664L19.9817 9.2664ZM12.2501 20.5957L11.7493 19.7284L10.0173 20.7284L10.518 21.5957L12.2501 20.5957ZM15.8144 16.3626C18.1559 17.2239 18.4305 20.4254 16.2699 21.6728L17.2699 23.4049C20.899 21.3096 20.4378 15.9322 16.5048 14.4856L15.8144 16.3626ZM12.7291 6.58992C9.09998 8.68522 9.56125 14.0626 13.4942 15.5092L14.1846 13.6322C11.8431 12.7709 11.5685 9.56943 13.7291 8.32197L12.7291 6.58992ZM15.9993 24.3307V23.0628H13.9993V24.3307H15.9993ZM15.9993 23.0628V14.9974H13.9993V23.0628H15.9993ZM16.2699 21.6728C15.8504 21.915 15.3988 22.0415 14.9492 22.064L15.0495 24.0615C15.8084 24.0235 16.5694 23.8093 17.2699 23.4049L16.2699 21.6728ZM14.9492 22.064C13.8787 22.1178 12.8207 21.584 12.2501 20.5957L10.518 21.5957C11.4783 23.259 13.2587 24.1514 15.0495 24.0615L14.9492 22.064ZM13.4942 15.5092L14.6541 15.9359L15.3446 14.0589L14.1847 13.6322L13.4942 15.5092ZM14.6542 15.9359L15.8144 16.3626L16.5047 14.4856L15.3445 14.0589L14.6542 15.9359ZM15.9993 14.9974L15.9993 6.93203L13.9993 6.93203L13.9993 14.9974L15.9993 14.9974ZM15.9993 6.93203V5.66406H13.9993V6.93203H15.9993ZM19.481 8.39907C18.5206 6.73565 16.74 5.84329 14.9492 5.93329L15.0495 7.93077C16.1202 7.87696 17.1783 8.41071 17.7489 9.39907L19.481 8.39907ZM14.9492 5.93329C14.1904 5.97142 13.4295 6.18559 12.7291 6.58992L13.7291 8.32197C14.1485 8.07983 14.6 7.95336 15.0495 7.93077L14.9492 5.93329Z" fill="#ACACB0"/>
           </svg>
-          <p class="pi-font-4 t-c">The mission of your organization will appear here</p>
+              <p class="pi-font-4 t-c" >The mission of your organization will appear here</p>
         </div>
 
-        <!-- mission display-text filled -->
-        <div class="mission-display-text-filled mb-3">
+         <!-- mission display-text filled -->
+        <div class="mission-display-text-filled">
           <p class="listing-font-4">Wounded Warriors Project</p>
-          <p class="pi-font-6">The mission of Wounded Warrior Project is to honor and empower wounded warriors. Our
-            purpose is: to raise awareness and enlist the public's aid for the needs of severely injured service men and
-            women; to help severely injured service members aid and assist each other; and to provide unique, direct
-            programs and services to meet the needs of severely injured service members.</p>
+          <p class="pi-font-6">The mission of Wounded Warrior Project is to honor and empower wounded warriors. Our purpose is: to raise awareness and enlist the public's aid for the needs of severely injured service men and women; to help severely injured service members aid and assist each other; and to provide unique, direct programs and services to meet the needs of severely injured service members.</p>
         </div>
 
 
 
 
         <div class="w-100">
-          <p class="listing-font-3"> <b>Optional:</b> Add an amount per payout to donate</p>
+          <p class="listing-font-3"> <b>Optional:</b>  Add an amount per payout to donate</p>
           <div class="search-box search-box-2">
             <p class="listing-font-3">Select your military charity</p>
             <div>
@@ -241,7 +728,7 @@
           </div>
         </div>
         <button class="continue-button active">Publish</button>
-      </div>
+    </div>
 
 
 
@@ -251,8 +738,8 @@
 
   <!-- models -->
 
-  <!-- government travel policy Modal -->
-  <div class="modal fade" id="government-travel-policy" tabindex="-1" aria-labelledby="government-travel-policy"
+    <!-- government travel policy Modal -->
+    <div class="modal fade" id="government-travel-policy" tabindex="-1" aria-labelledby="government-travel-policy"
     aria-hidden="true">
     <div class="modal-dialog" style="width: 100%; max-width: 628px;">
       <div class="modal-content">
@@ -280,8 +767,7 @@
           </div>
 
           <p class="dashboard-font-16">
-            Don’t worry, we will follow up after the completion of your listing to ensure you are willing and able to
-            host official travel.
+            Don’t worry, we will follow up after the completion of your listing to ensure you are willing and able to host official travel. 
           </p>
 
         </div>
@@ -290,10 +776,29 @@
   </div>
 
 
-  <!-- Modal learn more 2 -->
+    <!-- Modal learn more 1 -->
+    <div class="modal fade" id="learnmore-1" tabindex="-1" aria-labelledby="learnmore-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <p class="pi-font-7 pt-4 mb-2">The military discount</p>
+            <p class="pi-font-4">Your military discount is applied to the total nightly or monthly rate, not including
+              fees or deposits. It is stacked on top of any length of stay discounts you apply (added on next page). We
+              display this prominently on your listing for guests to see. </p>
+            <div class="divider mb-3"></div>
+            <p class="dm-small-4 mb-2">When the military discount is not applied:</p>
+            <p class="pi-font-4">Official gov’t travel stays where your rates have been reduced to reflect per diem
+              amounts (if opted in for official gov’t hosting).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal learn more 2 -->
   <div class="modal fade" id="learnmore-2" tabindex="-1" aria-labelledby="learnmore-2" aria-hidden="true">
-    <div class="modal-dialog w-100" style="max-width: 624px;" >
-      <div class="modal-content">
+    <div class="modal-dialog">
+      <div class="modal-content" >
         <div class="modal-body">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <p class="pi-font-7 pt-4 mb-2">How it works</p>
@@ -303,13 +808,11 @@
           <div class="divider mb-3"></div>
           <p class="dm-small-4 mb-2">Your donation is removed and donated from each payout</p>
           <p class="pi-font-4">Plus, you’ll be able to track how much we donate to your cause</p>
-          <br>
-          <br>
         </div>
       </div>
     </div>
   </div>
-
+  
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -332,49 +835,49 @@
     });
   </script>
 
-  <script>
-    let currentSection = 1;
-    const totalSections = 5;
+<script>
+  let currentSection = 1;
+  const totalSections = 10;
 
-    function showSection(id) {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => section.classList.remove('active'));
+  function showSection(id) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
 
-      document.getElementById(`section${id}`).classList.add('active');
+    document.getElementById(`section${id}`).classList.add('active');
+   
+    updateProgress(id);
+    updateButtonStates(id);
+  }
 
-      updateProgress(id);
-      updateButtonStates(id);
+  function nextSection() {
+    if (currentSection < totalSections) {
+      currentSection++;
+      showSection(currentSection);
     }
+  }
 
-    function nextSection() {
-      if (currentSection < totalSections) {
-        currentSection++;
-        showSection(currentSection);
-      }
+  function prevSection() {
+    if (currentSection > 1) {
+      currentSection--;
+      showSection(currentSection);
     }
+  }
 
-    function prevSection() {
-      if (currentSection > 1) {
-        currentSection--;
-        showSection(currentSection);
-      }
-    }
+  function updateProgress(sectionId) {
+    const progressFill = document.querySelector('.process-status-fill');
+    const progressPercent = (sectionId / totalSections) * 100;
+    progressFill.style.width = `${progressPercent}%`;
+  }
 
-    function updateProgress(sectionId) {
-      const progressFill = document.querySelector('.process-status-fill');
-      const progressPercent = (sectionId / totalSections) * 100;
-      progressFill.style.width = `${progressPercent}%`;
-    }
+  function updateButtonStates(sectionId) {
+    document.getElementById('backButton').disabled = sectionId === 1;
+  }
 
-    function updateButtonStates(sectionId) {
-      document.getElementById('backButton').disabled = sectionId === 1;
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      updateProgress(currentSection);
-      updateButtonStates(currentSection);
-    });
-  </script>
+  document.addEventListener('DOMContentLoaded', () => {
+    updateProgress(currentSection);
+    updateButtonStates(currentSection);
+  });
+</script>
 
 </body>
 

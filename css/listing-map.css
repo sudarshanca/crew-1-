@@ -86,8 +86,8 @@ background: var(--Shades-White, #FFF);
 }
 .decreade-Map .Right-Map {
   width: 100% !important;
-  margin: 3rem 0 0 0;
-  height: calc(100vh - 145px);
+  margin: 2.5rem 0 0 0;
+  height: calc(100vh - 126px);
 }
 .increase-Map .Right-Map {
   width: 0px !important;

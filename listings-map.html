@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="filter-menu-mobile filter-menu-main d-flex justify-content-between align-items-center">
-      <div id="filter-menu-main" class="over-x-scroll">
+      <div id="filter-menu-main">
         <div class="filter-area p-1 d-flex align-items-center">
           <div id="filter-menu-1" class="filter-menu d-flex p-1" style="padding-left: 0;">
             <button type="button" class="btn btn-cd-light btn-pill active">
@@ -167,7 +167,7 @@
           <img src="./img/Right 1.svg" alt="">
         </button>
 
-        <div class="filter-menu d-flex" style="padding-left: 0; overflow: auto; white-space: nowrap;">
+        <div id="filter-menu-scroll" class="filter-menu" style="padding-left: 0px; margin-left: -1.5rem;">
           <button type="button" class="btn btn-cd-light btn-pill active">
             <img src="img/bed-1.svg" alt=""> Room
           </button>
@@ -192,6 +192,7 @@
           <button type="button" class="btn btn-cd-light btn-pill">
             <img src="img/truck-long-term.svg" alt=""> Long Term
           </button>
+
         </div>
 
         <button class="scroll-next">
@@ -199,6 +200,7 @@
         </button>
 
       </div>
+
 
 
 
@@ -894,46 +896,45 @@ window.onscroll = function() {
 
   </script>
 
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const scrollBackButton = document.querySelector('.scroll-back');
-  const scrollNextButton = document.querySelector('.scroll-next');
-  const filterMenu = document.querySelector('.filter-menu');
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const scrollNextBtn = document.querySelector('.scroll-next');
+      const scrollBackBtn = document.querySelector('.scroll-back');
+      const filterMenu = document.querySelector('#filter-menu-scroll');
 
-  console.log('Scroll Back Button:', scrollBackButton);
-  console.log('Scroll Next Button:', scrollNextButton);
-  console.log('Filter Menu:', filterMenu);
+      function toggleScrollButtons() {
+        // Toggle visibility of scroll-back button based on scroll position
+        scrollBackBtn.style.visibility = filterMenu.scrollLeft > 0 ? 'visible' : 'hidden';
 
-  if (!scrollBackButton || !scrollNextButton || !filterMenu) {
-    console.error('Error: Scroll buttons or filter menu not found.');
-    return;
-  }
+        // Calculate if scrolled to the rightmost
+        const isRightmost = filterMenu.scrollLeft + filterMenu.clientWidth >= filterMenu.scrollWidth;
 
-  const scrollFilterMenu = (direction) => {
-    const scrollAmount = 100;
-    console.log(`Scrolling ${direction > 0 ? 'right' : 'left'} by ${scrollAmount}px`);
-    filterMenu.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-  };
+        // Toggle visibility of scroll-next button based on scroll position
+        scrollNextBtn.style.visibility = isRightmost ? 'hidden' : 'visible';
+      }
 
-  scrollBackButton.addEventListener('click', () => {
-    scrollFilterMenu(-1);
-  });
+      // Initial check on page load
+      toggleScrollButtons();
 
-  scrollNextButton.addEventListener('click', () => {
-    scrollFilterMenu(1);
-  });
+      // Scroll event listener to check and toggle scroll buttons visibility
+      filterMenu.addEventListener('scroll', toggleScrollButtons);
 
-  filterMenu.addEventListener('wheel', (event) => {
-    if (event.deltaY !== 0) {
-      event.preventDefault();
-      filterMenu.scrollBy({ left: event.deltaY, behavior: 'smooth' });
-    }
-  });
-});
+      // Click event listeners for scroll buttons
+      scrollNextBtn.addEventListener('click', function() {
+        filterMenu.scroll({
+          left: filterMenu.scrollLeft + 100,
+          behavior: 'smooth'
+        });
+      });
 
-
-  </script>
-
+      scrollBackBtn.addEventListener('click', function() {
+        filterMenu.scroll({
+          left: filterMenu.scrollLeft - 100,
+          behavior: 'smooth'
+        });
+      });
+    });
+</script>
 
 </body>
 

@@ -499,11 +499,11 @@ ul.cd-highlights b {
   padding-right: 20px;
 }
 
-.filter-area .filter-menu {
+.filter-menu {
   padding-left: 20px;
   width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: .5rem;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
@@ -543,6 +543,7 @@ ul.cd-highlights b {
   background-color: #EEF8FF;
 }
 
+
 .filter-menu-main .scroll-next,
 .filter-menu-main .scroll-back {
   background-color: #fff;
@@ -554,6 +555,7 @@ ul.cd-highlights b {
 
 .filter-menu-main .scroll-back {
   rotate: 180deg;
+
 }
 
 .badge-icon {

@@ -113,7 +113,7 @@
   border-radius: 16px;
 }
 
-.listing-search-main .section {
+.listing-section-main .section {
   width: 100% !important;
 }
 
@@ -665,6 +665,11 @@ learn more
  input
 ------------------------------*/
 
+input ,
+textarea {
+  margin-bottom: 1rem;
+}
+
 input[type=text] {
   height: 64px;
   padding: 12px 24px;
@@ -1128,4 +1133,9 @@ input[type=text] {
   .Add-listing-button {
     height: 50px;
   }
+
+  .learnmore-main {
+    margin: 0;
+    gap: 5px;
+}
 }

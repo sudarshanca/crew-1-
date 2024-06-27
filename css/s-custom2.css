@@ -456,9 +456,6 @@ letter-spacing: -0.2px;
 
 
 @media (max-width:700px) {
-  .scroll-next {
-    display: none !important;
-  }
   .main-container {
   margin-top: 4rem;
 }

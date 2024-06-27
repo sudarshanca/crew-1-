@@ -138,6 +138,7 @@ listing map mobile wersion
 @media (max-width:700px){
   .decreade-Map .left-Map .filter-menu-main {
     margin-top: 5.5rem !important;
+
   }
   .mobile-map-result-div {
     display:  block !important;
@@ -160,8 +161,8 @@ listing map mobile wersion
   .Right-Map {
     width: 100%;
     position: fixed;
-    top: 174px;
-    height: 65dvh;
+    top: 161px;
+    height: 68dvh;
   }
   .map-container .button-div {
     display: none;

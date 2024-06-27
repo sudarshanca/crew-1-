@@ -24,8 +24,12 @@
   .search-bar {
     display: flex !important;
   }
-  .filter-menu-main {
+  .filter-menu-mobile {
     padding: 0 !important;
+    margin: 0 !important;
+  }
+  .filter-menu-mobile button {
+    margin: 0 !important;
   }
 }
 

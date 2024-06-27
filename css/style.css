@@ -80,6 +80,9 @@ a.btn-brand:hover {
   background: #EEF8FF;
   color: #076CB6;
 }
+.btn.btn-cd-light:hover img {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(91%) saturate(1434%) hue-rotate(185deg) brightness(93%) contrast(95%);
+}
 
 .btn.btn-cd-light:active {
   background: #EEF8FF;
@@ -545,18 +548,13 @@ ul.cd-highlights b {
   background-color: #fff;
   border: 1px solid #747474;
   border-radius: 50%;
-  display: none !important;
+  margin-top: 1rem;
+  display: block;
 }
 
 .filter-menu-main .scroll-back {
   rotate: 180deg;
 }
-
-
-.filter-menu-main .over-x-scroll {
-  overflow-x: auto;
-}
-
 
 .badge-icon {
   width: 50px;

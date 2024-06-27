@@ -61,7 +61,7 @@
         <p class="dashboard-font-12 mb-0">Only the Airbnb listing owner can import a listing into Crewdogs. If you do not own the listing or do not have the Airbnb account credentials, we will send an email to the listing owner with instructions.  </p>
         <br>
         <!-- Button for continue action -->
-        <button id="continueButton" class="continue-button">Continue</button>
+        <button id="continueButton" class="continue-button active">Continue</button>
         <br>
       </div>
     </div>
@@ -93,7 +93,7 @@
       
       continueButton.addEventListener('click', function () {
         if (selectedDiv) {
-          window.location.href = './listingtype.html';
+          window.location.href = './cohost1.html';
         } else {
           alert('Please select an option before continuing.');
         }

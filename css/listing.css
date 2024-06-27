@@ -19,14 +19,16 @@
   width: 100%;
   height: 7px;
   overflow: hidden;
-  border: 1rem; /* Adjust as needed */
+  border: 1rem;
+  /* Adjust as needed */
 }
 
 .process-status-fill {
   border-radius: 0 1rem 1rem 0;
   background: var(--PRIMARY-MAIN, #0D99FF);
   height: 100%;
-  width: 0%; /* Change this value dynamically */
+  width: 0%;
+  /* Change this value dynamically */
 }
 
 
@@ -95,9 +97,9 @@
 .set-your-pricing,
 .Amenites,
 .about-details,
-.edit-pictures ,
+.edit-pictures,
 .listing-section-main,
-.listing-property-details{
+.listing-property-details {
   display: flex;
   max-width: 720px;
   padding: 0px 64px;
@@ -112,7 +114,7 @@
 }
 
 .listing-search-main .section {
-  width: 100%;
+  width: 100% !important;
 }
 
 
@@ -549,20 +551,20 @@ learn more
 }
 
 
- .listin-rooms {
+.listin-rooms {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
 
- .rooms-number {
+.rooms-number {
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 
- .rooms-number div {
+.rooms-number div {
   display: flex;
   padding: 8px;
   width: 38px;
@@ -771,6 +773,8 @@ input[type=text] {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.078px;
+
+  margin-bottom: 1rem;
 }
 
 
@@ -790,7 +794,7 @@ input[type=text] {
   overflow: hidden;
 }
 
-.pictures-grid .added-pictures-button {
+.added-pictures-button {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23333' stroke-width='2' stroke-dasharray='9%2c 9%2c 9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 16px;
   display: flex;
@@ -799,6 +803,22 @@ input[type=text] {
   gap: 1rem;
   flex-direction: column;
 }
+
+.added-pictures-button-1 {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23333' stroke-width='2' stroke-dasharray='9%2c 9%2c 9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 24px;
+  border-color: var(--Grayscale-Gray-50, #D9D9D9);
+  width: 90vw;
+  max-width: 554px;
+  margin-top: 3rem;
+}
+
 
 .pictures-grid .added-pictures:first-child {
   grid-column: 1 / 3;
@@ -822,6 +842,7 @@ input[type=text] {
   align-items: center;
   justify-content: center;
 }
+
 .pictures-grid .added-pictures .dropdown .dropdown-menu {
   border-radius: 16px;
   border: 1px solid #E7E7E7;
@@ -829,17 +850,20 @@ input[type=text] {
   /* Elevation */
   box-shadow: 0px 20px 70px 0px rgba(194, 194, 194, 0.10);
 }
+
 .pictures-grid .added-pictures .dropdown .btn {
   border-color: transparent;
 }
+
 .dropdown-toggle::after {
   display: none;
 }
 
-.pictures-grid .added-pictures .cover-photo.active  {
+.pictures-grid .added-pictures .cover-photo.active {
   display: flex;
 }
-.pictures-grid .added-pictures .cover-photo  {
+
+.pictures-grid .added-pictures .cover-photo {
   display: none;
   padding: 7.5px 12px;
   justify-content: center;
@@ -905,18 +929,18 @@ input[type=text] {
 }
 
 .continue-button-2 {
-display: flex;
-height: 48px;
-padding: 8px 24px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 16px;
-background: var(--Primary-Primary-50, #0D99FF);
-border: none;
-color: white;
-text-decoration: none;
+  display: flex;
+  height: 48px;
+  padding: 8px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: var(--Primary-Primary-50, #0D99FF);
+  border: none;
+  color: white;
+  text-decoration: none;
 }
 
 .Add-listing-button {
@@ -984,6 +1008,7 @@ text-decoration: none;
   border-radius: 400px;
   border: 1px solid #E7E7E7;
   background: #FAFAFA;
+  cursor: pointer;
 }
 
 /*----------------------------
@@ -1024,9 +1049,13 @@ text-decoration: none;
   .set-your-pricing,
   .Amenites,
   .about-details,
-  .edit-pictures {
+  .edit-pictures,
+  .listing-section-main {
     padding: 0px .5rem;
     gap: 22px;
+  }
+  .listing-section-main {
+    margin-top: 0px;
   }
 
   .listing-section-1 {
@@ -1083,7 +1112,7 @@ text-decoration: none;
   }
 
   .mission-display {
-    height: 132px;
+    height: auto;
   }
 
   .General-features-main {

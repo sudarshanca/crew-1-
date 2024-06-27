@@ -1,195 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crew dogs</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/listing.css" />
+    <link rel="stylesheet" href="../css/slick-slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crew dogs</title>
-  <link href="../css/bootstrap.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/fonts.css">
-  <link rel="stylesheet" href="../css/listing.css">
-  <link rel="stylesheet" href="../css/slick-slider.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+  <body>
+    <section class="listing-main">
+      <div class="listing-section mb-5">
+        <header class="listing-header m-n">
+          <img src="../img/logo.svg" alt="" />
+          <div>
+            <button class="help">help</button>
+            <button class="help">Save and exit</button>
+          </div>
+        </header>
+        <header class="listing-header d-n">
+          <a href="./addlisting.html">
+            <img src="../img/arrow_back.svg" alt="" />
+          </a>
+        </header>
 
-<body>
-  <section class="listing-main">
-    <div class="listing-section mb-5">
-      <header class="listing-header m-n">
-        <img src="../img/logo.svg" alt="">
-        <div>
-          <button class="help">help</button>
-          <button class="help">Save and exit</button>
+        <div class="process-status-indicator">
+          <div class="process-status-fill"></div>
         </div>
-      </header>
-      <header class="listing-header d-n">
-        <a href="./addlisting.html">
-          <img src="../img/arrow_back.svg" alt="">
-        </a>
-      </header>
 
-<div class="process-status-indicator">
-  <div class="process-status-fill"></div>
-</div>
+        <br />
 
-<br>
-
-      <div class="desktop-back-button">
-        <img src="../img/Left 1.svg" alt="">
-      </div>
-
-      <div class="edit-pictures" style="padding: 0 !important;">
-        <p class="your-payout-font text-center">Re-arrange your pictures</p>
-      <div class="pictures-grid">
-
-        <div class="added-pictures"> <img src="../img/g1.jpg" alt=""> 
-        <p class="cover-photo active">Cover photo</p>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
+        <div class="desktop-back-button">
+          <img src="../img/Left 1.svg" alt="" />
         </div>
-        </div>
-        <div class="added-pictures"> 
-          <img src="../img/g1.jpg" alt=""> 
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../img/More Circle.svg" alt="">
-            </button>
-            <ul class="dropdown-menu" >
-              <li class="dropdown-item">
-                <div class="edit-remove">
-                  <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                  <div class="divider my-1"></div>
-                  <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-                </div></li>
-            </ul>
+
+        <div class="edit-pictures" style="padding: 0 !important">
+          <p class="your-payout-font text-center">Re-arrange your pictures</p>
+          <div class="pictures-grid">
+            <div class="added-pictures">
+              <img src="../img/g1.jpg" alt="" />
+              <p class="cover-photo active">Cover photo</p>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g1.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g2.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g3.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g4.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g2.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures">
+              <img src="../img/g4.jpg" alt="" />
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/More Circle.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <div class="edit-remove">
+                      <p class="mb-0 dashboard-font-21">Remove from cover</p>
+                      <div class="divider my-1"></div>
+                      <p class="mb-0 dashboard-font-21" style="color: #ff554a">
+                        Delete picture
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="added-pictures added-pictures-button">
+              <img
+                src="../img/Add.svg"
+                style="width: 38px; height: 38px"
+                alt=""
+              />
+              <p>Add another</p>
+            </div>
           </div>
         </div>
-        <div class="added-pictures"> 
-          <img src="../img/g2.jpg" alt=""> 
-           <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
-        </div>
-        </div>
-        <div class="added-pictures"> 
-          <img src="../img/g3.jpg" alt=""> 
-           <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
-        </div>
-        </div>
-        <div class="added-pictures"> 
-          <img src="../img/g4.jpg" alt=""> 
-           <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
-        </div>
-        </div>
-        <div class="added-pictures"> 
-          <img src="../img/g2.jpg" alt=""> 
-           <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
-        </div>
-        </div>
-        <div class="added-pictures"> 
-          <img src="../img/g4.jpg" alt=""> 
-           <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/More Circle.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" >
-            <li class="dropdown-item">
-              <div class="edit-remove">
-                <p class="mb-0 dashboard-font-21">Remove from cover</p>
-                <div class="divider my-1"></div>
-                <p class="mb-0 dashboard-font-21" style="color: #FF554A;">Delete picture</p>
-              </div></li>
-          </ul>
-        </div>
-        </div>
-        <div class="added-pictures  added-pictures-button">
-              <img src="../img/Add.svg" style="width: 38px; height: 38px;" alt="">
-              <p>Add another</p>
-        </div>
       </div>
-      </div>
-    </div>
+    </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".property-select-radio").forEach((radio) => {
+        radio.addEventListener("click", () => {
+          const isActive = radio.classList.contains("active");
 
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-<script>
-  document.querySelectorAll('.property-select-radio').forEach(radio => {
-      radio.addEventListener('click', () => {
-          const isActive = radio.classList.contains('active');
-
-          document.querySelectorAll('.property-select-radio').forEach(r => {
-              r.classList.remove('active');
-              r.querySelector('.form-check-input').checked = false;
+          document.querySelectorAll(".property-select-radio").forEach((r) => {
+            r.classList.remove("active");
+            r.querySelector(".form-check-input").checked = false;
           });
 
           if (!isActive) {
-              radio.classList.add('active');
-              radio.querySelector('.form-check-input').checked = true;
+            radio.classList.add("active");
+            radio.querySelector(".form-check-input").checked = true;
           }
+        });
       });
-  });
-</script>
-</body>
-
+    </script>
+  </body>
 </html>

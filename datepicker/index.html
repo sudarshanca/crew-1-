@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Picker</title>
+
+    <link rel="stylesheet" href="monthsecond.css">
+    <link rel="stylesheet" href="month.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="container">
+        
+  <h4 style = "text-align :center"> Choose stay Duration</h4>
+     
+        <nav>
+            <div class="nav nav-tabs navbarcotainers" id="nav-tab" role="tablist">
+              <button class=" navbuttons nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Dayes</button>
+              <button class=" navbuttons nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Months</button>
+              <button class=" navbuttons nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Years</button>
+            </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+
+              <!-- date section -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <link rel="stylesheet" href="calander.css">
+                <!-- <div class="section selected-date">
+                   
+                </div> -->
+                <div class="section">
+                    <p id="start-date-days">Start date</p>
+                    <p id="end-date-days">End date</p>
+                </div>
+                <div class = "daysectioncalender">
+                    <button id="prevMonthBtn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                      </svg> </button>
+                    
+                    <div class="section  daysection" id="datePicker">
+                        
+                    </div>
+                    <button id="nextMonthBtn"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg></button>
+                </div>
+                <script src="script.js"></script>
+            </div>
+
+            <!-- month section -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="section selected-date">
+                    <p id="start-date-month">Start date</p>
+                    <p id="end-date-month">End date</p>
+                </div>
+                <div id="content2" class="content months-calander w-100 active" style="overflow: hidden;">
+                    <div class="w-100">
+                        <p class="duration-font text-center mb-5">Duration</p>
+                        <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
+
+                            <div class="slider-container">
+                                <input type="range" min="1" max="12" value="1" class="input-slider-range" id = "durationSlider" style="background: linear-gradient(to right, rgb(33, 150, 243) 0%, rgb(221, 221, 221) 0%);">
+                                <div class="slider-tooltip" id="sliderTooltip" style="left: -1.5px;">1 month</div>
+                                <div class="slider-scale">
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <div class="scale-mark"></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="calander-font-1" id = "edit-button-months" style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
+                        Select start date</button>
+
+                </div>
+                
+            
+                <div class = "monthendsection" style="display: none;">
+                    Starting on <span id="start-date-display">current date</span>, 
+                    <button id="edit-button-months">Edit</button>
+                </div> 
+            
+                <!-- Custom Modal -->
+                <div id="customModal" class="custom-modal">
+                    <div class="custom-modal-content">
+                        <span class="custom-modal-close">&times;</span>
+                        <div class="calendar-navigation">
+                            <button id="prev-month" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                              </svg></button>
+                              <div>
+                                <div id="calendar"></div>
+                                <button id="apply-date" class="btn  mt-3">Apply</button>
+                              </div>
+                            <button id="next-month" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                              </svg></button>
+                        </div>
+                       
+                    </div>
+                </div>
+                <script src="month.js"></script>
+            </div>
+
+            <!-- year section -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    
+         <link rel="stylesheet" href="year.css">
+         <div class="section selected-date">
+            <p id="start-date-year">Start date</p>
+            <p id="end-date-year">End date</p>
+        </div>
+         <div  style = "text-align: center;">
+                            <p>Duration</p>
+                <button class="buttonclassforyear active-button" id="1-year">1 yrs</button>
+                <button class="buttonclassforyear" id="1.5-year">1.5 yrs</button>
+                <button class="buttonclassforyear" id="2-year">2 yrs</button>
+                <button class="buttonclassforyear" id="2.5-year">2.5 yrs</button>
+                <button class="buttonclassforyear" id="3-year">3 yrs</button>
+                <button class="buttonclassforyear" id="custom-duration">Custom</button>
+            </div>
+        <div class = "lastsectioninyear">
+            <div >
+                Starting on <span id="start-date-display-year">current date</span>, 
+                
+            </div>
+            <button id="edit-button-year" class="Editbutton"> <span style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit date</span> </button> 
+        </div>
+            <!-- Custom Modal -->
+            <div id="customModalyear" class="custom-modal">
+                <div class="custom-modal-content">
+                    <span class="custom-modal-close1">&times;</span>
+                    <div class="calendar-navigation">
+                        <button id="prev-year" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                          </svg></button>
+                          <div>
+                          <div id="calendarContaineryear">
+                        
+                          </div>
+                          <button id="apply-date-year" class="btn  mt-3">Apply</button>
+                        </div>
+                        <button id="next-year" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <script src="year.js"></script>
+            </div>
+          </div>
+        
+    </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

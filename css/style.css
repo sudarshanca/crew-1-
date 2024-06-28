@@ -545,17 +545,26 @@ ul.cd-highlights b {
 }
 
 
+
 .filter-menu-main .scroll-next,
 .filter-menu-main .scroll-back {
+  z-index: 1;
   background-color: #fff;
-  border: 1px solid #747474;
-  border-radius: 50%;
+  border: 1px solid #75757524 ;
+  border-radius: 1.5rem;
   display: block;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+  height: 38px;
+  width: 42px;
 }
 
 .filter-menu-main .scroll-back {
   rotate: 180deg;
-
+}
+.filter-menu-main .scroll-next {
+  position: absolute;
+  right: 0;
+  width: 38px;
 }
 
 .badge-icon {

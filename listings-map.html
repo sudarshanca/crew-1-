@@ -119,9 +119,10 @@
       </button>
     </div>
 
-    <button class="scroll-back">
-      <img src="./img/Right 1.svg" alt="">
-    </button>
+     <button class="scroll-back">
+       <img src="./img/Right 1.svg" alt="">
+      </button>
+  
 
     <div id="filter-menu-scroll" class="filter-menu" style="padding-left: 0px; margin-left: -1.5rem;">
       <button type="button" class="btn btn-cd-light btn-pill active">
@@ -170,12 +171,34 @@
       <button type="button" class="btn btn-cd-light btn-pill">
         <img src="img/truck-long-term.svg" alt=""> Long Term
       </button>
+      <button type="button" class="btn btn-cd-light btn-pill ">
+        <img src="img/bag.svg" alt=""> Short Term
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/file-1.svg" alt=""> Per diem
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/network-1.svg" alt=""> Home swap
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/Home.svg" alt=""> Entire place
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/mike.png" alt=""> Free
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/dog-1.png" alt=""> pet Friendly
+      </button>
+      <button type="button" class="btn btn-cd-light btn-pill">
+        <img src="img/truck-long-term.svg" alt=""> Long Term
+      </button>
 
     </div>
+  
+        <button class="scroll-next">
+          <img src="./img/Right 1.svg" alt="">
+        </button>
 
-    <button class="scroll-next">
-      <img src="./img/Right 1.svg" alt="">
-    </button>
 
   </div>
 </div>
@@ -883,40 +906,41 @@ window.onscroll = function() {
       const scrollNextBtn = document.querySelector('.scroll-next');
       const scrollBackBtn = document.querySelector('.scroll-back');
       const filterMenu = document.querySelector('#filter-menu-scroll');
-
+  
       function toggleScrollButtons() {
-        // Toggle visibility of scroll-back button based on scroll position
-        scrollBackBtn.style.visibility = filterMenu.scrollLeft > 0 ? 'visible' : 'hidden';
-
-        // Calculate if scrolled to the rightmost
-        const isRightmost = filterMenu.scrollLeft + filterMenu.clientWidth >= filterMenu.scrollWidth;
-
-        // Toggle visibility of scroll-next button based on scroll position
-        scrollNextBtn.style.visibility = isRightmost ? 'hidden' : 'visible';
+          // Toggle visibility of scroll-back button based on scroll position
+          scrollBackBtn.style.visibility = filterMenu.scrollLeft > 150 ? 'visible' : 'hidden';
+  
+          // Calculate if scrolled to the rightmost
+          const isRightmost = filterMenu.scrollLeft + filterMenu.clientWidth >= filterMenu.scrollWidth - 150;
+  
+          // Toggle visibility of scroll-next button based on scroll position
+          scrollNextBtn.style.visibility = isRightmost ? 'hidden' : 'visible';
       }
-
+  
       // Initial check on page load
       toggleScrollButtons();
-
+  
       // Scroll event listener to check and toggle scroll buttons visibility
       filterMenu.addEventListener('scroll', toggleScrollButtons);
-
+  
       // Click event listeners for scroll buttons
       scrollNextBtn.addEventListener('click', function() {
-        filterMenu.scroll({
-          left: filterMenu.scrollLeft + 100,
-          behavior: 'smooth'
-        });
+          filterMenu.scrollBy({
+              left: filterMenu.clientWidth,
+              behavior: 'smooth'
+          });
       });
-
+  
       scrollBackBtn.addEventListener('click', function() {
-        filterMenu.scroll({
-          left: filterMenu.scrollLeft - 100,
-          behavior: 'smooth'
-        });
+          filterMenu.scrollBy({
+              left: -filterMenu.clientWidth,
+              behavior: 'smooth'
+          });
       });
-    });
-</script>
+  });
+  </script>
+  
 
 </body>
 

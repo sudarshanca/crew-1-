@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crew dogs</title>
-    <link rel="stylesheet" href="./datepicker/month.css">
-    <link rel="stylesheet" href="./datepicker/monthsecond.css">
+    <link rel="stylesheet" href="css/calander.css">
     <style>
         .choose-a-date,
         .Select-a-destination,
@@ -237,194 +236,236 @@
             <ul class="dropdown-menu dropdown-menu-position  p-0"
                 style="overflow: hidden; margin: auto; min-width: 850px; border-radius: 1rem;">
                 <li class="dropdown-item calander-main p-2 pt-4" style=" background-color: #fff ;">
-                    <div class="container">
-        
-                        <h4 style = "text-align :center"> Choose stay Duration</h4>
-                           
-                              <nav>
-                                  <div class="nav nav-tabs navbarcotainers" id="nav-tab" role="tablist">
-                                    <button class=" navbuttons nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Dayes</button>
-                                    <button class=" navbuttons nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Months</button>
-                                    <button class=" navbuttons nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Years</button>
-                                  </div>
-                              </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                      
-                                    <!-- date section -->
-                                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                      <link rel="stylesheet" href="./datepicker/calander.css">
-                                      <!-- <div class="section selected-date">
+                    <div class="w-100 d-flex flex-column" style="z-index: 999  !important;">
+
+                        <div>
+                            <p class="offer-header-font-2 text-center">Choose stay Duration</p>
+                        </div>
+                        <div class="d-m-y container d-flex justify-content-evenly align-items-center">
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0 active-d-m-y"
+                                onclick="showContent('content1', event)">Days</p>
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
+                                onclick="showContent('content2', event)">Months
+                            </p>
+                            <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
+                                onclick="showContent('content3', event)">Years
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <div class="days-calander pt-3 w-100 m-auto content active" id="content1"
+                                style="max-width: 744px;">
+                                <div class="m-auto">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                viewBox="0 0 13 16" fill="none">
+                                                <path
+                                                    d="M10.0533 16.0001C9.4222 16.0008 8.8101 15.7843 8.31994 15.3868L1.51995 9.77343C1.25329 9.56114 1.03794 9.29144 0.889921 8.98442C0.741907 8.67739 0.665039 8.34093 0.665039 8.00009C0.665039 7.65925 0.741907 7.32279 0.889921 7.01577C1.03794 6.70874 1.25329 6.43905 1.51995 6.22676L8.31994 0.613426C8.72932 0.285418 9.22261 0.0790069 9.74359 0.0177151C10.2646 -0.0435768 10.7923 0.0427154 11.2666 0.266759C11.6788 0.448465 12.0301 0.74499 12.2783 1.12092C12.5266 1.49685 12.6614 1.93629 12.6666 2.38676V13.6134C12.6614 14.0639 12.5266 14.5033 12.2783 14.8793C12.0301 15.2552 11.6788 15.5517 11.2666 15.7334C10.8855 15.9068 10.472 15.9976 10.0533 16.0001Z"
+                                                    fill="#CDCDCD" />
+                                            </svg>
+                                        </div>
+                                        <div class="months-column flex-grow-1">
+                                            <p class="mb-0">January</p>
+                                            <p class="mb-0">February</p>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                viewBox="0 0 13 16" fill="none">
+                                                <path
+                                                    d="M2.94634 16.0001C2.52763 15.9976 2.11416 15.9068 1.73301 15.7334C1.32078 15.5517 0.969559 15.2552 0.721305 14.8793C0.47305 14.5033 0.338252 14.0639 0.333008 13.6134V2.38676C0.338252 1.93629 0.47305 1.49685 0.721305 1.12092C0.969559 0.74499 1.32078 0.448465 1.73301 0.266759C2.20733 0.0427154 2.73505 -0.0435768 3.25603 0.0177151C3.77701 0.0790069 4.2703 0.285418 4.67968 0.613426L11.4797 6.22676C11.7463 6.43905 11.9617 6.70874 12.1097 7.01577C12.2577 7.32279 12.3346 7.65925 12.3346 8.00009C12.3346 8.34093 12.2577 8.67739 12.1097 8.98442C11.9617 9.29144 11.7463 9.56114 11.4797 9.77343L4.67968 15.3868C4.18951 15.7843 3.57742 16.0008 2.94634 16.0001Z"
+                                                    fill="#CDCDCD" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="weeks d-flex gap-4 justify-content-between py-2">
                                          
-                                      </div> -->
-                                      <div class="section">
-                                          <p id="start-date-days">Start date</p>
-                                          <p id="end-date-days">End date</p>
-                                      </div>
-                                      <div class = "daysectioncalender">
-                                          <button id="prevMonthBtn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                                              <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                                            </svg> </button>
-                                          
-                                          <div class="section  daysection" id="datePicker">
-                                              
-                                          </div>
-                                          <button id="nextMonthBtn"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                            </svg></button>
-                                      </div>
-                                      <script src="./datepicker/script.js"></script>
-                                  </div>
-                      
-                                  <!-- month section -->
-                                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                      <div class="section selected-date">
-                                          <p id="start-date-month">Start date</p>
-                                          <p id="end-date-month">End date</p>
-                                      </div>
-                                      <div id="content2" class="content months-calander w-100 active" style="overflow: hidden;">
-                                          <div class="w-100">
-                                              <p class="duration-font text-center mb-5">Duration</p>
-                                              <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
-                      
-                                                  <div class="slider-container">
-                                                      <input type="range" min="1" max="12" value="1" class="input-slider-range" id = "durationSlider" style="background: linear-gradient(to right, rgb(33, 150, 243) 0%, rgb(221, 221, 221) 0%);">
-                                                      <div class="slider-tooltip" id="sliderTooltip" style="left: -1.5px;">1 month</div>
-                                                      <div class="slider-scale">
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <p></p>
-                                                          <div class="scale-mark"></div>
-                      
-                                                      </div>
-                      
-                                                  </div>
-                                              </div>
-                                          </div>
-                      
-                                          <button class="calander-font-1" id = "edit-button-months" style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
-                                              Select start date</button>
-                      
-                                      </div>
-                                      
-                                  
-                                      <div class = "monthendsection" style="display: none;">
-                                          Starting on <span id="start-date-display">current date</span>, 
-                                          <button id="edit-button-months">Edit</button>
-                                      </div> 
-                                  
-                                      <!-- Custom Modal -->
-                                      <div id="customModal" class="custom-modal">
-                                          <div class="custom-modal-content">
-                                              <span class="custom-modal-close">&times;</span>
-                                              <div class="calendar-navigation">
-                                                  <button id="prev-month" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                                                      <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                                                    </svg></button>
-                                                    <div>
-                                                      <div id="calendar"></div>
-                                                      <button id="apply-date" class="btn  mt-3">Apply</button>
-                                                    </div>
-                                                  <button id="next-month" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                                      <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                                    </svg></button>
-                                              </div>
-                                             
-                                          </div>
-                                      </div>
-                                      <script src="./datepicker/month.js"></script>
-                                  </div>
-                      
-                                  <!-- year section -->
-                                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                          
-                               <link rel="stylesheet" href="./datepicker/year.css">
-                               <div class="section selected-date">
-                                  <p id="start-date-year">Start date</p>
-                                  <p id="end-date-year">End date</p>
-                              </div>
-                               <div  style = "text-align: center;">
-                                                  <p>Duration</p>
-                                      <button class="buttonclassforyear active-button" id="1-year">1 yrs</button>
-                                      <button class="buttonclassforyear" id="1.5-year">1.5 yrs</button>
-                                      <button class="buttonclassforyear" id="2-year">2 yrs</button>
-                                      <button class="buttonclassforyear" id="2.5-year">2.5 yrs</button>
-                                      <button class="buttonclassforyear" id="3-year">3 yrs</button>
-                                      <button class="buttonclassforyear" id="custom-duration">Custom</button>
-                                  </div>
-                              <div class = "lastsectioninyear">
-                                  <div >
-                                      Starting on <span id="start-date-display-year">current date</span>, 
-                                      
-                                  </div>
-                                  <button id="edit-button-year" class="Editbutton"> <span style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit date</span> </button> 
-                              </div>
-                                  <!-- Custom Modal -->
-                                  <div id="customModalyear" class="custom-modal">
-                                      <div class="custom-modal-content">
-                                          <span class="custom-modal-close1">&times;</span>
-                                          <div class="calendar-navigation">
-                                              <button id="prev-year" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                                                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                                                </svg></button>
-                                                <div>
-                                                <div id="calendarContaineryear">
-                                              
-                                                </div>
-                                                <button id="apply-date-year" class="btn  mt-3">Apply</button>
-                                              </div>
-                                              <button id="next-year" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                                </svg></button>
-                                          </div>
-                                          
-                                      </div>
-                                  </div>
-                                  
-                                  <script src="./datepicker/year.js"></script>
-                                  </div>
+                                        <div class="calander-weeks">
+                                            <div class="weeks"><p>Sun</p></div>
+                                            <div class="weeks"><p>Mon</p></div>
+                                            <div class="weeks"><p>Tue</p></div>
+                                            <div class="weeks"><p>Wed</p></div>
+                                            <div class="weeks"><p>Thu</p></div>
+                                            <div class="weeks"><p>Fri</p></div>
+                                            <div class="weeks"><p>Sat</p></div>
+                                            <div class="dates dsbl-dts"><p></p></div>
+                                            <div class="dates dsbl-dts"><p></p></div>
+                                            <div class="dates dsbl-dts"><p></p></div>
+                                            <div class="dates dsbl-dts"><p></p></div>
+                                            <div class="dates dsbl-dts"><p></p></div>
+                                            <div class="dates dsbl-dts"><p>1</p></div>
+                                            <div class="dates dsbl-dts"><p>2</p></div>
+                                            <div class="dates dsbl-dts"><p>3</p></div>
+                                            <div class="dates dsbl-dts"><p>4</p></div>
+                                            <div class="dates dsbl-dts"><p>5</p></div>
+                                            <div class="dates dsbl-dts"><p>6</p></div>
+                                            <div class="dates dsbl-dts"><p>7</p></div>
+                                            <div class="dates dsbl-dts"><p>8</p></div>
+                                            <div class="dates dsbl-dts"><p>9</p></div>
+                                            <div class="dates dsbl-dts"><p>10</p></div>
+                                            <div class="dates dsbl-dts"><p>11</p></div>
+                                            <div class="dates dsbl-dts"><p>12</p></div>
+                                            <div class="dates dsbl-dts"><p>13</p></div>
+                                            <div class="dates dsbl-dts"><p>14</p></div>
+                                            <div class="dates dsbl-dts"><p>15</p></div>
+                                            <div class="dates selected-range selected-range-start"><p>16</p></div>
+                                            <div class="dates selected-range "><p>17</p></div>
+                                            <div class="dates selected-range "><p>18</p></div>
+                                            <div class="dates selected-range "><p>19</p></div>
+                                            <div class="dates selected-range "><p>20</p></div>
+                                            <div class="dates selected-range "><p>21</p></div>
+                                            <div class="dates selected-range "><p>22</p></div>
+                                            <div class="dates selected-range "><p>23</p></div>
+                                            <div class="dates selected-range "><p>24</p></div>
+                                            <div class="dates selected-range selected-range-endes "><p>25</p></div>
+                                            <div class="dates"><p>26</p></div>
+                                            <div class="dates"><p>27</p></div>
+                                            <div class="dates"><p>28</p></div>
+                                            <div class="dates"><p>29</p></div>
+                                            <div class="dates"><p>30</p></div>
+                                            <div class="dates"><p>31</p></div>
+                                        </div>
+
+                                        <div class="calander-weeks">
+                                            <div class="weeks"><p>Sun</p></div>
+                                            <div class="weeks"><p>Mon</p></div>
+                                            <div class="weeks"><p>Tue</p></div>
+                                            <div class="weeks"><p>Wed</p></div>
+                                            <div class="weeks"><p>Thu</p></div>
+                                            <div class="weeks"><p>Fri</p></div>
+                                            <div class="weeks"><p>Sat</p></div>
+                                            <div class="dates"><p></p></div>
+                                            <div class="dates"><p></p></div>
+                                            <div class="dates"><p></p></div>
+                                            <div class="dates"><p></p></div>
+                                            <div class="dates"><p></p></div>
+                                            <div class="dates"><p>1</p></div>
+                                            <div class="dates"><p>2</p></div>
+                                            <div class="dates"><p>3</p></div>
+                                            <div class="dates"><p>4</p></div>
+                                            <div class="dates"><p>5</p></div>
+                                            <div class="dates"><p>6</p></div>
+                                            <div class="dates"><p>7</p></div>
+                                            <div class="dates"><p>8</p></div>
+                                            <div class="dates"><p>9</p></div>
+                                            <div class="dates"><p>10</p></div>
+                                            <div class="dates"><p>11</p></div>
+                                            <div class="dates"><p>12</p></div>
+                                            <div class="dates"><p>13</p></div>
+                                            <div class="dates"><p>14</p></div>
+                                            <div class="dates"><p>15</p></div>
+                                            <div class="dates"><p>16</p></div>
+                                            <div class="dates"><p>17</p></div>
+                                            <div class="dates"><p>18</p></div>
+                                            <div class="dates"><p>19</p></div>
+                                            <div class="dates"><p>20</p></div>
+                                            <div class="dates"><p>21</p></div>
+                                            <div class="dates"><p>22</p></div>
+                                            <div class="dates"><p>23</p></div>
+                                            <div class="dates"><p>24</p></div>
+                                            <div class="dates"><p>25</p></div>
+                                            <div class="dates"><p>26</p></div>
+                                            <div class="dates"><p>27</p></div>
+                                            <div class="dates"><p>28</p></div>
+                                            <div class="dates"><p>29</p></div>
+                                            <div class="dates"><p>30</p></div>
+                                            <div class="dates"><p>31</p></div>
+                                        </div>
+                                       
+                                    </div>
                                 </div>
-                          </div>
+                            </div>
+
+                            <div id="content2" class=" content months-calander  w-100" style="overflow: hidden;">
+                                <div class="w-100">
+                                    <p class="duration-font text-center mb-5">Duration</p>
+                                    <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
+
+                                        <div class="slider-container">
+                                            <input type="range" min="1" max="12" value="1" class="input-slider-range w-100"
+                                                id="durationSlider">
+                                            <div class="slider-tooltip" id="sliderTooltip">1 month</div>
+                                            <div class="slider-scale">
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="scale-mark"></div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="calander-font-1"
+                                    style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
+                                    Select start date</p>
+
+                            </div>
+
+                            <div id="content3" class="content years-calander ">
+                                <div>
+                                    <p class="duration-font text-center">Duration</p>
+                                    <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
+                                        <button class="years-button ">1 yrs</button>
+                                        <button class="years-button ">1.5 yrs</button>
+                                        <button class="years-button ">2 yrs</button>
+                                        <button class="years-button years-button-active">2.5 yrs</button>
+                                        <button class="years-button ">3+ years</button>
+                                        <button class="years-button ">Custon</button>
+                                    </div>
+                                </div>
+
+                                <p class="calander-font-1"> Starting May 1, 2024 <span
+                                        style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit
+                                        date</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </li>
             </ul>
         </div>
@@ -517,6 +558,52 @@
     </div>
 
 
+    <script>
+        function initializeDynamicContent() {
+            const slider = document.getElementById("durationSlider");
+            const tooltip = document.getElementById("sliderTooltip");
+
+            if (slider && tooltip) {
+                const updateTooltip = () => {
+                    const value = slider.value;
+                    tooltip.textContent = `${value} month${value > 1 ? 's' : ''}`;
+
+                    const percent = (value - slider.min) / (slider.max - slider.min) * 100;
+                    const offset = -1.5; // Adjust as necessary to center the tooltip
+                    const tooltipPos = percent / 100 * (slider.offsetWidth - 20) + offset;
+
+                    tooltip.style.left = `${tooltipPos}px`;
+                    slider.style.background = `linear-gradient(to right, #2196F3 ${percent}%, #ddd ${percent}%)`;
+                };
+
+                // Use event delegation for dynamically added elements
+                $(document).on('input', '#durationSlider', updateTooltip);
+
+                // Initial positioning
+                updateTooltip();
+            } else {
+                console.error("Slider or tooltip element not found.");
+            }
+        }
+
+        // Preserve existing function showContent
+        function showContent(contentId, event) {
+            let contents = document.getElementsByClassName('content');
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            document.getElementById(contentId).classList.add('active');
+
+            let cols = document.querySelectorAll('.calander-d-m-y');
+            for (let i = 0; i < cols.length; i++) {
+                cols[i].classList.remove('active-d-m-y');
+            }
+            event.target.classList.add('active-d-m-y');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script>
 
 </body>
 

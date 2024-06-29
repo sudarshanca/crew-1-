@@ -226,15 +226,28 @@ a.btn-brand:hover {
 }
 
 .header-drpdn-icon button{
-  background-color: white; 
-  display: flex;
-  padding: 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 16px;
-  border: 1px solid var(--Grayscale-Gray-24, rgba(234, 235, 237, 0.80));
-  background: #FFF;
+display: flex;
+height: 40px;
+padding: 9.119px 13.679px;
+justify-content: center;
+align-items: center;
+gap: 11.399px;
+align-self: stretch;
+border-radius: 16px;
+border: 1px solid #E7E7E7;
+
+color: #444;
+font-size: 14px;
+font-weight: 500;
+line-height: 138%; /* 19.32px */
+letter-spacing: -0.28px;
+}
+
+.header-drpdn-icon button.active,
+.header-drpdn-icon .cdmenu-item button:focus {
+  background: var(--PRIMARY-MAIN, #0D99FF);
+  border: 1px solid #0D99FF;
+  color: #FFFFFF;
 }
 
 .banner-section {

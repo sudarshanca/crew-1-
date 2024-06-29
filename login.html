@@ -32,6 +32,11 @@
             top: 10px;
             right: 10px;
         }
+        @media (max-width:700px) {
+            .mobile-w-100{
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
@@ -43,7 +48,7 @@
         </button>
 
         <div class="d-flex" id="leftSideLoginEntryId">
-            <div class="p-3 pt-5 text-center leftSideLoginEntry w-50" id="loginPhoneNumberPageId">
+            <div class="p-3 pt-5 text-center leftSideLoginEntry w-50 mobile-w-100" id="loginPhoneNumberPageId">
                 <h1>
                     Log in or sign up
                 </h1>
@@ -416,7 +421,7 @@
 
 
 
-            <div class="w-50" id="rightSideEligibleId" style="background-image: url(./img/BG.png);">
+            <div class="w-50 mobile-w-100" id="rightSideEligibleId" style="background-image: url(./img/BG.png);">
                 <div class="eligibleListContainer" style="margin: 3rem 5%;">
 
                     <div class="mobile-display-flex mb-4">

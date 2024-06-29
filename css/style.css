@@ -1175,6 +1175,11 @@ ul.cd-highlights b {
   line-height: 21px;
   /* 150% */
   letter-spacing: -0.32px;
+  display: flex;
+  gap: 1rem;
+}
+.leftSideLoginEntry .gapedDiv button div {
+  width: 50px;
 }
 
 .leftSideLoginEntry .orClass {

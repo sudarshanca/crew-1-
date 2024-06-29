@@ -1162,7 +1162,7 @@ ul.cd-highlights b {
 .leftSideLoginEntry .gapedDiv button {
   color: #444;
   margin-bottom: 24px;
-  padding: 24px;
+  padding: 12px 24px;
   border-radius: 16px;
   border: 1px solid rgba(234, 235, 237, 0.8);
   background: #FCFCFC;

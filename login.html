@@ -5,20 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crew dogs</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/menu.css" rel="stylesheet">
-    <link href="css/slick-slider.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/s-custom.css">
     <style>
+         input[type="text"]{
+    width: 100%;
+    padding: 12px 45px 12px 12px !important;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    font-size: 14px;
+}
         .goback {
             padding-inline: 16px;
             width: 53px;
@@ -36,17 +34,23 @@
             .pt-1 {
                 padding-top: 40px !important;
             }
-        }
+    .mobile-view-1 {
+        display: flex !important;
+    }
+}
     </style>
 
 </head>
 
 <body>
-    <div class=" hidden position-absolute border "
+    <div class="position-absolute border "
     style="width: 30px; height: 30px; display: flex; background-color: white; top: 4%; right: 2%; border-radius: 50%;">
-    <img src="img/cross.png" class="m-auto" alt="">
+    
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <img src="img/cross.png" class="m-auto" alt="">
+    </button>
 </div>
-    <section>
+    <section style="overflow-x: hidden;">
 
         <div class="row">
             <div class="col-md-6 pt-1" style="padding-top: 64px !important ;" id="leftSideLoginEntryId">
@@ -576,12 +580,8 @@
 
         });
     </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <script type="text/javascript">
-
-
         document.addEventListener("DOMContentLoaded", function () {
             // Get references to the links and both divs using their IDs
             var toggleLink = document.getElementById("toggleLink");

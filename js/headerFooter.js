@@ -47,7 +47,11 @@ $(function () {
 });
 
 
+/* login models */ 
 
+$(function () {
+    $("#login").load("login.html");
+});
 
 
 

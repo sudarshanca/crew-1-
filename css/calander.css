@@ -1,6 +1,6 @@
 .calander-main {
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .dsbl-dts {

@@ -33,34 +33,37 @@
 
   /*font*/
   color: var(--Foundation-black-black-500, #111);
-font-family: "DM Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 25.2px; /* 140% */
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px;
+  /* 140% */
 }
 
 .calander-weeks {
   display: grid;
-  grid-template-columns: repeat(7 ,  1fr);
+  grid-template-columns: repeat(7, 1fr);
   /* font*/
   color: var(--BLACK, #444);
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 22.4px; /* 140% */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  /* 140% */
 }
 
 .calander-weeks p {
-   width: 48px;
-   height: 48px;
-   margin: 0 !important; 
-   padding: 0 !important;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .calander-weeks div {
   margin-bottom: .2rem;
 }
@@ -70,13 +73,14 @@ line-height: 22.4px; /* 140% */
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 
-/*font*/
-color: var(--BLACK, #444);
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 22.4px; /* 140% */
+  /*font*/
+  color: var(--BLACK, #444);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  /* 140% */
 }
 
 
@@ -94,9 +98,9 @@ line-height: 22.4px; /* 140% */
 }
 
 .content {
-  display: none ;
+  display: none;
 
-min-height: 400px;
+  min-height: 400px;
 }
 
 .content.active {
@@ -114,6 +118,9 @@ min-height: 400px;
   flex-direction: column !important;
   justify-content: space-evenly !important;
   align-items: center !important;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 
@@ -129,49 +136,52 @@ min-height: 400px;
 
 .duration-font {
   color: var(--Foundation-black-black-500, #111);
-font-family: "DM Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 25.2px; /* 140% */
-letter-spacing: -0.252px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px;
+  /* 140% */
+  letter-spacing: -0.252px;
 }
 
 
-.years-button{
+.years-button {
   display: flex;
-padding: 8px 24px;
-align-items: center;
-gap: 8px;
-border-radius: 13px;
-border: 1px solid #E7E7E7;
-background: inherit;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 13px;
+  border: 1px solid #E7E7E7;
+  background: inherit;
 
-color: var(--GREY, #747474);
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 26px; /* 185.714% */
-letter-spacing: -0.08px;
+  color: var(--GREY, #747474);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  /* 185.714% */
+  letter-spacing: -0.08px;
 
 }
 
 .years-button-active {
   border-radius: 13px;
-background: var(--Primary-Primary-50, #0D99FF) !important;
-color: white !important;
+  background: var(--Primary-Primary-50, #0D99FF) !important;
+  color: white !important;
 }
 
 
 .calander-font-1 {
   color: var(--Grayscale-Gray-80, #4B4B4D);
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 112.5% */
-letter-spacing: -0.078px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  letter-spacing: -0.078px;
 }
 
 
@@ -180,16 +190,18 @@ letter-spacing: -0.078px;
 }
 
 .selected-range-start {
-   border-radius: 50% 0 0 50%;
+  border-radius: 50% 0 0 50%;
 }
+
 .selected-range-endes {
   border-radius: 0 50% 50% 0;
 }
-.selected-range-start p, 
+
+.selected-range-start p,
 .selected-range-endes p {
-   border-radius: 50%;
-   background-color: #0D99FF;
-   color: white;
+  border-radius: 50%;
+  background-color: #0D99FF;
+  color: white;
 }
 
 
@@ -293,3 +305,22 @@ letter-spacing: -0.078px;
   background: #E7E7E7;
 }
 
+
+.select-your-date {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.select-your-date-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu-position {
+  transition: all .3s ease;
+}

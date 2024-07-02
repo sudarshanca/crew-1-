@@ -33,8 +33,9 @@ async function initMap() {
   }
 }
 
+
 function toggleHighlight(markerView, property) {   
-   
+
   if (markerView.content.classList.contains("highlight")) {
     markerView.content.classList.remove("highlight");
     markerView.zIndex = null;
@@ -62,7 +63,6 @@ function buildContent(property) {
         $800
     </div>
     <div class="details">
-
                     <div class="book-gallery mb-0" style="width:300px; position: relative;">
                         <a href="details.html">
                             <div class="bgallery-img mb-3">

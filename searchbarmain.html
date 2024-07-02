@@ -233,7 +233,7 @@
                 </div>
             </a>
 
-            <ul class="dropdown-menu dropdown-menu-position  p-0"
+            <ul id="calander-main" class="dropdown-menu dropdown-menu-position  p-0"
                 style="overflow: hidden; margin: auto; min-width: 850px; border-radius: 1rem;">
                 <li class="dropdown-item calander-main p-2 pt-4" style=" background-color: #fff ;">
                     <div class="w-100 d-flex flex-column" style="z-index: 999  !important;">
@@ -241,7 +241,7 @@
                         <div>
                             <p class="offer-header-font-2 text-center">Choose stay Duration</p>
                         </div>
-                        <div class="d-m-y container d-flex justify-content-evenly align-items-center">
+                        <div class="d-m-y  d-flex justify-content-evenly align-items-center">
                             <p class="addpaymentmethod-font-3 calander-d-m-y mb-0 active-d-m-y"
                                 onclick="showContent('content1', event)">Days</p>
                             <p class="addpaymentmethod-font-3 calander-d-m-y mb-0"
@@ -280,106 +280,269 @@
                                     </div>
 
                                     <div class="weeks d-flex gap-4 justify-content-between py-2">
-                                         
+
                                         <div class="calander-weeks">
-                                            <div class="weeks"><p>Sun</p></div>
-                                            <div class="weeks"><p>Mon</p></div>
-                                            <div class="weeks"><p>Tue</p></div>
-                                            <div class="weeks"><p>Wed</p></div>
-                                            <div class="weeks"><p>Thu</p></div>
-                                            <div class="weeks"><p>Fri</p></div>
-                                            <div class="weeks"><p>Sat</p></div>
-                                            <div class="dates dsbl-dts"><p>1</p></div>
-                                            <div class="dates dsbl-dts"><p>2</p></div>
-                                            <div class="dates dsbl-dts"><p>3</p></div>
-                                            <div class="dates dsbl-dts"><p>4</p></div>
-                                            <div class="dates dsbl-dts"><p>5</p></div>
-                                            <div class="dates dsbl-dts"><p>6</p></div>
-                                            <div class="dates dsbl-dts"><p>7</p></div>
-                                            <div class="dates dsbl-dts"><p>8</p></div>
-                                            <div class="dates dsbl-dts"><p>9</p></div>
-                                            <div class="dates dsbl-dts"><p>10</p></div>
-                                            <div class="dates dsbl-dts"><p>11</p></div>
-                                            <div class="dates dsbl-dts"><p>12</p></div>
-                                            <div class="dates dsbl-dts"><p>13</p></div>
-                                            <div class="dates dsbl-dts"><p>14</p></div>
-                                            <div class="dates dsbl-dts"><p>15</p></div>
-                                            <div class="dates selected-range selected-range-start"><p>16</p></div>
-                                            <div class="dates selected-range "><p>17</p></div>
-                                            <div class="dates selected-range "><p>18</p></div>
-                                            <div class="dates selected-range "><p>19</p></div>
-                                            <div class="dates selected-range "><p>20</p></div>
-                                            <div class="dates selected-range "><p>21</p></div>
-                                            <div class="dates selected-range "><p>22</p></div>
-                                            <div class="dates selected-range "><p>23</p></div>
-                                            <div class="dates selected-range "><p>24</p></div>
-                                            <div class="dates selected-range selected-range-endes "><p>25</p></div>
-                                            <div class="dates"><p>26</p></div>
-                                            <div class="dates"><p>27</p></div>
-                                            <div class="dates"><p>28</p></div>
-                                            <div class="dates"><p>29</p></div>
-                                            <div class="dates"><p>30</p></div>
-                                            <div class="dates"><p>31</p></div>
+                                            <div class="weeks">
+                                                <p>Sun</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Mon</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Tue</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Wed</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Thu</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Fri</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Sat</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>1</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>2</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>3</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>4</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>5</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>6</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>7</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>8</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>9</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>10</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>11</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>12</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>13</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>14</p>
+                                            </div>
+                                            <div class="dates dsbl-dts">
+                                                <p>15</p>
+                                            </div>
+                                            <div class="dates selected-range selected-range-start">
+                                                <p>16</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>17</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>18</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>19</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>20</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>21</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>22</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>23</p>
+                                            </div>
+                                            <div class="dates selected-range ">
+                                                <p>24</p>
+                                            </div>
+                                            <div class="dates selected-range selected-range-endes ">
+                                                <p>25</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>26</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>27</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>28</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>29</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>30</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>31</p>
+                                            </div>
                                         </div>
 
                                         <div class="calander-weeks">
-                                            <div class="weeks"><p>Sun</p></div>
-                                            <div class="weeks"><p>Mon</p></div>
-                                            <div class="weeks"><p>Tue</p></div>
-                                            <div class="weeks"><p>Wed</p></div>
-                                            <div class="weeks"><p>Thu</p></div>
-                                            <div class="weeks"><p>Fri</p></div>
-                                            <div class="weeks"><p>Sat</p></div>
-                                            <div class="dates"><p></p></div>
-                                            <div class="dates"><p></p></div>
-                                            <div class="dates"><p></p></div>
-                                            <div class="dates"><p></p></div>
-                                            <div class="dates"><p></p></div>
-                                            <div class="dates"><p>1</p></div>
-                                            <div class="dates"><p>2</p></div>
-                                            <div class="dates"><p>3</p></div>
-                                            <div class="dates"><p>4</p></div>
-                                            <div class="dates"><p>5</p></div>
-                                            <div class="dates"><p>6</p></div>
-                                            <div class="dates"><p>7</p></div>
-                                            <div class="dates"><p>8</p></div>
-                                            <div class="dates"><p>9</p></div>
-                                            <div class="dates"><p>10</p></div>
-                                            <div class="dates"><p>11</p></div>
-                                            <div class="dates"><p>12</p></div>
-                                            <div class="dates"><p>13</p></div>
-                                            <div class="dates"><p>14</p></div>
-                                            <div class="dates"><p>15</p></div>
-                                            <div class="dates"><p>16</p></div>
-                                            <div class="dates"><p>17</p></div>
-                                            <div class="dates"><p>18</p></div>
-                                            <div class="dates"><p>19</p></div>
-                                            <div class="dates"><p>20</p></div>
-                                            <div class="dates"><p>21</p></div>
-                                            <div class="dates"><p>22</p></div>
-                                            <div class="dates"><p>23</p></div>
-                                            <div class="dates"><p>24</p></div>
-                                            <div class="dates"><p>25</p></div>
-                                            <div class="dates"><p>26</p></div>
-                                            <div class="dates"><p>27</p></div>
-                                            <div class="dates"><p>28</p></div>
-                                            <div class="dates"><p>29</p></div>
-                                            <div class="dates"><p>30</p></div>
-                                            <div class="dates"><p>31</p></div>
+                                            <div class="weeks">
+                                                <p>Sun</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Mon</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Tue</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Wed</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Thu</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Fri</p>
+                                            </div>
+                                            <div class="weeks">
+                                                <p>Sat</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p></p>
+                                            </div>
+                                            <div class="dates">
+                                                <p></p>
+                                            </div>
+                                            <div class="dates">
+                                                <p></p>
+                                            </div>
+                                            <div class="dates">
+                                                <p></p>
+                                            </div>
+                                            <div class="dates">
+                                                <p></p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>1</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>2</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>3</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>4</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>5</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>6</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>7</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>8</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>9</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>10</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>11</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>12</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>13</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>14</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>15</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>16</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>17</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>18</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>19</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>20</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>21</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>22</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>23</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>24</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>25</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>26</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>27</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>28</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>29</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>30</p>
+                                            </div>
+                                            <div class="dates">
+                                                <p>31</p>
+                                            </div>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="content2" class=" content months-calander  w-100" style="overflow: hidden;">
+                            <div id="content2" class=" content months-calander">
+
                                 <div class="w-100">
                                     <p class="duration-font text-center mb-5">Duration</p>
                                     <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
 
                                         <div class="slider-container">
-                                            <input type="range" min="1" max="12" value="1" class="input-slider-range w-100"
-                                                id="durationSlider">
+                                            <input type="range" min="1" max="12" value="1"
+                                                class="input-slider-range w-100" id="durationSlider">
                                             <div class="slider-tooltip" id="sliderTooltip">1 month</div>
                                             <div class="slider-scale">
                                                 <div class="scale-mark"></div>
@@ -427,35 +590,633 @@
                                                 <p></p>
                                                 <p></p>
                                                 <div class="scale-mark"></div>
-
                                             </div>
 
                                         </div>
                                     </div>
+                                    <a class="dashboard-font-24 mt-5" onclick="selectyourdate()" style="font-weight: 700; display: flex; justify-content: center;">
+                                        Select start date
+                                    </a>
                                 </div>
 
-                                <p class="calander-font-1"
-                                    style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">
-                                    Select start date</p>
+
+                                <div id="select-your-date" class="select-your-date">
+                                    <div class="select-your-date-header container bb mb-3">
+                                        <p class="dashboard-font-23">
+                                            Select start date
+                                        </p>
+                                        <a onclick="selectyourdate()" style="font-weight: 700;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M3.6642 3.79466L3.72471 3.72456C3.9466 3.50267 4.29382 3.4825 4.5385 3.66405L4.6086 3.72456L9.99999 9.11567L15.3914 3.72456C15.6355 3.48048 16.0312 3.48048 16.2753 3.72456C16.5193 3.96864 16.5193 4.36437 16.2753 4.60845L10.8842 9.99984L16.2753 15.3912C16.4972 15.6131 16.5173 15.9603 16.3358 16.205L16.2753 16.2751C16.0534 16.497 15.7062 16.5172 15.4615 16.3356L15.3914 16.2751L9.99999 10.884L4.6086 16.2751C4.36452 16.5192 3.96879 16.5192 3.72471 16.2751C3.48064 16.031 3.48064 15.6353 3.72471 15.3912L9.11582 9.99984L3.72471 4.60845C3.50283 4.38656 3.48265 4.03934 3.6642 3.79466L3.72471 3.72456L3.6642 3.79466Z" fill="#B6B6B9"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                        <div class="container">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                    viewBox="0 0 13 16" fill="none">
+                                                    <path
+                                                        d="M10.0533 16.0001C9.4222 16.0008 8.8101 15.7843 8.31994 15.3868L1.51995 9.77343C1.25329 9.56114 1.03794 9.29144 0.889921 8.98442C0.741907 8.67739 0.665039 8.34093 0.665039 8.00009C0.665039 7.65925 0.741907 7.32279 0.889921 7.01577C1.03794 6.70874 1.25329 6.43905 1.51995 6.22676L8.31994 0.613426C8.72932 0.285418 9.22261 0.0790069 9.74359 0.0177151C10.2646 -0.0435768 10.7923 0.0427154 11.2666 0.266759C11.6788 0.448465 12.0301 0.74499 12.2783 1.12092C12.5266 1.49685 12.6614 1.93629 12.6666 2.38676V13.6134C12.6614 14.0639 12.5266 14.5033 12.2783 14.8793C12.0301 15.2552 11.6788 15.5517 11.2666 15.7334C10.8855 15.9068 10.472 15.9976 10.0533 16.0001Z"
+                                                        fill="#CDCDCD" />
+                                                </svg>
+                                            </div>
+                                            <div class="months-column flex-grow-1">
+                                                <p class="mb-0">January</p>
+                                                <p class="mb-0">February</p>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                    viewBox="0 0 13 16" fill="none">
+                                                    <path
+                                                        d="M2.94634 16.0001C2.52763 15.9976 2.11416 15.9068 1.73301 15.7334C1.32078 15.5517 0.969559 15.2552 0.721305 14.8793C0.47305 14.5033 0.338252 14.0639 0.333008 13.6134V2.38676C0.338252 1.93629 0.47305 1.49685 0.721305 1.12092C0.969559 0.74499 1.32078 0.448465 1.73301 0.266759C2.20733 0.0427154 2.73505 -0.0435768 3.25603 0.0177151C3.77701 0.0790069 4.2703 0.285418 4.67968 0.613426L11.4797 6.22676C11.7463 6.43905 11.9617 6.70874 12.1097 7.01577C12.2577 7.32279 12.3346 7.65925 12.3346 8.00009C12.3346 8.34093 12.2577 8.67739 12.1097 8.98442C11.9617 9.29144 11.7463 9.56114 11.4797 9.77343L4.67968 15.3868C4.18951 15.7843 3.57742 16.0008 2.94634 16.0001Z"
+                                                        fill="#CDCDCD" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="weeks d-flex gap-4 justify-content-between py-2">
+
+                                            <div class="calander-weeks">
+                                                <div class="weeks">
+                                                    <p>Sun</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Mon</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Tue</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Wed</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Thu</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Fri</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Sat</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>4</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>5</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>6</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>7</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>8</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>9</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>11</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>12</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>13</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>14</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>15</p>
+                                                </div>
+                                                <div class="dates selected-range selected-range-start">
+                                                    <p>16</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>17</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>18</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>19</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>21</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>22</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>23</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>24</p>
+                                                </div>
+                                                <div class="dates selected-range selected-range-endes ">
+                                                    <p>25</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>26</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>27</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>28</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>29</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>31</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="calander-weeks">
+                                                <div class="weeks">
+                                                    <p>Sun</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Mon</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Tue</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Wed</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Thu</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Fri</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Sat</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>4</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>5</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>6</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>7</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>8</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>9</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>11</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>12</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>13</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>14</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>15</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>16</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>17</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>18</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>19</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>21</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>22</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>23</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>24</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>25</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>26</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>27</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>28</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>29</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>31</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <button class="save" style="float: right; margin-right: 1rem;">Apply</button>
+                                </div>
 
                             </div>
 
                             <div id="content3" class="content years-calander ">
                                 <div>
                                     <p class="duration-font text-center">Duration</p>
+                                    <br>
                                     <div class="buttons d-flex gap-2 justify-content-evenly align-items-center">
                                         <button class="years-button ">1 yrs</button>
                                         <button class="years-button ">1.5 yrs</button>
                                         <button class="years-button ">2 yrs</button>
-                                        <button class="years-button years-button-active">2.5 yrs</button>
+                                        <button class="years-button active">2.5 yrs</button>
                                         <button class="years-button ">3+ years</button>
                                         <button class="years-button ">Custon</button>
                                     </div>
                                 </div>
 
-                                <p class="calander-font-1"> Starting May 1, 2024 <span
-                                        style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit
-                                        date</span></p>
+                                <p class="calander-font-1">Starting May 1, 2024
+                                    <span onclick="selectyourdateyear()"
+                                     style=" text-decoration: underline; color: #0D99FF; font-weight: 700;">Edit
+                                        date</span>
+                                </p>
+
+                                <div id="select-your-date-year" class="select-your-date">
+                                    <div class="select-your-date-header container bb">
+                                        <p class="dashboard-font-23">
+                                            Select date
+                                        </p>
+                                        <a onclick="selectyourdateyear()" style="font-weight: 700;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M3.6642 3.79466L3.72471 3.72456C3.9466 3.50267 4.29382 3.4825 4.5385 3.66405L4.6086 3.72456L9.99999 9.11567L15.3914 3.72456C15.6355 3.48048 16.0312 3.48048 16.2753 3.72456C16.5193 3.96864 16.5193 4.36437 16.2753 4.60845L10.8842 9.99984L16.2753 15.3912C16.4972 15.6131 16.5173 15.9603 16.3358 16.205L16.2753 16.2751C16.0534 16.497 15.7062 16.5172 15.4615 16.3356L15.3914 16.2751L9.99999 10.884L4.6086 16.2751C4.36452 16.5192 3.96879 16.5192 3.72471 16.2751C3.48064 16.031 3.48064 15.6353 3.72471 15.3912L9.11582 9.99984L3.72471 4.60845C3.50283 4.38656 3.48265 4.03934 3.6642 3.79466L3.72471 3.72456L3.6642 3.79466Z" fill="#B6B6B9"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="container py-2">
+                                        <p class="dashboard-font-23">
+                                            Select date
+                                        </p>
+                                        <input type="text" class="form-select" placeholder="Current year" style="width: 300px;">
+                                        <p class="dashboard-font-23">
+                                            Select start day
+                                        </p>
+                                    </div>
+                                        <div class="container mt-3">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                    viewBox="0 0 13 16" fill="none">
+                                                    <path
+                                                        d="M10.0533 16.0001C9.4222 16.0008 8.8101 15.7843 8.31994 15.3868L1.51995 9.77343C1.25329 9.56114 1.03794 9.29144 0.889921 8.98442C0.741907 8.67739 0.665039 8.34093 0.665039 8.00009C0.665039 7.65925 0.741907 7.32279 0.889921 7.01577C1.03794 6.70874 1.25329 6.43905 1.51995 6.22676L8.31994 0.613426C8.72932 0.285418 9.22261 0.0790069 9.74359 0.0177151C10.2646 -0.0435768 10.7923 0.0427154 11.2666 0.266759C11.6788 0.448465 12.0301 0.74499 12.2783 1.12092C12.5266 1.49685 12.6614 1.93629 12.6666 2.38676V13.6134C12.6614 14.0639 12.5266 14.5033 12.2783 14.8793C12.0301 15.2552 11.6788 15.5517 11.2666 15.7334C10.8855 15.9068 10.472 15.9976 10.0533 16.0001Z"
+                                                        fill="#CDCDCD" />
+                                                </svg>
+                                            </div>
+                                            <div class="months-column flex-grow-1">
+                                                <p class="mb-0">January</p>
+                                                <p class="mb-0">February</p>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                    viewBox="0 0 13 16" fill="none">
+                                                    <path
+                                                        d="M2.94634 16.0001C2.52763 15.9976 2.11416 15.9068 1.73301 15.7334C1.32078 15.5517 0.969559 15.2552 0.721305 14.8793C0.47305 14.5033 0.338252 14.0639 0.333008 13.6134V2.38676C0.338252 1.93629 0.47305 1.49685 0.721305 1.12092C0.969559 0.74499 1.32078 0.448465 1.73301 0.266759C2.20733 0.0427154 2.73505 -0.0435768 3.25603 0.0177151C3.77701 0.0790069 4.2703 0.285418 4.67968 0.613426L11.4797 6.22676C11.7463 6.43905 11.9617 6.70874 12.1097 7.01577C12.2577 7.32279 12.3346 7.65925 12.3346 8.00009C12.3346 8.34093 12.2577 8.67739 12.1097 8.98442C11.9617 9.29144 11.7463 9.56114 11.4797 9.77343L4.67968 15.3868C4.18951 15.7843 3.57742 16.0008 2.94634 16.0001Z"
+                                                        fill="#CDCDCD" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="weeks d-flex gap-4 justify-content-between">
+
+                                            <div class="calander-weeks">
+                                                <div class="weeks">
+                                                    <p>Sun</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Mon</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Tue</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Wed</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Thu</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Fri</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Sat</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>4</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>5</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>6</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>7</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>8</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>9</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>11</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>12</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>13</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>14</p>
+                                                </div>
+                                                <div class="dates dsbl-dts">
+                                                    <p>15</p>
+                                                </div>
+                                                <div class="dates selected-range selected-range-start">
+                                                    <p>16</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>17</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>18</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>19</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>21</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>22</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>23</p>
+                                                </div>
+                                                <div class="dates selected-range ">
+                                                    <p>24</p>
+                                                </div>
+                                                <div class="dates selected-range selected-range-endes ">
+                                                    <p>25</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>26</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>27</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>28</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>29</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>31</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="calander-weeks">
+                                                <div class="weeks">
+                                                    <p>Sun</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Mon</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Tue</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Wed</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Thu</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Fri</p>
+                                                </div>
+                                                <div class="weeks">
+                                                    <p>Sat</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p></p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>4</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>5</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>6</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>7</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>8</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>9</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>10</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>11</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>12</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>13</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>14</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>15</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>16</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>17</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>18</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>19</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>20</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>21</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>22</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>23</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>24</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>25</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>26</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>27</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>28</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>29</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>30</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <p>31</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <button class="save" style="float: right; margin-right: 1rem;">Apply</button>
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -554,6 +1315,30 @@
 
 
     <script>
+
+     function selectyourdate(){
+        let selectdate = document.getElementById("select-your-date");
+        let dropdownHeight = document.getElementById("calander-main")
+        if(selectdate.style.display === "none"){
+            selectdate.style.display = "block" ;
+            dropdownHeight.style.height = "610px";
+        }else {
+            selectdate.style.display = "none";
+            dropdownHeight.style.height = "auto";
+        }
+     }
+     function selectyourdateyear(){
+        let selectdate = document.getElementById("select-your-date-year");
+        let dropdownHeight = document.getElementById("calander-main")
+        if(selectdate.style.display === "none"){
+            selectdate.style.display = "block" ;
+            dropdownHeight.style.height = "750px";
+        }else {
+            selectdate.style.display = "none";
+            dropdownHeight.style.height = "auto";
+        }
+     }
+
         function initializeDynamicContent() {
             const slider = document.getElementById("durationSlider");
             const tooltip = document.getElementById("sliderTooltip");
@@ -599,6 +1384,7 @@
         document.addEventListener("DOMContentLoaded", function () {
         });
     </script>
+
 
 </body>
 

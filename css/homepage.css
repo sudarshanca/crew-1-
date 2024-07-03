@@ -2,6 +2,7 @@
 #search-bar {
   display: none;
 }
+
 @media (max-width: 700px) {
   #search-bar {
     display: block;
@@ -11,23 +12,29 @@
 .search-bar {
   display: none !important;
 }
+
 .search-main {
   padding: 0 !important;
 }
+
 .search-main .filter-area button {
   font-size: 10px !important;
 }
+
 @media (max-width: 700px) {
   .filter-button-m-n {
     display: none;
   }
+
   .search-bar {
     display: flex !important;
   }
+
   .filter-menu-mobile {
     padding: 0 !important;
     margin: 0 !important;
   }
+
   .filter-menu-mobile button {
     margin: 0 !important;
   }
@@ -44,9 +51,11 @@
 #search-box-m {
   margin: auto;
 }
+
 .bg-white header {
   background-image: none !important;
 }
+
 .drop-sticky {
   transition: all 0.5s ease-in-out;
 }
@@ -102,7 +111,7 @@
  listing.html and listing-map.html searchbar starts
  --------------------------- */
 
- .header-parent {
+.header-parent {
   z-index: 100;
   background-color: #fff;
   border-bottom: 1px solid #74747436;
@@ -111,26 +120,27 @@
   left: 0;
   right: 0;
 }
-    .header-parent header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding: 0.4rem;
-    }
 
-    .header-parent .searchbar-default-text span {
-        display: none;
-    }
+.header-parent header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
 
-    .header-parent header input {
-        width: 110px;
-    }
+.header-parent .searchbar-default-text span {
+  display: none;
+}
 
-    .header-parent .dropdown a {
-        min-width: fit-content !important;
-    }
+.header-parent header input {
+  width: 110px;
+}
+
+.header-parent .dropdown a {
+  min-width: fit-content !important;
+}
 
 
 .d-n {
@@ -141,9 +151,11 @@
   .m-n {
     display: none !important;
   }
+
   .d-n {
     display: block !important;
   }
+
   .d-n-f {
     display: flex !important;
   }
@@ -178,6 +190,7 @@
   overflow-x: scroll;
   margin-left: 2%;
 }
+
 .filter-menu-main::-webkit-scrollbar {
   display: none;
 }
@@ -196,15 +209,17 @@
 
 /*  */
 .filter-menu button img {
-  width: 18px !important ;
+  width: 18px !important;
   height: 18px !important;
   object-fit: fill;
 }
+
 .filter-menu button {
   display: flex;
   align-items: center;
   gap: 4px;
 }
+
 .filter-menu button img:hover {
   fill: #076cb6;
 }
@@ -299,7 +314,8 @@
   color: var(--Grayscale-Gray-80, #4b4b4d);
   font-size: 13px !important;
   font-weight: 400;
-  line-height: 18px; /* 138.462% */
+  line-height: 18px;
+  /* 138.462% */
   letter-spacing: -0.078px;
 }
 
@@ -336,6 +352,7 @@
   background-color: #dddddd;
   border-radius: 20px;
 }
+
 .double_range_slider_box .range_track {
   height: 100%;
   position: absolute;
@@ -354,6 +371,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .double_range_slider_box input::-webkit-slider-thumb {
   height: 25px;
   width: 25px;
@@ -365,6 +383,7 @@
   cursor: pointer;
   margin-bottom: 1px;
 }
+
 .double_range_slider_box input::-moz-range-thumb {
   height: 18px;
   width: 18px;
@@ -389,4 +408,22 @@
  Filter Model Poupup ends
 ------------------------------*/
 
+/* -----------------------------
+ search-mobile 
+------------------------------*/
+.search-mobile {
+  display: none;
+}
 
+@media (max-width:700px) {
+  .search-mobile {
+    display: none;
+    z-index: 1;
+    border-radius: 2rem;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

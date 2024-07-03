@@ -317,7 +317,7 @@ letter-spacing: -0.28px;
   .hero-search .search-box .dropdown .dropdown-toggle::after {
     text-align: right;
     float: right;
-    margin-top: 10px;
+    margin: 10px 10px 0 0 !important;
   }
 
   .header-section {

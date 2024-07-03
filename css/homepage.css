@@ -417,7 +417,7 @@
 
 @media (max-width:700px) {
   .search-mobile {
-    display: none;
+    display: block;
     z-index: 1;
     border-radius: 2rem;
     position: absolute !important;

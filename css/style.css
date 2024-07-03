@@ -1,7 +1,7 @@
 body,
 html {
   font-size: 18px;
-  height: 100dvh;
+height: -webkit-fill-available;
 }
 .book-gallery a {
   text-decoration: none;

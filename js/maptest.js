@@ -13,7 +13,7 @@ async function initMap() {
         zoom: 10,
         mapId: "4b2dddd7241f0f38",
         disableDefaultUI: true,
-        gestureHandling: 'greedy' // or 'cooperative' for a different behavior
+        gestureHandling: 'greedy'
     });
     
     const priceTag = document.createElement("div");

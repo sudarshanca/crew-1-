@@ -235,7 +235,6 @@ listing map mobile wersion
   flex-direction: column-reverse;
   padding: 4px;
   position: relative;
-  position: relative;
   transition: all 0.3s ease-out;
   width: 30px;
 }
@@ -282,6 +281,8 @@ listing map mobile wersion
   flex: 1;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   background-color: white;
+  position: absolute;
+  top: 102%;
 }
 
 .property .address {
@@ -433,3 +434,4 @@ listing map mobile wersion
   }
 
 /* details cart ends */
+

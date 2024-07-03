@@ -12,11 +12,11 @@ async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
   const center = { lat: 37.43238031167444, lng: -122.16795397128632 };
-   map = new Map(document.getElementById("map"), {
+  map = new Map(document.getElementById("map"), {
     zoom: 11,
     center,
     mapId: "4504f8b37365c3d0",
-     gestureHandling: 'greedy'
+    gestureHandling: "greedy",
   });
 
   for (const property of properties) {
@@ -26,20 +26,15 @@ async function initMap() {
       position: property.position,
       title: property.description,
     });
-      markersArray.push(marker);
-      marker.addListener("click", () => {    
-         /* clearOverlays();*/
+    markersArray.push(marker);
+    marker.addListener("click", () => {
+      /* clearOverlays();*/
       toggleHighlight(marker, property);
     });
   }
 }
 
-
-
-
-
-function toggleHighlight(markerView, property) {   
-
+function toggleHighlight(markerView, property) {
   if (markerView.content.classList.contains("highlight")) {
     markerView.content.classList.remove("highlight");
     markerView.zIndex = null;
@@ -49,16 +44,15 @@ function toggleHighlight(markerView, property) {
   }
 }
 function clearOverlays() {
-    if (markersArray) {
-        for (var i in markersArray) {           
-            if (markersArray[i].content.classList.contains("highlight")) {
-                markersArray[i].content.classList.remove("highlight");
-                markersArray[i].zIndex = null;
-            }
-        }
+  if (markersArray) {
+    for (var i in markersArray) {
+      if (markersArray[i].content.classList.contains("highlight")) {
+        markersArray[i].content.classList.remove("highlight");
+        markersArray[i].zIndex = null;
+      }
     }
+  }
 }
-
 
 function buildContent(property) {
   const content = document.createElement("div");
@@ -68,8 +62,9 @@ function buildContent(property) {
     <div class="icon">
         $800
     </div>
+    
     <div class="details">
-                    <div class="book-gallery mb-0" style="width:300px; position: relative;">
+                    <div class="map-card mb-0" style="width:300px; position: relative;">
                         <a href="details.html">
                             <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
@@ -92,7 +87,7 @@ function buildContent(property) {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-                            <div class="card-body m-1">
+                            <div class=" m-1">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5>Apartment</h5>
                                     <div class="d-flex rating align-items-center">
@@ -105,6 +100,9 @@ function buildContent(property) {
                                 </p>
                           </div>
                         </a>
+                        <div class="map-cls-btn">
+                        <img src="img/Close.svg" alt="">
+                        </div>
                       </div>
 
   </div>

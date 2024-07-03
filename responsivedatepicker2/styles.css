@@ -1,0 +1,313 @@
+
+
+/* table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+td, th {
+  padding:2px 0px !important; 
+    margin: .2rem 0px !important;
+} */
+
+table {
+    border-collapse: separate; /* Make sure the borders don't collapse */
+    border-spacing: 0 5px; /* Horizontal spacing is 0, vertical spacing is 10px */
+  }
+ 
+
+.daysectioncalender{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow-y: scroll;
+    height: 300px;
+}
+.navbarcotainers{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+}
+.navbuttons{
+    /* border: 1px solid gray; */
+    text-align: center;
+    border-radius: 2rem !important;
+    padding: 6px 2rem;
+    margin: 4px !important;
+    color: gray !important;
+}
+.navbuttons:hover{
+background-color: aqua Im !important;
+}
+
+.daysection{
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    justify-content: center;
+    /* height: 300px;
+    overflow-y: scroll;
+    align-items: start; */
+   flex-direction: column;
+
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 792px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    margin: -4px;
+  
+}
+
+#datePickerdays {
+    display: grid;
+    /* grid-template-columns: repeat(7, 1fr); */
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+th{
+    /* background-color: #f4f4f4; */
+    color: #444;
+    font-weight: 500;
+}
+td button{
+    background-color:white;
+    color: rgb(132, 33, 33);
+    border: none;
+    font-weight: 500;
+    border-collapse: collapse !important
+}
+
+#datePickerdays button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#datePicker button:hover {
+    background-color: #eee;
+}
+
+#datePicker button.selected {
+    background-color: #007BFF;
+    color: #fff;
+}
+.dmbutton{
+    padding:1rem 1.5rem;
+    border:none;
+    font-size: 1rem;
+    background-color: skyblue;
+    color: white;
+    border-radius: 6px;
+
+}
+.dmbutton:hover{
+    cursor: pointer;
+}
+#datePicker button.disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.selected-date {
+    margin-top: 20px;
+    /* font-size: 1.2em; */
+}
+
+#prevMonthBtn, #nextMonthBtn {
+    /* width: 100px; */
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    /* border-radius: 4px; */
+    /* border: 1px solid gray; */
+    display: flex;
+    align-items: center;
+    color: #cdcdcd;
+    margin: 5px;
+    padding: 4px;
+}
+
+#prevMonthBtn:hover, #nextMonthBtn:hover {
+    background-color: #f0f0f0;
+}
+
+.tableheaderclass{
+    padding: 1rem 0px !important;
+    font-weight: 600;
+}
+.start-date {
+  background-color: #0D99FF;
+  color: #fff;
+  border-radius: 50%;
+}
+.parentofend-date{
+    background-color: #0d9aff2f; /* Blue background for end date */
+    color: white; /* White text for better contrast */
+    border-radius: 0 50% 50% 0;
+}
+.parentofstart-date{
+    background-color: #0d9aff2f; /* Blue background for start date */
+    color: white; /* White text for better contrast */
+    border-radius: 50% 0 0 50%;
+}
+
+.end-date {
+    background-color: #0D99FF !important;
+    color: #fff;
+    border-radius: 50%;
+  
+}
+
+.parentofInrange {
+    background-color: #0d9aff2f; /* Light blue background for in-range dates */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  border-radius: unset;
+  margin-bottom: 1rem;
+}
+.in-range{
+    background-color: #0d9aff00;;
+}
+
+#loadMoreBtn{
+    width: 100%;
+}
+
+/* *****************************************************************************************************************************************
+    mobile css
+ *****************************************************************************************************************************************
+ */
+
+ @media screen and (max-width:500px) {
+    .navbarcotainers{
+        width: 100%;
+    }
+    .navbuttons {
+        padding: 6px 7%;
+    }
+    .custom-modal-content{
+        width: 100% !important;
+    }
+    body{
+        padding: 0px !important;
+    }
+    .calendar-table th, .calendar-table td {
+        width: 48px !important;
+        height: 48px !important;
+        padding: 0px !important;
+    }
+    td button {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .slider-container{
+        display: none;
+    }
+    .slider-containerformobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    
+
+    }
+    .incrementanddesshow{
+        display: flex;
+        border: 1px solid #0d9affae;
+        border-radius: 6px;
+        padding: .4rem;
+        font-size: 1rem;
+        font-weight: 500;
+        align-items: center;
+    }
+    .vertical-line{
+        width: 2px;
+        height: 36px;
+        background:#0d9affae;
+        margin: 0px 4px;
+    }
+    .count-display{
+        font-size: 2rem;
+        font-weight: 500;
+        color: gray;
+    }
+    .mon{
+        color: #cdcdcd;
+    }
+    #decrementbymonth{
+        border-radius: 50%;
+    }
+    #incrementinmonth{
+        border-radius: 50%;
+    }
+ }
+
+ .slider-containerformobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+.incrementanddesshow{
+    display: flex;
+    border: 1px solid #0d9affae;
+    border-radius: 6px;
+    padding: .4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+}
+.vertical-line{
+    width: 2px;
+    height: 36px;
+    background:#0d9affae;
+    margin: 0px 4px;
+}
+.count-display{
+    font-size: 2rem;
+    font-weight: 500;
+    color: gray;
+}
+.mon{
+    color: #cdcdcd;
+}
+#decrementbymonth{
+    border-radius: 50%;
+}
+#incrementinmonth{
+    border-radius: 50%;
+}

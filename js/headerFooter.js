@@ -48,9 +48,13 @@ $(function () {
 
 
 /* login models */ 
-
 $(function () {
     $("#login").load("login.html");
+});
+
+/* search mobile rsponsive models */ 
+$(function () {
+    $("#mobilesearch").load("./responsivedatepicker2/index.html");
 });
 
 

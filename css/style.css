@@ -1,6 +1,7 @@
 body,
 html {
   font-size: 18px;
+  height: 100dvh;
 }
 .book-gallery a {
   text-decoration: none;

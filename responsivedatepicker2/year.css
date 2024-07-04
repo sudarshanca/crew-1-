@@ -129,13 +129,14 @@
     background-color: #fefefe;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: none !important;
     width: 80%;
     /* Could be more or less, depending on screen size */
     max-width: 840px;
-    border-radius: 8px;
+    border-radius: 1rem 1rem 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: fit-content;
+    margin-top: 1rem;
     /* margin-top: 30rem; */
 }
 

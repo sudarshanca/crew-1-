@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 //details review slider
 $(document).ready(function () {
   try {

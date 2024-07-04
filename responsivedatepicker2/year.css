@@ -69,7 +69,7 @@
     border-radius: 13px;
 
 }
-button {
+.accordion-container button {
     color: #747474;
     border: .5px solid #f0f0f0;
     font-weight: 700;
@@ -84,7 +84,7 @@ button {
     border-radius: 5px;
 
 }
-td button{
+.accordion-container td button{
     width: 48px;
     height: 48px;
     margin: 0 !important;
@@ -92,7 +92,7 @@ td button{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #444;
+    color: #444 !important;
     border-radius: 50%;
     /* margin: 2px 0px !important */
 }

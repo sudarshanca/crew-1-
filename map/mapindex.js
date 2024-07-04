@@ -29,7 +29,7 @@ async function initMap() {
     markersArray.push(marker);
     marker.addListener("click", () => {
       /* clearOverlays();*/
-      toggleHighlight(marker, property);
+   toggleHighlight(marker, property);
     });
   }
 }
@@ -64,47 +64,34 @@ function buildContent(property) {
     </div>
     
     <div class="details">
-                    <div class="map-card mb-0" style="width:300px; position: relative;">
+                     <div class="book-gallery mb-0" style="position: relative;">
                         <a href="details.html">
-                            <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/g1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/g2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/g3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-                            <div class=" m-1">
+                            <div class="bgallery-img mb-3">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide">
+                                        <img src="img/g2.jpg" alt="Image 1">
+                                        <img src="img/g3.jpg" alt="Image 2">
+                                        <img src="img/g1.jpg" alt="Image 3">
+                                    </div>
+                                </div>
+                                <div class="dots"></div>
+                            </div>
+                            <div class="m-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5>Apartment</h5>
                                     <div class="d-flex rating align-items-center">
                                         <img src="img/star.svg" alt=""><span>4.0</span>
-                                </div>
+                                    </div>
                                 </div>
                                 <p class="card-text bs-3 py-2 mb-0">
                                     Distance in kilometers/meters/miles<br>Address of
                                     apartment/room<br>Period of time
                                 </p>
-                          </div>
+                                <p><b class="bb">$350</b> <b class="b">$300</b> <Span class="bs-3">per night</Span></p>
+                            </div>
                         </a>
-                        <div class="map-cls-btn">
-                        <img src="img/Close.svg" alt="">
-                        </div>
-                      </div>
-
+                        <button class="prev" data-carousel="0"><img src="img/arrow_back.svg" alt=""></button>
+                        <button class="next" data-carousel="0"><img src="img/arrow_forward.svg" alt=""></button>
   </div>
     </div>
     `;

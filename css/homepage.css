@@ -428,4 +428,7 @@
     right: 0;
     bottom: 0;
   }
+  #searchbarmain{
+    width: 100% ;
+  }
 }

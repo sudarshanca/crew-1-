@@ -52,9 +52,10 @@ $(function () {
     $("#login").load("login.html");
 });
 
-/* search mobile rsponsive models */ 
-$(function () {
-    $("#mobilesearch").load("./responsivedatepicker2/index.html");
+  // Load responsive datepicker and append it to #mobilesearch
+  $.get("./responsivedatepicker2/index.html", function (data) {
+    $("#mobilesearch").append(data);
+    initializeDynamicContent(); // Initialize JS after appending
 });
 
 

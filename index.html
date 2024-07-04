@@ -17,15 +17,8 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/headerFooter.js"></script>
 
-    <!-- search mobile responsive -->
-    <link rel="stylesheet" href="./responsivedatepicker2/styles.css">
-    <link rel="stylesheet" href="./responsivedatepicker2/monthsecond.css">
-    <link rel="stylesheet" href="./responsivedatepicker2/month.css">
-    <link rel="stylesheet" href="./responsivedatepicker2/accordion.css">
-    <script src="./responsivedatepicker2/accordion1.js"></script>
-    <script src="./responsivedatepicker2/month.js"></script>
-    <script src="./responsivedatepicker2/script.js"></script>
-    <script src="./responsivedatepicker2/year.js"></script>
+
+    
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -34,11 +27,11 @@
 <body>
 
     <div id="search-bar" class="search-main" style="position: fixed;">
-        <div class="d-flex d-n align-items-center justify-content-evenly gap-2 mt-2">
+        <div class="d-flex d-n align-items-center justify-content-evenly gap-2 p-1">
             <div class="d-flex align-items-center gap-2  search-bar search-bar-container w-100 border m-0"
                 style="position: relative; border-radius: 2rem; padding: 6px 16px;">
                 <div>
-                    <img src="img/Search 2.png" width="20px" height="20px" alt="">
+                    <img src="img/Search 2.svg" width="20px" height="20px" alt="">
                 </div>
                 <div class="">
                     <p class="dm-bold-6 m-0" style="color: #4B4B4D;">Where to?</p>
@@ -116,7 +109,7 @@
         <div class="hero-search" style=" padding-top: 6rem; padding-bottom: 3rem;">
             <h1>Bringing the military community together</h1>
             <div class="d-flex justify-content-center mb-4" style="position: relative; min-height: 100px; height: fit-content;">
-                <div id="searchbarmain" class="w-100"></div>
+                <div id="searchbarmain"></div>
                 <button type="button" class="dropdown search-mobile " data-bs-toggle="modal" data-bs-target="#search_mobile"></button>
             </div>
             <p onclick="canIJoin()" title="" class="btn btn-link">Can I Join?</p>
@@ -910,9 +903,9 @@
             <img class="d-none" src="img/Message-filled.svg" alt="">
             <p class=" m-0 mobile-text-footer">Message</p>
         </div>
+        
         <div class="mf-icon">
             <img src="img/Profile.svg" alt="">
-            <img class="d-none" src="img/Profile-filled.svg" alt="">
             <p class="m-0 mobile-text-footer">Log in</p>
         </div>
     </footer>
@@ -955,11 +948,6 @@
 
     <div id="preloader"></div>
 
-
-  <script src="responsivedatepicker2/accordion1.js"></script>
-  <script src="responsivedatepicker2/month.js"></script>
-  <script src="responsivedatepicker2/script.js"></script>
-  <script src="responsivedatepicker2/year.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script>

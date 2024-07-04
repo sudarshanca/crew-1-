@@ -1,14 +1,16 @@
-#calendarContaineryear{
+#calendarContaineryear {
     display: flex;
     gap: 10px;
     margin: 1rem 0px;
 }
+
 @media screen and (max-width :1078px) {
-    #calendarContaineryear{
+    #calendarContaineryear {
         flex-direction: column;
     }
 }
-.topyearcontainer{
+
+.topyearcontainer {
     background-color: white;
     border-radius: 6px;
     width: 60%;
@@ -20,6 +22,7 @@
     padding: 2rem;
     margin: 2rem;
 }
+
 .containeryear {
     width: 80%;
     max-width: 600px;
@@ -30,7 +33,7 @@
     margin-bottom: 20px;
 }
 
-.container1 > div {
+.container1>div {
     margin-bottom: 15px;
 }
 
@@ -69,22 +72,8 @@
     border-radius: 13px;
 
 }
-.accordion-container button {
-    color: #747474;
-    border: .5px solid #f0f0f0;
-    font-weight: 700;
-    padding: 6px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background: white;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
 
-}
-.accordion-container td button{
+.accordion-container td button {
     width: 48px;
     height: 48px;
     margin: 0 !important;
@@ -92,11 +81,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #444 !important;
+    color: var(--BLACK, #444);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    /* 140% */
     border-radius: 50%;
     /* margin: 2px 0px !important */
 }
-.Editbutton{
+
+.Editbutton {
     color: #747474;
     border: .5px solid #f0f0f0;
     font-weight: 700;
@@ -109,38 +103,40 @@
     margin-top: 0px;
     cursor: pointer;
     border-radius: 5px;
-    border :none;
-    color:#0D99FF;
+    border: none;
+    color: #0D99FF;
     /* position: relative; */
 }
 
 
 /* Custom modal */
 .custom-modal {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scrolling if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: auto;
+    /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 .custom-modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
     max-width: 840px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: fit-content;
     /* margin-top: 30rem; */
-    top: -65px;
-    position: fixed;
 }
 
 .custom-modal-close {
@@ -190,29 +186,33 @@
 }
 
 
-.active-button{
-    background-color: #0D99FF; /* Change to your desired background color */
-    color: #fff; /* Change to your desired text color */
+.active-button {
+    background-color: #0D99FF;
+    /* Change to your desired background color */
+    color: #fff;
+    /* Change to your desired text color */
 }
 
 
-    hr {
-        border: none;
-        height: 2px;
-        color: #0D99FF; /* Red color */
-        background-color: #0D99FF; /* Red color */
-        margin: 0;
-        padding: 0;
-      }
+hr {
+    border: none;
+    height: 2px;
+    color: #0D99FF;
+    /* Red color */
+    background-color: #0D99FF;
+    /* Red color */
+    margin: 0;
+    padding: 0;
+}
 
-.lastsectioninyear{
+.lastsectioninyear {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5rem 0px
 }
 
-.calendar-navigation{
+.calendar-navigation {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -221,7 +221,7 @@
     height: 82vh;
 }
 
-#apply-date-year{
+#apply-date-year {
     background-color: #0D99FF;
     color: white;
     /* width: 100%; */
@@ -231,27 +231,31 @@
     border: none;
     color: #cdcdcd;
 }
+
 #prev-year:hover {
     border: unset;
 }
 
-#next-year{
+#next-year {
     border: none;
     color: #cdcdcd
 }
-#next-year:hover{
+
+#next-year:hover {
     border: unset;
 }
 
-.calendeInYearmonth{
-    font-weight: 600;
-    color: black;
-}
-.calendar-month-year{
+.calendeInYearmonth {
     font-weight: 600;
     color: black;
 }
 
-.chooseclass{
-    text-align: center;font-size: 1.5rem;
+.calendar-month-year {
+    font-weight: 600;
+    color: black;
+}
+
+.chooseclass {
+    text-align: center;
+    font-size: 1.5rem;
 }

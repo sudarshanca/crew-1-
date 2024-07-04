@@ -69,10 +69,9 @@
                     <div id="reloadpagecontaiener">
                         <h5 class="accordionfirsttital">Choose a date</h5>
                         <div class="mobile_date_show">
-                            <p class="accordionsecondtital">
+                            <p class="accordionsecondtital"></p>
                             <p id="start-date-days"></p>
                             <p id="end-date-days"></p>
-                            </p>
                         </div>
                     </div>
                 </span>
@@ -86,19 +85,20 @@
 
                         <h4 style="text-align :center"> Choose stay Duration</h4>
 
-                        <nav>
+                        
                             <div class="nav nav-tabs navbarcotainers" id="nav-tab" role="tablist">
-                                <button class=" navbuttons nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                <button class=" navbuttons active" id="nav-home-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                                     aria-selected="true">Dayes</button>
-                                <button class=" navbuttons nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                <button class=" navbuttons" id="nav-profile-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
                                     aria-selected="false">Months</button>
-                                <button class=" navbuttons nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                <button class=" navbuttons " id="nav-contact-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
                                     aria-selected="false">Years</button>
                             </div>
-                        </nav>
+                       
+
                         <div class="tab-content" id="nav-tabContent">
 
                             <!-- date section -->
@@ -169,8 +169,10 @@
                                 <!-- Custom Modal -->
                                 <div id="customModal" class="custom-modal">
                                     <div class="custom-modal-content">
-                                        <div class="chooseclass"> choose a start date</div>
                                         <span class="custom-modal-close">&times;</span>
+                                        <br>
+                                        <div class="chooseclass" style=" font-size: 18px; font-weight: 500; line-height: 23.44px; letter-spacing: -0.04em; text-align: left; color: #222222;
+                                        ">Select start date</div>
                                         <div>
                                             <!-- ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; -->
                                             <!-- <table style="width: 91%;
@@ -188,7 +190,7 @@
                                                     </tr>
                                                 </table> -->
                                         </div>
-                                        <div class="calendar-navigation">
+                                        <div class="calendar-navigation mt-0">
                                             <!-- <button id="prev-month" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                                                       <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                                                     </svg></button> -->
@@ -201,8 +203,7 @@
                                                       <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                                                     </svg></button> -->
                                         </div>
-                                        <div class="col-12 d-flex">
-
+                                        <div class="mobile-cal-footer">
                                             <button id="reset" class="btn  mt-3 col-6">reset</button>
                                             <!-- <button id="skip" class="btn  mt-3 col-6">skip</button> -->
                                             <button id="apply-date" class="btn  mt-3 col-6">Apply</button>
@@ -242,8 +243,10 @@
                                 <!-- Custom Modal -->
                                 <div id="customModalyear" class="custom-modal">
                                     <div class="custom-modal-content">
-                                        <div class="chooseclass"> choose a start date</div>
                                         <span class="custom-modal-close1">&times;</span>
+                                        <br>
+                                        <div class="chooseclass" style="font-size: 18px; font-weight: 500; line-height: 23.44px; letter-spacing: -0.04em; text-align: left; color: #222222;
+                                        ">Select start date</div>
                                         <div class="calendar-navigation">
                                             <!-- <button id="prev-year" class="calendar-nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                                                   <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
@@ -258,9 +261,10 @@
                                                   <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                                                 </svg></button> -->
                                         </div>
-                                        <div class="d-flex col-12">
-                                            <button id="resetdate" class="btn  col-6 mt-3">reset</button>
-                                            <button id="apply-date-year" class="btn  col-6 mt-3">Apply</button>
+                                        <div class="mobile-cal-footer">
+                                            <button id="reset" class="btn  mt-3 col-6">reset</button>
+                                            <!-- <button id="skip" class="btn  mt-3 col-6">skip</button> -->
+                                            <button id="apply-date" class="btn  mt-3 col-6">Apply</button>
                                         </div>
                                     </div>
                                 </div>
@@ -322,11 +326,9 @@
                 </div>
             </div>
         </div>
-
-        <div style="display: flex;
-    justify-content: space-between;
-    margin: 10px;">
-            <button class="clearallbutton" id="clearallbtn">Clear All</button>
+   
+        <div class="mobile-cal-footer">
+            <button class="save" style="background-color: white; border: none ; color: #747474; padding: .5rem;" id="clearallbtn">Clear All</button>
             <button class="save" id="nextbtnfornextaccordion">Next</button>
         </div>
     </div>

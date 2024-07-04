@@ -435,22 +435,32 @@ listing map mobile wersion
 /* details cart starts */
 
   /* Individual dot */
+  .dots {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
   .dot {
     cursor: pointer;
-    height: 10px !important ;
-    width: 10px !important;
+    height: 6px;
+    width: 6px;
     margin: 5px 3px;
     background-color: #eaeaea !important;
     border-radius: 50%;
     transition: all 0.3s ease !important;
-
   }
 
   /* Active dot */
-  .active-dot {
-    background-color: #717171 !important;
-    width: 13px !important;
-    height: 13px !important;
+  .dot.active {
+    width: 9px ;
+    height: 9px ;
   }
 
 

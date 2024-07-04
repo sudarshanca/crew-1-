@@ -2,6 +2,7 @@ body,
 html {
   font-size: 18px;
 height: -webkit-fill-available;
+font-family: "DM Sans";
 }
 .book-gallery a {
   text-decoration: none;

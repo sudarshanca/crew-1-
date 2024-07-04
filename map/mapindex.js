@@ -64,6 +64,9 @@ function buildContent(property) {
     </div>
     
     <div class="details">
+    <button class="mapcartclose-btn">
+            <img src="./img/Close.svg" alt="">
+        </button>
                      <div class="book-gallery mb-0" style="position: relative;">
                         <a href="details.html">
                             <div class="bgallery-img mb-3">

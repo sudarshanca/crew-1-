@@ -453,5 +453,21 @@ listing map mobile wersion
     height: 13px !important;
   }
 
+
+
+  .mapcartclose-btn  {
+    position: absolute;
+    z-index: 1;
+    background: white;
+    right: 2%;
+    top: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+  }
+
 /* details cart ends */
 

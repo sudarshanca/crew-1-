@@ -42,13 +42,13 @@
 
 <body>
 
-    <section>
+    <section class="d-flex">
         <button type="button" class="btn-close model-close-btn" data-bs-dismiss="modal" aria-label="Close">
             <img src="./img/Close.svg" alt="">
         </button>
 
-        <div class="d-flex" id="leftSideLoginEntryId">
-            <div class="p-3 pt-5 text-center leftSideLoginEntry w-50 mobile-w-100" id="loginPhoneNumberPageId">
+        <div class="flex-grow-1 p-3 pt-5" id="leftSideLoginEntryId">
+            <div class="text-center leftSideLoginEntry" id="loginPhoneNumberPageId">
                 <h1>
                     Log in or sign up
                 </h1>
@@ -371,7 +371,7 @@
                             <input style=" padding-left: 7rem !important; background-color: white; border-radius:.5rem;"
                                 type="text" id="phone-input"
                                 class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile number" required />
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile number" />
                         </div>
                     </div>
 
@@ -381,9 +381,8 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-
                         <a class=" canIjoinLink mobile-view-1 " style="text-align: center !important; display: none;"
-                            id="toggleLink">
+                            onclick=" toggleling()" style="cursor: pointer;">
                             can I Join?
                         </a>
                     </div>
@@ -417,13 +416,62 @@
                         </button>
                     </div>
                 </form>
+
+                 
+            </div>
+            <div  id="otpPageId">
+                <div class="text-center ">
+
+                    <div class="d-flex">
+
+                        <!-- back icon resopmsive-->
+                        <div class="1" id="goBackButtonId">
+                            <div class=" back-border-none d-flex justify-content-center align-items-center p-2  border"
+                                style=" border-radius: 1rem; width: 48px; height: 38px;">
+                                <svg class="mobile-none" xmlns="http://www.w3.org/2000/svg" width="16" height="10"
+                                    viewBox="0 0 16 10" fill="none">
+                                    <path
+                                        d="M5.10728 1.27594C5.35245 1.03295 5.35421 0.63723 5.11123 0.392066C4.86824 0.146901 4.47252 0.145136 4.22735 0.388122L2.73174 1.87045C2.16843 2.42873 1.70804 2.88502 1.38153 3.29158C1.04201 3.71435 0.79623 4.14347 0.730575 4.65856C0.701787 4.88442 0.701787 5.11298 0.730575 5.33883C0.79623 5.85393 1.04201 6.28304 1.38153 6.70581C1.70804 7.11238 2.16843 7.56867 2.73175 8.12696L4.22735 9.60927C4.47252 9.85226 4.86824 9.85049 5.11123 9.60533C5.35421 9.36017 5.35245 8.96444 5.10728 8.72146L3.63814 7.26537C3.0419 6.67442 2.6329 6.26772 2.35615 5.92311C2.26621 5.81112 2.19603 5.71253 2.14155 5.6237H14.6673C15.0125 5.6237 15.2923 5.34388 15.2923 4.9987C15.2923 4.65352 15.0125 4.3737 14.6673 4.3737H2.14155C2.19603 4.28487 2.26621 4.18628 2.35615 4.07429C2.6329 3.72968 3.0419 3.32298 3.63814 2.73203L5.10728 1.27594Z"
+                                        fill="#444444" />
+                                </svg>
+
+                                <svg class="desktop-version-none" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#090A0A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h1>
+                            Enter Authentication Code
+                        </h1>
+                    </div>
+                    <h3>
+                        Enter the 6_digit code we sent to the phone number <br /><strong>(854) 210- 3097</strong>
+                    </h3>
+                    <div class="inputContainer">
+                        <input type="text" id="optNum1" maxlength="1" onkeyup="moveToNext(this, event)">
+                        <input type="text" id="optNum2" maxlength="1" onkeyup="moveToNext(this, event)">
+                        <input type="text" id="optNum3" maxlength="1" onkeyup="moveToNext(this, event)">
+                        <input type="text" id="optNum4" maxlength="1" onkeyup="moveToNext(this, event)">
+                        <input type="text" id="optNum5" maxlength="1" onkeyup="moveToNext(this, event)">
+                        <input type="text" id="optNum6" maxlength="1" onkeyup="moveToNext(this, event)">
+                    </div>
+
+                    <h3>
+                        Waiting to resend OTP in <strong>59 Secs</strong>
+                    </h3>
+
+                    <button class="btn btn-primary Continue-button" id="optContinueButton">
+                        Continue
+                    </button>
+                </div>
+            </div>
             </div>
 
-
-
-            <div class="w-50 mobile-w-100" id="rightSideEligibleId" style="background-image: url(./img/BG.png);">
-                <div class="eligibleListContainer" style="margin: 3rem 64px;">
-
+            <div class="flex-grow-1" id="rightSideEligibleId" style="background-image: url(./img/BG.png);">
+                <div class="eligibleListContainer" style=" margin: 3rem 64px;">
                     <div class="mobile-display-flex mb-4">
                         <div class="" id="toggleLinkReverse">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -483,38 +531,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-
 
     </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
-    <script>
-        $('.burger, .overlay').click(function () {
-            $('.burger').toggleClass('clicked');
-            $('.overlay').toggleClass('show');
-            $('nav').toggleClass('show');
-            $('body').toggleClass('overflow');
-        });
-
-        $(function () {
-            var header = $(".navbar");
-
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                if (scroll >= 50) {
-                    header.addClass("scrolled");
-                    header.removeClass("navbar-inverse");
-
-                } else {
-                    header.removeClass("scrolled");
-                }
-            });
-
-        });
-    </script>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
@@ -534,6 +555,13 @@
                 hideContentDiv.style.display = "none";
                 showContentDiv.style.display = "block";
             });
+
+            function toggleling() {
+               event.preventDefault(); // Prevent the default behavior of the link
+
+                hideContentDiv.style.display = "none";
+                showContentDiv.style.display = "block";
+            }
 
 
             // Add click event listener to the second link
